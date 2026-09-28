@@ -63,8 +63,19 @@ jobs:
             git push
           fi
 
+      - name: Ota GitHub Pages käyttöön
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh api -X POST "repos/${GITHUB_REPOSITORY}/pages" \
+            -f build_type=workflow \
+            --silent || true
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
+        with:
+          enablement: true
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
