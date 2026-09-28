@@ -40,8 +40,11 @@ Jokainen ajo hakee datan, kirjoittaa `docs/` ja julkaisee GitHub Pagesiin.
 Ensimmäisen pushin jälkeen:
 
 1. GitHub → **Settings → Pages**
-2. Source: **GitHub Actions**
-3. Julkinen osoite: `https://jeodata.github.io/sisu-ottelut/`
+2. Source: **GitHub Actions** (vaihtoehto: Deploy from a branch → `main` / `/docs`)
+3. Julkinen osoite: https://jeodata.github.io/sisu-ottelut/
+
+Ensimmäinen workflow-ajo julkaisee sivun. Jos osoite ei aukea heti, varmista
+Pages-lähde yllä ja käynnistä ajo manuaalisesti.
 
 Työnkulun voi myös käynnistää manuaalisesti: **Actions → Päivitä Sisu Hockeyn ottelut → Run workflow**.
 
