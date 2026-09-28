@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sisu Hockey – päivän ottelut</title>
+  <meta name="description" content="Sisu Hockey Hämeenlinna ry:n päivän ottelut ja tulokset.">
+  <meta name="theme-color" content="#8b1a16">
+  <link rel="icon" href="assets/logo.png">
+  <style>
+    :root {
+      --red: #e3302c;
+      --red-dark: #8b1a16;
+      --ice: #f4f7fb;
+      --ink: #12151c;
+      --muted: #5b6573;
+      --card: #ffffff;
+      --line: #e4e9f0;
+      --live: #0b8a4a;
+      --loss: #8a2430;
+      --win: #1f7a4d;
+      --shadow: 0 10px 30px rgba(18, 21, 28, .08);
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(1200px 500px at 10% -10%, rgba(227,48,44,.18), transparent 55%),
+        linear-gradient(180deg, #f8fafc 0%, #eef2f7 100%);
+      min-height: 100vh;
+    }
+    .hero {
+      background: linear-gradient(135deg, #6d1410 0%, #c62823 55%, #e3302c 100%);
+      color: #fff;
+      padding: 1.4rem 1.1rem 1.7rem;
+      box-shadow: 0 8px 24px rgba(139, 26, 22, .28);
+    }
+    .hero-inner {
+      max-width: 920px;
+      margin: 0 auto;
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+    .hero img {
+      width: 64px; height: 64px;
+      background: #fff; border-radius: 16px; padding: 4px;
+    }
+    .hero h1 {
+      font-size: 1.35rem; margin: 0 0 .15rem; letter-spacing: .01em;
+      text-transform: uppercase;
+    }
+    .hero p { margin: 0; opacity: .92; font-size: .95rem; }
+    main { max-width: 920px; margin: 0 auto; padding: 1rem 1rem 3rem; }
+    .chips {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: .6rem;
+      margin: -1.4rem 0 1.2rem;
+    }
+    .chip {
+      background: var(--card);
+      border-radius: 14px;
+      padding: .7rem .55rem;
+      text-align: center;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--line);
+    }
+    .chip-n { display: block; font-size: 1.25rem; font-weight: 800; }
+    .chip-l { font-size: .72rem; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
+    .chip-live .chip-n { color: var(--live); }
+    .chip-finished .chip-n { color: var(--red); }
+    .block { margin: 1.4rem 0; }
+    .block h2 {
+      margin: 0 0 .8rem;
+      font-size: 1.02rem;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      color: var(--red-dark);
+    }
+    .grid { display: grid; gap: .85rem; }
+    .card {
+      background: var(--card);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--line);
+      overflow: hidden;
+    }
+    .card.status-live { border-color: #9fe0bc; box-shadow: 0 8px 24px rgba(11,138,74,.16); }
+    .card.result-win { border-left: 5px solid var(--win); }
+    .card.result-loss { border-left: 5px solid var(--red); }
+    .card.result-tie { border-left: 5px solid #c9a227; }
+    .card-link { display: block; color: inherit; text-decoration: none; padding: .95rem 1rem 1rem; }
+    .card-top {
+      display: flex; align-items: center; gap: .5rem;
+      font-size: .8rem; color: var(--muted); margin-bottom: .35rem;
+    }
+    .badge {
+      border-radius: 999px; padding: .15rem .55rem;
+      font-weight: 700; letter-spacing: .04em; text-transform: uppercase;
+      font-size: .68rem; background: #eef2f7; color: #445;
+    }
+    .badge-live { background: #d9f6e5; color: #0b8a4a; animation: pulse 1.6s ease-in-out infinite; }
+    .badge-upcoming { background: #e8eefc; color: #2b4ea2; }
+    .badge-finished { background: #fde8e7; color: #b42318; }
+    .time { margin-left: auto; font-variant-numeric: tabular-nums; font-weight: 700; color: var(--ink); }
+    .venue { border: 1px solid var(--line); border-radius: 999px; padding: .1rem .5rem; }
+    .venue-home { background: #fff4f3; border-color: #f3c7c5; color: var(--red-dark); }
+    .sisu-line {
+      margin: 0 0 .55rem; font-size: .8rem; color: var(--muted);
+    }
+    .match {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      gap: .6rem;
+      align-items: center;
+    }
+    .team { display: flex; flex-direction: column; align-items: center; gap: .35rem; text-align: center; }
+    .tname { font-weight: 700; font-size: .92rem; line-height: 1.2; }
+    .crest { width: 40px; height: 40px; object-fit: contain; border-radius: 50%; background: #fff; }
+    .crest-fallback {
+      width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center;
+      background: #f3f5f8; font-size: .75rem; font-weight: 800;
+    }
+    .score {
+      min-width: 92px; text-align: center;
+      font-variant-numeric: tabular-nums;
+    }
+    .score .num { font-size: 1.7rem; font-weight: 800; }
+    .score .sep { margin: 0 .15rem; color: var(--muted); font-size: 1.3rem; }
+    .score.wait .kickoff { font-size: 1.25rem; font-weight: 800; }
+    .score.live .num { color: var(--live); }
+    .extra { display: block; font-size: .7rem; color: var(--muted); font-weight: 700; }
+    .meta { margin: .7rem 0 0; color: var(--muted); font-size: .8rem; }
+    .empty {
+      background: var(--card); border-radius: 16px; padding: 1.2rem;
+      color: var(--muted); box-shadow: var(--shadow);
+    }
+    footer {
+      max-width: 920px; margin: 0 auto; padding: 0 1rem 2.5rem;
+      color: var(--muted); font-size: .8rem;
+    }
+    footer a { color: var(--red-dark); }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: .55; }
+    }
+    @media (max-width: 560px) {
+      .chips { grid-template-columns: repeat(2, 1fr); }
+      .hero h1 { font-size: 1.15rem; }
+      .tname { font-size: .84rem; }
+      .score .num { font-size: 1.45rem; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <img src="assets/logo.png" alt="Sisu Hockey" width="64" height="64">
+      <div>
+        <h1>Sisu Hockey</h1>
+        <p>maanantai 28.9.2026 · SISU HOCKEY HÄMEENLINNA RY</p>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="chips">
+      <div class="chip chip-total"><span class="chip-n">0</span><span class="chip-l">Ottelut</span></div>
+      <div class="chip chip-upcoming"><span class="chip-n">0</span><span class="chip-l">Tulossa</span></div>
+      <div class="chip chip-live"><span class="chip-n">0</span><span class="chip-l">Käynnissä</span></div>
+      <div class="chip chip-finished"><span class="chip-n">0</span><span class="chip-l">Päättynyt</span></div>
+    </div>
+    <section class="block"><h2>Päivän ottelut</h2><p class="empty">Tänään Sisu Hockeylla ei ole merkittyjä otteluita.</p></section>
+    
+    
+    <section class="block"><h2>Seuraavat pelipäivät</h2></section>
+    <section class="block muted"><h2>lauantai 3.10.2026</h2><div class="grid">
+<article class="card status-upcoming">
+  <a class="card-link" href="https://tulospalvelu.leijonat.fi/game?gameid=757841" target="_blank" rel="noopener">
+    <header class="card-top">
+      <span class="badge badge-upcoming">Tulossa</span>
+      <span class="time">09:30</span>
+      <span class="venue venue-home">Koti</span>
+    </header>
+    <p class="sisu-line">SiSu Punainen</p>
+    <div class="match">
+      <div class="team home">
+        <img class="crest" src="https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png" alt="SiSu Punainen" width="40" height="40" loading="lazy">
+        <span class="tname">SiSu Punainen</span>
+      </div>
+      <div class="score wait"><span class="kickoff">09:30</span></div>
+      <div class="team away">
+        <img class="crest" src="https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11019913.png" alt="Pelicans Itä Turkoosi" width="40" height="40" loading="lazy">
+        <span class="tname">Pelicans Itä Turkoosi</span>
+      </div>
+    </div>
+    <p class="meta">U11 sarja · Hakio S · pieni kaukalo</p>
+  </a>
+</article>
+
+<article class="card status-upcoming">
+  <a class="card-link" href="https://tulospalvelu.leijonat.fi/game?gameid=727972" target="_blank" rel="noopener">
+    <header class="card-top">
+      <span class="badge badge-upcoming">Tulossa</span>
+      <span class="time">10:15</span>
+      <span class="venue venue-home">Koti</span>
+    </header>
+    <p class="sisu-line">SiSu punainen</p>
+    <div class="match">
+      <div class="team home">
+        <img class="crest" src="https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png" alt="SiSu punainen" width="40" height="40" loading="lazy">
+        <span class="tname">SiSu punainen</span>
+      </div>
+      <div class="score wait"><span class="kickoff">10:15</span></div>
+      <div class="team away">
+        <img class="crest" src="https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114698.png" alt="Ilves Vihreä" width="40" height="40" loading="lazy">
+        <span class="tname">Ilves Vihreä</span>
+      </div>
+    </div>
+    <p class="meta">U13 Sininen · Hakio C</p>
+  </a>
+</article>
+
+<article class="card status-upcoming">
+  <a class="card-link" href="https://tulospalvelu.leijonat.fi/game?gameid=757842" target="_blank" rel="noopener">
+    <header class="card-top">
+      <span class="badge badge-upcoming">Tulossa</span>
+      <span class="time">11:50</span>
+      <span class="venue venue-home">Koti</span>
+    </header>
+    <p class="sisu-line">SiSu Punainen</p>
+    <div class="match">
+      <div class="team home">
+        <img class="crest" src="https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png" alt="SiSu Punainen" width="40" height="40" loading="lazy">
+        <span class="tname">SiSu Punainen</span>
+      </div>
+      <div class="score wait"><span class="kickoff">11:50</span></div>
+      <div class="team away">
+        <img class="crest" src="https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11019913.png" alt="Pelicans Itä Turkoosi" width="40" height="40" loading="lazy">
+        <span class="tname">Pelicans Itä Turkoosi</span>
+      </div>
+    </div>
+    <p class="meta">U11 sarja · Hakio C · pieni kaukalo</p>
+  </a>
+</article>
+
+<article class="card status-upcoming">
+  <a class="card-link" href="https://tulospalvelu.leijonat.fi/game?gameid=753329" target="_blank" rel="noopener">
+    <header class="card-top">
+      <span class="badge badge-upcoming">Tulossa</span>
+      <span class="time">13:00</span>
+      <span class="venue venue-home">Koti</span>
+    </header>
+    <p class="sisu-line">SiSu Punainen</p>
+    <div class="match">
+      <div class="team home">
+        <img class="crest" src="https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png" alt="SiSu Punainen" width="40" height="40" loading="lazy">
+        <span class="tname">SiSu Punainen</span>
+      </div>
+      <div class="score wait"><span class="kickoff">13:00</span></div>
+      <div class="team away">
+        <img class="crest" src="https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114669.png" alt="KOOVEE Black" width="40" height="40" loading="lazy">
+        <span class="tname">KOOVEE Black</span>
+      </div>
+    </div>
+    <p class="meta">U12 sarja · Hakio S</p>
+  </a>
+</article>
+
+<article class="card status-upcoming">
+  <a class="card-link" href="https://tulospalvelu.leijonat.fi/game?gameid=732546" target="_blank" rel="noopener">
+    <header class="card-top">
+      <span class="badge badge-upcoming">Tulossa</span>
+      <span class="time">13:10</span>
+      <span class="venue venue-away">Vieras</span>
+    </header>
+    <p class="sisu-line">SiSu</p>
+    <div class="match">
+      <div class="team home">
+        <img class="crest" src="https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11019913.png" alt="Pelicans Team" width="40" height="40" loading="lazy">
+        <span class="tname">Pelicans Team</span>
+      </div>
+      <div class="score wait"><span class="kickoff">13:10</span></div>
+      <div class="team away">
+        <img class="crest" src="https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png" alt="SiSu" width="40" height="40" loading="lazy">
+        <span class="tname">SiSu</span>
+      </div>
+    </div>
+    <p class="meta">U16 Suomi-sarja · Hollola</p>
+  </a>
+</article>
+
+<article class="card status-upcoming">
+  <a class="card-link" href="https://tulospalvelu.leijonat.fi/game?gameid=753331" target="_blank" rel="noopener">
+    <header class="card-top">
+      <span class="badge badge-upcoming">Tulossa</span>
+      <span class="time">14:40</span>
+      <span class="venue venue-home">Koti</span>
+    </header>
+    <p class="sisu-line">SiSu Punainen</p>
+    <div class="match">
+      <div class="team home">
+        <img class="crest" src="https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png" alt="SiSu Punainen" width="40" height="40" loading="lazy">
+        <span class="tname">SiSu Punainen</span>
+      </div>
+      <div class="score wait"><span class="kickoff">14:40</span></div>
+      <div class="team away">
+        <img class="crest" src="https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114669.png" alt="KOOVEE Black" width="40" height="40" loading="lazy">
+        <span class="tname">KOOVEE Black</span>
+      </div>
+    </div>
+    <p class="meta">U12 sarja · Hakio S</p>
+  </a>
+</article>
+
+<article class="card status-upcoming">
+  <a class="card-link" href="https://tulospalvelu.leijonat.fi/game?gameid=758134" target="_blank" rel="noopener">
+    <header class="card-top">
+      <span class="badge badge-upcoming">Tulossa</span>
+      <span class="time">16:10</span>
+      <span class="venue venue-home">Koti</span>
+    </header>
+    <p class="sisu-line">SiSu Valkoinen</p>
+    <div class="match">
+      <div class="team home">
+        <img class="crest" src="https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png" alt="SiSu Valkoinen" width="40" height="40" loading="lazy">
+        <span class="tname">SiSu Valkoinen</span>
+      </div>
+      <div class="score wait"><span class="kickoff">16:10</span></div>
+      <div class="team away">
+        <img class="crest" src="https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114122.png" alt="VaPS Sininen" width="40" height="40" loading="lazy">
+        <span class="tname">VaPS Sininen</span>
+      </div>
+    </div>
+    <p class="meta">U11 sarja · Hakio S</p>
+  </a>
+</article>
+
+<article class="card status-upcoming">
+  <a class="card-link" href="https://tulospalvelu.leijonat.fi/game?gameid=731545" target="_blank" rel="noopener">
+    <header class="card-top">
+      <span class="badge badge-upcoming">Tulossa</span>
+      <span class="time">16:45</span>
+      <span class="venue venue-home">Koti</span>
+    </header>
+    <p class="sisu-line">SiSu valkoinen</p>
+    <div class="match">
+      <div class="team home">
+        <img class="crest" src="https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png" alt="SiSu valkoinen" width="40" height="40" loading="lazy">
+        <span class="tname">SiSu valkoinen</span>
+      </div>
+      <div class="score wait"><span class="kickoff">16:45</span></div>
+      <div class="team away">
+        <img class="crest" src="https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114313.png" alt="PK 83" width="40" height="40" loading="lazy">
+        <span class="tname">PK 83</span>
+      </div>
+    </div>
+    <p class="meta">U13 Valkoinen · Hakio C</p>
+  </a>
+</article>
+
+<article class="card status-upcoming">
+  <a class="card-link" href="https://tulospalvelu.leijonat.fi/game?gameid=758135" target="_blank" rel="noopener">
+    <header class="card-top">
+      <span class="badge badge-upcoming">Tulossa</span>
+      <span class="time">17:40</span>
+      <span class="venue venue-home">Koti</span>
+    </header>
+    <p class="sisu-line">SiSu Valkoinen</p>
+    <div class="match">
+      <div class="team home">
+        <img class="crest" src="https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png" alt="SiSu Valkoinen" width="40" height="40" loading="lazy">
+        <span class="tname">SiSu Valkoinen</span>
+      </div>
+      <div class="score wait"><span class="kickoff">17:40</span></div>
+      <div class="team away">
+        <img class="crest" src="https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114122.png" alt="VaPS Sininen" width="40" height="40" loading="lazy">
+        <span class="tname">VaPS Sininen</span>
+      </div>
+    </div>
+    <p class="meta">U11 sarja · Hakio S</p>
+  </a>
+</article>
+
+<article class="card status-upcoming">
+  <a class="card-link" href="https://tulospalvelu.leijonat.fi/game?gameid=735140" target="_blank" rel="noopener">
+    <header class="card-top">
+      <span class="badge badge-upcoming">Tulossa</span>
+      <span class="time">18:45</span>
+      <span class="venue venue-home">Koti</span>
+    </header>
+    <p class="sisu-line">SiSu</p>
+    <div class="match">
+      <div class="team home">
+        <img class="crest" src="https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png" alt="SiSu" width="40" height="40" loading="lazy">
+        <span class="tname">SiSu</span>
+      </div>
+      <div class="score wait"><span class="kickoff">18:45</span></div>
+      <div class="team away">
+        <img class="crest" src="https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11019913.png" alt="Pelicans Team" width="40" height="40" loading="lazy">
+        <span class="tname">Pelicans Team</span>
+      </div>
+    </div>
+    <p class="meta">U18 II-divisioona · HML hh</p>
+  </a>
+</article>
+</div></section>
+<section class="block muted"><h2>sunnuntai 4.10.2026</h2><div class="grid">
+<article class="card status-upcoming">
+  <a class="card-link" href="https://tulospalvelu.leijonat.fi/game?gameid=752891" target="_blank" rel="noopener">
+    <header class="card-top">
+      <span class="badge badge-upcoming">Tulossa</span>
+      <span class="time">14:20</span>
+      <span class="venue venue-away">Vieras</span>
+    </header>
+    <p class="sisu-line">SiSu Valkoinen</p>
+    <div class="match">
+      <div class="team home">
+        <img class="crest" src="https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114740.png" alt="HPK White" width="40" height="40" loading="lazy">
+        <span class="tname">HPK White</span>
+      </div>
+      <div class="score wait"><span class="kickoff">14:20</span></div>
+      <div class="team away">
+        <img class="crest" src="https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png" alt="SiSu Valkoinen" width="40" height="40" loading="lazy">
+        <span class="tname">SiSu Valkoinen</span>
+      </div>
+    </div>
+    <p class="meta">U12 sarja · Hakio S</p>
+  </a>
+</article>
+
+<article class="card status-upcoming">
+  <a class="card-link" href="https://tulospalvelu.leijonat.fi/game?gameid=731552" target="_blank" rel="noopener">
+    <header class="card-top">
+      <span class="badge badge-upcoming">Tulossa</span>
+      <span class="time">15:30</span>
+      <span class="venue venue-away">Vieras</span>
+    </header>
+    <p class="sisu-line">SiSu valkoinen</p>
+    <div class="match">
+      <div class="team home">
+        <img class="crest" src="https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114740.png" alt="HPK Valkoinen" width="40" height="40" loading="lazy">
+        <span class="tname">HPK Valkoinen</span>
+      </div>
+      <div class="score wait"><span class="kickoff">15:30</span></div>
+      <div class="team away">
+        <img class="crest" src="https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png" alt="SiSu valkoinen" width="40" height="40" loading="lazy">
+        <span class="tname">SiSu valkoinen</span>
+      </div>
+    </div>
+    <p class="meta">U13 Valkoinen · HML hh</p>
+  </a>
+</article>
+
+<article class="card status-upcoming">
+  <a class="card-link" href="https://tulospalvelu.leijonat.fi/game?gameid=752897" target="_blank" rel="noopener">
+    <header class="card-top">
+      <span class="badge badge-upcoming">Tulossa</span>
+      <span class="time">16:00</span>
+      <span class="venue venue-away">Vieras</span>
+    </header>
+    <p class="sisu-line">SiSu Valkoinen</p>
+    <div class="match">
+      <div class="team home">
+        <img class="crest" src="https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114740.png" alt="HPK White" width="40" height="40" loading="lazy">
+        <span class="tname">HPK White</span>
+      </div>
+      <div class="score wait"><span class="kickoff">16:00</span></div>
+      <div class="team away">
+        <img class="crest" src="https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png" alt="SiSu Valkoinen" width="40" height="40" loading="lazy">
+        <span class="tname">SiSu Valkoinen</span>
+      </div>
+    </div>
+    <p class="meta">U12 sarja · Hakio S</p>
+  </a>
+</article>
+</div></section>
+  </main>
+  <footer>
+    Päivitetty 2026-09-28 21:19 (Helsinki) · kausi 2026-2027.
+    Lähde: <a href="https://tulospalvelu.leijonat.fi/">tulospalvelu.leijonat.fi</a>.
+    JSON: <a href="games.json">games.json</a>.
+  </footer>
+</body>
+</html>

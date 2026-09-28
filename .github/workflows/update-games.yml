@@ -1,0 +1,55 @@
+name: Päivitä Sisu Hockeyn ottelut
+
+on:
+  schedule:
+    # Aamu (Helsinki ~7:15, kattaa kesä- ja talviajan)
+    - cron: "15 4 * * *"
+    - cron: "15 6 * * *"
+    # Iltapäivä ja ilta: valmistuneet tulokset
+    - cron: "15 12 * * *"
+    - cron: "15 14 * * *"
+    - cron: "15 17 * * *"
+    - cron: "15 19 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "sisu_ottelut.py"
+      - "render_html.py"
+      - "publish.py"
+      - "assets/**"
+      - ".github/workflows/update-games.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sisu-ottelut
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Hae ottelut ja rakenna sivu
+        run: python3 publish.py --out docs
+
+      - name: Tallenna Pages-tiedostot
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs
+          if git diff --cached --quiet; then
+            echo "Ei muutoksia."
+            exit 0
+          fi
+          git commit -m "Päivitä ottelut $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push
