@@ -50,6 +50,7 @@ import sys
 import urllib.error
 import urllib.parse
 import urllib.request
+import time
 from datetime import datetime
 from typing import Any
 from zoneinfo import ZoneInfo
@@ -61,7 +62,10 @@ TZ = ZoneInfo("Europe/Helsinki")
 CLUB_NAME_NEEDLE = "SISU HOCKEY HÄMEENLINNA"
 DEFAULT_ASS_ID = "11015646"
 
-USER_AGENT = "SisuHockeyOttelut/1.0 (+https://tulospalvelu.leijonat.fi/)"
+USER_AGENT = (
+    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
+    "(KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
+)
 
 DEFAULT_CLUB = {
     "AssID": DEFAULT_ASS_ID,
@@ -93,26 +97,39 @@ class ApiError(RuntimeError):
 def http_get_json(url: str, params: dict[str, Any] | None = None, timeout: int = 45) -> Any:
     if params:
         url = f"{url}?{urllib.parse.urlencode(params, doseq=True)}"
-    req = urllib.request.Request(
-        url,
-        headers={
-            "Accept": "application/json",
-            "User-Agent": USER_AGENT,
-        },
-    )
-    try:
-        with urllib.request.urlopen(req, timeout=timeout) as resp:
-            raw = resp.read()
-    except urllib.error.HTTPError as exc:
-        raise ApiError(f"HTTP {exc.code} {url}") from exc
-    except urllib.error.URLError as exc:
-        raise ApiError(f"Yhteysvirhe: {exc.reason} ({url})") from exc
-    if not raw:
-        return None
-    try:
-        return json.loads(raw.decode("utf-8"))
-    except json.JSONDecodeError as exc:
-        raise ApiError(f"Vastaus ei ollut JSON: {url}") from exc
+    last_error: Exception | None = None
+    for attempt in range(4):
+        req = urllib.request.Request(
+            url,
+            headers={
+                "Accept": "application/json",
+                "User-Agent": USER_AGENT,
+                "Referer": f"{BASE_URL}/serie?lang=fi",
+                "Origin": BASE_URL,
+            },
+        )
+        try:
+            with urllib.request.urlopen(req, timeout=timeout) as resp:
+                raw = resp.read()
+            if not raw:
+                return None
+            try:
+                return json.loads(raw.decode("utf-8"))
+            except json.JSONDecodeError as exc:
+                raise ApiError(f"Vastaus ei ollut JSON: {url}") from exc
+        except urllib.error.HTTPError as exc:
+            last_error = ApiError(f"HTTP {exc.code} {url}")
+            if exc.code in (403, 429, 500, 502, 503, 504) and attempt < 3:
+                time.sleep(1.5 * (attempt + 1))
+                continue
+            raise last_error from exc
+        except urllib.error.URLError as exc:
+            last_error = ApiError(f"Yhteysvirhe: {exc.reason} ({url})")
+            if attempt < 3:
+                time.sleep(1.5 * (attempt + 1))
+                continue
+            raise last_error from exc
+    raise last_error or ApiError(url)
 
 
 def parse_date(value: str | None) -> datetime:
