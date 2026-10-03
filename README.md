@@ -26,36 +26,48 @@ python3 publish.py --out docs             # HTML + JSON docs/
 python3 publish.py --date 2026-10-03 --out docs
 ```
 
-## Automaatio (suositus): GitHub Actions + Pages
+## Automaatio: cron tai self-hosted n8n
 
-Repo sisältää työnkulun `.github/workflows/update-games.yml`:
+Leijonat-tulospalvelun CloudFront-suoja estää GitHub-hosted runnerien pyynnöt
+(HTTP 403), joten tiedonhaku ajetaan luotettavasti ympäristössä, jossa API on
+sallittu: n8n-palvelimella, NAS:lla, VPS:llä tai Manus-ajastuksella. Julkaisu
+pysyy GitHub-repossa ja GitHub Pagesissa.
 
-| Aika (UTC) | Tarkoitus |
-|---|---|
-| 04:15 ja 06:15 | Aamun otteluohjelma (kattaa Helsingin kesä- ja talviajan) |
-| 12:15, 14:15, 17:15, 19:15 | Iltapäivän ja illan tulospäivitykset |
+Valmis komentosarja:
 
-Jokainen ajo hakee datan, kirjoittaa `docs/` ja julkaisee GitHub Pagesiin.
+```bash
+./cron/update_sisu.sh
+```
 
-Ensimmäisen pushin jälkeen:
+Se lukitsee päällekkäiset ajot, synkronoi repon, muodostaa HTML:n + JSON:n ja
+puskee vain muuttuneet `docs/`-tiedostot GitHubiin.
+
+Valmis n8n-tuonti ja cron-ohjeet ovat [`n8n/README.md`](n8n/README.md).
+
+### Ajastus
+
+Aja komentosarja **klo 07:15, 16:15 ja 20:15 Europe/Helsinki**:
+
+```cron
+15 7,16,20 * * * /opt/sisu-ottelut/cron/update_sisu.sh >> /var/log/sisu-ottelut.log 2>&1
+```
+
+n8n-tuonti sisältää saman aikataulun ja Helsinki-aikavyöhykkeen.
+
+### GitHub Pages (kertatoimi)
+
+Repo on julkinen: https://github.com/Jeodata/sisu-ottelut
+
+Ota Pages käyttöön kerran GitHubissa:
 
 1. Avaa https://github.com/Jeodata/sisu-ottelut/settings/pages
 2. **Build and deployment → Source:** Deploy from a branch
 3. Branch: `main`, folder: `/docs` → **Save**
-4. Julkinen osoite: https://jeodata.github.io/sisu-ottelut/
+4. Julkinen osoite on tämän jälkeen https://jeodata.github.io/sisu-ottelut/
 
-Tämä klikkaus tehdään vain kerran. Sen jälkeen cron päivittää `docs/`-kansion
-ja GitHub Pages julkaisee sivun automaattisesti.
-
-Työnkulun voi myös käynnistää manuaalisesti: **Actions → Päivitä Sisu Hockeyn ottelut → Run workflow**.
-
-## Vaihtoehto: n8n
-
-Tuo [`n8n/sisu-ottelut.json`](n8n/sisu-ottelut.json) n8n:ään
-(ajat 07:15 / 16:15 / 20:15 Europe/Helsinki). Ohje: [`n8n/README.md`](n8n/README.md).
-
-GitHub Actions on ensisijainen julkaisuputki, koska se generoi sekä HTML:n
-että JSON:in ilman erillistä palvelinta.
+Ajastetut pushit julkaistaan sen jälkeen automaattisesti. Tässä ympäristössä
+käytössä oleva GitHub-token voi luoda repon ja puskea tiedostoja, mutta sillä ei
+ole Pages-asetuksen hallintaoikeutta.
 
 ## API (tärkeimmät kutsut)
 

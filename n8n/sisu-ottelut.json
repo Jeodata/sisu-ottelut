@@ -1,118 +1,55 @@
 {
-  "name": "Sisu Hockey päivän ottelut",
+  "name": "Sisu Hockey päivän ottelut → GitHub Pages",
   "nodes": [
     {
       "parameters": {
         "rule": {
           "interval": [
-            { "field": "cronExpression", "expression": "15 7 * * *" },
-            { "field": "cronExpression", "expression": "15 16 * * *" },
-            { "field": "cronExpression", "expression": "15 20 * * *" }
+            {
+              "field": "cronExpression",
+              "expression": "0 15 7,16,20 * * *"
+            }
           ]
         }
       },
-      "id": "schedule",
-      "name": "Aamu ja ilta",
+      "id": "6e793bae-29ca-4f60-ae9f-75d53b4e0651",
+      "name": "Aamu, iltapäivä ja ilta",
       "type": "n8n-nodes-base.scheduleTrigger",
       "typeVersion": 1.2,
-      "position": [240, 300],
-      "notes": "Ajat Europe/Helsinki. Aseta työnkulun aikavyöhyke Helsinki."
+      "position": [360, 300],
+      "notes": "Aikavyöhyke: Europe/Helsinki. Ajaa klo 07:15, 16:15 ja 20:15."
     },
     {
       "parameters": {
-        "url": "https://tulospalvelu.leijonat.fi/helpers/getseasons",
-        "options": {
-          "response": { "response": { "responseFormat": "json" } }
-        },
-        "headerParameters": {
-          "parameters": [
-            { "name": "Accept", "value": "application/json" }
-          ]
-        }
+        "command": "cd /opt/sisu-ottelut && ./cron/update_sisu.sh"
       },
-      "id": "getseasons",
-      "name": "Hae kausi",
-      "type": "n8n-nodes-base.httpRequest",
-      "typeVersion": 4.2,
-      "position": [480, 300]
-    },
-    {
-      "parameters": {
-        "jsCode": "const seasons = $input.first().json;\nconst list = Array.isArray(seasons) ? seasons : (seasons.body || seasons.data || []);\nconst current = list.find(s => s.current) || list[0];\nconst now = new Date(new Date().toLocaleString('en-US', { timeZone: 'Europe/Helsinki' }));\nconst dd = String(now.getDate()).padStart(2,'0');\nconst mm = String(now.getMonth()+1).padStart(2,'0');\nconst yyyy = now.getFullYear();\nconst iso = `${yyyy}-${mm}-${dd}`;\nconst fi = `${dd}.${mm}.${yyyy}`;\nconst end = new Date(now); end.setDate(end.getDate()+10);\nconst edd = String(end.getDate()).padStart(2,'0');\nconst emm = String(end.getMonth()+1).padStart(2,'0');\nconst eyyyy = end.getFullYear();\nreturn [{\n  json: {\n    season: current.SeasonNumber,\n    seasonName: current.SeasonName,\n    assId: '11015646',\n    dateIso: iso,\n    dateFi: fi,\n    endFi: `${edd}.${emm}.${eyyyy}`\n  }\n}];"
-      },
-      "id": "dates",
-      "name": "Päiväys ja kausi",
-      "type": "n8n-nodes-base.code",
-      "typeVersion": 2,
-      "position": [700, 300]
-    },
-    {
-      "parameters": {
-        "url": "=https://tulospalvelu.leijonat.fi/helpers/getextsearchgames",
-        "sendQuery": true,
-        "queryParameters": {
-          "parameters": [
-            { "name": "season", "value": "={{ $json.season }}" },
-            { "name": "Filters[StartDate]", "value": "={{ $json.dateFi }}" },
-            { "name": "Filters[EndDate]", "value": "={{ $json.endFi }}" },
-            { "name": "Filters[AssID]", "value": "={{ $json.assId }}" },
-            { "name": "Filters[TeamID]", "value": "" },
-            { "name": "Filters[RinkID]", "value": "" },
-            { "name": "Filters[GameID]", "value": "" },
-            { "name": "Filters[Games]", "value": "" },
-            { "name": "Filters[GamesTime]", "value": "" }
-          ]
-        },
-        "sendHeaders": true,
-        "headerParameters": {
-          "parameters": [
-            { "name": "Accept", "value": "application/json" }
-          ]
-        },
-        "options": {
-          "response": { "response": { "responseFormat": "json" } }
-        }
-      },
-      "id": "getgames",
-      "name": "Hae ottelut",
-      "type": "n8n-nodes-base.httpRequest",
-      "typeVersion": 4.2,
-      "position": [920, 300]
-    },
-    {
-      "parameters": {
-        "jsCode": "const meta = $('Päiväys ja kausi').first().json;\nconst games = $input.first().json;\nconst list = Array.isArray(games) ? games : [];\nfunction statusOf(g) {\n  if ((g.FinishedType || 0) >= 1) return 'finished';\n  if (g.GameStatus === 1) return 'live';\n  if (g.GameStatus === 2 || g.GameStatus === 94) return 'finished';\n  return 'upcoming';\n}\nconst today = list.filter(g => g.GameDate === meta.dateFi).map(g => ({\n  game_id: g.GameID,\n  date: g.GameDate,\n  time: (g.GameTime || '').slice(0,5),\n  status: statusOf(g),\n  level: g.LevelName,\n  rink: g.RinkName || g.RinkAbbrv,\n  venue: String(g.HomeAssociation) === String(meta.assId) ? 'home' : 'away',\n  home: { abbreviation: g.HomeAbbrv, goals: g.HomeGoals, association_id: g.HomeAssociation },\n  away: { abbreviation: g.AwayAbbrv, goals: g.AwayGoals, association_id: g.AwayAssociation },\n  score: statusOf(g) === 'finished' ? `${g.HomeGoals}-${g.AwayGoals}` : null,\n  urls: { gamecentre: `https://tulospalvelu.leijonat.fi/game?gameid=${g.GameID}` }\n}));\nconst payload = {\n  generated_at: new Date().toISOString(),\n  date: meta.dateIso,\n  date_fi: meta.dateFi,\n  club: { id: meta.assId, name: 'SISU HOCKEY HÄMEENLINNA RY', abbreviation: 'SiSu' },\n  season: { number: meta.season, name: meta.seasonName },\n  counts: {\n    total: today.length,\n    upcoming: today.filter(g => g.status === 'upcoming').length,\n    live: today.filter(g => g.status === 'live').length,\n    finished: today.filter(g => g.status === 'finished').length\n  },\n  games: today\n};\nreturn [{ json: { payload, content: JSON.stringify(payload, null, 2) } }];"
-      },
-      "id": "shape",
-      "name": "Muotoile JSON",
-      "type": "n8n-nodes-base.code",
-      "typeVersion": 2,
-      "position": [1140, 300]
-    },
-    {
-      "parameters": {
-        "owner": { "__rl": true, "mode": "name", "value": "Jeodata" },
-        "repository": { "__rl": true, "mode": "name", "value": "sisu-ottelut" },
-        "filePath": "docs/games.json",
-        "fileContent": "={{ $json.content }}",
-        "commitMessage": "=n8n: päivitä ottelut {{ $json.payload.date }}"
-      },
-      "id": "github",
-      "name": "Päivitä GitHub Pages JSON",
-      "type": "n8n-nodes-base.github",
-      "typeVersion": 1.1,
-      "position": [1360, 300],
-      "notes": "Valitse operaatio 'Create or Update a File'. Liitä GitHub-tunniste n8n:ssä."
+      "id": "2e7a0b55-3821-4c9a-a5ec-838a25787f7a",
+      "name": "Hae, renderöi ja puske GitHubiin",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [620, 300],
+      "notes": "Vaihda /opt/sisu-ottelut n8n-palvelimella olevaan repon absoluuttiseen polkuun. Palvelimella täytyy olla Python 3, git ja git push -todennus valmiina."
     }
   ],
   "connections": {
-    "Aamu ja ilta": { "main": [[{ "node": "Hae kausi", "type": "main", "index": 0 }]] },
-    "Hae kausi": { "main": [[{ "node": "Päiväys ja kausi", "type": "main", "index": 0 }]] },
-    "Päiväys ja kausi": { "main": [[{ "node": "Hae ottelut", "type": "main", "index": 0 }]] },
-    "Hae ottelut": { "main": [[{ "node": "Muotoile JSON", "type": "main", "index": 0 }]] },
-    "Muotoile JSON": { "main": [[{ "node": "Päivitä GitHub Pages JSON", "type": "main", "index": 0 }]] }
+    "Aamu, iltapäivä ja ilta": {
+      "main": [
+        [
+          {
+            "node": "Hae, renderöi ja puske GitHubiin",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
   },
-  "settings": { "timezone": "Europe/Helsinki" },
+  "settings": {
+    "timezone": "Europe/Helsinki"
+  },
   "staticData": null,
-  "meta": { "instanceId": "sisu-hockey-ottelut" }
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "sisu-hockey-ottelut"
+  }
 }
