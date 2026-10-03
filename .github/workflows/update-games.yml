@@ -18,13 +18,10 @@ on:
       - "render_html.py"
       - "publish.py"
       - "assets/**"
-      - "docs/**"
       - ".github/workflows/update-games.yml"
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 concurrency:
   group: sisu-ottelut
@@ -33,9 +30,6 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -46,42 +40,16 @@ jobs:
           python-version: "3.12"
 
       - name: Hae ottelut ja rakenna sivu
-        id: publish
-        continue-on-error: true
         run: python3 publish.py --out docs
 
       - name: Tallenna Pages-tiedostot
-        if: steps.publish.outcome == 'success'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add docs
           if git diff --cached --quiet; then
-            echo "Ei muutoksia repossa."
-          else
-            git commit -m "Päivitä ottelut $(date -u +%Y-%m-%dT%H:%MZ)"
-            git push
+            echo "Ei muutoksia."
+            exit 0
           fi
-
-      - name: Ota GitHub Pages käyttöön
-        continue-on-error: true
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          gh api -X POST "repos/${GITHUB_REPOSITORY}/pages" \
-            -f build_type=workflow \
-            --silent || true
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-        with:
-          enablement: true
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: docs
-
-      - name: Deploy GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+          git commit -m "Päivitä ottelut $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push
