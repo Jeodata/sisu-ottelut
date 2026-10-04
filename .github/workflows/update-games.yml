@@ -2,9 +2,7 @@ name: Päivitä Sisu Hockeyn ottelut
 
 on:
   schedule:
-    # Arkisin (ma-pe) klo 07:15, 16:15 ja 20:15
     - cron: '15 7,16,20 * * 1-5'
-    # Viikonloppuna (la-su) tasatunnein klo 08:00 - 22:00
     - cron: '0 8 * * 6,7'
     - cron: '0 9 * * 6,7'
     - cron: '0 10 * * 6,7'
