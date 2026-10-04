@@ -3,6 +3,45 @@
 # Aja tästä repon juuresta tai cronista / n8n Execute Command -solmusta.
 set -Eeuo pipefail
 
+scheduled_run=false
+case "${1:-}" in
+  "") ;;
+  --scheduled) scheduled_run=true ;;
+  -h|--help)
+    cat <<'EOF'
+Käyttö: update_sisu.sh [--scheduled]
+
+Ilman valintaa skripti päivittää ottelut heti. --scheduled-valinnalla
+ma–pe ajetaan vain klo 07, 16 ja 20; la–su tasatunnein klo 08–22
+(Europe/Helsinki).
+EOF
+    exit 0
+    ;;
+  *)
+    echo "Tuntematon valinta: $1" >&2
+    exit 2
+    ;;
+esac
+
+if [[ "${scheduled_run}" == true ]]; then
+  weekday="$(TZ=Europe/Helsinki date +%u)" # 1 = ma, 7 = su
+  hour="$(TZ=Europe/Helsinki date +%H)"
+  should_run=false
+
+  if (( weekday <= 5 )); then
+    case "${hour}" in
+      07|16|20) should_run=true ;;
+    esac
+  elif (( 10#${hour} >= 8 && 10#${hour} <= 22 )); then
+    should_run=true
+  fi
+
+  if [[ "${should_run}" != true ]]; then
+    echo "Ajastettu haku ohitetaan: Helsinki-aika on viikonpäivä ${weekday}, klo ${hour}."
+    exit 0
+  fi
+fi
+
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 LOCK_FILE="${TMPDIR:-/tmp}/sisu-ottelut-update.lock"
 
