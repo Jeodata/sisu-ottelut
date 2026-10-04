@@ -4,8 +4,22 @@ on:
   schedule:
     # Arkisin (ma-pe) klo 07:15, 16:15 ja 20:15
     - cron: '15 7,16,20 * * 1-5'
-    # Viikonloppuna (la-su) klo 08:00 - 22:00 joka tunti
-    - cron: '0 8-22 * * 6,7'
+    # Viikonloppuna (la-su) tasatunnein klo 08:00 - 22:00
+    - cron: '0 8 * * 6,7'
+    - cron: '0 9 * * 6,7'
+    - cron: '0 10 * * 6,7'
+    - cron: '0 11 * * 6,7'
+    - cron: '0 12 * * 6,7'
+    - cron: '0 13 * * 6,7'
+    - cron: '0 14 * * 6,7'
+    - cron: '0 15 * * 6,7'
+    - cron: '0 16 * * 6,7'
+    - cron: '0 17 * * 6,7'
+    - cron: '0 18 * * 6,7'
+    - cron: '0 19 * * 6,7'
+    - cron: '0 20 * * 6,7'
+    - cron: '0 21 * * 6,7'
+    - cron: '0 22 * * 6,7'
   workflow_dispatch:
   push:
     branches: [main]
