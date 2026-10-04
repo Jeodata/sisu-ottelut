@@ -4,8 +4,9 @@ on:
   schedule:
     # Arkisin (ma-pe) klo 07:15, 16:15 ja 20:15
     - cron: '15 7,16,20 * * 1-5'
-    # Viikonloppuna (la-su) tunnin välein klo 10 - 21
-    - cron: '0 08-22 * * 6,7'  workflow_dispatch:
+    # Viikonloppuna (la-su) klo 08:00 - 22:00 joka tunti
+    - cron: '0 8-22 * * 6,7'
+  workflow_dispatch:
   push:
     branches: [main]
     paths:
