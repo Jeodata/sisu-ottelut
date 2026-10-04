@@ -2,15 +2,10 @@ name: Päivitä Sisu Hockeyn ottelut
 
 on:
   schedule:
-    # Aamu (Helsinki ~7:15, kattaa kesä- ja talviajan)
-    - cron: "15 4 * * *"
-    - cron: "15 6 * * *"
-    # Iltapäivä ja ilta: valmistuneet tulokset
-    - cron: "15 12 * * *"
-    - cron: "15 14 * * *"
-    - cron: "15 17 * * *"
-    - cron: "15 19 * * *"
-  workflow_dispatch:
+    # Arkisin (ma-pe) klo 07:15, 16:15 ja 20:15
+    - cron: '15 7,16,20 * * 1-5'
+    # Viikonloppuna (la-su) tunnin välein klo 10 - 21
+    - cron: '0 08-22 * * 6,7'  workflow_dispatch:
   push:
     branches: [main]
     paths:
