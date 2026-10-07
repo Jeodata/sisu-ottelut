@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-06T16:05:04+03:00",
-  "date": "2026-10-06",
-  "date_fi": "06.10.2026",
+  "generated_at": "2026-10-07T07:04:51+03:00",
+  "date": "2026-10-07",
+  "date_fi": "07.10.2026",
   "club": {
     "id": "11015646",
     "name": "SISU HOCKEY HÄMEENLINNA RY",
@@ -747,6 +747,184 @@
           "period_scores": null,
           "urls": {
             "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=732530"
+          },
+          "denied_results": false,
+          "denied_stats": false
+        }
+      ]
+    },
+    {
+      "date": "2026-10-17",
+      "date_fi": "17.10.2026",
+      "games": [
+        {
+          "game_id": 735237,
+          "date": "17.10.2026",
+          "time": "11:15",
+          "status": "upcoming",
+          "status_code": 0,
+          "finished_type": null,
+          "level": "Harjoitusottelut, U13",
+          "level_id": 1170,
+          "rink": "Mäntsälä 1",
+          "rink_id": null,
+          "small_area": false,
+          "spectators": 0,
+          "venue": "home",
+          "sisu_team": {
+            "team_id": 1368626549,
+            "name": "SISU HOCKEY HÄMEENLINNA  RY U13 punainen",
+            "abbreviation": "SiSu punainen"
+          },
+          "home": {
+            "team_id": 1368626549,
+            "name": "SISU HOCKEY HÄMEENLINNA  RY U13 punainen",
+            "abbreviation": "SiSu punainen",
+            "association_id": 11015646,
+            "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
+            "goals": null
+          },
+          "away": {
+            "team_id": 1368626419,
+            "name": null,
+            "abbreviation": "KooKoo Black",
+            "association_id": 10418967,
+            "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10418967.png",
+            "goals": null
+          },
+          "score": null,
+          "period_scores": null,
+          "urls": {
+            "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=735237"
+          },
+          "denied_results": false,
+          "denied_stats": false
+        },
+        {
+          "game_id": 735238,
+          "date": "17.10.2026",
+          "time": "12:25",
+          "status": "upcoming",
+          "status_code": 0,
+          "finished_type": null,
+          "level": "Harjoitusottelut, U13",
+          "level_id": 1170,
+          "rink": "Mäntsälä 1",
+          "rink_id": null,
+          "small_area": false,
+          "spectators": 0,
+          "venue": "home",
+          "sisu_team": {
+            "team_id": 1368626550,
+            "name": "SISU HOCKEY HÄMEENLINNA  RY U13 valkoinen",
+            "abbreviation": "SiSu valkoinen"
+          },
+          "home": {
+            "team_id": 1368626550,
+            "name": "SISU HOCKEY HÄMEENLINNA  RY U13 valkoinen",
+            "abbreviation": "SiSu valkoinen",
+            "association_id": 11015646,
+            "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
+            "goals": null
+          },
+          "away": {
+            "team_id": 1368626421,
+            "name": null,
+            "abbreviation": "KooKoo White",
+            "association_id": 10418967,
+            "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10418967.png",
+            "goals": null
+          },
+          "score": null,
+          "period_scores": null,
+          "urls": {
+            "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=735238"
+          },
+          "denied_results": false,
+          "denied_stats": false
+        },
+        {
+          "game_id": 735225,
+          "date": "17.10.2026",
+          "time": "15:55",
+          "status": "upcoming",
+          "status_code": 0,
+          "finished_type": null,
+          "level": "Harjoitusottelut, U13",
+          "level_id": 1170,
+          "rink": "Mäntsälä 1",
+          "rink_id": null,
+          "small_area": false,
+          "spectators": 0,
+          "venue": "away",
+          "sisu_team": {
+            "team_id": 1368626549,
+            "name": "SISU HOCKEY HÄMEENLINNA  RY U13 punainen",
+            "abbreviation": "SiSu punainen"
+          },
+          "home": {
+            "team_id": 1368626658,
+            "name": null,
+            "abbreviation": "Jukurit Sininen",
+            "association_id": 10113110,
+            "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10113110.png",
+            "goals": null
+          },
+          "away": {
+            "team_id": 1368626549,
+            "name": "SISU HOCKEY HÄMEENLINNA  RY U13 punainen",
+            "abbreviation": "SiSu punainen",
+            "association_id": 11015646,
+            "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
+            "goals": null
+          },
+          "score": null,
+          "period_scores": null,
+          "urls": {
+            "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=735225"
+          },
+          "denied_results": false,
+          "denied_stats": false
+        },
+        {
+          "game_id": 735230,
+          "date": "17.10.2026",
+          "time": "17:05",
+          "status": "upcoming",
+          "status_code": 0,
+          "finished_type": null,
+          "level": "Harjoitusottelut, U13",
+          "level_id": 1170,
+          "rink": "Mäntsälä 1",
+          "rink_id": null,
+          "small_area": false,
+          "spectators": 0,
+          "venue": "away",
+          "sisu_team": {
+            "team_id": 1368626550,
+            "name": "SISU HOCKEY HÄMEENLINNA  RY U13 valkoinen",
+            "abbreviation": "SiSu valkoinen"
+          },
+          "home": {
+            "team_id": 1368626659,
+            "name": null,
+            "abbreviation": "Jukurit Keltainen",
+            "association_id": 10113110,
+            "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10113110.png",
+            "goals": null
+          },
+          "away": {
+            "team_id": 1368626550,
+            "name": "SISU HOCKEY HÄMEENLINNA  RY U13 valkoinen",
+            "abbreviation": "SiSu valkoinen",
+            "association_id": 11015646,
+            "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
+            "goals": null
+          },
+          "score": null,
+          "period_scores": null,
+          "urls": {
+            "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=735230"
           },
           "denied_results": false,
           "denied_stats": false
