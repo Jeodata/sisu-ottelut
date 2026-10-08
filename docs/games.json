@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T07:04:59+03:00",
+  "generated_at": "2026-10-08T16:02:03+03:00",
   "date": "2026-10-08",
   "date_fi": "08.10.2026",
   "club": {
@@ -828,9 +828,9 @@
             "goals": null
           },
           "away": {
-            "team_id": 1368626421,
+            "team_id": 1368626420,
             "name": null,
-            "abbreviation": "KooKoo White",
+            "abbreviation": "KooKoo Orange",
             "association_id": 10418967,
             "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10418967.png",
             "goals": null
