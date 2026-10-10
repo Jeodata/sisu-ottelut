@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-10T10:04:14+03:00",
+  "generated_at": "2026-10-10T11:01:31+03:00",
   "date": "2026-10-10",
   "date_fi": "10.10.2026",
   "club": {
@@ -33,14 +33,14 @@
       "date": "10.10.2026",
       "time": "10:15",
       "status": "live",
-      "status_code": 1,
+      "status_code": 13,
       "finished_type": null,
       "level": "Harjoitusottelut, U12",
       "level_id": 1171,
       "rink": "HML hh",
       "rink_id": null,
       "small_area": false,
-      "spectators": 0,
+      "spectators": 30,
       "venue": "home",
       "sisu_team": {
         "team_id": 1368627072,
@@ -53,7 +53,7 @@
         "abbreviation": "SiSu Valkoinen",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 0
+        "goals": 2
       },
       "away": {
         "team_id": 1368627170,
@@ -61,7 +61,7 @@
         "abbreviation": "Kiekko-Ahma Oranssi",
         "association_id": 10114407,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114407.png",
-        "goals": 0
+        "goals": 1
       },
       "score": null,
       "period_scores": null,
@@ -596,14 +596,14 @@
       "date": "10.10.2026",
       "time": "10:15",
       "status": "live",
-      "status_code": 1,
+      "status_code": 13,
       "finished_type": null,
       "level": "Harjoitusottelut, U12",
       "level_id": 1171,
       "rink": "HML hh",
       "rink_id": null,
       "small_area": false,
-      "spectators": 0,
+      "spectators": 30,
       "venue": "home",
       "sisu_team": {
         "team_id": 1368627072,
@@ -616,7 +616,7 @@
         "abbreviation": "SiSu Valkoinen",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 0
+        "goals": 2
       },
       "away": {
         "team_id": 1368627170,
@@ -624,7 +624,7 @@
         "abbreviation": "Kiekko-Ahma Oranssi",
         "association_id": 10114407,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114407.png",
-        "goals": 0
+        "goals": 1
       },
       "score": null,
       "period_scores": null,
