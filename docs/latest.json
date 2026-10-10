@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-10T18:05:01+03:00",
+  "generated_at": "2026-10-10T19:04:24+03:00",
   "date": "2026-10-10",
   "date_fi": "10.10.2026",
   "club": {
@@ -22,8 +22,8 @@
   "counts": {
     "total": 7,
     "upcoming": 0,
-    "live": 1,
-    "finished": 6,
+    "live": 0,
+    "finished": 7,
     "other": 0,
     "teams": 37
   },
@@ -290,9 +290,9 @@
       "game_id": 732550,
       "date": "10.10.2026",
       "time": "17:00",
-      "status": "live",
-      "status_code": 13,
-      "finished_type": null,
+      "status": "finished",
+      "status_code": 2,
+      "finished_type": "regulation",
       "level": "U16 Suomi-sarja",
       "level_id": 1138,
       "rink": "Hakio S",
@@ -319,9 +319,9 @@
         "abbreviation": "Kisa-Eagles",
         "association_id": 50003291,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/50003291.png",
-        "goals": 0
+        "goals": 2
       },
-      "score": null,
+      "score": "1-2",
       "period_scores": null,
       "urls": {
         "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=732550"
@@ -331,51 +331,7 @@
     }
   ],
   "upcoming": [],
-  "live": [
-    {
-      "game_id": 732550,
-      "date": "10.10.2026",
-      "time": "17:00",
-      "status": "live",
-      "status_code": 13,
-      "finished_type": null,
-      "level": "U16 Suomi-sarja",
-      "level_id": 1138,
-      "rink": "Hakio S",
-      "rink_id": null,
-      "small_area": false,
-      "spectators": 40,
-      "venue": "home",
-      "sisu_team": {
-        "team_id": 1305184724,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U16",
-        "abbreviation": "SiSu"
-      },
-      "home": {
-        "team_id": 1305184724,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U16",
-        "abbreviation": "SiSu",
-        "association_id": 11015646,
-        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 1
-      },
-      "away": {
-        "team_id": 52578941,
-        "name": null,
-        "abbreviation": "Kisa-Eagles",
-        "association_id": 50003291,
-        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/50003291.png",
-        "goals": 0
-      },
-      "score": null,
-      "period_scores": null,
-      "urls": {
-        "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=732550"
-      },
-      "denied_results": false,
-      "denied_stats": false
-    }
-  ],
+  "live": [],
   "finished": [
     {
       "game_id": 769574,
@@ -631,6 +587,49 @@
       "period_scores": null,
       "urls": {
         "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=768835"
+      },
+      "denied_results": false,
+      "denied_stats": false
+    },
+    {
+      "game_id": 732550,
+      "date": "10.10.2026",
+      "time": "17:00",
+      "status": "finished",
+      "status_code": 2,
+      "finished_type": "regulation",
+      "level": "U16 Suomi-sarja",
+      "level_id": 1138,
+      "rink": "Hakio S",
+      "rink_id": null,
+      "small_area": false,
+      "spectators": 40,
+      "venue": "home",
+      "sisu_team": {
+        "team_id": 1305184724,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U16",
+        "abbreviation": "SiSu"
+      },
+      "home": {
+        "team_id": 1305184724,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U16",
+        "abbreviation": "SiSu",
+        "association_id": 11015646,
+        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
+        "goals": 1
+      },
+      "away": {
+        "team_id": 52578941,
+        "name": null,
+        "abbreviation": "Kisa-Eagles",
+        "association_id": 50003291,
+        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/50003291.png",
+        "goals": 2
+      },
+      "score": "1-2",
+      "period_scores": null,
+      "urls": {
+        "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=732550"
       },
       "denied_results": false,
       "denied_stats": false
