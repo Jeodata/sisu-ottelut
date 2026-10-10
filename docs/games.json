@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-10T11:01:31+03:00",
+  "generated_at": "2026-10-10T12:05:27+03:00",
   "date": "2026-10-10",
   "date_fi": "10.10.2026",
   "club": {
@@ -21,9 +21,9 @@
   },
   "counts": {
     "total": 7,
-    "upcoming": 6,
-    "live": 1,
-    "finished": 0,
+    "upcoming": 5,
+    "live": 0,
+    "finished": 2,
     "other": 0,
     "teams": 37
   },
@@ -32,9 +32,9 @@
       "game_id": 769574,
       "date": "10.10.2026",
       "time": "10:15",
-      "status": "live",
-      "status_code": 13,
-      "finished_type": null,
+      "status": "finished",
+      "status_code": 2,
+      "finished_type": "regulation",
       "level": "Harjoitusottelut, U12",
       "level_id": 1171,
       "rink": "HML hh",
@@ -63,7 +63,7 @@
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114407.png",
         "goals": 1
       },
-      "score": null,
+      "score": "2-1",
       "period_scores": null,
       "urls": {
         "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=769574"
@@ -75,15 +75,15 @@
       "game_id": 769575,
       "date": "10.10.2026",
       "time": "11:15",
-      "status": "upcoming",
-      "status_code": 0,
-      "finished_type": null,
+      "status": "finished",
+      "status_code": 2,
+      "finished_type": "regulation",
       "level": "Harjoitusottelut, U12",
       "level_id": 1171,
       "rink": "HML hh",
       "rink_id": null,
       "small_area": false,
-      "spectators": 0,
+      "spectators": 25,
       "venue": "home",
       "sisu_team": {
         "team_id": 1368627072,
@@ -96,7 +96,7 @@
         "abbreviation": "SiSu Valkoinen",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": null
+        "goals": 5
       },
       "away": {
         "team_id": 1368627170,
@@ -104,9 +104,9 @@
         "abbreviation": "Kiekko-Ahma Oranssi",
         "association_id": 10114407,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114407.png",
-        "goals": null
+        "goals": 3
       },
-      "score": null,
+      "score": "5-3",
       "period_scores": null,
       "urls": {
         "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=769575"
@@ -332,49 +332,6 @@
   ],
   "upcoming": [
     {
-      "game_id": 769575,
-      "date": "10.10.2026",
-      "time": "11:15",
-      "status": "upcoming",
-      "status_code": 0,
-      "finished_type": null,
-      "level": "Harjoitusottelut, U12",
-      "level_id": 1171,
-      "rink": "HML hh",
-      "rink_id": null,
-      "small_area": false,
-      "spectators": 0,
-      "venue": "home",
-      "sisu_team": {
-        "team_id": 1368627072,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U12 Valkoinen",
-        "abbreviation": "SiSu Valkoinen"
-      },
-      "home": {
-        "team_id": 1368627072,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U12 Valkoinen",
-        "abbreviation": "SiSu Valkoinen",
-        "association_id": 11015646,
-        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": null
-      },
-      "away": {
-        "team_id": 1368627170,
-        "name": null,
-        "abbreviation": "Kiekko-Ahma Oranssi",
-        "association_id": 10114407,
-        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114407.png",
-        "goals": null
-      },
-      "score": null,
-      "period_scores": null,
-      "urls": {
-        "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=769575"
-      },
-      "denied_results": false,
-      "denied_stats": false
-    },
-    {
       "game_id": 727984,
       "date": "10.10.2026",
       "time": "13:00",
@@ -590,14 +547,15 @@
       "denied_stats": false
     }
   ],
-  "live": [
+  "live": [],
+  "finished": [
     {
       "game_id": 769574,
       "date": "10.10.2026",
       "time": "10:15",
-      "status": "live",
-      "status_code": 13,
-      "finished_type": null,
+      "status": "finished",
+      "status_code": 2,
+      "finished_type": "regulation",
       "level": "Harjoitusottelut, U12",
       "level_id": 1171,
       "rink": "HML hh",
@@ -626,16 +584,58 @@
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114407.png",
         "goals": 1
       },
-      "score": null,
+      "score": "2-1",
       "period_scores": null,
       "urls": {
         "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=769574"
       },
       "denied_results": false,
       "denied_stats": false
+    },
+    {
+      "game_id": 769575,
+      "date": "10.10.2026",
+      "time": "11:15",
+      "status": "finished",
+      "status_code": 2,
+      "finished_type": "regulation",
+      "level": "Harjoitusottelut, U12",
+      "level_id": 1171,
+      "rink": "HML hh",
+      "rink_id": null,
+      "small_area": false,
+      "spectators": 25,
+      "venue": "home",
+      "sisu_team": {
+        "team_id": 1368627072,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U12 Valkoinen",
+        "abbreviation": "SiSu Valkoinen"
+      },
+      "home": {
+        "team_id": 1368627072,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U12 Valkoinen",
+        "abbreviation": "SiSu Valkoinen",
+        "association_id": 11015646,
+        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
+        "goals": 5
+      },
+      "away": {
+        "team_id": 1368627170,
+        "name": null,
+        "abbreviation": "Kiekko-Ahma Oranssi",
+        "association_id": 10114407,
+        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114407.png",
+        "goals": 3
+      },
+      "score": "5-3",
+      "period_scores": null,
+      "urls": {
+        "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=769575"
+      },
+      "denied_results": false,
+      "denied_stats": false
     }
   ],
-  "finished": [],
   "teams": [
     {
       "team_id": 1251467171,
