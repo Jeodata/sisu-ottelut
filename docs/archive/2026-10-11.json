@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T15:56:09+03:00",
+  "generated_at": "2026-10-11T16:03:56+03:00",
   "date": "2026-10-11",
   "date_fi": "11.10.2026",
   "club": {
@@ -22,8 +22,8 @@
   "counts": {
     "total": 6,
     "upcoming": 0,
-    "live": 1,
-    "finished": 5,
+    "live": 0,
+    "finished": 6,
     "other": 0,
     "teams": 37
   },
@@ -252,9 +252,9 @@
       "game_id": 732530,
       "date": "11.10.2026",
       "time": "14:00",
-      "status": "live",
-      "status_code": 15,
-      "finished_type": null,
+      "status": "finished",
+      "status_code": 2,
+      "finished_type": "regulation",
       "level": "U16 Suomi-sarja",
       "level_id": 1138,
       "rink": "Hämeenkyrö",
@@ -283,7 +283,7 @@
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
         "goals": 8
       },
-      "score": null,
+      "score": "1-8",
       "period_scores": null,
       "urls": {
         "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=732530"
@@ -294,52 +294,7 @@
     }
   ],
   "upcoming": [],
-  "live": [
-    {
-      "game_id": 732530,
-      "date": "11.10.2026",
-      "time": "14:00",
-      "status": "live",
-      "status_code": 15,
-      "finished_type": null,
-      "level": "U16 Suomi-sarja",
-      "level_id": 1138,
-      "rink": "Hämeenkyrö",
-      "rink_id": null,
-      "small_area": false,
-      "spectators": 60,
-      "venue": "away",
-      "sisu_team": {
-        "team_id": 1305184724,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U16",
-        "abbreviation": "SiSu"
-      },
-      "home": {
-        "team_id": 1211305523,
-        "name": null,
-        "abbreviation": "Hokkarit",
-        "association_id": 10114423,
-        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114423.png",
-        "goals": 1
-      },
-      "away": {
-        "team_id": 1305184724,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U16",
-        "abbreviation": "SiSu",
-        "association_id": 11015646,
-        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 8
-      },
-      "score": null,
-      "period_scores": null,
-      "urls": {
-        "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=732530"
-      },
-      "denied_results": false,
-      "denied_stats": false,
-      "no_score_tracking": false
-    }
-  ],
+  "live": [],
   "finished": [
     {
       "game_id": 767094,
@@ -556,6 +511,50 @@
       "period_scores": null,
       "urls": {
         "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=731569"
+      },
+      "denied_results": false,
+      "denied_stats": false,
+      "no_score_tracking": false
+    },
+    {
+      "game_id": 732530,
+      "date": "11.10.2026",
+      "time": "14:00",
+      "status": "finished",
+      "status_code": 2,
+      "finished_type": "regulation",
+      "level": "U16 Suomi-sarja",
+      "level_id": 1138,
+      "rink": "Hämeenkyrö",
+      "rink_id": null,
+      "small_area": false,
+      "spectators": 60,
+      "venue": "away",
+      "sisu_team": {
+        "team_id": 1305184724,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U16",
+        "abbreviation": "SiSu"
+      },
+      "home": {
+        "team_id": 1211305523,
+        "name": null,
+        "abbreviation": "Hokkarit",
+        "association_id": 10114423,
+        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114423.png",
+        "goals": 1
+      },
+      "away": {
+        "team_id": 1305184724,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U16",
+        "abbreviation": "SiSu",
+        "association_id": 11015646,
+        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
+        "goals": 8
+      },
+      "score": "1-8",
+      "period_scores": null,
+      "urls": {
+        "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=732530"
       },
       "denied_results": false,
       "denied_stats": false,
