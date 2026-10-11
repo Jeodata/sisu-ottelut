@@ -130,6 +130,16 @@ def render_html(payload: dict[str, Any], extra_days: list[dict[str, Any]] | None
       var u = window.location.pathname + "?t=" + new Date().getTime();
       fetch(u, {{ cache: "no-store" }}).then(function(r) {{ if (r.ok) window.location.replace(u); }}).catch(function() {{}});
     }}, 300000);
+    function sendHeight() {{
+      if (window.parent !== window) {{
+        document.documentElement.classList.add("in-iframe");
+        var h = document.documentElement.scrollHeight || document.body.scrollHeight;
+        window.parent.postMessage({{ type: "sisu-height", height: h }}, "*");
+      }}
+    }}
+    window.addEventListener("load", sendHeight);
+    window.addEventListener("resize", sendHeight);
+    setInterval(sendHeight, 1000);
   </script>
   <title>Sisu Hockey – päivän ottelut</title>
   <meta name="description" content="Sisu Hockey Hämeenlinna ry:n päivän ottelut ja tulokset.">
@@ -139,6 +149,7 @@ def render_html(payload: dict[str, Any], extra_days: list[dict[str, Any]] | None
     :root {{ --red:#e3302c; --red-dark:#8b1a16; --ice:#f4f7fb; --ink:#12151c; --muted:#5b6573; --card:#fff; --line:#e4e9f0; --live:#0b8a4a; --loss:#8a2430; --win:#1f7a4d; --shadow:0 10px 30px rgba(18,21,28,.08); }}
     * {{ box-sizing:border-box; }} html, body {{ margin:0; padding:0; }}
     body {{ font-family:"Segoe UI",system-ui,-apple-system,sans-serif; color:var(--ink); background:radial-gradient(1200px 500px at 10% -10%,rgba(227,48,44,.18),transparent 55%),linear-gradient(180deg,#f8fafc 0%,#eef2f7 100%); min-height:100vh; }}
+    html.in-iframe body {{ min-height:auto; overflow-x:hidden; }}
     .hero {{ background:linear-gradient(135deg,#6d1410 0%,#c62823 55%,#e3302c 100%); color:#fff; padding:1.4rem 1.1rem 1.7rem; box-shadow:0 8px 24px rgba(139,26,22,.28); }}
     .hero-inner {{ max-width:920px; margin:0 auto; display:flex; gap:1rem; align-items:center; }}
     .hero img {{ width:64px; height:64px; background:#fff; border-radius:16px; padding:4px; }}
