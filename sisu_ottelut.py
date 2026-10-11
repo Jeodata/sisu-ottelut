@@ -154,17 +154,18 @@ def iso_date(dt: datetime) -> str:
 
 
 def current_season(season_override: int | None = None) -> dict[str, Any]:
-    seasons = http_get_json(f"{HELPERS}/getseasons") or []
     if season_override:
+        return {"SeasonNumber": season_override, "SeasonName": "2026-2027", "current": True}
+    try:
+        seasons = http_get_json(f"{HELPERS}/getseasons") or []
         for s in seasons:
-            if int(s.get("SeasonNumber") or 0) == season_override:
+            if s.get("current"):
                 return s
-        return {"SeasonNumber": season_override, "SeasonName": str(season_override), "current": False}
-    for s in seasons:
-        if s.get("current"):
-            return s
-    if seasons:
-        return seasons[0]
+        if seasons:
+            return seasons[0]
+    except ApiError:
+        # Jos getseasons antaa 403, käytetään suoraan kuluvaa kautta 2026-2027 (2027)
+        return {"SeasonNumber": 2027, "SeasonName": "2026-2027", "current": True}
     raise ApiError("Kausitietoja ei saatu (getseasons).")
 
 
