@@ -23,6 +23,7 @@ DEFAULT_CLUB = {
 
 GAME_STATUS_MAP = {0: "upcoming", 1: "live", 2: "finished", 94: "finished"}
 FINISHED_TYPE_MAP = {0: None, 1: "regulation", 2: "overtime", 3: "shootout"}
+NO_SCORE_DURATION_MIN = 50
 
 class ApiError(RuntimeError):
     pass
@@ -117,12 +118,8 @@ def period_scores(summary: Any) -> dict[str, list[Any]] | None:
     home, away = pg.get("Home") or [], pg.get("Away") or []
     return {"home": home, "away": away} if (home or away) else None
 
-def team_side(raw: dict[str, Any], prefix: str) -> dict[str, Any]:
+def team_side(raw: dict[str, Any], prefix: str, show_score: bool) -> dict[str, Any]:
     goals = raw.get(f"{prefix}Goals")
-    status = classify_status(raw.get("GameStatus"))
-    ft = raw.get("FinishedType") or 0
-    has_goals = (raw.get("HomeGoals") or 0) + (raw.get("AwayGoals") or 0) > 0
-    show_score = status != "upcoming" or ft >= 1 or (status == "upcoming" and has_goals)
     score = goals if show_score and goals is not None else None
     img = raw.get(f"{prefix}Img")
     logo = f"{BASE_URL}/images/associations/weblogos/200x200/{img}" if img else None
@@ -134,7 +131,28 @@ def normalize_game(raw: dict[str, Any], ass_id: str, teams_by_id: dict[Any, str]
     ft = FINISHED_TYPE_MAP.get(raw.get("FinishedType") or 0)
     if status == "upcoming" and (raw.get("FinishedType") or 0) >= 1:
         status = "finished"
-    home, away = team_side(raw, "Home"), team_side(raw, "Away")
+
+    level = raw.get("LevelName") or ""
+    small_area = bool(raw.get("SmallAreaGame"))
+    denied_results = bool(raw.get("DeniedResults"))
+    no_score_tracking = denied_results or small_area or ("leijonaliiga" in level.casefold())
+
+    time_str = (raw.get("GameTime") or "")[:5] or None
+    date_str = raw.get("GameDate") or ""
+    if status == "upcoming" and no_score_tracking and date_str and time_str:
+        try:
+            start_dt = datetime.strptime(f"{date_str} {time_str}", "%Y-%m-%d %H:%M").replace(tzinfo=TZ)
+            elapsed_min = (datetime.now(TZ) - start_dt).total_seconds() / 60.0
+            if 0 <= elapsed_min < NO_SCORE_DURATION_MIN:
+                status = "live"
+            elif elapsed_min >= NO_SCORE_DURATION_MIN:
+                status = "finished"
+        except ValueError:
+            pass
+
+    has_goals = (raw.get("HomeGoals") or 0) + (raw.get("AwayGoals") or 0) > 0
+    show_score = (not no_score_tracking) and (status != "upcoming" or (raw.get("FinishedType") or 0) >= 1 or has_goals)
+    home, away = team_side(raw, "Home", show_score), team_side(raw, "Away", show_score)
     if not home["name"] and home["team_id"] in teams_by_id:
         home["name"] = teams_by_id[home["team_id"]]
     if not away["name"] and away["team_id"] in teams_by_id:
@@ -149,14 +167,15 @@ def normalize_game(raw: dict[str, Any], ass_id: str, teams_by_id: dict[Any, str]
     sisu_info = {"team_id": sisu_team.get("team_id"), "name": sisu_team.get("name"), "abbreviation": sisu_team.get("abbreviation")} if sisu_team else None
     game_id = raw.get("GameID")
     return {
-        "game_id": game_id, "date": raw.get("GameDate"), "time": (raw.get("GameTime") or "")[:5] or None,
-        "status": status, "status_code": status_code, "finished_type": ft, "level": raw.get("LevelName"),
+        "game_id": game_id, "date": date_str, "time": time_str,
+        "status": status, "status_code": status_code, "finished_type": ft, "level": level,
         "level_id": raw.get("LevelID"), "rink": raw.get("RinkName") or raw.get("RinkAbbrv"),
-        "rink_id": raw.get("RinkID") or None, "small_area": bool(raw.get("SmallAreaGame")),
+        "rink_id": raw.get("RinkID") or None, "small_area": small_area,
         "spectators": raw.get("Spectator") or 0, "venue": venue, "sisu_team": sisu_info,
         "home": home, "away": away, "score": result, "period_scores": period_scores(raw),
         "urls": {"gamecentre": f"{BASE_URL}/game?gameid={game_id}"},
-        "denied_results": bool(raw.get("DeniedResults")), "denied_stats": bool(raw.get("DeniedStats")),
+        "denied_results": denied_results, "denied_stats": bool(raw.get("DeniedStats")),
+        "no_score_tracking": no_score_tracking,
     }
 
 def build_payload(*, day: datetime, season: dict[str, Any], club: dict[str, Any], teams: list[dict[str, Any]], raw_games: list[dict[str, Any]]) -> dict[str, Any]:
