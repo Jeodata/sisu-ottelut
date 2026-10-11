@@ -1,9 +1,8 @@
 name: Päivitä Sisu Hockeyn ottelut
 
 on:
- schedule:
+  schedule:
     # Arkisin (ma-pe) 3 kertaa päivässä (aamulla, iltapäivällä ja illalla)
-    # Vaihtaa päivämäärän näytölle ja nappaa mahdolliset harjoituspelit
     - cron: '15 5,15,19 * * 1-5'
     # Viikonloppuna (la-su) 5 minuutin välein klo 05:00 - 20:55 UTC (klo 07/08 - 22/23 Suomen aikaa)
     - cron: '*/5 5-20 * * 0,6'
