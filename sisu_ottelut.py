@@ -125,7 +125,7 @@ def team_side(raw: dict[str, Any], prefix: str, show_score: bool) -> dict[str, A
     logo = f"{BASE_URL}/images/associations/weblogos/200x200/{img}" if img else None
     return {"team_id": raw.get(f"{prefix}Team"), "name": raw.get(f"{prefix}TeamName"), "abbreviation": raw.get(f"{prefix}Abbrv"), "association_id": raw.get(f"{prefix}Association"), "logo": logo, "goals": score}
 
-def normalize_game(raw: dict[str, Any], ass_id: str, teams_by_id: dict[Any, str]) -> dict[str, Any]:
+def normalize_game(raw: dict[str, Any], ass_id: str, teams_by_id: dict[Any, str], day: datetime | None = None) -> dict[str, Any]:
     status_code = raw.get("GameStatus")
     status = classify_status(status_code)
     ft = FINISHED_TYPE_MAP.get(raw.get("FinishedType") or 0)
@@ -133,21 +133,32 @@ def normalize_game(raw: dict[str, Any], ass_id: str, teams_by_id: dict[Any, str]
         status = "finished"
 
     level = raw.get("LevelName") or ""
+    lvl_low = level.casefold()
     small_area = bool(raw.get("SmallAreaGame"))
     denied_results = bool(raw.get("DeniedResults"))
-    no_score_tracking = denied_results or small_area or ("leijonaliiga" in level.casefold())
+    no_score_tracking = denied_results or small_area or ("leijonaliiga" in lvl_low)
 
-    time_str = (raw.get("GameTime") or "")[:5] or None
-    date_str = raw.get("GameDate") or ""
-    if status == "upcoming" and no_score_tracking and date_str and time_str:
+    time_str = (raw.get("GameTime") or "").strip()[:5].replace(".", ":") or None
+    date_str = (raw.get("GameDate") or "").strip()
+    if status == "upcoming" and no_score_tracking and time_str:
         try:
-            start_dt = datetime.strptime(f"{date_str} {time_str}", "%Y-%m-%d %H:%M").replace(tzinfo=TZ)
-            elapsed_min = (datetime.now(TZ) - start_dt).total_seconds() / 60.0
-            if 0 <= elapsed_min < NO_SCORE_DURATION_MIN:
-                status = "live"
-            elif elapsed_min >= NO_SCORE_DURATION_MIN:
-                status = "finished"
-        except ValueError:
+            base_day = day
+            if date_str:
+                for dfmt in ("%Y-%m-%d", "%d.%m.%Y", "%d.%m.%y"):
+                    try:
+                        base_day = datetime.strptime(date_str, dfmt).replace(tzinfo=TZ)
+                        break
+                    except ValueError:
+                        continue
+            if base_day is not None:
+                hh, mm = (int(x) for x in time_str.split(":", 1))
+                start_dt = base_day.replace(hour=hh, minute=mm, second=0, microsecond=0, tzinfo=TZ)
+                elapsed_min = (datetime.now(TZ) - start_dt).total_seconds() / 60.0
+                if 0 <= elapsed_min < NO_SCORE_DURATION_MIN:
+                    status = "live"
+                elif elapsed_min >= NO_SCORE_DURATION_MIN:
+                    status = "finished"
+        except Exception:
             pass
 
     has_goals = (raw.get("HomeGoals") or 0) + (raw.get("AwayGoals") or 0) > 0
@@ -181,7 +192,7 @@ def normalize_game(raw: dict[str, Any], ass_id: str, teams_by_id: dict[Any, str]
 def build_payload(*, day: datetime, season: dict[str, Any], club: dict[str, Any], teams: list[dict[str, Any]], raw_games: list[dict[str, Any]]) -> dict[str, Any]:
     ass_id = str(club.get("AssID"))
     teams_by_id = {t["team_id"]: t["name"] for t in teams}
-    games = [normalize_game(g, ass_id, teams_by_id) for g in raw_games]
+    games = [normalize_game(g, ass_id, teams_by_id, day=day) for g in raw_games]
     games.sort(key=lambda g: (g.get("time") or "", g.get("game_id") or 0))
     upcoming = [g for g in games if g["status"] == "upcoming"]
     live = [g for g in games if g["status"] == "live"]
