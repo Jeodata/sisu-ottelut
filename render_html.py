@@ -244,6 +244,7 @@ def render_html(payload: dict[str, Any], extra_days: list[dict[str, Any]] | None
 <html lang="fi">
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="refresh" content="300">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sisu Hockey – päivän ottelut</title>
   <meta name="description" content="Sisu Hockey Hämeenlinna ry:n päivän ottelut ja tulokset.">
