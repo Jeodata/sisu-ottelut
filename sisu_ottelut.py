@@ -99,13 +99,18 @@ def http_get_json(url: str, params: dict[str, Any] | None = None, timeout: int =
         url = f"{url}?{urllib.parse.urlencode(params, doseq=True)}"
     last_error: Exception | None = None
     for attempt in range(4):
-        req = urllib.request.Request(
+      req = urllib.request.Request(
             url,
             headers={
-                "Accept": "application/json",
+                "Accept": "application/json, text/javascript, */*; q=0.01",
+                "Accept-Language": "fi-FI,fi;q=0.9,en-US;q=0.8,en;q=0.7",
                 "User-Agent": USER_AGENT,
                 "Referer": f"{BASE_URL}/serie?lang=fi",
                 "Origin": BASE_URL,
+                "X-Requested-With": "XMLHttpRequest",
+                "Sec-Fetch-Dest": "empty",
+                "Sec-Fetch-Mode": "cors",
+                "Sec-Fetch-Site": "same-origin",
             },
         )
         try:
