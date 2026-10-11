@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T15:44:11+03:00",
+  "generated_at": "2026-10-11T15:51:28+03:00",
   "date": "2026-10-11",
   "date_fi": "11.10.2026",
   "club": {
@@ -69,7 +69,8 @@
         "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=767094"
       },
       "denied_results": false,
-      "denied_stats": false
+      "denied_stats": false,
+      "no_score_tracking": true
     },
     {
       "game_id": 767101,
@@ -112,7 +113,8 @@
         "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=767101"
       },
       "denied_results": false,
-      "denied_stats": false
+      "denied_stats": false,
+      "no_score_tracking": true
     },
     {
       "game_id": 767098,
@@ -155,7 +157,8 @@
         "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=767098"
       },
       "denied_results": false,
-      "denied_stats": false
+      "denied_stats": false,
+      "no_score_tracking": true
     },
     {
       "game_id": 767106,
@@ -198,7 +201,8 @@
         "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=767106"
       },
       "denied_results": false,
-      "denied_stats": false
+      "denied_stats": false,
+      "no_score_tracking": true
     },
     {
       "game_id": 731569,
@@ -241,7 +245,8 @@
         "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=731569"
       },
       "denied_results": false,
-      "denied_stats": false
+      "denied_stats": false,
+      "no_score_tracking": false
     },
     {
       "game_id": 732530,
@@ -255,7 +260,7 @@
       "rink": "Hämeenkyrö",
       "rink_id": null,
       "small_area": false,
-      "spectators": 0,
+      "spectators": 60,
       "venue": "away",
       "sisu_team": {
         "team_id": 1305184724,
@@ -284,7 +289,8 @@
         "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=732530"
       },
       "denied_results": false,
-      "denied_stats": false
+      "denied_stats": false,
+      "no_score_tracking": false
     }
   ],
   "upcoming": [
@@ -329,7 +335,8 @@
         "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=767094"
       },
       "denied_results": false,
-      "denied_stats": false
+      "denied_stats": false,
+      "no_score_tracking": true
     },
     {
       "game_id": 767101,
@@ -372,7 +379,8 @@
         "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=767101"
       },
       "denied_results": false,
-      "denied_stats": false
+      "denied_stats": false,
+      "no_score_tracking": true
     },
     {
       "game_id": 767098,
@@ -415,7 +423,8 @@
         "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=767098"
       },
       "denied_results": false,
-      "denied_stats": false
+      "denied_stats": false,
+      "no_score_tracking": true
     },
     {
       "game_id": 767106,
@@ -458,7 +467,8 @@
         "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=767106"
       },
       "denied_results": false,
-      "denied_stats": false
+      "denied_stats": false,
+      "no_score_tracking": true
     }
   ],
   "live": [
@@ -474,7 +484,7 @@
       "rink": "Hämeenkyrö",
       "rink_id": null,
       "small_area": false,
-      "spectators": 0,
+      "spectators": 60,
       "venue": "away",
       "sisu_team": {
         "team_id": 1305184724,
@@ -503,7 +513,8 @@
         "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=732530"
       },
       "denied_results": false,
-      "denied_stats": false
+      "denied_stats": false,
+      "no_score_tracking": false
     }
   ],
   "finished": [
@@ -548,7 +559,8 @@
         "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=731569"
       },
       "denied_results": false,
-      "denied_stats": false
+      "denied_stats": false,
+      "no_score_tracking": false
     }
   ],
   "teams": [
@@ -747,7 +759,8 @@
             "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=735237"
           },
           "denied_results": false,
-          "denied_stats": false
+          "denied_stats": false,
+          "no_score_tracking": false
         },
         {
           "game_id": 735238,
@@ -790,7 +803,8 @@
             "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=735238"
           },
           "denied_results": false,
-          "denied_stats": false
+          "denied_stats": false,
+          "no_score_tracking": false
         },
         {
           "game_id": 735225,
@@ -833,7 +847,8 @@
             "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=735225"
           },
           "denied_results": false,
-          "denied_stats": false
+          "denied_stats": false,
+          "no_score_tracking": false
         },
         {
           "game_id": 735230,
@@ -876,7 +891,8 @@
             "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=735230"
           },
           "denied_results": false,
-          "denied_stats": false
+          "denied_stats": false,
+          "no_score_tracking": false
         }
       ]
     },
@@ -925,7 +941,8 @@
             "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=771129"
           },
           "denied_results": false,
-          "denied_stats": false
+          "denied_stats": false,
+          "no_score_tracking": false
         },
         {
           "game_id": 735151,
@@ -968,7 +985,8 @@
             "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=735151"
           },
           "denied_results": false,
-          "denied_stats": false
+          "denied_stats": false,
+          "no_score_tracking": false
         },
         {
           "game_id": 770885,
@@ -1011,7 +1029,8 @@
             "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=770885"
           },
           "denied_results": false,
-          "denied_stats": false
+          "denied_stats": false,
+          "no_score_tracking": false
         }
       ]
     }
