@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T15:02:54+03:00",
+  "generated_at": "2026-10-11T15:35:20+03:00",
   "date": "2026-10-11",
   "date_fi": "11.10.2026",
   "club": {
@@ -248,7 +248,7 @@
       "date": "11.10.2026",
       "time": "14:00",
       "status": "live",
-      "status_code": 13,
+      "status_code": 15,
       "finished_type": null,
       "level": "U16 Suomi-sarja",
       "level_id": 1138,
@@ -276,7 +276,7 @@
         "abbreviation": "SiSu",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 2
+        "goals": 7
       },
       "score": null,
       "period_scores": null,
@@ -467,7 +467,7 @@
       "date": "11.10.2026",
       "time": "14:00",
       "status": "live",
-      "status_code": 13,
+      "status_code": 15,
       "finished_type": null,
       "level": "U16 Suomi-sarja",
       "level_id": 1138,
@@ -495,7 +495,7 @@
         "abbreviation": "SiSu",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 2
+        "goals": 7
       },
       "score": null,
       "period_scores": null,
