@@ -244,8 +244,18 @@ def render_html(payload: dict[str, Any], extra_days: list[dict[str, Any]] | None
 <html lang="fi">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="refresh" content="300">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <script>
+    setInterval(function() {{
+      var url = window.location.pathname + "?t=" + new Date().getTime();
+      fetch(url, {{ cache: "no-store" }})
+        .then(function(r) {{ if (r.ok) window.location.replace(url); }})
+        .catch(function() {{}});
+    }}, 300000);
+  </script>
   <title>Sisu Hockey – päivän ottelut</title>
   <meta name="description" content="Sisu Hockey Hämeenlinna ry:n päivän ottelut ja tulokset.">
   <meta name="theme-color" content="#8b1a16">
@@ -312,120 +322,4 @@ def render_html(payload: dict[str, Any], extra_days: list[dict[str, Any]] | None
       border: 1px solid var(--line);
     }}
     .chip-n {{ display: block; font-size: 1.25rem; font-weight: 800; }}
-    .chip-l {{ font-size: .72rem; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }}
-    .chip-live .chip-n {{ color: var(--live); }}
-    .chip-finished .chip-n {{ color: var(--red); }}
-    .block {{ margin: 1.4rem 0; }}
-    .block h2 {{
-      margin: 0 0 .8rem;
-      font-size: 1.02rem;
-      text-transform: uppercase;
-      letter-spacing: .08em;
-      color: var(--red-dark);
-    }}
-    .grid {{ display: grid; gap: .85rem; }}
-    .card {{
-      background: var(--card);
-      border-radius: 18px;
-      box-shadow: var(--shadow);
-      border: 1px solid var(--line);
-      overflow: hidden;
-    }}
-    .card.status-live {{ border-color: #9fe0bc; box-shadow: 0 8px 24px rgba(11,138,74,.16); }}
-    .card.result-win {{ border-left: 5px solid var(--win); }}
-    .card.result-loss {{ border-left: 5px solid var(--red); }}
-    .card.result-tie {{ border-left: 5px solid #c9a227; }}
-    .card-link {{ display: block; color: inherit; text-decoration: none; padding: .95rem 1rem 1rem; }}
-    .card-top {{
-      display: flex; align-items: center; gap: .5rem;
-      font-size: .8rem; color: var(--muted); margin-bottom: .35rem;
-    }}
-    .badge {{
-      border-radius: 999px; padding: .15rem .55rem;
-      font-weight: 700; letter-spacing: .04em; text-transform: uppercase;
-      font-size: .68rem; background: #eef2f7; color: #445;
-    }}
-    .badge-live {{ background: #d9f6e5; color: #0b8a4a; animation: pulse 1.6s ease-in-out infinite; }}
-    .badge-upcoming {{ background: #e8eefc; color: #2b4ea2; }}
-    .badge-finished {{ background: #fde8e7; color: #b42318; }}
-    .time {{ margin-left: auto; font-variant-numeric: tabular-nums; font-weight: 700; color: var(--ink); }}
-    .venue {{ border: 1px solid var(--line); border-radius: 999px; padding: .1rem .5rem; }}
-    .venue-home {{ background: #fff4f3; border-color: #f3c7c5; color: var(--red-dark); }}
-    .sisu-line {{
-      margin: 0 0 .55rem; font-size: .8rem; color: var(--muted);
-    }}
-    .match {{
-      display: grid;
-      grid-template-columns: 1fr auto 1fr;
-      gap: .6rem;
-      align-items: center;
-    }}
-    .team {{ display: flex; flex-direction: column; align-items: center; gap: .35rem; text-align: center; }}
-    .tname {{ font-weight: 700; font-size: .92rem; line-height: 1.2; }}
-    .crest {{ width: 40px; height: 40px; object-fit: contain; border-radius: 50%; background: #fff; }}
-    .crest-fallback {{
-      width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center;
-      background: #f3f5f8; font-size: .75rem; font-weight: 800;
-    }}
-    .score {{
-      min-width: 92px; text-align: center;
-      font-variant-numeric: tabular-nums;
-    }}
-    .score .num {{ font-size: 1.7rem; font-weight: 800; }}
-    .score .sep {{ margin: 0 .15rem; color: var(--muted); font-size: 1.3rem; }}
-    .score.wait .kickoff {{ font-size: 1.25rem; font-weight: 800; }}
-    .score.live .num {{ color: var(--live); }}
-    .extra {{ display: block; font-size: .7rem; color: var(--muted); font-weight: 700; }}
-    .meta {{ margin: .7rem 0 0; color: var(--muted); font-size: .8rem; }}
-    .empty {{
-      background: var(--card); border-radius: 16px; padding: 1.2rem;
-      color: var(--muted); box-shadow: var(--shadow);
-    }}
-    footer {{
-      max-width: 920px; margin: 0 auto; padding: 0 1rem 2.5rem;
-      color: var(--muted); font-size: .8rem;
-    }}
-    footer a {{ color: var(--red-dark); }}
-    @keyframes pulse {{
-      0%, 100% {{ opacity: 1; }}
-      50% {{ opacity: .55; }}
-    }}
-    @media (max-width: 560px) {{
-      .chips {{ grid-template-columns: repeat(2, 1fr); }}
-      .hero h1 {{ font-size: 1.15rem; }}
-      .tname {{ font-size: .84rem; }}
-      .score .num {{ font-size: 1.45rem; }}
-    }}
-  </style>
-</head>
-<body>
-  <header class="hero">
-    <div class="hero-inner">
-      <img src="assets/logo.png" alt="Sisu Hockey" width="64" height="64">
-      <div>
-        <h1>Sisu Hockey</h1>
-        <p>{_e(heading_date)} · {_e(club_name)}</p>
-      </div>
-    </div>
-  </header>
-  <main>
-    <div class="chips">
-      {_chip("Ottelut", int(counts.get("total") or 0), "total")}
-      {_chip("Tulossa", int(counts.get("upcoming") or 0), "upcoming")}
-      {_chip("Käynnissä", int(counts.get("live") or 0), "live")}
-      {_chip("Päättynyt", int(counts.get("finished") or 0), "finished")}
-    </div>
-    {_section(primary_title, primary_games, empty_msg)}
-    {_section("Vielä pelaamatta", rest_upcoming, "") if rest_upcoming else ""}
-    {_section("Valmistuneet", rest_finished, "") if rest_finished else ""}
-    {next_heading}
-    {next_block}
-  </main>
-  <footer>
-    Päivitetty {_e(generated_human)} (Helsinki) · kausi {_e(season.get("name") or "")}.
-    Lähde: <a href="https://tulospalvelu.leijonat.fi/">tulospalvelu.leijonat.fi</a>.
-    JSON: <a href="games.json">games.json</a>.
-  </footer>
-</body>
-</html>
-"""
+    .chip-l {{ font-size: .72rem
