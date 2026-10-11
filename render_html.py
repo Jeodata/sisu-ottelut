@@ -116,7 +116,10 @@ def render_html(payload: dict[str, Any], extra_days: list[dict[str, Any]] | None
     empty_msg = "Tänään Sisu Hockeylla ei ole merkittyjä otteluita." if empty_today else "Ei otteluita tässä osiossa."
     next_block = "\n".join(extra_html)
     next_heading = '<section class="block"><h2>Seuraavat pelipäivät</h2></section>' if (extra_html and empty_today) else ""
-    generated_human = generated.replace("T", " ")[:16]
+    try:
+        generated_human = datetime.fromisoformat(generated).astimezone(TZ).strftime("%d.%m.%Y %H:%M")
+    except ValueError:
+        generated_human = generated.replace("T", " ")[:16]
     return f"""<!DOCTYPE html>
 <html lang="fi">
 <head>
@@ -155,6 +158,7 @@ def render_html(payload: dict[str, Any], extra_days: list[dict[str, Any]] | None
     .hero img {{ width:64px; height:64px; background:#fff; border-radius:16px; padding:4px; }}
     .hero h1 {{ font-size:1.35rem; margin:0 0 .15rem; letter-spacing:.01em; text-transform:uppercase; }}
     .hero p {{ margin:0; opacity:.92; font-size:.95rem; }}
+    .hero .hero-updated {{ margin-top:.2rem; font-size:.78rem; opacity:.8; }}
     main {{ max-width:920px; margin:0 auto; padding:1rem 1rem 3rem; }}
     .chips {{ display:grid; grid-template-columns:repeat(4,1fr); gap:.6rem; margin:-1.4rem 0 1.2rem; }}
     .chip {{ background:var(--card); border-radius:14px; padding:.7rem .55rem; text-align:center; box-shadow:var(--shadow); border:1px solid var(--line); }}
@@ -195,7 +199,7 @@ def render_html(payload: dict[str, Any], extra_days: list[dict[str, Any]] | None
   </style>
 </head>
 <body>
-  <header class="hero"><div class="hero-inner"><img src="assets/logo.png" alt="Sisu Hockey" width="64" height="64"><div><h1>Sisu Hockey</h1><p>{_e(heading_date)} · {_e(club_name)}</p></div></div></header>
+  <header class="hero"><div class="hero-inner"><img src="assets/logo.png" alt="Sisu Hockey" width="64" height="64"><div><h1>Sisu Hockey</h1><p>{_e(heading_date)} · {_e(club_name)}</p><p class="hero-updated">Päivitetty {_e(generated_human)}</p></div></div></header>
   <main>
     <div class="chips">{_chip("Ottelut", int(counts.get("total") or 0), "total")}{_chip("Tulossa", int(counts.get("upcoming") or 0), "upcoming")}{_chip("Käynnissä", int(counts.get("live") or 0), "live")}{_chip("Päättynyt", int(counts.get("finished") or 0), "finished")}</div>
     {_section(primary_title, primary_games, empty_msg)}
