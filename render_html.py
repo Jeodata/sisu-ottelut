@@ -25,7 +25,7 @@ def _human_date(iso: str, fi: str | None = None) -> str:
     return f"{WEEKDAYS_FI[dt.weekday()]} {dt.strftime('%-d.%-m.%Y')}" if dt else (fi or iso or "")
 
 def _sisu_result(game: dict[str, Any]) -> str | None:
-    if game.get("status") != "finished":
+    if game.get("status") != "finished" or game.get("no_score_tracking"):
         return None
     home, away = (game.get("home") or {}).get("goals"), (game.get("away") or {}).get("goals")
     if home is None or away is None:
@@ -52,14 +52,19 @@ def _logo(side: dict[str, Any] | None) -> str:
 
 def _score_block(game: dict[str, Any]) -> str:
     status = game.get("status")
+    no_score = bool(game.get("no_score_tracking"))
     home, away = (game.get("home") or {}).get("goals"), (game.get("away") or {}).get("goals")
     extra = FINISHED_FI.get(game.get("finished_type") or "", "") or ""
     extra_html = f'<span class="extra">{_e(extra)}</span>' if extra else ""
     if status == "live":
+        if no_score and home is None and away is None:
+            return '<div class="score live"><span class="kickoff">Pelataan</span></div>'
         hs, aws = ("—" if home is None else home), ("—" if away is None else away)
         return f'<div class="score live"><span class="num">{_e(hs)}</span><span class="sep">–</span><span class="num">{_e(aws)}</span>{extra_html}</div>'
-    if status == "finished" and home is not None and away is not None:
-        return f'<div class="score done"><span class="num">{_e(home)}</span><span class="sep">–</span><span class="num">{_e(away)}</span>{extra_html}</div>'
+    if status == "finished":
+        if home is not None and away is not None and not no_score:
+            return f'<div class="score done"><span class="num">{_e(home)}</span><span class="sep">–</span><span class="num">{_e(away)}</span>{extra_html}</div>'
+        return '<div class="score wait"><span class="played-label">Pelattu</span></div>'
     return f'<div class="score wait"><span class="kickoff">{_e(game.get("time") or "—")}</span></div>'
 
 def _game_card(game: dict[str, Any]) -> str:
@@ -167,7 +172,8 @@ def render_html(payload: dict[str, Any], extra_days: list[dict[str, Any]] | None
     .crest-fallback {{ width:40px; height:40px; border-radius:50%; display:grid; place-items:center; background:#f3f5f8; font-size:.75rem; font-weight:800; }}
     .score {{ min-width:92px; text-align:center; font-variant-numeric:tabular-nums; }}
     .score .num {{ font-size:1.7rem; font-weight:800; }} .score .sep {{ margin:0 .15rem; color:var(--muted); font-size:1.3rem; }}
-    .score.wait .kickoff {{ font-size:1.25rem; font-weight:800; }} .score.live .num {{ color:var(--live); }}
+    .score.wait .kickoff {{ font-size:1.25rem; font-weight:800; }} .score.live .num, .score.live .kickoff {{ color:var(--live); font-size:1.15rem; font-weight:800; }}
+    .played-label {{ font-size:.95rem; font-weight:700; color:var(--muted); text-transform:uppercase; letter-spacing:.04em; }}
     .extra {{ display:block; font-size:.7rem; color:var(--muted); font-weight:700; }}
     .meta {{ margin:.7rem 0 0; color:var(--muted); font-size:.8rem; }}
     .empty {{ background:var(--card); border-radius:16px; padding:1.2rem; color:var(--muted); box-shadow:var(--shadow); }}
