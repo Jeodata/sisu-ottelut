@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T13:04:20+03:00",
+  "generated_at": "2026-10-11T14:05:17+03:00",
   "date": "2026-10-11",
   "date_fi": "11.10.2026",
   "club": {
@@ -21,9 +21,9 @@
   },
   "counts": {
     "total": 6,
-    "upcoming": 5,
+    "upcoming": 4,
     "live": 1,
-    "finished": 0,
+    "finished": 1,
     "other": 0,
     "teams": 37
   },
@@ -204,9 +204,9 @@
       "game_id": 731569,
       "date": "11.10.2026",
       "time": "12:15",
-      "status": "live",
-      "status_code": 13,
-      "finished_type": null,
+      "status": "finished",
+      "status_code": 2,
+      "finished_type": "regulation",
       "level": "U13 Valkoinen",
       "level_id": 1146,
       "rink": "Hämeenkyrö",
@@ -225,7 +225,7 @@
         "abbreviation": "Hokkarit Valkoinen",
         "association_id": 10114423,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114423.png",
-        "goals": 5
+        "goals": 8
       },
       "away": {
         "team_id": 1368626550,
@@ -233,9 +233,9 @@
         "abbreviation": "SiSu valkoinen",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 5
+        "goals": 7
       },
-      "score": null,
+      "score": "8-7",
       "period_scores": null,
       "urls": {
         "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=731569"
@@ -247,8 +247,8 @@
       "game_id": 732530,
       "date": "11.10.2026",
       "time": "14:00",
-      "status": "upcoming",
-      "status_code": 0,
+      "status": "live",
+      "status_code": 11,
       "finished_type": null,
       "level": "U16 Suomi-sarja",
       "level_id": 1138,
@@ -268,7 +268,7 @@
         "abbreviation": "Hokkarit",
         "association_id": 10114423,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114423.png",
-        "goals": null
+        "goals": 0
       },
       "away": {
         "team_id": 1305184724,
@@ -276,7 +276,7 @@
         "abbreviation": "SiSu",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": null
+        "goals": 0
       },
       "score": null,
       "period_scores": null,
@@ -459,13 +459,15 @@
       },
       "denied_results": false,
       "denied_stats": false
-    },
+    }
+  ],
+  "live": [
     {
       "game_id": 732530,
       "date": "11.10.2026",
       "time": "14:00",
-      "status": "upcoming",
-      "status_code": 0,
+      "status": "live",
+      "status_code": 11,
       "finished_type": null,
       "level": "U16 Suomi-sarja",
       "level_id": 1138,
@@ -485,7 +487,7 @@
         "abbreviation": "Hokkarit",
         "association_id": 10114423,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114423.png",
-        "goals": null
+        "goals": 0
       },
       "away": {
         "team_id": 1305184724,
@@ -493,7 +495,7 @@
         "abbreviation": "SiSu",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": null
+        "goals": 0
       },
       "score": null,
       "period_scores": null,
@@ -504,14 +506,14 @@
       "denied_stats": false
     }
   ],
-  "live": [
+  "finished": [
     {
       "game_id": 731569,
       "date": "11.10.2026",
       "time": "12:15",
-      "status": "live",
-      "status_code": 13,
-      "finished_type": null,
+      "status": "finished",
+      "status_code": 2,
+      "finished_type": "regulation",
       "level": "U13 Valkoinen",
       "level_id": 1146,
       "rink": "Hämeenkyrö",
@@ -530,7 +532,7 @@
         "abbreviation": "Hokkarit Valkoinen",
         "association_id": 10114423,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114423.png",
-        "goals": 5
+        "goals": 8
       },
       "away": {
         "team_id": 1368626550,
@@ -538,9 +540,9 @@
         "abbreviation": "SiSu valkoinen",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 5
+        "goals": 7
       },
-      "score": null,
+      "score": "8-7",
       "period_scores": null,
       "urls": {
         "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=731569"
@@ -549,7 +551,6 @@
       "denied_stats": false
     }
   ],
-  "finished": [],
   "teams": [
     {
       "team_id": 1251467171,
