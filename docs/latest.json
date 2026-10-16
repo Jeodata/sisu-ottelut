@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T12:44:17+03:00",
+  "generated_at": "2026-10-16T21:06:40+03:00",
   "date": "2026-10-16",
   "date_fi": "16.10.2026",
   "club": {
@@ -597,7 +597,7 @@
         {
           "game_id": 752883,
           "date": "24.10.2026",
-          "time": "14:15",
+          "time": "14:20",
           "status": "upcoming",
           "status_code": 0,
           "finished_type": null,
