@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-17T17:40:24+03:00",
+  "generated_at": "2026-10-17T17:45:23+03:00",
   "date": "2026-10-17",
   "date_fi": "17.10.2026",
   "club": {
@@ -185,7 +185,7 @@
         "abbreviation": "Jukurit Keltainen",
         "association_id": 10113110,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10113110.png",
-        "goals": 1
+        "goals": 2
       },
       "away": {
         "team_id": 1368626550,
@@ -232,7 +232,7 @@
         "abbreviation": "Jukurit Keltainen",
         "association_id": 10113110,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10113110.png",
-        "goals": 1
+        "goals": 2
       },
       "away": {
         "team_id": 1368626550,
