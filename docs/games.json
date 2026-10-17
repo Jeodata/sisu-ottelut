@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-17T11:27:37+03:00",
+  "generated_at": "2026-10-17T12:00:10+03:00",
   "date": "2026-10-17",
   "date_fi": "17.10.2026",
   "club": {
@@ -33,14 +33,14 @@
       "date": "17.10.2026",
       "time": "11:15",
       "status": "live",
-      "status_code": 11,
+      "status_code": 13,
       "finished_type": null,
       "level": "Harjoitusottelut, U13",
       "level_id": 1170,
       "rink": "Mäntsälä 1",
       "rink_id": null,
       "small_area": false,
-      "spectators": 0,
+      "spectators": 40,
       "venue": "home",
       "sisu_team": {
         "team_id": 1368626549,
@@ -53,7 +53,7 @@
         "abbreviation": "SiSu punainen",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 1
+        "goals": 4
       },
       "away": {
         "team_id": 1368626419,
@@ -61,7 +61,7 @@
         "abbreviation": "KooKoo Black",
         "association_id": 10418967,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10418967.png",
-        "goals": 0
+        "goals": 3
       },
       "score": null,
       "period_scores": null,
@@ -345,14 +345,14 @@
       "date": "17.10.2026",
       "time": "11:15",
       "status": "live",
-      "status_code": 11,
+      "status_code": 13,
       "finished_type": null,
       "level": "Harjoitusottelut, U13",
       "level_id": 1170,
       "rink": "Mäntsälä 1",
       "rink_id": null,
       "small_area": false,
-      "spectators": 0,
+      "spectators": 40,
       "venue": "home",
       "sisu_team": {
         "team_id": 1368626549,
@@ -365,7 +365,7 @@
         "abbreviation": "SiSu punainen",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 1
+        "goals": 4
       },
       "away": {
         "team_id": 1368626419,
@@ -373,7 +373,7 @@
         "abbreviation": "KooKoo Black",
         "association_id": 10418967,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10418967.png",
-        "goals": 0
+        "goals": 3
       },
       "score": null,
       "period_scores": null,
