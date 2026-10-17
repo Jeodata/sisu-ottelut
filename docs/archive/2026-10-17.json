@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-17T15:54:02+03:00",
+  "generated_at": "2026-10-17T16:18:36+03:00",
   "date": "2026-10-17",
   "date_fi": "17.10.2026",
   "club": {
@@ -141,7 +141,7 @@
         "abbreviation": "Jukurit Sininen",
         "association_id": 10113110,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10113110.png",
-        "goals": 0
+        "goals": 3
       },
       "away": {
         "team_id": 1368626549,
@@ -149,7 +149,7 @@
         "abbreviation": "SiSu punainen",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 0
+        "goals": 4
       },
       "score": null,
       "period_scores": null,
@@ -277,7 +277,7 @@
         "abbreviation": "Jukurit Sininen",
         "association_id": 10113110,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10113110.png",
-        "goals": 0
+        "goals": 3
       },
       "away": {
         "team_id": 1368626549,
@@ -285,7 +285,7 @@
         "abbreviation": "SiSu punainen",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 0
+        "goals": 4
       },
       "score": null,
       "period_scores": null,
