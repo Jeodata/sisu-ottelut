@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-17T11:08:09+03:00",
+  "generated_at": "2026-10-17T11:27:37+03:00",
   "date": "2026-10-17",
   "date_fi": "17.10.2026",
   "club": {
@@ -21,8 +21,8 @@
   },
   "counts": {
     "total": 4,
-    "upcoming": 4,
-    "live": 0,
+    "upcoming": 3,
+    "live": 1,
     "finished": 0,
     "other": 0,
     "teams": 37
@@ -32,8 +32,8 @@
       "game_id": 735237,
       "date": "17.10.2026",
       "time": "11:15",
-      "status": "upcoming",
-      "status_code": 0,
+      "status": "live",
+      "status_code": 11,
       "finished_type": null,
       "level": "Harjoitusottelut, U13",
       "level_id": 1170,
@@ -53,7 +53,7 @@
         "abbreviation": "SiSu punainen",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": null
+        "goals": 1
       },
       "away": {
         "team_id": 1368626419,
@@ -61,7 +61,7 @@
         "abbreviation": "KooKoo Black",
         "association_id": 10418967,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10418967.png",
-        "goals": null
+        "goals": 0
       },
       "score": null,
       "period_scores": null,
@@ -207,50 +207,6 @@
   ],
   "upcoming": [
     {
-      "game_id": 735237,
-      "date": "17.10.2026",
-      "time": "11:15",
-      "status": "upcoming",
-      "status_code": 0,
-      "finished_type": null,
-      "level": "Harjoitusottelut, U13",
-      "level_id": 1170,
-      "rink": "Mäntsälä 1",
-      "rink_id": null,
-      "small_area": false,
-      "spectators": 0,
-      "venue": "home",
-      "sisu_team": {
-        "team_id": 1368626549,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U13 punainen",
-        "abbreviation": "SiSu punainen"
-      },
-      "home": {
-        "team_id": 1368626549,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U13 punainen",
-        "abbreviation": "SiSu punainen",
-        "association_id": 11015646,
-        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": null
-      },
-      "away": {
-        "team_id": 1368626419,
-        "name": null,
-        "abbreviation": "KooKoo Black",
-        "association_id": 10418967,
-        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10418967.png",
-        "goals": null
-      },
-      "score": null,
-      "period_scores": null,
-      "urls": {
-        "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=735237"
-      },
-      "denied_results": false,
-      "denied_stats": false,
-      "no_score_tracking": false
-    },
-    {
       "game_id": 735238,
       "date": "17.10.2026",
       "time": "12:25",
@@ -383,7 +339,52 @@
       "no_score_tracking": false
     }
   ],
-  "live": [],
+  "live": [
+    {
+      "game_id": 735237,
+      "date": "17.10.2026",
+      "time": "11:15",
+      "status": "live",
+      "status_code": 11,
+      "finished_type": null,
+      "level": "Harjoitusottelut, U13",
+      "level_id": 1170,
+      "rink": "Mäntsälä 1",
+      "rink_id": null,
+      "small_area": false,
+      "spectators": 0,
+      "venue": "home",
+      "sisu_team": {
+        "team_id": 1368626549,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U13 punainen",
+        "abbreviation": "SiSu punainen"
+      },
+      "home": {
+        "team_id": 1368626549,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U13 punainen",
+        "abbreviation": "SiSu punainen",
+        "association_id": 11015646,
+        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
+        "goals": 1
+      },
+      "away": {
+        "team_id": 1368626419,
+        "name": null,
+        "abbreviation": "KooKoo Black",
+        "association_id": 10418967,
+        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10418967.png",
+        "goals": 0
+      },
+      "score": null,
+      "period_scores": null,
+      "urls": {
+        "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=735237"
+      },
+      "denied_results": false,
+      "denied_stats": false,
+      "no_score_tracking": false
+    }
+  ],
   "finished": [],
   "teams": [
     {
