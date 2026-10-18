@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T17:40:24+03:00",
+  "generated_at": "2026-10-18T17:45:23+03:00",
   "date": "2026-10-18",
   "date_fi": "18.10.2026",
   "club": {
@@ -22,8 +22,8 @@
   "counts": {
     "total": 3,
     "upcoming": 0,
-    "live": 1,
-    "finished": 2,
+    "live": 0,
+    "finished": 3,
     "other": 0,
     "teams": 37
   },
@@ -76,9 +76,9 @@
       "game_id": 735151,
       "date": "18.10.2026",
       "time": "15:30",
-      "status": "live",
-      "status_code": 16,
-      "finished_type": null,
+      "status": "finished",
+      "status_code": 2,
+      "finished_type": "regulation",
       "level": "U18 II-divisioona",
       "level_id": 1136,
       "rink": "Hämeenlinna",
@@ -107,7 +107,7 @@
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114546.png",
         "goals": 5
       },
-      "score": null,
+      "score": "5-5",
       "period_scores": null,
       "urls": {
         "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=735151"
@@ -162,52 +162,7 @@
     }
   ],
   "upcoming": [],
-  "live": [
-    {
-      "game_id": 735151,
-      "date": "18.10.2026",
-      "time": "15:30",
-      "status": "live",
-      "status_code": 16,
-      "finished_type": null,
-      "level": "U18 II-divisioona",
-      "level_id": 1136,
-      "rink": "Hämeenlinna",
-      "rink_id": null,
-      "small_area": false,
-      "spectators": 70,
-      "venue": "home",
-      "sisu_team": {
-        "team_id": 1368629034,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U18",
-        "abbreviation": "SiSu"
-      },
-      "home": {
-        "team_id": 1368629034,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U18",
-        "abbreviation": "SiSu",
-        "association_id": 11015646,
-        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 5
-      },
-      "away": {
-        "team_id": 582668394,
-        "name": null,
-        "abbreviation": "K-Karhut",
-        "association_id": 10114546,
-        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114546.png",
-        "goals": 5
-      },
-      "score": null,
-      "period_scores": null,
-      "urls": {
-        "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=735151"
-      },
-      "denied_results": false,
-      "denied_stats": false,
-      "no_score_tracking": false
-    }
-  ],
+  "live": [],
   "finished": [
     {
       "game_id": 771129,
@@ -248,6 +203,50 @@
       "period_scores": null,
       "urls": {
         "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=771129"
+      },
+      "denied_results": false,
+      "denied_stats": false,
+      "no_score_tracking": false
+    },
+    {
+      "game_id": 735151,
+      "date": "18.10.2026",
+      "time": "15:30",
+      "status": "finished",
+      "status_code": 2,
+      "finished_type": "regulation",
+      "level": "U18 II-divisioona",
+      "level_id": 1136,
+      "rink": "Hämeenlinna",
+      "rink_id": null,
+      "small_area": false,
+      "spectators": 70,
+      "venue": "home",
+      "sisu_team": {
+        "team_id": 1368629034,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U18",
+        "abbreviation": "SiSu"
+      },
+      "home": {
+        "team_id": 1368629034,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U18",
+        "abbreviation": "SiSu",
+        "association_id": 11015646,
+        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
+        "goals": 5
+      },
+      "away": {
+        "team_id": 582668394,
+        "name": null,
+        "abbreviation": "K-Karhut",
+        "association_id": 10114546,
+        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114546.png",
+        "goals": 5
+      },
+      "score": "5-5",
+      "period_scores": null,
+      "urls": {
+        "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=735151"
       },
       "denied_results": false,
       "denied_stats": false,
