@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T16:50:24+03:00",
+  "generated_at": "2026-10-18T16:55:23+03:00",
   "date": "2026-10-18",
   "date_fi": "18.10.2026",
   "club": {
@@ -77,7 +77,7 @@
       "date": "18.10.2026",
       "time": "15:30",
       "status": "live",
-      "status_code": 13,
+      "status_code": 15,
       "finished_type": null,
       "level": "U18 II-divisioona",
       "level_id": 1136,
@@ -105,7 +105,7 @@
         "abbreviation": "K-Karhut",
         "association_id": 10114546,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114546.png",
-        "goals": 4
+        "goals": 5
       },
       "score": null,
       "period_scores": null,
@@ -141,7 +141,7 @@
         "abbreviation": "SiSu valkoinen",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 16
+        "goals": 17
       },
       "away": {
         "team_id": 1368627638,
@@ -168,7 +168,7 @@
       "date": "18.10.2026",
       "time": "15:30",
       "status": "live",
-      "status_code": 13,
+      "status_code": 15,
       "finished_type": null,
       "level": "U18 II-divisioona",
       "level_id": 1136,
@@ -196,7 +196,7 @@
         "abbreviation": "K-Karhut",
         "association_id": 10114546,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114546.png",
-        "goals": 4
+        "goals": 5
       },
       "score": null,
       "period_scores": null,
@@ -232,7 +232,7 @@
         "abbreviation": "SiSu valkoinen",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 16
+        "goals": 17
       },
       "away": {
         "team_id": 1368627638,
