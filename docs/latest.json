@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T16:35:23+03:00",
+  "generated_at": "2026-10-18T16:40:26+03:00",
   "date": "2026-10-18",
   "date_fi": "18.10.2026",
   "club": {
@@ -84,7 +84,7 @@
       "rink": "Hämeenlinna",
       "rink_id": null,
       "small_area": false,
-      "spectators": 0,
+      "spectators": 65,
       "venue": "home",
       "sisu_team": {
         "team_id": 1368629034,
@@ -141,7 +141,7 @@
         "abbreviation": "SiSu valkoinen",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 12
+        "goals": 13
       },
       "away": {
         "team_id": 1368627638,
@@ -175,7 +175,7 @@
       "rink": "Hämeenlinna",
       "rink_id": null,
       "small_area": false,
-      "spectators": 0,
+      "spectators": 65,
       "venue": "home",
       "sisu_team": {
         "team_id": 1368629034,
@@ -232,7 +232,7 @@
         "abbreviation": "SiSu valkoinen",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 12
+        "goals": 13
       },
       "away": {
         "team_id": 1368627638,
