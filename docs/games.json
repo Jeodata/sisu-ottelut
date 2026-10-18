@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T15:45:24+03:00",
+  "generated_at": "2026-10-18T15:50:24+03:00",
   "date": "2026-10-18",
   "date_fi": "18.10.2026",
   "club": {
@@ -97,7 +97,7 @@
         "abbreviation": "SiSu",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 0
+        "goals": 1
       },
       "away": {
         "team_id": 582668394,
@@ -105,7 +105,7 @@
         "abbreviation": "K-Karhut",
         "association_id": 10114546,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114546.png",
-        "goals": 0
+        "goals": 1
       },
       "score": null,
       "period_scores": null,
@@ -233,7 +233,7 @@
         "abbreviation": "SiSu",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 0
+        "goals": 1
       },
       "away": {
         "team_id": 582668394,
@@ -241,7 +241,7 @@
         "abbreviation": "K-Karhut",
         "association_id": 10114546,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114546.png",
-        "goals": 0
+        "goals": 1
       },
       "score": null,
       "period_scores": null,
