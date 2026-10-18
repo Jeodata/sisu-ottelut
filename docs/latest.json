@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T16:22:42+03:00",
+  "generated_at": "2026-10-18T16:25:24+03:00",
   "date": "2026-10-18",
   "date_fi": "18.10.2026",
   "club": {
@@ -97,7 +97,7 @@
         "abbreviation": "SiSu",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 4
+        "goals": 5
       },
       "away": {
         "team_id": 582668394,
@@ -141,7 +141,7 @@
         "abbreviation": "SiSu valkoinen",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 7
+        "goals": 8
       },
       "away": {
         "team_id": 1368627638,
@@ -188,7 +188,7 @@
         "abbreviation": "SiSu",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 4
+        "goals": 5
       },
       "away": {
         "team_id": 582668394,
@@ -232,7 +232,7 @@
         "abbreviation": "SiSu valkoinen",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 7
+        "goals": 8
       },
       "away": {
         "team_id": 1368627638,
