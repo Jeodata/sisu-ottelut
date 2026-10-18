@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T12:00:22+03:00",
+  "generated_at": "2026-10-18T12:05:23+03:00",
   "date": "2026-10-18",
   "date_fi": "18.10.2026",
   "club": {
@@ -22,8 +22,8 @@
   "counts": {
     "total": 3,
     "upcoming": 2,
-    "live": 1,
-    "finished": 0,
+    "live": 0,
+    "finished": 1,
     "other": 0,
     "teams": 37
   },
@@ -32,9 +32,9 @@
       "game_id": 771129,
       "date": "18.10.2026",
       "time": "10:50",
-      "status": "live",
-      "status_code": 15,
-      "finished_type": null,
+      "status": "finished",
+      "status_code": 2,
+      "finished_type": "regulation",
       "level": "Harjoitusottelut, U13",
       "level_id": 1170,
       "rink": "Lempäälä 2",
@@ -63,7 +63,7 @@
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
         "goals": 0
       },
-      "score": null,
+      "score": "1-0",
       "period_scores": null,
       "urls": {
         "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=771129"
@@ -251,14 +251,15 @@
       "no_score_tracking": false
     }
   ],
-  "live": [
+  "live": [],
+  "finished": [
     {
       "game_id": 771129,
       "date": "18.10.2026",
       "time": "10:50",
-      "status": "live",
-      "status_code": 15,
-      "finished_type": null,
+      "status": "finished",
+      "status_code": 2,
+      "finished_type": "regulation",
       "level": "Harjoitusottelut, U13",
       "level_id": 1170,
       "rink": "Lempäälä 2",
@@ -287,7 +288,7 @@
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
         "goals": 0
       },
-      "score": null,
+      "score": "1-0",
       "period_scores": null,
       "urls": {
         "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=771129"
@@ -297,7 +298,6 @@
       "no_score_tracking": false
     }
   ],
-  "finished": [],
   "teams": [
     {
       "team_id": 1251467171,
