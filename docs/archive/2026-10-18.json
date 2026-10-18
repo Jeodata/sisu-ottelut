@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T11:35:22+03:00",
+  "generated_at": "2026-10-18T11:40:23+03:00",
   "date": "2026-10-18",
   "date_fi": "18.10.2026",
   "club": {
@@ -33,7 +33,7 @@
       "date": "18.10.2026",
       "time": "10:50",
       "status": "live",
-      "status_code": 13,
+      "status_code": 15,
       "finished_type": null,
       "level": "Harjoitusottelut, U13",
       "level_id": 1170,
@@ -257,7 +257,7 @@
       "date": "18.10.2026",
       "time": "10:50",
       "status": "live",
-      "status_code": 13,
+      "status_code": 15,
       "finished_type": null,
       "level": "Harjoitusottelut, U13",
       "level_id": 1170,
