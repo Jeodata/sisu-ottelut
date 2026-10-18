@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T15:00:25+03:00",
+  "generated_at": "2026-10-18T15:05:22+03:00",
   "date": "2026-10-18",
   "date_fi": "18.10.2026",
   "club": {
@@ -21,8 +21,8 @@
   },
   "counts": {
     "total": 3,
-    "upcoming": 2,
-    "live": 0,
+    "upcoming": 1,
+    "live": 1,
     "finished": 1,
     "other": 0,
     "teams": 37
@@ -76,8 +76,8 @@
       "game_id": 735151,
       "date": "18.10.2026",
       "time": "15:30",
-      "status": "upcoming",
-      "status_code": 0,
+      "status": "live",
+      "status_code": 11,
       "finished_type": null,
       "level": "U18 II-divisioona",
       "level_id": 1136,
@@ -97,7 +97,7 @@
         "abbreviation": "SiSu",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": null
+        "goals": 0
       },
       "away": {
         "team_id": 582668394,
@@ -105,7 +105,7 @@
         "abbreviation": "K-Karhut",
         "association_id": 10114546,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114546.png",
-        "goals": null
+        "goals": 0
       },
       "score": null,
       "period_scores": null,
@@ -163,50 +163,6 @@
   ],
   "upcoming": [
     {
-      "game_id": 735151,
-      "date": "18.10.2026",
-      "time": "15:30",
-      "status": "upcoming",
-      "status_code": 0,
-      "finished_type": null,
-      "level": "U18 II-divisioona",
-      "level_id": 1136,
-      "rink": "Hämeenlinna",
-      "rink_id": null,
-      "small_area": false,
-      "spectators": 0,
-      "venue": "home",
-      "sisu_team": {
-        "team_id": 1368629034,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U18",
-        "abbreviation": "SiSu"
-      },
-      "home": {
-        "team_id": 1368629034,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U18",
-        "abbreviation": "SiSu",
-        "association_id": 11015646,
-        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": null
-      },
-      "away": {
-        "team_id": 582668394,
-        "name": null,
-        "abbreviation": "K-Karhut",
-        "association_id": 10114546,
-        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114546.png",
-        "goals": null
-      },
-      "score": null,
-      "period_scores": null,
-      "urls": {
-        "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=735151"
-      },
-      "denied_results": false,
-      "denied_stats": false,
-      "no_score_tracking": false
-    },
-    {
       "game_id": 770885,
       "date": "18.10.2026",
       "time": "15:50",
@@ -251,7 +207,52 @@
       "no_score_tracking": false
     }
   ],
-  "live": [],
+  "live": [
+    {
+      "game_id": 735151,
+      "date": "18.10.2026",
+      "time": "15:30",
+      "status": "live",
+      "status_code": 11,
+      "finished_type": null,
+      "level": "U18 II-divisioona",
+      "level_id": 1136,
+      "rink": "Hämeenlinna",
+      "rink_id": null,
+      "small_area": false,
+      "spectators": 0,
+      "venue": "home",
+      "sisu_team": {
+        "team_id": 1368629034,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U18",
+        "abbreviation": "SiSu"
+      },
+      "home": {
+        "team_id": 1368629034,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U18",
+        "abbreviation": "SiSu",
+        "association_id": 11015646,
+        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
+        "goals": 0
+      },
+      "away": {
+        "team_id": 582668394,
+        "name": null,
+        "abbreviation": "K-Karhut",
+        "association_id": 10114546,
+        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114546.png",
+        "goals": 0
+      },
+      "score": null,
+      "period_scores": null,
+      "urls": {
+        "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=735151"
+      },
+      "denied_results": false,
+      "denied_stats": false,
+      "no_score_tracking": false
+    }
+  ],
   "finished": [
     {
       "game_id": 771129,
