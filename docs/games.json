@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T11:45:24+03:00",
+  "generated_at": "2026-10-18T11:50:24+03:00",
   "date": "2026-10-18",
   "date_fi": "18.10.2026",
   "club": {
@@ -40,7 +40,7 @@
       "rink": "Lempäälä 2",
       "rink_id": null,
       "small_area": false,
-      "spectators": 0,
+      "spectators": 20,
       "venue": "away",
       "sisu_team": {
         "team_id": 1368626550,
@@ -264,7 +264,7 @@
       "rink": "Lempäälä 2",
       "rink_id": null,
       "small_area": false,
-      "spectators": 0,
+      "spectators": 20,
       "venue": "away",
       "sisu_team": {
         "team_id": 1368626550,
