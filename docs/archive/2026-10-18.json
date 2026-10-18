@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T17:00:23+03:00",
+  "generated_at": "2026-10-18T17:05:25+03:00",
   "date": "2026-10-18",
   "date_fi": "18.10.2026",
   "club": {
@@ -22,8 +22,8 @@
   "counts": {
     "total": 3,
     "upcoming": 0,
-    "live": 2,
-    "finished": 1,
+    "live": 1,
+    "finished": 2,
     "other": 0,
     "teams": 37
   },
@@ -120,9 +120,9 @@
       "game_id": 770885,
       "date": "18.10.2026",
       "time": "15:50",
-      "status": "live",
-      "status_code": 15,
-      "finished_type": null,
+      "status": "finished",
+      "status_code": 2,
+      "finished_type": "regulation",
       "level": "Harjoitusottelut, U13",
       "level_id": 1170,
       "rink": "Lempäälä 2",
@@ -151,7 +151,7 @@
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10113848.png",
         "goals": 0
       },
-      "score": null,
+      "score": "18-0",
       "period_scores": null,
       "urls": {
         "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=770885"
@@ -206,50 +206,6 @@
       "denied_results": false,
       "denied_stats": false,
       "no_score_tracking": false
-    },
-    {
-      "game_id": 770885,
-      "date": "18.10.2026",
-      "time": "15:50",
-      "status": "live",
-      "status_code": 15,
-      "finished_type": null,
-      "level": "Harjoitusottelut, U13",
-      "level_id": 1170,
-      "rink": "Lempäälä 2",
-      "rink_id": null,
-      "small_area": false,
-      "spectators": 20,
-      "venue": "home",
-      "sisu_team": {
-        "team_id": 1368626550,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U13 valkoinen",
-        "abbreviation": "SiSu valkoinen"
-      },
-      "home": {
-        "team_id": 1368626550,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U13 valkoinen",
-        "abbreviation": "SiSu valkoinen",
-        "association_id": 11015646,
-        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 18
-      },
-      "away": {
-        "team_id": 1368627638,
-        "name": null,
-        "abbreviation": "JYP Punainen",
-        "association_id": 10113848,
-        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10113848.png",
-        "goals": 0
-      },
-      "score": null,
-      "period_scores": null,
-      "urls": {
-        "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=770885"
-      },
-      "denied_results": false,
-      "denied_stats": false,
-      "no_score_tracking": false
     }
   ],
   "finished": [
@@ -292,6 +248,50 @@
       "period_scores": null,
       "urls": {
         "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=771129"
+      },
+      "denied_results": false,
+      "denied_stats": false,
+      "no_score_tracking": false
+    },
+    {
+      "game_id": 770885,
+      "date": "18.10.2026",
+      "time": "15:50",
+      "status": "finished",
+      "status_code": 2,
+      "finished_type": "regulation",
+      "level": "Harjoitusottelut, U13",
+      "level_id": 1170,
+      "rink": "Lempäälä 2",
+      "rink_id": null,
+      "small_area": false,
+      "spectators": 20,
+      "venue": "home",
+      "sisu_team": {
+        "team_id": 1368626550,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U13 valkoinen",
+        "abbreviation": "SiSu valkoinen"
+      },
+      "home": {
+        "team_id": 1368626550,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U13 valkoinen",
+        "abbreviation": "SiSu valkoinen",
+        "association_id": 11015646,
+        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
+        "goals": 18
+      },
+      "away": {
+        "team_id": 1368627638,
+        "name": null,
+        "abbreviation": "JYP Punainen",
+        "association_id": 10113848,
+        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10113848.png",
+        "goals": 0
+      },
+      "score": "18-0",
+      "period_scores": null,
+      "urls": {
+        "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=770885"
       },
       "denied_results": false,
       "denied_stats": false,
