@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-22T13:07:09+03:00",
-  "date": "2026-10-22",
-  "date_fi": "22.10.2026",
+  "generated_at": "2026-10-23T13:16:55+03:00",
+  "date": "2026-10-23",
+  "date_fi": "23.10.2026",
   "club": {
     "id": "11015646",
     "name": "SISU HOCKEY HÄMEENLINNA RY",
@@ -195,6 +195,7 @@
           "finished_type": null,
           "level": "U12 sarja",
           "level_id": 1143,
+          "sub_serie_id": null,
           "rink": "Hakio C",
           "rink_id": null,
           "small_area": true,
@@ -226,11 +227,11 @@
           "urls": {
             "gamecentre": "https://tulospalvelu.leijonat.fi/"
           },
+          "link_is_specific": false,
+          "link_source": "unresolved",
           "denied_results": false,
           "denied_stats": false,
-          "no_score_tracking": true,
-          "link_is_specific": false,
-          "link_source": "unresolved"
+          "no_score_tracking": true
         },
         {
           "game_id": 757921,
@@ -241,6 +242,7 @@
           "finished_type": null,
           "level": "U11 sarja",
           "level_id": 1142,
+          "sub_serie_id": null,
           "rink": "Hakio S",
           "rink_id": null,
           "small_area": true,
@@ -272,11 +274,11 @@
           "urls": {
             "gamecentre": "https://tulospalvelu.leijonat.fi/"
           },
+          "link_is_specific": false,
+          "link_source": "unresolved",
           "denied_results": false,
           "denied_stats": false,
-          "no_score_tracking": true,
-          "link_is_specific": false,
-          "link_source": "unresolved"
+          "no_score_tracking": true
         },
         {
           "game_id": 752883,
@@ -287,6 +289,7 @@
           "finished_type": null,
           "level": "U12 sarja",
           "level_id": 1143,
+          "sub_serie_id": null,
           "rink": "Hakio C",
           "rink_id": null,
           "small_area": false,
@@ -318,11 +321,11 @@
           "urls": {
             "gamecentre": "https://tulospalvelu.leijonat.fi/"
           },
+          "link_is_specific": false,
+          "link_source": "unresolved",
           "denied_results": false,
           "denied_stats": false,
-          "no_score_tracking": false,
-          "link_is_specific": false,
-          "link_source": "unresolved"
+          "no_score_tracking": false
         },
         {
           "game_id": 757924,
@@ -333,6 +336,7 @@
           "finished_type": null,
           "level": "U11 sarja",
           "level_id": 1142,
+          "sub_serie_id": null,
           "rink": "Hakio S",
           "rink_id": null,
           "small_area": true,
@@ -364,11 +368,11 @@
           "urls": {
             "gamecentre": "https://tulospalvelu.leijonat.fi/"
           },
+          "link_is_specific": false,
+          "link_source": "unresolved",
           "denied_results": false,
           "denied_stats": false,
-          "no_score_tracking": true,
-          "link_is_specific": false,
-          "link_source": "unresolved"
+          "no_score_tracking": true
         },
         {
           "game_id": 758160,
@@ -379,6 +383,7 @@
           "finished_type": null,
           "level": "U11 sarja",
           "level_id": 1142,
+          "sub_serie_id": null,
           "rink": "Laune 1",
           "rink_id": null,
           "small_area": false,
@@ -410,11 +415,11 @@
           "urls": {
             "gamecentre": "https://tulospalvelu.leijonat.fi/"
           },
+          "link_is_specific": false,
+          "link_source": "unresolved",
           "denied_results": false,
           "denied_stats": false,
-          "no_score_tracking": false,
-          "link_is_specific": false,
-          "link_source": "unresolved"
+          "no_score_tracking": false
         },
         {
           "game_id": 727992,
@@ -425,6 +430,7 @@
           "finished_type": null,
           "level": "U13 Sininen",
           "level_id": 1144,
+          "sub_serie_id": null,
           "rink": "Hakio C",
           "rink_id": null,
           "small_area": false,
@@ -456,11 +462,11 @@
           "urls": {
             "gamecentre": "https://tulospalvelu.leijonat.fi/"
           },
+          "link_is_specific": false,
+          "link_source": "unresolved",
           "denied_results": false,
           "denied_stats": false,
-          "no_score_tracking": false,
-          "link_is_specific": false,
-          "link_source": "unresolved"
+          "no_score_tracking": false
         },
         {
           "game_id": 732527,
@@ -471,6 +477,7 @@
           "finished_type": null,
           "level": "U16 Suomi-sarja",
           "level_id": 1138,
+          "sub_serie_id": null,
           "rink": "Mänttä",
           "rink_id": null,
           "small_area": false,
@@ -502,11 +509,11 @@
           "urls": {
             "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2721476&lang=fi"
           },
+          "link_is_specific": true,
+          "link_source": "verified_override",
           "denied_results": false,
           "denied_stats": false,
-          "no_score_tracking": false,
-          "link_is_specific": true,
-          "link_source": "verified_override"
+          "no_score_tracking": false
         },
         {
           "game_id": 758161,
@@ -517,6 +524,7 @@
           "finished_type": null,
           "level": "U11 sarja",
           "level_id": 1142,
+          "sub_serie_id": null,
           "rink": "Laune 1",
           "rink_id": null,
           "small_area": false,
@@ -548,11 +556,11 @@
           "urls": {
             "gamecentre": "https://tulospalvelu.leijonat.fi/"
           },
+          "link_is_specific": false,
+          "link_source": "unresolved",
           "denied_results": false,
           "denied_stats": false,
-          "no_score_tracking": false,
-          "link_is_specific": false,
-          "link_source": "unresolved"
+          "no_score_tracking": false
         },
         {
           "game_id": 731576,
@@ -563,6 +571,7 @@
           "finished_type": null,
           "level": "U13 Valkoinen",
           "level_id": 1146,
+          "sub_serie_id": null,
           "rink": "Hakio S",
           "rink_id": null,
           "small_area": false,
@@ -594,11 +603,11 @@
           "urls": {
             "gamecentre": "https://tulospalvelu.leijonat.fi/"
           },
+          "link_is_specific": false,
+          "link_source": "unresolved",
           "denied_results": false,
           "denied_stats": false,
-          "no_score_tracking": false,
-          "link_is_specific": false,
-          "link_source": "unresolved"
+          "no_score_tracking": false
         }
       ]
     },
@@ -615,6 +624,7 @@
           "finished_type": null,
           "level": "U9 Leijonaliiga",
           "level_id": 1184,
+          "sub_serie_id": null,
           "rink": "Orivesi",
           "rink_id": null,
           "small_area": true,
@@ -646,11 +656,11 @@
           "urls": {
             "gamecentre": "https://tulospalvelu.leijonat.fi/"
           },
+          "link_is_specific": false,
+          "link_source": "unresolved",
           "denied_results": false,
           "denied_stats": false,
-          "no_score_tracking": true,
-          "link_is_specific": false,
-          "link_source": "unresolved"
+          "no_score_tracking": true
         },
         {
           "game_id": 767222,
@@ -661,6 +671,7 @@
           "finished_type": null,
           "level": "U9 Leijonaliiga",
           "level_id": 1184,
+          "sub_serie_id": null,
           "rink": "Orivesi",
           "rink_id": null,
           "small_area": true,
@@ -692,11 +703,11 @@
           "urls": {
             "gamecentre": "https://tulospalvelu.leijonat.fi/"
           },
+          "link_is_specific": false,
+          "link_source": "unresolved",
           "denied_results": false,
           "denied_stats": false,
-          "no_score_tracking": true,
-          "link_is_specific": false,
-          "link_source": "unresolved"
+          "no_score_tracking": true
         },
         {
           "game_id": 767209,
@@ -707,6 +718,7 @@
           "finished_type": null,
           "level": "U9 Leijonaliiga",
           "level_id": 1184,
+          "sub_serie_id": null,
           "rink": "Orivesi",
           "rink_id": null,
           "small_area": true,
@@ -738,11 +750,11 @@
           "urls": {
             "gamecentre": "https://tulospalvelu.leijonat.fi/"
           },
+          "link_is_specific": false,
+          "link_source": "unresolved",
           "denied_results": false,
           "denied_stats": false,
-          "no_score_tracking": true,
-          "link_is_specific": false,
-          "link_source": "unresolved"
+          "no_score_tracking": true
         },
         {
           "game_id": 767218,
@@ -753,6 +765,7 @@
           "finished_type": null,
           "level": "U9 Leijonaliiga",
           "level_id": 1184,
+          "sub_serie_id": null,
           "rink": "Orivesi",
           "rink_id": null,
           "small_area": true,
@@ -784,11 +797,11 @@
           "urls": {
             "gamecentre": "https://tulospalvelu.leijonat.fi/"
           },
+          "link_is_specific": false,
+          "link_source": "unresolved",
           "denied_results": false,
           "denied_stats": false,
-          "no_score_tracking": true,
-          "link_is_specific": false,
-          "link_source": "unresolved"
+          "no_score_tracking": true
         },
         {
           "game_id": 727999,
@@ -799,6 +812,7 @@
           "finished_type": null,
           "level": "U13 Sininen",
           "level_id": 1144,
+          "sub_serie_id": null,
           "rink": "Laune 2",
           "rink_id": null,
           "small_area": false,
@@ -830,11 +844,11 @@
           "urls": {
             "gamecentre": "https://tulospalvelu.leijonat.fi/"
           },
+          "link_is_specific": false,
+          "link_source": "unresolved",
           "denied_results": false,
           "denied_stats": false,
-          "no_score_tracking": false,
-          "link_is_specific": false,
-          "link_source": "unresolved"
+          "no_score_tracking": false
         },
         {
           "game_id": 757857,
@@ -845,6 +859,7 @@
           "finished_type": null,
           "level": "U11 sarja",
           "level_id": 1142,
+          "sub_serie_id": null,
           "rink": "Hakio S",
           "rink_id": null,
           "small_area": false,
@@ -876,11 +891,11 @@
           "urls": {
             "gamecentre": "https://tulospalvelu.leijonat.fi/"
           },
+          "link_is_specific": false,
+          "link_source": "unresolved",
           "denied_results": false,
           "denied_stats": false,
-          "no_score_tracking": false,
-          "link_is_specific": false,
-          "link_source": "unresolved"
+          "no_score_tracking": false
         },
         {
           "game_id": 735159,
@@ -891,6 +906,7 @@
           "finished_type": null,
           "level": "U18 II-divisioona",
           "level_id": 1136,
+          "sub_serie_id": null,
           "rink": "HML hh",
           "rink_id": null,
           "small_area": false,
@@ -922,11 +938,11 @@
           "urls": {
             "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2727976&lang=fi"
           },
+          "link_is_specific": true,
+          "link_source": "verified_override",
           "denied_results": false,
           "denied_stats": false,
-          "no_score_tracking": false,
-          "link_is_specific": true,
-          "link_source": "verified_override"
+          "no_score_tracking": false
         },
         {
           "game_id": 757859,
@@ -937,6 +953,7 @@
           "finished_type": null,
           "level": "U11 sarja",
           "level_id": 1142,
+          "sub_serie_id": null,
           "rink": "Hakio S",
           "rink_id": null,
           "small_area": false,
@@ -968,11 +985,11 @@
           "urls": {
             "gamecentre": "https://tulospalvelu.leijonat.fi/"
           },
+          "link_is_specific": false,
+          "link_source": "unresolved",
           "denied_results": false,
           "denied_stats": false,
-          "no_score_tracking": false,
-          "link_is_specific": false,
-          "link_source": "unresolved"
+          "no_score_tracking": false
         }
       ]
     },
@@ -989,6 +1006,7 @@
           "finished_type": null,
           "level": "U13 Sininen",
           "level_id": 1144,
+          "sub_serie_id": null,
           "rink": "Hollola",
           "rink_id": null,
           "small_area": false,
@@ -1020,11 +1038,11 @@
           "urls": {
             "gamecentre": "https://tulospalvelu.leijonat.fi/"
           },
+          "link_is_specific": false,
+          "link_source": "unresolved",
           "denied_results": false,
           "denied_stats": false,
-          "no_score_tracking": false,
-          "link_is_specific": false,
-          "link_source": "unresolved"
+          "no_score_tracking": false
         },
         {
           "game_id": 753348,
@@ -1035,6 +1053,7 @@
           "finished_type": null,
           "level": "U12 sarja",
           "level_id": 1143,
+          "sub_serie_id": null,
           "rink": "Hakio S",
           "rink_id": null,
           "small_area": false,
@@ -1066,11 +1085,11 @@
           "urls": {
             "gamecentre": "https://tulospalvelu.leijonat.fi/"
           },
+          "link_is_specific": false,
+          "link_source": "unresolved",
           "denied_results": false,
           "denied_stats": false,
-          "no_score_tracking": false,
-          "link_is_specific": false,
-          "link_source": "unresolved"
+          "no_score_tracking": false
         },
         {
           "game_id": 753350,
@@ -1081,6 +1100,7 @@
           "finished_type": null,
           "level": "U12 sarja",
           "level_id": 1143,
+          "sub_serie_id": null,
           "rink": "Hakio S",
           "rink_id": null,
           "small_area": false,
@@ -1112,11 +1132,11 @@
           "urls": {
             "gamecentre": "https://tulospalvelu.leijonat.fi/"
           },
+          "link_is_specific": false,
+          "link_source": "unresolved",
           "denied_results": false,
           "denied_stats": false,
-          "no_score_tracking": false,
-          "link_is_specific": false,
-          "link_source": "unresolved"
+          "no_score_tracking": false
         },
         {
           "game_id": 731590,
@@ -1127,6 +1147,7 @@
           "finished_type": null,
           "level": "U13 Valkoinen",
           "level_id": 1146,
+          "sub_serie_id": null,
           "rink": "Hakio S",
           "rink_id": null,
           "small_area": false,
@@ -1158,11 +1179,11 @@
           "urls": {
             "gamecentre": "https://tulospalvelu.leijonat.fi/"
           },
+          "link_is_specific": false,
+          "link_source": "unresolved",
           "denied_results": false,
           "denied_stats": false,
-          "no_score_tracking": false,
-          "link_is_specific": false,
-          "link_source": "unresolved"
+          "no_score_tracking": false
         },
         {
           "game_id": 735165,
@@ -1173,6 +1194,7 @@
           "finished_type": null,
           "level": "U18 II-divisioona",
           "level_id": 1136,
+          "sub_serie_id": null,
           "rink": "Mänttä",
           "rink_id": null,
           "small_area": false,
@@ -1204,11 +1226,11 @@
           "urls": {
             "gamecentre": "https://tulospalvelu.leijonat.fi/"
           },
+          "link_is_specific": false,
+          "link_source": "unresolved",
           "denied_results": false,
           "denied_stats": false,
-          "no_score_tracking": false,
-          "link_is_specific": false,
-          "link_source": "unresolved"
+          "no_score_tracking": false
         },
         {
           "game_id": 732524,
@@ -1219,6 +1241,7 @@
           "finished_type": null,
           "level": "U16 Suomi-sarja",
           "level_id": 1138,
+          "sub_serie_id": null,
           "rink": "HML hh",
           "rink_id": null,
           "small_area": false,
@@ -1250,11 +1273,11 @@
           "urls": {
             "gamecentre": "https://tulospalvelu.leijonat.fi/"
           },
+          "link_is_specific": false,
+          "link_source": "unresolved",
           "denied_results": false,
           "denied_stats": false,
-          "no_score_tracking": false,
-          "link_is_specific": false,
-          "link_source": "unresolved"
+          "no_score_tracking": false
         },
         {
           "game_id": 752912,
@@ -1265,6 +1288,7 @@
           "finished_type": null,
           "level": "U12 sarja",
           "level_id": 1143,
+          "sub_serie_id": null,
           "rink": "Hakio S",
           "rink_id": null,
           "small_area": true,
@@ -1296,11 +1320,11 @@
           "urls": {
             "gamecentre": "https://tulospalvelu.leijonat.fi/"
           },
+          "link_is_specific": false,
+          "link_source": "unresolved",
           "denied_results": false,
           "denied_stats": false,
-          "no_score_tracking": true,
-          "link_is_specific": false,
-          "link_source": "unresolved"
+          "no_score_tracking": true
         },
         {
           "game_id": 752920,
@@ -1311,6 +1335,7 @@
           "finished_type": null,
           "level": "U12 sarja",
           "level_id": 1143,
+          "sub_serie_id": null,
           "rink": "Hakio S",
           "rink_id": null,
           "small_area": false,
@@ -1342,11 +1367,11 @@
           "urls": {
             "gamecentre": "https://tulospalvelu.leijonat.fi/"
           },
+          "link_is_specific": false,
+          "link_source": "unresolved",
           "denied_results": false,
           "denied_stats": false,
-          "no_score_tracking": false,
-          "link_is_specific": false,
-          "link_source": "unresolved"
+          "no_score_tracking": false
         }
       ]
     },
@@ -1363,6 +1388,7 @@
           "finished_type": null,
           "level": "U11 sarja",
           "level_id": 1142,
+          "sub_serie_id": null,
           "rink": "Hervanta 2",
           "rink_id": null,
           "small_area": false,
@@ -1394,11 +1420,11 @@
           "urls": {
             "gamecentre": "https://tulospalvelu.leijonat.fi/"
           },
+          "link_is_specific": false,
+          "link_source": "unresolved",
           "denied_results": false,
           "denied_stats": false,
-          "no_score_tracking": false,
-          "link_is_specific": false,
-          "link_source": "unresolved"
+          "no_score_tracking": false
         },
         {
           "game_id": 757872,
@@ -1409,6 +1435,7 @@
           "finished_type": null,
           "level": "U11 sarja",
           "level_id": 1142,
+          "sub_serie_id": null,
           "rink": "Hervanta 2",
           "rink_id": null,
           "small_area": false,
@@ -1440,11 +1467,11 @@
           "urls": {
             "gamecentre": "https://tulospalvelu.leijonat.fi/"
           },
+          "link_is_specific": false,
+          "link_source": "unresolved",
           "denied_results": false,
           "denied_stats": false,
-          "no_score_tracking": false,
-          "link_is_specific": false,
-          "link_source": "unresolved"
+          "no_score_tracking": false
         },
         {
           "game_id": 752944,
@@ -1455,6 +1482,7 @@
           "finished_type": null,
           "level": "U12 sarja",
           "level_id": 1143,
+          "sub_serie_id": null,
           "rink": "Kangasala",
           "rink_id": null,
           "small_area": false,
@@ -1486,11 +1514,11 @@
           "urls": {
             "gamecentre": "https://tulospalvelu.leijonat.fi/"
           },
+          "link_is_specific": false,
+          "link_source": "unresolved",
           "denied_results": false,
           "denied_stats": false,
-          "no_score_tracking": false,
-          "link_is_specific": false,
-          "link_source": "unresolved"
+          "no_score_tracking": false
         },
         {
           "game_id": 752943,
@@ -1501,6 +1529,7 @@
           "finished_type": null,
           "level": "U12 sarja",
           "level_id": 1143,
+          "sub_serie_id": null,
           "rink": "Kangasala",
           "rink_id": null,
           "small_area": false,
@@ -1532,11 +1561,11 @@
           "urls": {
             "gamecentre": "https://tulospalvelu.leijonat.fi/"
           },
+          "link_is_specific": false,
+          "link_source": "unresolved",
           "denied_results": false,
           "denied_stats": false,
-          "no_score_tracking": false,
-          "link_is_specific": false,
-          "link_source": "unresolved"
+          "no_score_tracking": false
         },
         {
           "game_id": 767267,
@@ -1547,6 +1576,7 @@
           "finished_type": null,
           "level": "U9 Leijonaliiga",
           "level_id": 1184,
+          "sub_serie_id": null,
           "rink": "Hakio S",
           "rink_id": null,
           "small_area": true,
@@ -1578,11 +1608,11 @@
           "urls": {
             "gamecentre": "https://tulospalvelu.leijonat.fi/"
           },
+          "link_is_specific": false,
+          "link_source": "unresolved",
           "denied_results": false,
           "denied_stats": false,
-          "no_score_tracking": true,
-          "link_is_specific": false,
-          "link_source": "unresolved"
+          "no_score_tracking": true
         },
         {
           "game_id": 767274,
@@ -1593,6 +1623,7 @@
           "finished_type": null,
           "level": "U9 Leijonaliiga",
           "level_id": 1184,
+          "sub_serie_id": null,
           "rink": "Hakio S",
           "rink_id": null,
           "small_area": true,
@@ -1624,11 +1655,11 @@
           "urls": {
             "gamecentre": "https://tulospalvelu.leijonat.fi/"
           },
+          "link_is_specific": false,
+          "link_source": "unresolved",
           "denied_results": false,
           "denied_stats": false,
-          "no_score_tracking": true,
-          "link_is_specific": false,
-          "link_source": "unresolved"
+          "no_score_tracking": true
         },
         {
           "game_id": 767263,
@@ -1639,6 +1670,7 @@
           "finished_type": null,
           "level": "U9 Leijonaliiga",
           "level_id": 1184,
+          "sub_serie_id": null,
           "rink": "Hakio S",
           "rink_id": null,
           "small_area": true,
@@ -1670,11 +1702,11 @@
           "urls": {
             "gamecentre": "https://tulospalvelu.leijonat.fi/"
           },
+          "link_is_specific": false,
+          "link_source": "unresolved",
           "denied_results": false,
           "denied_stats": false,
-          "no_score_tracking": true,
-          "link_is_specific": false,
-          "link_source": "unresolved"
+          "no_score_tracking": true
         },
         {
           "game_id": 767270,
@@ -1685,6 +1717,7 @@
           "finished_type": null,
           "level": "U9 Leijonaliiga",
           "level_id": 1184,
+          "sub_serie_id": null,
           "rink": "Hakio S",
           "rink_id": null,
           "small_area": true,
@@ -1716,11 +1749,11 @@
           "urls": {
             "gamecentre": "https://tulospalvelu.leijonat.fi/"
           },
+          "link_is_specific": false,
+          "link_source": "unresolved",
           "denied_results": false,
           "denied_stats": false,
-          "no_score_tracking": true,
-          "link_is_specific": false,
-          "link_source": "unresolved"
+          "no_score_tracking": true
         },
         {
           "game_id": 728008,
@@ -1731,6 +1764,7 @@
           "finished_type": null,
           "level": "U13 Sininen",
           "level_id": 1144,
+          "sub_serie_id": null,
           "rink": "Hakio S",
           "rink_id": null,
           "small_area": false,
@@ -1762,13 +1796,18 @@
           "urls": {
             "gamecentre": "https://tulospalvelu.leijonat.fi/"
           },
+          "link_is_specific": false,
+          "link_source": "unresolved",
           "denied_results": false,
           "denied_stats": false,
-          "no_score_tracking": false,
-          "link_is_specific": false,
-          "link_source": "unresolved"
+          "no_score_tracking": false
         }
       ]
     }
-  ]
+  ],
+  "public_link_resolution": {
+    "resolved": 2,
+    "total": 34,
+    "queries": 16
+  }
 }
