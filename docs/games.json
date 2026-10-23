@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T15:37:19+03:00",
+  "generated_at": "2026-10-23T22:09:30+03:00",
   "date": "2026-10-23",
   "date_fi": "23.10.2026",
   "club": {
@@ -1274,7 +1274,7 @@
             "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2721473&lang=fi"
           },
           "link_is_specific": true,
-          "link_source": "getgames",
+          "link_source": "getgames_cache",
           "denied_results": false,
           "denied_stats": false,
           "no_score_tracking": false,
@@ -1810,6 +1810,6 @@
     "resolved": 3,
     "total": 34,
     "unresolved": 31,
-    "queries": 25
+    "queries": 23
   }
 }
