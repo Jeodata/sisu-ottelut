@@ -142,3 +142,25 @@ python3 -m unittest discover -s tests -v
 Julkaisu päivittyy vasta, kun muutokset viedään GitHubin `main`-haaraan.
 Live-API-testit kannattaa tehdä vasta GitHub Actions -ympäristössä nykyisen
 Cloudflare-proxyn kautta.
+
+### Julkisten Leijonat-ottelulinkkien täsmäytys (23.10.2026)
+
+`helpers/getextsearchgames` palauttaa sisäisen `GameID`-tunnisteen ja oman
+`LevelID`-numerointinsa. Niitä **ei** voi käyttää sellaisenaan `game?gameid=`-
+linkeissä tai verrata `helpers/getgames`-vastauksen `LevelID`-numeroihin.
+Esimerkiksi U16-ottelun sisäinen `GameID=732527`, sisäinen `LevelID=1138`
+sekä julkinen `GameID=2721476`, julkinen `LevelID=90` tarkoittavat samaa ottelua.
+
+`public_game_ids.py` käyttää ensisijaisesti `getgames`-rajapinnan ottelulistaa,
+rajattuna päivällä ja SiSun joukkueen `teamid`-tunnisteella. Vastaukset
+kohdistetaan *molempien joukkueiden ID:llä, päivämäärällä ja alkamisajalla*.
+Vain yksiselitteisestä vastaavuudesta muodostetaan julkinen URL; muuten
+käytetään turvallisesti tulospalvelun etusivua. Vahvistetut tunnisteet
+säilyvät `docs/public_game_ids.json`-välimuistissa seuraavia ajoja varten.
+
+GitHub Actionsin **Hae ottelut ja rakenna sivu** -vaiheen loki näyttää
+`Julkiset ottelulinkit: X/Y (hakupyyntoja N, ratkaisematta M)` sekä enintään
+12 ratkaisemattoman ottelun sisäiset tunnisteet. Jos jokin ottelu edelleen
+avaa etusivun, tarkista lokista kyseinen päivä ja `SisuTeamID` sekä pyynnön
+saatavuus Cloudflare Workerin kautta. Joidenkin sarjojen `getgames`-suodatus
+voi vaatia lisäselvitystä; mitään julkista ID:tä ei arvata.

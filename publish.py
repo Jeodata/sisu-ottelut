@@ -133,6 +133,24 @@ def main(argv: list[str] | None = None) -> int:
         return 1
     out = Path(args.out)
     write_site(payload, out)
+    resolution = payload.get("public_link_resolution") or {}
+    print(
+        "Julkiset ottelulinkit: "
+        f"{resolution.get('resolved', 0)}/{resolution.get('total', 0)} "
+        f"(hakupyyntoja {resolution.get('queries', 0)}, "
+        f"ratkaisematta {resolution.get('unresolved', 0)})",
+        file=sys.stderr,
+    )
+    unresolved_games = [g for group in [payload.get("games") or []] +
+                        [d.get("games") or [] for d in payload.get("coming_days") or []]
+                        for g in group if not g.get("link_is_specific")]
+    for game in unresolved_games[:12]:
+        print(
+            f"Ei julkista linkkia: {game.get('date')} {game.get('time')} "
+            f"{game.get('level')} sisainen={game.get('game_id')} "
+            f"SisuTeamID={(game.get('sisu_team') or {}).get('team_id')}",
+            file=sys.stderr,
+        )
     print(
         f"Kirjoitettu {out}/index.html ja {out}/games.json "
         f"({payload['counts']['total']} ottelua {payload['date']})",

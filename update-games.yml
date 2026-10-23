@@ -1,0 +1,60 @@
+name: Päivitä Sisu Hockeyn ottelut
+
+on:
+  schedule:
+    # Arkisin (ma-pe) 3 kertaa päivässä (aamulla, iltapäivällä ja illalla)
+    - cron: '15 5,15,19 * * 1-5'
+    # Viikonloppuna (la-su) 5 minuutin välein klo 05:00 - 20:55 UTC (klo 07/08 - 22/23 Suomen aikaa)
+    - cron: '*/5 5-20 * * 0,6'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "sisu_ottelut.py"
+      - "public_game_ids.py"
+      - "game_link_overrides.json"
+      - "tests/**"
+      - "render_html.py"
+      - "publish.py"
+      - "assets/**"
+      - "icons/**"
+      - "manifest.webmanifest"
+      - "service-worker.js"
+      - ".github/workflows/update-games.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sisu-ottelut
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Tarkista ottelulinkkien muodostus
+        run: python3 -m unittest discover -s tests -v
+
+      - name: Hae ottelut ja rakenna sivu
+        run: python3 publish.py --out docs
+
+      - name: Tallenna Pages-tiedostot
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs
+          if git diff --cached --quiet; then
+            echo "Ei muutoksia."
+            exit 0
+          fi
+          git commit -m "Päivitä ottelut $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push
