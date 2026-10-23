@@ -18,6 +18,7 @@ from typing import Any
 from zoneinfo import ZoneInfo
 
 from render_html import render_html
+from public_game_ids import enrich_public_links
 from sisu_ottelut import (
     DEFAULT_ASS_ID,
     TZ,
@@ -49,11 +50,12 @@ def upcoming_days(payload: dict[str, Any], coming: list[dict[str, Any]]) -> list
     teams_by_id = {t["team_id"]: t["name"] for t in payload.get("teams") or []}
     ass_id = (payload.get("club") or {}).get("id")
     by_day: dict[str, list[dict[str, Any]]] = {}
+    season_no = (payload.get("season") or {}).get("number")
     for raw in coming:
         day = parse_game_date(raw)
         if not day or day == today:
             continue
-        by_day.setdefault(day, []).append(normalize_game(raw, ass_id, teams_by_id))
+        by_day.setdefault(day, []).append(normalize_game(raw, ass_id, teams_by_id, season_number=season_no))
     days = []
     for day in sorted(by_day):
         games = sorted(by_day[day], key=lambda g: (g.get("time") or "", g.get("game_id") or 0))
@@ -68,13 +70,17 @@ def upcoming_days(payload: dict[str, Any], coming: list[dict[str, Any]]) -> list
     return days
 
 
-def build_site_payload(day: datetime, lookup_club: bool = False) -> dict[str, Any]:
+def build_site_payload(day: datetime, lookup_club: bool = False, cache_file: Path | None = None) -> dict[str, Any]:
     payload = fetch_payload(day, lookup_club=lookup_club)
     season_no = int((payload.get("season") or {}).get("number") or 0)
     ass_id = str((payload.get("club") or {}).get("id") or DEFAULT_ASS_ID)
     end = day + timedelta(days=COMING_DAYS)
     coming_raw = fetch_club_games_range(season_no, ass_id, day + timedelta(days=1), end)
     payload["coming_days"] = upcoming_days(payload, coming_raw)
+    all_days = [payload["games"]] + [d["games"] for d in payload["coming_days"]]
+    payload["public_link_resolution"] = enrich_public_links(
+        all_days, season=season_no, cache_file=cache_file or ROOT / "docs" / "public_game_ids.json"
+    )
     return payload
 
 
@@ -87,6 +93,13 @@ def write_site(payload: dict[str, Any], out_dir: Path) -> None:
         for item in assets_src.iterdir():
             if item.is_file():
                 shutil.copy2(item, assets_dst / item.name)
+    # Include PWA shell in every publish, including fresh output directories.
+    for filename in ("manifest.webmanifest", "service-worker.js"):
+        shutil.copy2(ROOT / filename, out_dir / filename)
+    icons_dst = out_dir / "icons"
+    icons_dst.mkdir(exist_ok=True)
+    for icon in (ROOT / "icons").glob("*.png"):
+        shutil.copy2(icon, icons_dst / icon.name)
     html = render_html(payload)
     (out_dir / "index.html").write_text(html, encoding="utf-8")
     (out_dir / "games.json").write_text(
@@ -114,7 +127,7 @@ def main(argv: list[str] | None = None) -> int:
     args = p.parse_args(argv)
     day = parse_date(args.date)
     try:
-        payload = build_site_payload(day, lookup_club=args.lookup_club)
+        payload = build_site_payload(day, lookup_club=args.lookup_club, cache_file=Path(args.out) / "public_game_ids.json")
     except ApiError as exc:
         print(json.dumps({"error": str(exc)}, ensure_ascii=False), file=sys.stderr)
         return 1

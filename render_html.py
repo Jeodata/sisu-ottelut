@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 import html
+import re
 from datetime import datetime
 from typing import Any
 from zoneinfo import ZoneInfo
@@ -67,7 +68,7 @@ def _score_block(game: dict[str, Any]) -> str:
         return '<div class="score wait"><span class="played-label">Pelattu</span></div>'
     return f'<div class="score wait"><span class="kickoff">{_e(game.get("time") or "—")}</span></div>'
 
-def _game_card(game: dict[str, Any]) -> str:
+def _game_card(game: dict[str, Any], season_no: int | None = None) -> str:
     status = game.get("status") or "unknown"
     result = _sisu_result(game)
     venue = game.get("venue") or "unknown"
@@ -75,25 +76,33 @@ def _game_card(game: dict[str, Any]) -> str:
     level, rink = game.get("level") or "", game.get("rink") or ""
     small = " · pieni kaukalo" if game.get("small_area") else ""
     spectators = game.get("spectators") or 0
-    url = ((game.get("urls") or {}).get("gamecentre")) or "#"
+    # Link resolution happens at data ingestion, where raw API fields are
+    # available. Never reconstruct a game link from the internal game_id.
+    url = (game.get("urls") or {}).get("gamecentre") or "https://tulospalvelu.leijonat.fi/"
+    linked = True
+    specific = bool(game.get("link_is_specific"))
     result_class = f" result-{result}" if result else ""
     sisu_name = sisu.get("abbreviation") or sisu.get("name") or "Sisu"
     meta_bits = [bit for bit in (level, rink + small) if bit]
     if spectators and status == "finished":
         meta_bits.append(f"{spectators} katsojaa")
-    return f'<article class="card status-{_e(status)}{_e(result_class)}"><a class="card-link" href="{_e(url)}" target="_blank" rel="noopener"><header class="card-top"><span class="badge badge-{_e(status)}">{_e(STATUS_LABEL.get(status, status))}</span><span class="time">{_e(game.get("time") or "—")}</span><span class="venue venue-{_e(venue)}">{_e(VENUE_LABEL.get(venue, ""))}</span></header><p class="sisu-line">{_e(sisu_name)}</p><div class="match"><div class="team home">{_logo(game.get("home"))}<span class="tname">{_e(_team_label(game.get("home")))}</span></div>{_score_block(game)}<div class="team away">{_logo(game.get("away"))}<span class="tname">{_e(_team_label(game.get("away")))}</span></div></div><p class="meta">{_e(" · ".join(meta_bits))}</p></a></article>'
+    link_label = "Avaa ottelu Leijonien tulospalvelussa" if specific else "Avaa Leijonien tulospalvelun etusivu"
+    card_start = f'<a class="card-link" href="{_e(url)}" target="_blank" rel="noopener noreferrer" aria-label="{_e(link_label)}">' if linked else '<div class="card-link">'
+    card_end = '</a>' if linked else '</div>'
+    return f'<article class="card status-{_e(status)}{_e(result_class)}">{card_start}<header class="card-top"><span class="badge badge-{_e(status)}">{_e(STATUS_LABEL.get(status, status))}</span><span class="time">{_e(game.get("time") or "—")}</span><span class="venue venue-{_e(venue)}">{_e(VENUE_LABEL.get(venue, ""))}</span></header><p class="sisu-line">{_e(sisu_name)}</p><div class="match"><div class="team home">{_logo(game.get("home"))}<span class="tname">{_e(_team_label(game.get("home")))}</span></div>{_score_block(game)}<div class="team away">{_logo(game.get("away"))}<span class="tname">{_e(_team_label(game.get("away")))}</span></div></div><p class="meta">{_e(" · ".join(meta_bits))}</p>{card_end}</article>'
 
 def _chip(label: str, count: int, kind: str) -> str:
     return f'<div class="chip chip-{_e(kind)}"><span class="chip-n">{count}</span><span class="chip-l">{_e(label)}</span></div>'
 
-def _section(title: str, games: list[dict[str, Any]], empty: str) -> str:
+def _section(title: str, games: list[dict[str, Any]], empty: str, season_no: int | None = None) -> str:
     if not games:
         return f'<section class="block"><h2>{_e(title)}</h2><p class="empty">{_e(empty)}</p></section>'
-    return f'<section class="block"><h2>{_e(title)}</h2><div class="grid">{"".join(_game_card(g) for g in games)}</div></section>'
+    return f'<section class="block"><h2>{_e(title)}</h2><div class="grid">{"".join(_game_card(g, season_no) for g in games)}</div></section>'
 
 def render_html(payload: dict[str, Any], extra_days: list[dict[str, Any]] | None = None) -> str:
     extra_days = extra_days or payload.get("coming_days") or []
     club, counts, season = payload.get("club") or {}, payload.get("counts") or {}, payload.get("season") or {}
+    season_no = season.get("number")
     generated = payload.get("generated_at") or datetime.now(TZ).isoformat(timespec="seconds")
     heading_date = _human_date(payload.get("date") or "", payload.get("date_fi"))
     club_name = club.get("name") or "Sisu Hockey Hämeenlinna ry"
@@ -111,7 +120,7 @@ def render_html(payload: dict[str, Any], extra_days: list[dict[str, Any]] | None
         dg = day.get("games") or []
         if dg:
             lbl = _human_date(day.get("date", ""), day.get("date_fi"))
-            extra_html.append(f'<section class="block muted"><h2>{_e(lbl)}</h2><div class="grid">{"".join(_game_card(g) for g in dg)}</div></section>')
+            extra_html.append(f'<section class="block muted"><h2>{_e(lbl)}</h2><div class="grid">{"".join(_game_card(g, season_no) for g in dg)}</div></section>')
     empty_today = not games
     empty_msg = "Tänään Sisu Hockeylla ei ole merkittyjä otteluita." if empty_today else "Ei otteluita tässä osiossa."
     next_block = "\n".join(extra_html)
@@ -129,6 +138,11 @@ def render_html(payload: dict[str, Any], extra_days: list[dict[str, Any]] | None
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
   <script>
+    if ("serviceWorker" in navigator && window.top === window.self) {{
+      window.addEventListener("load", function() {{
+        navigator.serviceWorker.register("./service-worker.js").catch(function() {{}});
+      }});
+    }}
     setInterval(function() {{
       var u = window.location.pathname + "?t=" + new Date().getTime();
       fetch(u, {{ cache: "no-store" }}).then(function(r) {{ if (r.ok) window.location.replace(u); }}).catch(function() {{}});
@@ -148,6 +162,11 @@ def render_html(payload: dict[str, Any], extra_days: list[dict[str, Any]] | None
   <meta name="description" content="Sisu Hockey Hämeenlinna ry:n päivän ottelut ja tulokset.">
   <meta name="theme-color" content="#8b1a16">
   <link rel="icon" href="assets/logo.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Sisu Ottelut">
   <style>
     :root {{ --red:#e3302c; --red-dark:#8b1a16; --ice:#f4f7fb; --ink:#12151c; --muted:#5b6573; --card:#fff; --line:#e4e9f0; --live:#0b8a4a; --loss:#8a2430; --win:#1f7a4d; --shadow:0 10px 30px rgba(18,21,28,.08); }}
     * {{ box-sizing:border-box; }} html, body {{ margin:0; padding:0; }}
@@ -171,6 +190,8 @@ def render_html(payload: dict[str, Any], extra_days: list[dict[str, Any]] | None
     .card {{ background:var(--card); border-radius:18px; box-shadow:var(--shadow); border:1px solid var(--line); overflow:hidden; }}
     .card.status-live {{ border-color:#9fe0bc; box-shadow:0 8px 24px rgba(11,138,74,.16); }}
     .card.result-win {{ border-left:5px solid var(--win); }} .card.result-loss {{ border-left:5px solid var(--red); }} .card.result-tie {{ border-left:5px solid #c9a227; }}
+    a.card-link {{ cursor:pointer; }}
+    a.card-link:focus-visible {{ outline:3px solid #1769aa; outline-offset:-3px; }}
     .card-link {{ display:block; color:inherit; text-decoration:none; padding:.95rem 1rem 1rem; }}
     .card-top {{ display:flex; align-items:center; gap:.5rem; font-size:.8rem; color:var(--muted); margin-bottom:.35rem; }}
     .badge {{ border-radius:999px; padding:.15rem .55rem; font-weight:700; letter-spacing:.04em; text-transform:uppercase; font-size:.68rem; background:#eef2f7; color:#445; }}
@@ -202,9 +223,9 @@ def render_html(payload: dict[str, Any], extra_days: list[dict[str, Any]] | None
   <header class="hero"><div class="hero-inner"><img src="assets/logo.png" alt="Sisu Hockey" width="64" height="64"><div><h1>Sisu Hockey</h1><p>{_e(heading_date)} · {_e(club_name)}</p><p class="hero-updated">Päivitetty {_e(generated_human)}</p></div></div></header>
   <main>
     <div class="chips">{_chip("Ottelut", int(counts.get("total") or 0), "total")}{_chip("Tulossa", int(counts.get("upcoming") or 0), "upcoming")}{_chip("Käynnissä", int(counts.get("live") or 0), "live")}{_chip("Päättynyt", int(counts.get("finished") or 0), "finished")}</div>
-    {_section(primary_title, primary_games, empty_msg)}
-    {_section("Vielä pelaamatta", rest_upcoming, "") if rest_upcoming else ""}
-    {_section("Valmistuneet", rest_finished, "") if rest_finished else ""}
+    {_section(primary_title, primary_games, empty_msg, season_no)}
+    {_section("Vielä pelaamatta", rest_upcoming, "", season_no) if rest_upcoming else ""}
+    {_section("Valmistuneet", rest_finished, "", season_no) if rest_finished else ""}
     {next_heading}
     {next_block}
   </main>

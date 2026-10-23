@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-23T13:06:08+03:00",
-  "date": "2026-10-23",
-  "date_fi": "23.10.2026",
+  "generated_at": "2026-10-22T13:07:09+03:00",
+  "date": "2026-10-22",
+  "date_fi": "22.10.2026",
   "club": {
     "id": "11015646",
     "name": "SISU HOCKEY HÄMEENLINNA RY",
@@ -224,11 +224,13 @@
           "score": null,
           "period_scores": null,
           "urls": {
-            "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=752874"
+            "gamecentre": "https://tulospalvelu.leijonat.fi/"
           },
           "denied_results": false,
           "denied_stats": false,
-          "no_score_tracking": true
+          "no_score_tracking": true,
+          "link_is_specific": false,
+          "link_source": "unresolved"
         },
         {
           "game_id": 757921,
@@ -268,11 +270,13 @@
           "score": null,
           "period_scores": null,
           "urls": {
-            "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=757921"
+            "gamecentre": "https://tulospalvelu.leijonat.fi/"
           },
           "denied_results": false,
           "denied_stats": false,
-          "no_score_tracking": true
+          "no_score_tracking": true,
+          "link_is_specific": false,
+          "link_source": "unresolved"
         },
         {
           "game_id": 752883,
@@ -312,11 +316,13 @@
           "score": null,
           "period_scores": null,
           "urls": {
-            "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=752883"
+            "gamecentre": "https://tulospalvelu.leijonat.fi/"
           },
           "denied_results": false,
           "denied_stats": false,
-          "no_score_tracking": false
+          "no_score_tracking": false,
+          "link_is_specific": false,
+          "link_source": "unresolved"
         },
         {
           "game_id": 757924,
@@ -356,11 +362,13 @@
           "score": null,
           "period_scores": null,
           "urls": {
-            "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=757924"
+            "gamecentre": "https://tulospalvelu.leijonat.fi/"
           },
           "denied_results": false,
           "denied_stats": false,
-          "no_score_tracking": true
+          "no_score_tracking": true,
+          "link_is_specific": false,
+          "link_source": "unresolved"
         },
         {
           "game_id": 758160,
@@ -400,11 +408,13 @@
           "score": null,
           "period_scores": null,
           "urls": {
-            "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=758160"
+            "gamecentre": "https://tulospalvelu.leijonat.fi/"
           },
           "denied_results": false,
           "denied_stats": false,
-          "no_score_tracking": false
+          "no_score_tracking": false,
+          "link_is_specific": false,
+          "link_source": "unresolved"
         },
         {
           "game_id": 727992,
@@ -444,11 +454,13 @@
           "score": null,
           "period_scores": null,
           "urls": {
-            "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=727992"
+            "gamecentre": "https://tulospalvelu.leijonat.fi/"
           },
           "denied_results": false,
           "denied_stats": false,
-          "no_score_tracking": false
+          "no_score_tracking": false,
+          "link_is_specific": false,
+          "link_source": "unresolved"
         },
         {
           "game_id": 732527,
@@ -488,11 +500,13 @@
           "score": null,
           "period_scores": null,
           "urls": {
-            "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=732527"
+            "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2721476&lang=fi"
           },
           "denied_results": false,
           "denied_stats": false,
-          "no_score_tracking": false
+          "no_score_tracking": false,
+          "link_is_specific": true,
+          "link_source": "verified_override"
         },
         {
           "game_id": 758161,
@@ -532,11 +546,13 @@
           "score": null,
           "period_scores": null,
           "urls": {
-            "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=758161"
+            "gamecentre": "https://tulospalvelu.leijonat.fi/"
           },
           "denied_results": false,
           "denied_stats": false,
-          "no_score_tracking": false
+          "no_score_tracking": false,
+          "link_is_specific": false,
+          "link_source": "unresolved"
         },
         {
           "game_id": 731576,
@@ -576,11 +592,13 @@
           "score": null,
           "period_scores": null,
           "urls": {
-            "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=731576"
+            "gamecentre": "https://tulospalvelu.leijonat.fi/"
           },
           "denied_results": false,
           "denied_stats": false,
-          "no_score_tracking": false
+          "no_score_tracking": false,
+          "link_is_specific": false,
+          "link_source": "unresolved"
         }
       ]
     },
@@ -626,11 +644,13 @@
           "score": null,
           "period_scores": null,
           "urls": {
-            "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=767213"
+            "gamecentre": "https://tulospalvelu.leijonat.fi/"
           },
           "denied_results": false,
           "denied_stats": false,
-          "no_score_tracking": true
+          "no_score_tracking": true,
+          "link_is_specific": false,
+          "link_source": "unresolved"
         },
         {
           "game_id": 767222,
@@ -670,11 +690,13 @@
           "score": null,
           "period_scores": null,
           "urls": {
-            "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=767222"
+            "gamecentre": "https://tulospalvelu.leijonat.fi/"
           },
           "denied_results": false,
           "denied_stats": false,
-          "no_score_tracking": true
+          "no_score_tracking": true,
+          "link_is_specific": false,
+          "link_source": "unresolved"
         },
         {
           "game_id": 767209,
@@ -714,11 +736,13 @@
           "score": null,
           "period_scores": null,
           "urls": {
-            "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=767209"
+            "gamecentre": "https://tulospalvelu.leijonat.fi/"
           },
           "denied_results": false,
           "denied_stats": false,
-          "no_score_tracking": true
+          "no_score_tracking": true,
+          "link_is_specific": false,
+          "link_source": "unresolved"
         },
         {
           "game_id": 767218,
@@ -758,11 +782,13 @@
           "score": null,
           "period_scores": null,
           "urls": {
-            "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=767218"
+            "gamecentre": "https://tulospalvelu.leijonat.fi/"
           },
           "denied_results": false,
           "denied_stats": false,
-          "no_score_tracking": true
+          "no_score_tracking": true,
+          "link_is_specific": false,
+          "link_source": "unresolved"
         },
         {
           "game_id": 727999,
@@ -802,11 +828,13 @@
           "score": null,
           "period_scores": null,
           "urls": {
-            "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=727999"
+            "gamecentre": "https://tulospalvelu.leijonat.fi/"
           },
           "denied_results": false,
           "denied_stats": false,
-          "no_score_tracking": false
+          "no_score_tracking": false,
+          "link_is_specific": false,
+          "link_source": "unresolved"
         },
         {
           "game_id": 757857,
@@ -846,11 +874,13 @@
           "score": null,
           "period_scores": null,
           "urls": {
-            "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=757857"
+            "gamecentre": "https://tulospalvelu.leijonat.fi/"
           },
           "denied_results": false,
           "denied_stats": false,
-          "no_score_tracking": false
+          "no_score_tracking": false,
+          "link_is_specific": false,
+          "link_source": "unresolved"
         },
         {
           "game_id": 735159,
@@ -890,11 +920,13 @@
           "score": null,
           "period_scores": null,
           "urls": {
-            "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=735159"
+            "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2727976&lang=fi"
           },
           "denied_results": false,
           "denied_stats": false,
-          "no_score_tracking": false
+          "no_score_tracking": false,
+          "link_is_specific": true,
+          "link_source": "verified_override"
         },
         {
           "game_id": 757859,
@@ -934,11 +966,13 @@
           "score": null,
           "period_scores": null,
           "urls": {
-            "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=757859"
+            "gamecentre": "https://tulospalvelu.leijonat.fi/"
           },
           "denied_results": false,
           "denied_stats": false,
-          "no_score_tracking": false
+          "no_score_tracking": false,
+          "link_is_specific": false,
+          "link_source": "unresolved"
         }
       ]
     },
@@ -984,11 +1018,13 @@
           "score": null,
           "period_scores": null,
           "urls": {
-            "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=728004"
+            "gamecentre": "https://tulospalvelu.leijonat.fi/"
           },
           "denied_results": false,
           "denied_stats": false,
-          "no_score_tracking": false
+          "no_score_tracking": false,
+          "link_is_specific": false,
+          "link_source": "unresolved"
         },
         {
           "game_id": 753348,
@@ -1028,11 +1064,13 @@
           "score": null,
           "period_scores": null,
           "urls": {
-            "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=753348"
+            "gamecentre": "https://tulospalvelu.leijonat.fi/"
           },
           "denied_results": false,
           "denied_stats": false,
-          "no_score_tracking": false
+          "no_score_tracking": false,
+          "link_is_specific": false,
+          "link_source": "unresolved"
         },
         {
           "game_id": 753350,
@@ -1072,11 +1110,13 @@
           "score": null,
           "period_scores": null,
           "urls": {
-            "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=753350"
+            "gamecentre": "https://tulospalvelu.leijonat.fi/"
           },
           "denied_results": false,
           "denied_stats": false,
-          "no_score_tracking": false
+          "no_score_tracking": false,
+          "link_is_specific": false,
+          "link_source": "unresolved"
         },
         {
           "game_id": 731590,
@@ -1116,11 +1156,13 @@
           "score": null,
           "period_scores": null,
           "urls": {
-            "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=731590"
+            "gamecentre": "https://tulospalvelu.leijonat.fi/"
           },
           "denied_results": false,
           "denied_stats": false,
-          "no_score_tracking": false
+          "no_score_tracking": false,
+          "link_is_specific": false,
+          "link_source": "unresolved"
         },
         {
           "game_id": 735165,
@@ -1160,11 +1202,13 @@
           "score": null,
           "period_scores": null,
           "urls": {
-            "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=735165"
+            "gamecentre": "https://tulospalvelu.leijonat.fi/"
           },
           "denied_results": false,
           "denied_stats": false,
-          "no_score_tracking": false
+          "no_score_tracking": false,
+          "link_is_specific": false,
+          "link_source": "unresolved"
         },
         {
           "game_id": 732524,
@@ -1204,11 +1248,13 @@
           "score": null,
           "period_scores": null,
           "urls": {
-            "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=732524"
+            "gamecentre": "https://tulospalvelu.leijonat.fi/"
           },
           "denied_results": false,
           "denied_stats": false,
-          "no_score_tracking": false
+          "no_score_tracking": false,
+          "link_is_specific": false,
+          "link_source": "unresolved"
         },
         {
           "game_id": 752912,
@@ -1248,11 +1294,13 @@
           "score": null,
           "period_scores": null,
           "urls": {
-            "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=752912"
+            "gamecentre": "https://tulospalvelu.leijonat.fi/"
           },
           "denied_results": false,
           "denied_stats": false,
-          "no_score_tracking": true
+          "no_score_tracking": true,
+          "link_is_specific": false,
+          "link_source": "unresolved"
         },
         {
           "game_id": 752920,
@@ -1292,11 +1340,13 @@
           "score": null,
           "period_scores": null,
           "urls": {
-            "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=752920"
+            "gamecentre": "https://tulospalvelu.leijonat.fi/"
           },
           "denied_results": false,
           "denied_stats": false,
-          "no_score_tracking": false
+          "no_score_tracking": false,
+          "link_is_specific": false,
+          "link_source": "unresolved"
         }
       ]
     },
@@ -1342,11 +1392,13 @@
           "score": null,
           "period_scores": null,
           "urls": {
-            "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=757871"
+            "gamecentre": "https://tulospalvelu.leijonat.fi/"
           },
           "denied_results": false,
           "denied_stats": false,
-          "no_score_tracking": false
+          "no_score_tracking": false,
+          "link_is_specific": false,
+          "link_source": "unresolved"
         },
         {
           "game_id": 757872,
@@ -1386,11 +1438,13 @@
           "score": null,
           "period_scores": null,
           "urls": {
-            "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=757872"
+            "gamecentre": "https://tulospalvelu.leijonat.fi/"
           },
           "denied_results": false,
           "denied_stats": false,
-          "no_score_tracking": false
+          "no_score_tracking": false,
+          "link_is_specific": false,
+          "link_source": "unresolved"
         },
         {
           "game_id": 752944,
@@ -1430,11 +1484,13 @@
           "score": null,
           "period_scores": null,
           "urls": {
-            "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=752944"
+            "gamecentre": "https://tulospalvelu.leijonat.fi/"
           },
           "denied_results": false,
           "denied_stats": false,
-          "no_score_tracking": false
+          "no_score_tracking": false,
+          "link_is_specific": false,
+          "link_source": "unresolved"
         },
         {
           "game_id": 752943,
@@ -1474,11 +1530,13 @@
           "score": null,
           "period_scores": null,
           "urls": {
-            "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=752943"
+            "gamecentre": "https://tulospalvelu.leijonat.fi/"
           },
           "denied_results": false,
           "denied_stats": false,
-          "no_score_tracking": false
+          "no_score_tracking": false,
+          "link_is_specific": false,
+          "link_source": "unresolved"
         },
         {
           "game_id": 767267,
@@ -1518,11 +1576,13 @@
           "score": null,
           "period_scores": null,
           "urls": {
-            "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=767267"
+            "gamecentre": "https://tulospalvelu.leijonat.fi/"
           },
           "denied_results": false,
           "denied_stats": false,
-          "no_score_tracking": true
+          "no_score_tracking": true,
+          "link_is_specific": false,
+          "link_source": "unresolved"
         },
         {
           "game_id": 767274,
@@ -1562,11 +1622,13 @@
           "score": null,
           "period_scores": null,
           "urls": {
-            "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=767274"
+            "gamecentre": "https://tulospalvelu.leijonat.fi/"
           },
           "denied_results": false,
           "denied_stats": false,
-          "no_score_tracking": true
+          "no_score_tracking": true,
+          "link_is_specific": false,
+          "link_source": "unresolved"
         },
         {
           "game_id": 767263,
@@ -1606,11 +1668,13 @@
           "score": null,
           "period_scores": null,
           "urls": {
-            "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=767263"
+            "gamecentre": "https://tulospalvelu.leijonat.fi/"
           },
           "denied_results": false,
           "denied_stats": false,
-          "no_score_tracking": true
+          "no_score_tracking": true,
+          "link_is_specific": false,
+          "link_source": "unresolved"
         },
         {
           "game_id": 767270,
@@ -1650,11 +1714,13 @@
           "score": null,
           "period_scores": null,
           "urls": {
-            "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=767270"
+            "gamecentre": "https://tulospalvelu.leijonat.fi/"
           },
           "denied_results": false,
           "denied_stats": false,
-          "no_score_tracking": true
+          "no_score_tracking": true,
+          "link_is_specific": false,
+          "link_source": "unresolved"
         },
         {
           "game_id": 728008,
@@ -1694,11 +1760,13 @@
           "score": null,
           "period_scores": null,
           "urls": {
-            "gamecentre": "https://tulospalvelu.leijonat.fi/game?gameid=728008"
+            "gamecentre": "https://tulospalvelu.leijonat.fi/"
           },
           "denied_results": false,
           "denied_stats": false,
-          "no_score_tracking": false
+          "no_score_tracking": false,
+          "link_is_specific": false,
+          "link_source": "unresolved"
         }
       ]
     }

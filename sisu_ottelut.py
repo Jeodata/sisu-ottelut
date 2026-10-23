@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 import argparse, json, sys, time, urllib.error, urllib.parse, urllib.request
+from pathlib import Path
 from datetime import datetime
 from typing import Any
 from zoneinfo import ZoneInfo
@@ -25,16 +26,83 @@ GAME_STATUS_MAP = {0: "upcoming", 1: "live", 2: "finished", 94: "finished"}
 FINISHED_TYPE_MAP = {0: None, 1: "regulation", 2: "overtime", 3: "shootout"}
 NO_SCORE_DURATION_MIN = 50
 
+# The getextsearchgames endpoint returns an internal GameID (e.g. 732527).
+# The public game-page ID can be a completely different number (e.g. 2721476).
+# Never construct a public game URL from the unverified internal GameID.
+GAME_LINK_OVERRIDES = Path(__file__).resolve().parent / "game_link_overrides.json"
+PUBLIC_GAME_ID_FIELDS = (
+    "PublicGameID", "OfficialGameID", "ExternalGameID", "NewGameID",
+    "GamePublicID", "GameIdExternal", "GameIDNew", "GameNumber",
+)
+PUBLIC_GAME_URL_FIELDS = ("GameURL", "GameUrl", "GameLink", "PublicGameURL", "OfficialGameURL")
+
+
+def _verified_game_ids() -> dict[str, dict[str, int]]:
+    try:
+        obj = json.loads(GAME_LINK_OVERRIDES.read_text(encoding="utf-8"))
+    except (FileNotFoundError, ValueError, OSError):
+        return {}
+    return obj if isinstance(obj, dict) else {}
+
+
+def public_game_link(raw: dict[str, Any], season: int | None) -> tuple[str, bool, str]:
+    """Return an official link, or a safe homepage fallback (never a wrong game)."""
+    homepage = BASE_URL + "/"
+    internal_id = raw.get("GameID")
+    try:
+        season_id = int(season)
+        internal_number = int(internal_id)
+    except (TypeError, ValueError):
+        return homepage, False, "unresolved"
+
+    # An explicitly verified mapping takes priority.
+    mapped = _verified_game_ids().get(str(season_id), {}).get(str(internal_number))
+    if mapped:
+        public_id = int(mapped)
+        return f"{BASE_URL}/game?{urllib.parse.urlencode({'season':season_id,'gameid':public_id,'lang':'fi'})}", True, "verified_override"
+
+    # Prefer a canonical match URL if the API supplies one. Do not trust
+    # arbitrary domains or an internal 6-digit GameID with a new URL prefix.
+    for field in PUBLIC_GAME_URL_FIELDS:
+        value = raw.get(field)
+        if not isinstance(value, str):
+            continue
+        parsed = urllib.parse.urlparse(value)
+        if parsed.scheme != "https" or parsed.netloc != "tulospalvelu.leijonat.fi" or parsed.path.rstrip("/") != "/game":
+            continue
+        q = urllib.parse.parse_qs(parsed.query)
+        try:
+            game_number = int(q.get("gameid", [None])[0])
+            supplied_season = int(q.get("season", [season_id])[0])
+        except (ValueError, TypeError):
+            continue
+        if supplied_season == season_id and game_number >= 2_000_000:
+            return f"{BASE_URL}/game?{urllib.parse.urlencode({'season':season_id,'gameid':game_number,'lang':'fi'})}", True, field
+
+    # Some versions of the API may provide a separate 7-digit public ID.
+    for field in PUBLIC_GAME_ID_FIELDS:
+        try:
+            public_id = int(raw.get(field))
+        except (ValueError, TypeError):
+            continue
+        if public_id >= 2_000_000:
+            return f"{BASE_URL}/game?{urllib.parse.urlencode({'season':season_id,'gameid':public_id,'lang':'fi'})}", True, field
+
+    # Fail closed: the visitor can still open the official service, but won't
+    # be taken to the wrong game. No guesses based on numeric offsets.
+    return homepage, False, "unresolved"
+
+
 class ApiError(RuntimeError):
     pass
 
-def http_get_json(url: str, params: dict[str, Any] | None = None, timeout: int = 45) -> Any:
+def http_get_json(url: str, params: dict[str, Any] | None = None, timeout: int = 45, max_attempts: int = 4) -> Any:
     if params:
         url = f"{url}?{urllib.parse.urlencode(params, doseq=True)}"
     if PROXY_URL:
         url = f"{PROXY_URL.rstrip('/')}/?{urllib.parse.urlencode({'url': url})}"
     last_error: Exception | None = None
-    for attempt in range(4):
+    for attempt in range(max_attempts):
         req = urllib.request.Request(url, headers={"Accept": "application/json", "User-Agent": USER_AGENT})
         try:
             with urllib.request.urlopen(req, timeout=timeout) as resp:
@@ -44,7 +112,7 @@ def http_get_json(url: str, params: dict[str, Any] | None = None, timeout: int =
             return json.loads(raw.decode("utf-8"))
         except Exception as exc:
             last_error = ApiError(f"Virhe haussa {url}: {exc}")
-            if attempt < 3:
+            if attempt < max_attempts - 1:
                 time.sleep(1.5 * (attempt + 1))
                 continue
             raise last_error from exc
@@ -125,7 +193,7 @@ def team_side(raw: dict[str, Any], prefix: str, show_score: bool) -> dict[str, A
     logo = f"{BASE_URL}/images/associations/weblogos/200x200/{img}" if img else None
     return {"team_id": raw.get(f"{prefix}Team"), "name": raw.get(f"{prefix}TeamName"), "abbreviation": raw.get(f"{prefix}Abbrv"), "association_id": raw.get(f"{prefix}Association"), "logo": logo, "goals": score}
 
-def normalize_game(raw: dict[str, Any], ass_id: str, teams_by_id: dict[Any, str], day: datetime | None = None) -> dict[str, Any]:
+def normalize_game(raw: dict[str, Any], ass_id: str, teams_by_id: dict[Any, str], day: datetime | None = None, season_number: int | None = None) -> dict[str, Any]:
     status_code = raw.get("GameStatus")
     status = classify_status(status_code)
     ft = FINISHED_TYPE_MAP.get(raw.get("FinishedType") or 0)
@@ -177,14 +245,16 @@ def normalize_game(raw: dict[str, Any], ass_id: str, teams_by_id: dict[Any, str]
     result = f"{home['goals']}-{away['goals']}" if (status == "finished" and home["goals"] is not None and away["goals"] is not None) else None
     sisu_info = {"team_id": sisu_team.get("team_id"), "name": sisu_team.get("name"), "abbreviation": sisu_team.get("abbreviation")} if sisu_team else None
     game_id = raw.get("GameID")
+    game_url, specific_link, link_source = public_game_link(raw, season_number)
     return {
         "game_id": game_id, "date": date_str, "time": time_str,
         "status": status, "status_code": status_code, "finished_type": ft, "level": level,
-        "level_id": raw.get("LevelID"), "rink": raw.get("RinkName") or raw.get("RinkAbbrv"),
+        "level_id": raw.get("LevelID"), "sub_serie_id": raw.get("SubSerieID"), "rink": raw.get("RinkName") or raw.get("RinkAbbrv"),
         "rink_id": raw.get("RinkID") or None, "small_area": small_area,
         "spectators": raw.get("Spectator") or 0, "venue": venue, "sisu_team": sisu_info,
         "home": home, "away": away, "score": result, "period_scores": period_scores(raw),
-        "urls": {"gamecentre": f"{BASE_URL}/game?gameid={game_id}"},
+        "urls": {"gamecentre": game_url},
+        "link_is_specific": specific_link, "link_source": link_source,
         "denied_results": denied_results, "denied_stats": bool(raw.get("DeniedStats")),
         "no_score_tracking": no_score_tracking,
     }
@@ -192,7 +262,8 @@ def normalize_game(raw: dict[str, Any], ass_id: str, teams_by_id: dict[Any, str]
 def build_payload(*, day: datetime, season: dict[str, Any], club: dict[str, Any], teams: list[dict[str, Any]], raw_games: list[dict[str, Any]]) -> dict[str, Any]:
     ass_id = str(club.get("AssID"))
     teams_by_id = {t["team_id"]: t["name"] for t in teams}
-    games = [normalize_game(g, ass_id, teams_by_id, day=day) for g in raw_games]
+    season_no = season.get("SeasonNumber")
+    games = [normalize_game(g, ass_id, teams_by_id, day=day, season_number=season_no) for g in raw_games]
     games.sort(key=lambda g: (g.get("time") or "", g.get("game_id") or 0))
     upcoming = [g for g in games if g["status"] == "upcoming"]
     live = [g for g in games if g["status"] == "live"]

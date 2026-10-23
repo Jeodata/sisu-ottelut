@@ -89,6 +89,56 @@ Endpoint                                                                        
 /helpers/getass?season=                                                                                           Seuraluettelo
 /helpers/getteams?season=&assid=11015646                                                                          Sisu Hockeyn joukkueet
 /helpers/getextsearchgames?season=&Filters[AssID]=11015646&Filters[StartDate]=&Filters[EndDate]=                  Seuran kaikkien joukkueiden ottelut valitulla aikavälillä
-(Huom: Pääsivun /helpers/getgames palauttaa vain pääsarjat. Juniori- ja harrasteottelut haetaan aina getextsearchgames-kutsulla).
+(Huom: getextsearchgames pysyy varsinaisena seuran otteluhaun lähteenä. getgames palauttaa oikeat julkiset GameID-arvot, kun valitaan sopiva subSerieId, ja sitä käytetään vain linkkien täsmäytykseen.)
 
 
+
+
+## Ottelulinkit (PWA) – automaattinen täsmäytys
+
+`getextsearchgames`-rajapinnan `GameID` **ei ole luotettava julkisen pelisivun gameid**.
+Julkaisu käyttää `game_link_overrides.json`-tiedoston kausikohtaisia vahvistettuja vastaavuuksia
+sekä API:n erikseen tarjoamia julkisia ottelutunnisteita, mikäli niitä on.
+
+Jos julkista ottelutunnistetta ei tunneta, ottelukortti avaa varmuuden vuoksi
+Leijonien tulospalvelun etusivun, ei väärän ottelun sivua.
+Lisää manuaalisesti vahvistetut vastaavuudet `game_link_overrides.json`-tiedostoon
+muodossa `"kausi": {"sisäinen_id": julkinen_id}`.
+
+Esimerkiksi kaudelle 2027: `732527 -> 2721476` ja `735159 -> 2727976`.
+
+
+### Uusi automaattinen ID-täsmäytys
+
+`public_game_ids.py` hakee Leijonien `/helpers/getgames`-rajapinnasta ottelulistoja.
+Tuloksissa `Games[*].GameID` on sivulla toimiva julkinen ottelutunniste
+(esimerkiksi 2721476), kun taas vanhan `getextsearchgames`-haun tunniste voi
+olla 732527. Linkki hyväksytään **vain**, kun päivämäärä, alkamisaika,
+ottelujoukkueiden tunnisteet (tai puuttuvien tunnisteiden tapauksessa molemmat
+joukkueiden lyhennenimet) sekä saatavilla oleva sarjataso täsmäävät
+**yksiselitteisesti**.
+
+Palvelun muutoin toimivaan datahakuun ei kosketa. Jokaisen julkaisuajon
+alussa linkittäjä lukee julkaisukansion `public_game_ids.json`-välimuistin.
+Vahvistetut julkiset tunnisteet tallennetaan sinne. Kun ottelulista ei palauta
+yksiselitteistä julkista ID:tä, käytetään edelleen alkuperäistä turvallista
+etusivulinkkiä. Tunnisteita **ei lasketa** vanhasta numerosta.
+
+`getgames`-rajapinnan yleishaku ei välttämättä sisällä kaikkia juniorisarjoja.
+Jos legacy-lähde sisältää `SubSerieID`-kentän, sitä kokeillaan. Lisäksi kauden
+2027 U16 Suomi-sarjan varmistettu `subSerieId=4135` on mukana varatietona.
+Muita sarjoja varten linkittäjä kokeilee joukkue- ja sarjatasohakua. Näiden
+hakujen toimivuutta ei ole voitu todentaa kaikissa sarjoissa ilman live-APIa,
+joten kaikkien ikäluokkien suoraa linkitystä ei vielä voida taata. Yhden
+ajokerran uudet getgames-haut on rajoitettu 16 pyyntöön, jotta 5 minuutin
+ajastettu päivitys ei kuormitu kohtuuttomasti.
+
+Paikallisesti varmista regressiotesteillä:
+
+```bash
+python3 -m unittest discover -s tests -v
+```
+
+Julkaisu päivittyy vasta, kun muutokset viedään GitHubin `main`-haaraan.
+Live-API-testit kannattaa tehdä vasta GitHub Actions -ympäristössä nykyisen
+Cloudflare-proxyn kautta.
