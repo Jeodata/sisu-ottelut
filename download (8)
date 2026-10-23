@@ -1,8 +1,0 @@
-__pycache__/
-*.pyc
-.venv/
-.DS_Store
-.idea/
-.vscode/
-tama_paiva.json
-esimerkki_0310.json
