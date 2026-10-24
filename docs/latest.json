@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T16:25:22+03:00",
+  "generated_at": "2026-10-24T16:30:25+03:00",
   "date": "2026-10-24",
   "date_fi": "24.10.2026",
   "club": {
@@ -21,8 +21,8 @@
   },
   "counts": {
     "total": 9,
-    "upcoming": 3,
-    "live": 2,
+    "upcoming": 2,
+    "live": 3,
     "finished": 4,
     "other": 0,
     "teams": 37
@@ -242,7 +242,7 @@
         "abbreviation": "Pelicans Länsi Valkoinen",
         "association_id": 11019913,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11019913.png",
-        "goals": 13
+        "goals": 14
       },
       "away": {
         "team_id": 1368627586,
@@ -314,8 +314,8 @@
       "game_id": 732527,
       "date": "24.10.2026",
       "time": "16:30",
-      "status": "upcoming",
-      "status_code": 0,
+      "status": "live",
+      "status_code": 11,
       "finished_type": null,
       "level": "U16 Suomi-sarja",
       "level_id": 1138,
@@ -336,7 +336,7 @@
         "abbreviation": "KPK / KeuPa HT",
         "association_id": 10114274,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114274.png",
-        "goals": null
+        "goals": 0
       },
       "away": {
         "team_id": 1305184724,
@@ -344,7 +344,7 @@
         "abbreviation": "SiSu",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": null
+        "goals": 0
       },
       "score": null,
       "period_scores": null,
@@ -453,53 +453,6 @@
     }
   ],
   "upcoming": [
-    {
-      "game_id": 732527,
-      "date": "24.10.2026",
-      "time": "16:30",
-      "status": "upcoming",
-      "status_code": 0,
-      "finished_type": null,
-      "level": "U16 Suomi-sarja",
-      "level_id": 1138,
-      "sub_serie_id": null,
-      "rink": "Mänttä",
-      "rink_id": null,
-      "small_area": false,
-      "spectators": 0,
-      "venue": "away",
-      "sisu_team": {
-        "team_id": 1305184724,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U16",
-        "abbreviation": "SiSu"
-      },
-      "home": {
-        "team_id": 73529035,
-        "name": null,
-        "abbreviation": "KPK / KeuPa HT",
-        "association_id": 10114274,
-        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114274.png",
-        "goals": null
-      },
-      "away": {
-        "team_id": 1305184724,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U16",
-        "abbreviation": "SiSu",
-        "association_id": 11015646,
-        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": null
-      },
-      "score": null,
-      "period_scores": null,
-      "urls": {
-        "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2721476&lang=fi"
-      },
-      "link_is_specific": true,
-      "link_source": "verified_override",
-      "denied_results": false,
-      "denied_stats": false,
-      "no_score_tracking": false
-    },
     {
       "game_id": 758161,
       "date": "24.10.2026",
@@ -622,7 +575,7 @@
         "abbreviation": "Pelicans Länsi Valkoinen",
         "association_id": 11019913,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11019913.png",
-        "goals": 13
+        "goals": 14
       },
       "away": {
         "team_id": 1368627586,
@@ -686,6 +639,53 @@
       },
       "link_is_specific": false,
       "link_source": "unresolved",
+      "denied_results": false,
+      "denied_stats": false,
+      "no_score_tracking": false
+    },
+    {
+      "game_id": 732527,
+      "date": "24.10.2026",
+      "time": "16:30",
+      "status": "live",
+      "status_code": 11,
+      "finished_type": null,
+      "level": "U16 Suomi-sarja",
+      "level_id": 1138,
+      "sub_serie_id": null,
+      "rink": "Mänttä",
+      "rink_id": null,
+      "small_area": false,
+      "spectators": 0,
+      "venue": "away",
+      "sisu_team": {
+        "team_id": 1305184724,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U16",
+        "abbreviation": "SiSu"
+      },
+      "home": {
+        "team_id": 73529035,
+        "name": null,
+        "abbreviation": "KPK / KeuPa HT",
+        "association_id": 10114274,
+        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114274.png",
+        "goals": 0
+      },
+      "away": {
+        "team_id": 1305184724,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U16",
+        "abbreviation": "SiSu",
+        "association_id": 11015646,
+        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
+        "goals": 0
+      },
+      "score": null,
+      "period_scores": null,
+      "urls": {
+        "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2721476&lang=fi"
+      },
+      "link_is_specific": true,
+      "link_source": "verified_override",
       "denied_results": false,
       "denied_stats": false,
       "no_score_tracking": false
