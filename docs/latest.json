@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T17:00:25+03:00",
+  "generated_at": "2026-10-24T17:05:24+03:00",
   "date": "2026-10-24",
   "date_fi": "24.10.2026",
   "club": {
@@ -22,8 +22,8 @@
   "counts": {
     "total": 9,
     "upcoming": 1,
-    "live": 3,
-    "finished": 5,
+    "live": 2,
+    "finished": 6,
     "other": 0,
     "teams": 37
   },
@@ -267,9 +267,9 @@
       "game_id": 727992,
       "date": "24.10.2026",
       "time": "15:50",
-      "status": "live",
-      "status_code": 16,
-      "finished_type": null,
+      "status": "finished",
+      "status_code": 2,
+      "finished_type": "regulation",
       "level": "U13 Sininen",
       "level_id": 1144,
       "sub_serie_id": null,
@@ -299,7 +299,7 @@
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114562.png",
         "goals": 1
       },
-      "score": null,
+      "score": "8-1",
       "period_scores": null,
       "urls": {
         "gamecentre": "https://tulospalvelu.leijonat.fi/"
@@ -502,53 +502,6 @@
     }
   ],
   "live": [
-    {
-      "game_id": 727992,
-      "date": "24.10.2026",
-      "time": "15:50",
-      "status": "live",
-      "status_code": 16,
-      "finished_type": null,
-      "level": "U13 Sininen",
-      "level_id": 1144,
-      "sub_serie_id": null,
-      "rink": "Hakio C",
-      "rink_id": null,
-      "small_area": false,
-      "spectators": 40,
-      "venue": "home",
-      "sisu_team": {
-        "team_id": 1368626549,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U13 punainen",
-        "abbreviation": "SiSu punainen"
-      },
-      "home": {
-        "team_id": 1368626549,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U13 punainen",
-        "abbreviation": "SiSu punainen",
-        "association_id": 11015646,
-        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 8
-      },
-      "away": {
-        "team_id": 1368626651,
-        "name": null,
-        "abbreviation": "Tappara Sininen",
-        "association_id": 10114562,
-        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114562.png",
-        "goals": 1
-      },
-      "score": null,
-      "period_scores": null,
-      "urls": {
-        "gamecentre": "https://tulospalvelu.leijonat.fi/"
-      },
-      "link_is_specific": false,
-      "link_source": "unresolved",
-      "denied_results": false,
-      "denied_stats": false,
-      "no_score_tracking": false
-    },
     {
       "game_id": 732527,
       "date": "24.10.2026",
@@ -870,6 +823,53 @@
         "goals": 0
       },
       "score": "18-0",
+      "period_scores": null,
+      "urls": {
+        "gamecentre": "https://tulospalvelu.leijonat.fi/"
+      },
+      "link_is_specific": false,
+      "link_source": "unresolved",
+      "denied_results": false,
+      "denied_stats": false,
+      "no_score_tracking": false
+    },
+    {
+      "game_id": 727992,
+      "date": "24.10.2026",
+      "time": "15:50",
+      "status": "finished",
+      "status_code": 2,
+      "finished_type": "regulation",
+      "level": "U13 Sininen",
+      "level_id": 1144,
+      "sub_serie_id": null,
+      "rink": "Hakio C",
+      "rink_id": null,
+      "small_area": false,
+      "spectators": 40,
+      "venue": "home",
+      "sisu_team": {
+        "team_id": 1368626549,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U13 punainen",
+        "abbreviation": "SiSu punainen"
+      },
+      "home": {
+        "team_id": 1368626549,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U13 punainen",
+        "abbreviation": "SiSu punainen",
+        "association_id": 11015646,
+        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
+        "goals": 8
+      },
+      "away": {
+        "team_id": 1368626651,
+        "name": null,
+        "abbreviation": "Tappara Sininen",
+        "association_id": 10114562,
+        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114562.png",
+        "goals": 1
+      },
+      "score": "8-1",
       "period_scores": null,
       "urls": {
         "gamecentre": "https://tulospalvelu.leijonat.fi/"
