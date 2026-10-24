@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T18:40:24+03:00",
+  "generated_at": "2026-10-24T18:45:25+03:00",
   "date": "2026-10-24",
   "date_fi": "24.10.2026",
   "club": {
@@ -409,7 +409,7 @@
       "date": "24.10.2026",
       "time": "18:00",
       "status": "live",
-      "status_code": 13,
+      "status_code": 14,
       "finished_type": null,
       "level": "U13 Valkoinen",
       "level_id": 1146,
@@ -417,7 +417,7 @@
       "rink": "Hakio S",
       "rink_id": null,
       "small_area": false,
-      "spectators": 0,
+      "spectators": 20,
       "venue": "home",
       "sisu_team": {
         "team_id": 1368626550,
@@ -459,7 +459,7 @@
       "date": "24.10.2026",
       "time": "18:00",
       "status": "live",
-      "status_code": 13,
+      "status_code": 14,
       "finished_type": null,
       "level": "U13 Valkoinen",
       "level_id": 1146,
@@ -467,7 +467,7 @@
       "rink": "Hakio S",
       "rink_id": null,
       "small_area": false,
-      "spectators": 0,
+      "spectators": 20,
       "venue": "home",
       "sisu_team": {
         "team_id": 1368626550,
