@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T15:20:24+03:00",
+  "generated_at": "2026-10-24T15:25:25+03:00",
   "date": "2026-10-24",
   "date_fi": "24.10.2026",
   "club": {
@@ -156,7 +156,7 @@
         "abbreviation": "VaPS",
         "association_id": 10114122,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114122.png",
-        "goals": 9
+        "goals": 10
       },
       "score": null,
       "period_scores": null,
@@ -724,7 +724,7 @@
         "abbreviation": "VaPS",
         "association_id": 10114122,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114122.png",
-        "goals": 9
+        "goals": 10
       },
       "score": null,
       "period_scores": null,
