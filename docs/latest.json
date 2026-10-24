@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T17:50:24+03:00",
+  "generated_at": "2026-10-24T17:55:25+03:00",
   "date": "2026-10-24",
   "date_fi": "24.10.2026",
   "club": {
@@ -362,7 +362,7 @@
       "date": "24.10.2026",
       "time": "17:00",
       "status": "live",
-      "status_code": 13,
+      "status_code": 15,
       "finished_type": null,
       "level": "U11 sarja",
       "level_id": 1142,
@@ -383,7 +383,7 @@
         "abbreviation": "Pelicans Länsi Valkoinen",
         "association_id": 11019913,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11019913.png",
-        "goals": 10
+        "goals": 11
       },
       "away": {
         "team_id": 1368627586,
@@ -391,7 +391,7 @@
         "abbreviation": "SiSu Valkoinen",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 1
+        "goals": 2
       },
       "score": null,
       "period_scores": null,
@@ -506,7 +506,7 @@
       "date": "24.10.2026",
       "time": "17:00",
       "status": "live",
-      "status_code": 13,
+      "status_code": 15,
       "finished_type": null,
       "level": "U11 sarja",
       "level_id": 1142,
@@ -527,7 +527,7 @@
         "abbreviation": "Pelicans Länsi Valkoinen",
         "association_id": 11019913,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11019913.png",
-        "goals": 10
+        "goals": 11
       },
       "away": {
         "team_id": 1368627586,
@@ -535,7 +535,7 @@
         "abbreviation": "SiSu Valkoinen",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 1
+        "goals": 2
       },
       "score": null,
       "period_scores": null,
