@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T17:20:25+03:00",
+  "generated_at": "2026-10-24T17:25:23+03:00",
   "date": "2026-10-24",
   "date_fi": "24.10.2026",
   "club": {
@@ -336,7 +336,7 @@
         "abbreviation": "KPK / KeuPa HT",
         "association_id": 10114274,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114274.png",
-        "goals": 3
+        "goals": 4
       },
       "away": {
         "team_id": 1305184724,
@@ -383,7 +383,7 @@
         "abbreviation": "Pelicans Länsi Valkoinen",
         "association_id": 11019913,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11019913.png",
-        "goals": 7
+        "goals": 8
       },
       "away": {
         "team_id": 1368627586,
@@ -528,7 +528,7 @@
         "abbreviation": "KPK / KeuPa HT",
         "association_id": 10114274,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114274.png",
-        "goals": 3
+        "goals": 4
       },
       "away": {
         "team_id": 1305184724,
@@ -575,7 +575,7 @@
         "abbreviation": "Pelicans Länsi Valkoinen",
         "association_id": 11019913,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11019913.png",
-        "goals": 7
+        "goals": 8
       },
       "away": {
         "team_id": 1368627586,
