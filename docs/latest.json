@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T16:00:26+03:00",
+  "generated_at": "2026-10-24T16:05:24+03:00",
   "date": "2026-10-24",
   "date_fi": "24.10.2026",
   "club": {
@@ -242,7 +242,7 @@
         "abbreviation": "Pelicans Länsi Valkoinen",
         "association_id": 11019913,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11019913.png",
-        "goals": 5
+        "goals": 8
       },
       "away": {
         "team_id": 1368627586,
@@ -622,7 +622,7 @@
         "abbreviation": "Pelicans Länsi Valkoinen",
         "association_id": 11019913,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11019913.png",
-        "goals": 5
+        "goals": 8
       },
       "away": {
         "team_id": 1368627586,
