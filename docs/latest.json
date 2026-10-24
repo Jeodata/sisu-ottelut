@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T16:30:25+03:00",
+  "generated_at": "2026-10-24T16:35:24+03:00",
   "date": "2026-10-24",
   "date_fi": "24.10.2026",
   "club": {
@@ -242,7 +242,7 @@
         "abbreviation": "Pelicans Länsi Valkoinen",
         "association_id": 11019913,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11019913.png",
-        "goals": 14
+        "goals": 15
       },
       "away": {
         "team_id": 1368627586,
@@ -268,7 +268,7 @@
       "date": "24.10.2026",
       "time": "15:50",
       "status": "live",
-      "status_code": 13,
+      "status_code": 15,
       "finished_type": null,
       "level": "U13 Sininen",
       "level_id": 1144,
@@ -276,7 +276,7 @@
       "rink": "Hakio C",
       "rink_id": null,
       "small_area": false,
-      "spectators": 20,
+      "spectators": 40,
       "venue": "home",
       "sisu_team": {
         "team_id": 1368626549,
@@ -289,7 +289,7 @@
         "abbreviation": "SiSu punainen",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 2
+        "goals": 3
       },
       "away": {
         "team_id": 1368626651,
@@ -336,7 +336,7 @@
         "abbreviation": "KPK / KeuPa HT",
         "association_id": 10114274,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114274.png",
-        "goals": 0
+        "goals": 1
       },
       "away": {
         "team_id": 1305184724,
@@ -575,7 +575,7 @@
         "abbreviation": "Pelicans Länsi Valkoinen",
         "association_id": 11019913,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11019913.png",
-        "goals": 14
+        "goals": 15
       },
       "away": {
         "team_id": 1368627586,
@@ -601,7 +601,7 @@
       "date": "24.10.2026",
       "time": "15:50",
       "status": "live",
-      "status_code": 13,
+      "status_code": 15,
       "finished_type": null,
       "level": "U13 Sininen",
       "level_id": 1144,
@@ -609,7 +609,7 @@
       "rink": "Hakio C",
       "rink_id": null,
       "small_area": false,
-      "spectators": 20,
+      "spectators": 40,
       "venue": "home",
       "sisu_team": {
         "team_id": 1368626549,
@@ -622,7 +622,7 @@
         "abbreviation": "SiSu punainen",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 2
+        "goals": 3
       },
       "away": {
         "team_id": 1368626651,
@@ -669,7 +669,7 @@
         "abbreviation": "KPK / KeuPa HT",
         "association_id": 10114274,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114274.png",
-        "goals": 0
+        "goals": 1
       },
       "away": {
         "team_id": 1305184724,
