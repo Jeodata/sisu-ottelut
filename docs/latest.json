@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T14:20:24+03:00",
+  "generated_at": "2026-10-24T14:25:23+03:00",
   "date": "2026-10-24",
   "date_fi": "24.10.2026",
   "club": {
@@ -21,8 +21,8 @@
   },
   "counts": {
     "total": 9,
-    "upcoming": 7,
-    "live": 0,
+    "upcoming": 6,
+    "live": 1,
     "finished": 2,
     "other": 0,
     "teams": 37
@@ -126,8 +126,8 @@
       "game_id": 752883,
       "date": "24.10.2026",
       "time": "14:20",
-      "status": "upcoming",
-      "status_code": 0,
+      "status": "live",
+      "status_code": 11,
       "finished_type": null,
       "level": "U12 sarja",
       "level_id": 1143,
@@ -148,7 +148,7 @@
         "abbreviation": "SiSu Valkoinen",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": null
+        "goals": 0
       },
       "away": {
         "team_id": 1368627281,
@@ -156,7 +156,7 @@
         "abbreviation": "VaPS",
         "association_id": 10114122,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114122.png",
-        "goals": null
+        "goals": 0
       },
       "score": null,
       "period_scores": null,
@@ -454,53 +454,6 @@
   ],
   "upcoming": [
     {
-      "game_id": 752883,
-      "date": "24.10.2026",
-      "time": "14:20",
-      "status": "upcoming",
-      "status_code": 0,
-      "finished_type": null,
-      "level": "U12 sarja",
-      "level_id": 1143,
-      "sub_serie_id": null,
-      "rink": "Hakio C",
-      "rink_id": null,
-      "small_area": false,
-      "spectators": 20,
-      "venue": "home",
-      "sisu_team": {
-        "team_id": 1368627072,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U12 Valkoinen",
-        "abbreviation": "SiSu Valkoinen"
-      },
-      "home": {
-        "team_id": 1368627072,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U12 Valkoinen",
-        "abbreviation": "SiSu Valkoinen",
-        "association_id": 11015646,
-        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": null
-      },
-      "away": {
-        "team_id": 1368627281,
-        "name": null,
-        "abbreviation": "VaPS",
-        "association_id": 10114122,
-        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114122.png",
-        "goals": null
-      },
-      "score": null,
-      "period_scores": null,
-      "urls": {
-        "gamecentre": "https://tulospalvelu.leijonat.fi/"
-      },
-      "link_is_specific": false,
-      "link_source": "unresolved",
-      "denied_results": false,
-      "denied_stats": false,
-      "no_score_tracking": false
-    },
-    {
       "game_id": 757924,
       "date": "24.10.2026",
       "time": "14:40",
@@ -783,7 +736,55 @@
       "no_score_tracking": false
     }
   ],
-  "live": [],
+  "live": [
+    {
+      "game_id": 752883,
+      "date": "24.10.2026",
+      "time": "14:20",
+      "status": "live",
+      "status_code": 11,
+      "finished_type": null,
+      "level": "U12 sarja",
+      "level_id": 1143,
+      "sub_serie_id": null,
+      "rink": "Hakio C",
+      "rink_id": null,
+      "small_area": false,
+      "spectators": 20,
+      "venue": "home",
+      "sisu_team": {
+        "team_id": 1368627072,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U12 Valkoinen",
+        "abbreviation": "SiSu Valkoinen"
+      },
+      "home": {
+        "team_id": 1368627072,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U12 Valkoinen",
+        "abbreviation": "SiSu Valkoinen",
+        "association_id": 11015646,
+        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
+        "goals": 0
+      },
+      "away": {
+        "team_id": 1368627281,
+        "name": null,
+        "abbreviation": "VaPS",
+        "association_id": 10114122,
+        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114122.png",
+        "goals": 0
+      },
+      "score": null,
+      "period_scores": null,
+      "urls": {
+        "gamecentre": "https://tulospalvelu.leijonat.fi/"
+      },
+      "link_is_specific": false,
+      "link_source": "unresolved",
+      "denied_results": false,
+      "denied_stats": false,
+      "no_score_tracking": false
+    }
+  ],
   "finished": [
     {
       "game_id": 752874,
