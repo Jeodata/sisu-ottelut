@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T16:20:22+03:00",
+  "generated_at": "2026-10-24T16:23:56+03:00",
   "date": "2026-10-24",
   "date_fi": "24.10.2026",
   "club": {
@@ -221,7 +221,7 @@
       "date": "24.10.2026",
       "time": "15:30",
       "status": "live",
-      "status_code": 14,
+      "status_code": 15,
       "finished_type": null,
       "level": "U11 sarja",
       "level_id": 1142,
@@ -242,7 +242,7 @@
         "abbreviation": "Pelicans Länsi Valkoinen",
         "association_id": 11019913,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11019913.png",
-        "goals": 12
+        "goals": 13
       },
       "away": {
         "team_id": 1368627586,
@@ -601,7 +601,7 @@
       "date": "24.10.2026",
       "time": "15:30",
       "status": "live",
-      "status_code": 14,
+      "status_code": 15,
       "finished_type": null,
       "level": "U11 sarja",
       "level_id": 1142,
@@ -622,7 +622,7 @@
         "abbreviation": "Pelicans Länsi Valkoinen",
         "association_id": 11019913,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11019913.png",
-        "goals": 12
+        "goals": 13
       },
       "away": {
         "team_id": 1368627586,
