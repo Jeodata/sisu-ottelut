@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T17:35:25+03:00",
+  "generated_at": "2026-10-24T17:40:25+03:00",
   "date": "2026-10-24",
   "date_fi": "24.10.2026",
   "club": {
@@ -21,8 +21,8 @@
   },
   "counts": {
     "total": 9,
-    "upcoming": 1,
-    "live": 2,
+    "upcoming": 0,
+    "live": 3,
     "finished": 6,
     "other": 0,
     "teams": 37
@@ -408,8 +408,8 @@
       "game_id": 731576,
       "date": "24.10.2026",
       "time": "18:00",
-      "status": "upcoming",
-      "status_code": 0,
+      "status": "live",
+      "status_code": 1,
       "finished_type": null,
       "level": "U13 Valkoinen",
       "level_id": 1146,
@@ -430,7 +430,7 @@
         "abbreviation": "SiSu valkoinen",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": null
+        "goals": 0
       },
       "away": {
         "team_id": 1368626690,
@@ -438,7 +438,7 @@
         "abbreviation": "Pelicans Valkoinen 2",
         "association_id": 11019913,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11019913.png",
-        "goals": null
+        "goals": 0
       },
       "score": null,
       "period_scores": null,
@@ -452,55 +452,7 @@
       "no_score_tracking": false
     }
   ],
-  "upcoming": [
-    {
-      "game_id": 731576,
-      "date": "24.10.2026",
-      "time": "18:00",
-      "status": "upcoming",
-      "status_code": 0,
-      "finished_type": null,
-      "level": "U13 Valkoinen",
-      "level_id": 1146,
-      "sub_serie_id": null,
-      "rink": "Hakio S",
-      "rink_id": null,
-      "small_area": false,
-      "spectators": 0,
-      "venue": "home",
-      "sisu_team": {
-        "team_id": 1368626550,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U13 valkoinen",
-        "abbreviation": "SiSu valkoinen"
-      },
-      "home": {
-        "team_id": 1368626550,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U13 valkoinen",
-        "abbreviation": "SiSu valkoinen",
-        "association_id": 11015646,
-        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": null
-      },
-      "away": {
-        "team_id": 1368626690,
-        "name": null,
-        "abbreviation": "Pelicans Valkoinen 2",
-        "association_id": 11019913,
-        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11019913.png",
-        "goals": null
-      },
-      "score": null,
-      "period_scores": null,
-      "urls": {
-        "gamecentre": "https://tulospalvelu.leijonat.fi/"
-      },
-      "link_is_specific": false,
-      "link_source": "unresolved",
-      "denied_results": false,
-      "denied_stats": false,
-      "no_score_tracking": false
-    }
-  ],
+  "upcoming": [],
   "live": [
     {
       "game_id": 732527,
@@ -584,6 +536,53 @@
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
         "goals": 1
+      },
+      "score": null,
+      "period_scores": null,
+      "urls": {
+        "gamecentre": "https://tulospalvelu.leijonat.fi/"
+      },
+      "link_is_specific": false,
+      "link_source": "unresolved",
+      "denied_results": false,
+      "denied_stats": false,
+      "no_score_tracking": false
+    },
+    {
+      "game_id": 731576,
+      "date": "24.10.2026",
+      "time": "18:00",
+      "status": "live",
+      "status_code": 1,
+      "finished_type": null,
+      "level": "U13 Valkoinen",
+      "level_id": 1146,
+      "sub_serie_id": null,
+      "rink": "Hakio S",
+      "rink_id": null,
+      "small_area": false,
+      "spectators": 0,
+      "venue": "home",
+      "sisu_team": {
+        "team_id": 1368626550,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U13 valkoinen",
+        "abbreviation": "SiSu valkoinen"
+      },
+      "home": {
+        "team_id": 1368626550,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U13 valkoinen",
+        "abbreviation": "SiSu valkoinen",
+        "association_id": 11015646,
+        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
+        "goals": 0
+      },
+      "away": {
+        "team_id": 1368626690,
+        "name": null,
+        "abbreviation": "Pelicans Valkoinen 2",
+        "association_id": 11019913,
+        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11019913.png",
+        "goals": 0
       },
       "score": null,
       "period_scores": null,
