@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T18:45:25+03:00",
+  "generated_at": "2026-10-24T18:50:29+03:00",
   "date": "2026-10-24",
   "date_fi": "24.10.2026",
   "club": {
@@ -409,7 +409,7 @@
       "date": "24.10.2026",
       "time": "18:00",
       "status": "live",
-      "status_code": 14,
+      "status_code": 15,
       "finished_type": null,
       "level": "U13 Valkoinen",
       "level_id": 1146,
@@ -430,7 +430,7 @@
         "abbreviation": "SiSu valkoinen",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 6
+        "goals": 7
       },
       "away": {
         "team_id": 1368626690,
@@ -459,7 +459,7 @@
       "date": "24.10.2026",
       "time": "18:00",
       "status": "live",
-      "status_code": 14,
+      "status_code": 15,
       "finished_type": null,
       "level": "U13 Valkoinen",
       "level_id": 1146,
@@ -480,7 +480,7 @@
         "abbreviation": "SiSu valkoinen",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 6
+        "goals": 7
       },
       "away": {
         "team_id": 1368626690,
