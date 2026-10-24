@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T13:55:23+03:00",
+  "generated_at": "2026-10-24T14:00:23+03:00",
   "date": "2026-10-24",
   "date_fi": "24.10.2026",
   "club": {
@@ -135,7 +135,7 @@
       "rink": "Hakio C",
       "rink_id": null,
       "small_area": false,
-      "spectators": 0,
+      "spectators": 20,
       "venue": "home",
       "sisu_team": {
         "team_id": 1368627072,
@@ -466,7 +466,7 @@
       "rink": "Hakio C",
       "rink_id": null,
       "small_area": false,
-      "spectators": 0,
+      "spectators": 20,
       "venue": "home",
       "sisu_team": {
         "team_id": 1368627072,
