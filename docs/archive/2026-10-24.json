@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T15:30:23+03:00",
+  "generated_at": "2026-10-24T15:35:23+03:00",
   "date": "2026-10-24",
   "date_fi": "24.10.2026",
   "club": {
@@ -148,7 +148,7 @@
         "abbreviation": "SiSu Valkoinen",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 4
+        "goals": 5
       },
       "away": {
         "team_id": 1368627281,
@@ -156,7 +156,7 @@
         "abbreviation": "VaPS",
         "association_id": 10114122,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114122.png",
-        "goals": 11
+        "goals": 12
       },
       "score": null,
       "period_scores": null,
@@ -669,7 +669,7 @@
         "abbreviation": "SiSu Valkoinen",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 4
+        "goals": 5
       },
       "away": {
         "team_id": 1368627281,
@@ -677,7 +677,7 @@
         "abbreviation": "VaPS",
         "association_id": 10114122,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114122.png",
-        "goals": 11
+        "goals": 12
       },
       "score": null,
       "period_scores": null,
