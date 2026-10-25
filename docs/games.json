@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T14:20:24+02:00",
+  "generated_at": "2026-10-25T14:25:24+02:00",
   "date": "2026-10-25",
   "date_fi": "25.10.2026",
   "club": {
@@ -21,8 +21,8 @@
   },
   "counts": {
     "total": 8,
-    "upcoming": 2,
-    "live": 1,
+    "upcoming": 1,
+    "live": 2,
     "finished": 5,
     "other": 0,
     "teams": 37
@@ -314,8 +314,8 @@
       "game_id": 735159,
       "date": "25.10.2026",
       "time": "14:30",
-      "status": "upcoming",
-      "status_code": 0,
+      "status": "live",
+      "status_code": 1,
       "finished_type": null,
       "level": "U18 II-divisioona",
       "level_id": 1136,
@@ -336,7 +336,7 @@
         "abbreviation": "SiSu",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": null
+        "goals": 0
       },
       "away": {
         "team_id": 1368628225,
@@ -344,7 +344,7 @@
         "abbreviation": "Uplakers",
         "association_id": 10658853,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10658853.png",
-        "goals": null
+        "goals": 0
       },
       "score": null,
       "period_scores": null,
@@ -406,53 +406,6 @@
     }
   ],
   "upcoming": [
-    {
-      "game_id": 735159,
-      "date": "25.10.2026",
-      "time": "14:30",
-      "status": "upcoming",
-      "status_code": 0,
-      "finished_type": null,
-      "level": "U18 II-divisioona",
-      "level_id": 1136,
-      "sub_serie_id": null,
-      "rink": "HML hh",
-      "rink_id": null,
-      "small_area": false,
-      "spectators": 0,
-      "venue": "home",
-      "sisu_team": {
-        "team_id": 1368629034,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U18",
-        "abbreviation": "SiSu"
-      },
-      "home": {
-        "team_id": 1368629034,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U18",
-        "abbreviation": "SiSu",
-        "association_id": 11015646,
-        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": null
-      },
-      "away": {
-        "team_id": 1368628225,
-        "name": null,
-        "abbreviation": "Uplakers",
-        "association_id": 10658853,
-        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10658853.png",
-        "goals": null
-      },
-      "score": null,
-      "period_scores": null,
-      "urls": {
-        "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2727976&lang=fi"
-      },
-      "link_is_specific": true,
-      "link_source": "verified_override",
-      "denied_results": false,
-      "denied_stats": false,
-      "no_score_tracking": false
-    },
     {
       "game_id": 757859,
       "date": "25.10.2026",
@@ -545,6 +498,53 @@
       },
       "link_is_specific": false,
       "link_source": "unresolved",
+      "denied_results": false,
+      "denied_stats": false,
+      "no_score_tracking": false
+    },
+    {
+      "game_id": 735159,
+      "date": "25.10.2026",
+      "time": "14:30",
+      "status": "live",
+      "status_code": 1,
+      "finished_type": null,
+      "level": "U18 II-divisioona",
+      "level_id": 1136,
+      "sub_serie_id": null,
+      "rink": "HML hh",
+      "rink_id": null,
+      "small_area": false,
+      "spectators": 0,
+      "venue": "home",
+      "sisu_team": {
+        "team_id": 1368629034,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U18",
+        "abbreviation": "SiSu"
+      },
+      "home": {
+        "team_id": 1368629034,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U18",
+        "abbreviation": "SiSu",
+        "association_id": 11015646,
+        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
+        "goals": 0
+      },
+      "away": {
+        "team_id": 1368628225,
+        "name": null,
+        "abbreviation": "Uplakers",
+        "association_id": 10658853,
+        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10658853.png",
+        "goals": 0
+      },
+      "score": null,
+      "period_scores": null,
+      "urls": {
+        "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2727976&lang=fi"
+      },
+      "link_is_specific": true,
+      "link_source": "verified_override",
       "denied_results": false,
       "denied_stats": false,
       "no_score_tracking": false
