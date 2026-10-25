@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T16:25:26+02:00",
+  "generated_at": "2026-10-25T16:30:24+02:00",
   "date": "2026-10-25",
   "date_fi": "25.10.2026",
   "club": {
@@ -323,7 +323,7 @@
       "rink": "HML hh",
       "rink_id": null,
       "small_area": false,
-      "spectators": 0,
+      "spectators": 70,
       "venue": "home",
       "sisu_team": {
         "team_id": 1368629034,
@@ -344,7 +344,7 @@
         "abbreviation": "Uplakers",
         "association_id": 10658853,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10658853.png",
-        "goals": 11
+        "goals": 12
       },
       "score": null,
       "period_scores": null,
@@ -383,7 +383,7 @@
         "abbreviation": "SiSu Punainen",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 7
+        "goals": 8
       },
       "away": {
         "team_id": 1368627821,
@@ -420,7 +420,7 @@
       "rink": "HML hh",
       "rink_id": null,
       "small_area": false,
-      "spectators": 0,
+      "spectators": 70,
       "venue": "home",
       "sisu_team": {
         "team_id": 1368629034,
@@ -441,7 +441,7 @@
         "abbreviation": "Uplakers",
         "association_id": 10658853,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10658853.png",
-        "goals": 11
+        "goals": 12
       },
       "score": null,
       "period_scores": null,
@@ -480,7 +480,7 @@
         "abbreviation": "SiSu Punainen",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 7
+        "goals": 8
       },
       "away": {
         "team_id": 1368627821,
