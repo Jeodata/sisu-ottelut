@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T15:35:24+02:00",
+  "generated_at": "2026-10-25T15:40:24+02:00",
   "date": "2026-10-25",
   "date_fi": "25.10.2026",
   "club": {
@@ -336,7 +336,7 @@
         "abbreviation": "SiSu",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 1
+        "goals": 2
       },
       "away": {
         "team_id": 1368628225,
@@ -362,7 +362,7 @@
       "date": "25.10.2026",
       "time": "15:40",
       "status": "live",
-      "status_code": 1,
+      "status_code": 11,
       "finished_type": null,
       "level": "U11 sarja",
       "level_id": 1142,
@@ -433,7 +433,7 @@
         "abbreviation": "SiSu",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 1
+        "goals": 2
       },
       "away": {
         "team_id": 1368628225,
@@ -459,7 +459,7 @@
       "date": "25.10.2026",
       "time": "15:40",
       "status": "live",
-      "status_code": 1,
+      "status_code": 11,
       "finished_type": null,
       "level": "U11 sarja",
       "level_id": 1142,
