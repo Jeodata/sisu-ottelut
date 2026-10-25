@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T15:53:51+02:00",
+  "generated_at": "2026-10-25T15:55:23+02:00",
   "date": "2026-10-25",
   "date_fi": "25.10.2026",
   "club": {
@@ -391,7 +391,7 @@
         "abbreviation": "Kisa-Eagles Sininen",
         "association_id": 50003291,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/50003291.png",
-        "goals": 4
+        "goals": 5
       },
       "score": null,
       "period_scores": null,
@@ -488,7 +488,7 @@
         "abbreviation": "Kisa-Eagles Sininen",
         "association_id": 50003291,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/50003291.png",
-        "goals": 4
+        "goals": 5
       },
       "score": null,
       "period_scores": null,
