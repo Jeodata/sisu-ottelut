@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T15:10:24+02:00",
+  "generated_at": "2026-10-25T15:15:24+02:00",
   "date": "2026-10-25",
   "date_fi": "25.10.2026",
   "club": {
@@ -297,7 +297,7 @@
         "abbreviation": "Kisa-Eagles Sininen",
         "association_id": 50003291,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/50003291.png",
-        "goals": 5
+        "goals": 6
       },
       "score": null,
       "period_scores": null,
@@ -315,7 +315,7 @@
       "date": "25.10.2026",
       "time": "14:30",
       "status": "live",
-      "status_code": 12,
+      "status_code": 13,
       "finished_type": null,
       "level": "U18 II-divisioona",
       "level_id": 1136,
@@ -489,7 +489,7 @@
         "abbreviation": "Kisa-Eagles Sininen",
         "association_id": 50003291,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/50003291.png",
-        "goals": 5
+        "goals": 6
       },
       "score": null,
       "period_scores": null,
@@ -507,7 +507,7 @@
       "date": "25.10.2026",
       "time": "14:30",
       "status": "live",
-      "status_code": 12,
+      "status_code": 13,
       "finished_type": null,
       "level": "U18 II-divisioona",
       "level_id": 1136,
