@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T15:20:23+02:00",
+  "generated_at": "2026-10-25T15:25:24+02:00",
   "date": "2026-10-25",
   "date_fi": "25.10.2026",
   "club": {
@@ -21,9 +21,9 @@
   },
   "counts": {
     "total": 8,
-    "upcoming": 1,
+    "upcoming": 0,
     "live": 2,
-    "finished": 5,
+    "finished": 6,
     "other": 0,
     "teams": 37
   },
@@ -267,9 +267,9 @@
       "game_id": 757857,
       "date": "25.10.2026",
       "time": "14:00",
-      "status": "live",
-      "status_code": 16,
-      "finished_type": null,
+      "status": "finished",
+      "status_code": 2,
+      "finished_type": "regulation",
       "level": "U11 sarja",
       "level_id": 1142,
       "sub_serie_id": null,
@@ -299,7 +299,7 @@
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/50003291.png",
         "goals": 6
       },
-      "score": null,
+      "score": "12-6",
       "period_scores": null,
       "urls": {
         "gamecentre": "https://tulospalvelu.leijonat.fi/"
@@ -344,7 +344,7 @@
         "abbreviation": "Uplakers",
         "association_id": 10658853,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10658853.png",
-        "goals": 6
+        "goals": 7
       },
       "score": null,
       "period_scores": null,
@@ -361,8 +361,8 @@
       "game_id": 757859,
       "date": "25.10.2026",
       "time": "15:40",
-      "status": "upcoming",
-      "status_code": 0,
+      "status": "live",
+      "status_code": 1,
       "finished_type": null,
       "level": "U11 sarja",
       "level_id": 1142,
@@ -383,7 +383,7 @@
         "abbreviation": "SiSu Punainen",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": null
+        "goals": 0
       },
       "away": {
         "team_id": 1368627821,
@@ -391,7 +391,7 @@
         "abbreviation": "Kisa-Eagles Sininen",
         "association_id": 50003291,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/50003291.png",
-        "goals": null
+        "goals": 0
       },
       "score": null,
       "period_scores": null,
@@ -405,104 +405,9 @@
       "no_score_tracking": false
     }
   ],
-  "upcoming": [
-    {
-      "game_id": 757859,
-      "date": "25.10.2026",
-      "time": "15:40",
-      "status": "upcoming",
-      "status_code": 0,
-      "finished_type": null,
-      "level": "U11 sarja",
-      "level_id": 1142,
-      "sub_serie_id": null,
-      "rink": "Hakio S",
-      "rink_id": null,
-      "small_area": false,
-      "spectators": 0,
-      "venue": "home",
-      "sisu_team": {
-        "team_id": 1368627585,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U11 Punainen",
-        "abbreviation": "SiSu Punainen"
-      },
-      "home": {
-        "team_id": 1368627585,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U11 Punainen",
-        "abbreviation": "SiSu Punainen",
-        "association_id": 11015646,
-        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": null
-      },
-      "away": {
-        "team_id": 1368627821,
-        "name": null,
-        "abbreviation": "Kisa-Eagles Sininen",
-        "association_id": 50003291,
-        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/50003291.png",
-        "goals": null
-      },
-      "score": null,
-      "period_scores": null,
-      "urls": {
-        "gamecentre": "https://tulospalvelu.leijonat.fi/"
-      },
-      "link_is_specific": false,
-      "link_source": "unresolved",
-      "denied_results": false,
-      "denied_stats": false,
-      "no_score_tracking": false
-    }
-  ],
+  "upcoming": [],
   "live": [
     {
-      "game_id": 757857,
-      "date": "25.10.2026",
-      "time": "14:00",
-      "status": "live",
-      "status_code": 16,
-      "finished_type": null,
-      "level": "U11 sarja",
-      "level_id": 1142,
-      "sub_serie_id": null,
-      "rink": "Hakio S",
-      "rink_id": null,
-      "small_area": false,
-      "spectators": 30,
-      "venue": "home",
-      "sisu_team": {
-        "team_id": 1368627585,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U11 Punainen",
-        "abbreviation": "SiSu Punainen"
-      },
-      "home": {
-        "team_id": 1368627585,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U11 Punainen",
-        "abbreviation": "SiSu Punainen",
-        "association_id": 11015646,
-        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 12
-      },
-      "away": {
-        "team_id": 1368627821,
-        "name": null,
-        "abbreviation": "Kisa-Eagles Sininen",
-        "association_id": 50003291,
-        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/50003291.png",
-        "goals": 6
-      },
-      "score": null,
-      "period_scores": null,
-      "urls": {
-        "gamecentre": "https://tulospalvelu.leijonat.fi/"
-      },
-      "link_is_specific": false,
-      "link_source": "unresolved",
-      "denied_results": false,
-      "denied_stats": false,
-      "no_score_tracking": false
-    },
-    {
       "game_id": 735159,
       "date": "25.10.2026",
       "time": "14:30",
@@ -536,7 +441,7 @@
         "abbreviation": "Uplakers",
         "association_id": 10658853,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10658853.png",
-        "goals": 6
+        "goals": 7
       },
       "score": null,
       "period_scores": null,
@@ -545,6 +450,53 @@
       },
       "link_is_specific": true,
       "link_source": "verified_override",
+      "denied_results": false,
+      "denied_stats": false,
+      "no_score_tracking": false
+    },
+    {
+      "game_id": 757859,
+      "date": "25.10.2026",
+      "time": "15:40",
+      "status": "live",
+      "status_code": 1,
+      "finished_type": null,
+      "level": "U11 sarja",
+      "level_id": 1142,
+      "sub_serie_id": null,
+      "rink": "Hakio S",
+      "rink_id": null,
+      "small_area": false,
+      "spectators": 0,
+      "venue": "home",
+      "sisu_team": {
+        "team_id": 1368627585,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U11 Punainen",
+        "abbreviation": "SiSu Punainen"
+      },
+      "home": {
+        "team_id": 1368627585,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U11 Punainen",
+        "abbreviation": "SiSu Punainen",
+        "association_id": 11015646,
+        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
+        "goals": 0
+      },
+      "away": {
+        "team_id": 1368627821,
+        "name": null,
+        "abbreviation": "Kisa-Eagles Sininen",
+        "association_id": 50003291,
+        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/50003291.png",
+        "goals": 0
+      },
+      "score": null,
+      "period_scores": null,
+      "urls": {
+        "gamecentre": "https://tulospalvelu.leijonat.fi/"
+      },
+      "link_is_specific": false,
+      "link_source": "unresolved",
       "denied_results": false,
       "denied_stats": false,
       "no_score_tracking": false
@@ -776,6 +728,53 @@
         "goals": 5
       },
       "score": "6-5",
+      "period_scores": null,
+      "urls": {
+        "gamecentre": "https://tulospalvelu.leijonat.fi/"
+      },
+      "link_is_specific": false,
+      "link_source": "unresolved",
+      "denied_results": false,
+      "denied_stats": false,
+      "no_score_tracking": false
+    },
+    {
+      "game_id": 757857,
+      "date": "25.10.2026",
+      "time": "14:00",
+      "status": "finished",
+      "status_code": 2,
+      "finished_type": "regulation",
+      "level": "U11 sarja",
+      "level_id": 1142,
+      "sub_serie_id": null,
+      "rink": "Hakio S",
+      "rink_id": null,
+      "small_area": false,
+      "spectators": 30,
+      "venue": "home",
+      "sisu_team": {
+        "team_id": 1368627585,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U11 Punainen",
+        "abbreviation": "SiSu Punainen"
+      },
+      "home": {
+        "team_id": 1368627585,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U11 Punainen",
+        "abbreviation": "SiSu Punainen",
+        "association_id": 11015646,
+        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
+        "goals": 12
+      },
+      "away": {
+        "team_id": 1368627821,
+        "name": null,
+        "abbreviation": "Kisa-Eagles Sininen",
+        "association_id": 50003291,
+        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/50003291.png",
+        "goals": 6
+      },
+      "score": "12-6",
       "period_scores": null,
       "urls": {
         "gamecentre": "https://tulospalvelu.leijonat.fi/"
