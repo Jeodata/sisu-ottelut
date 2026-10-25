@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T13:25:24+02:00",
+  "generated_at": "2026-10-25T13:30:24+02:00",
   "date": "2026-10-25",
   "date_fi": "25.10.2026",
   "club": {
@@ -242,7 +242,7 @@
         "abbreviation": "Pelicans Turkoosi",
         "association_id": 11019913,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11019913.png",
-        "goals": 3
+        "goals": 4
       },
       "away": {
         "team_id": 1368626549,
@@ -250,7 +250,7 @@
         "abbreviation": "SiSu punainen",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 3
+        "goals": 4
       },
       "score": null,
       "period_scores": null,
@@ -669,7 +669,7 @@
         "abbreviation": "Pelicans Turkoosi",
         "association_id": 11019913,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11019913.png",
-        "goals": 3
+        "goals": 4
       },
       "away": {
         "team_id": 1368626549,
@@ -677,7 +677,7 @@
         "abbreviation": "SiSu punainen",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 3
+        "goals": 4
       },
       "score": null,
       "period_scores": null,
