@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T15:40:24+02:00",
+  "generated_at": "2026-10-25T15:45:24+02:00",
   "date": "2026-10-25",
   "date_fi": "25.10.2026",
   "club": {
@@ -336,7 +336,7 @@
         "abbreviation": "SiSu",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 2
+        "goals": 3
       },
       "away": {
         "team_id": 1368628225,
@@ -344,7 +344,7 @@
         "abbreviation": "Uplakers",
         "association_id": 10658853,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10658853.png",
-        "goals": 8
+        "goals": 9
       },
       "score": null,
       "period_scores": null,
@@ -383,7 +383,7 @@
         "abbreviation": "SiSu Punainen",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 0
+        "goals": 1
       },
       "away": {
         "team_id": 1368627821,
@@ -391,7 +391,7 @@
         "abbreviation": "Kisa-Eagles Sininen",
         "association_id": 50003291,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/50003291.png",
-        "goals": 0
+        "goals": 1
       },
       "score": null,
       "period_scores": null,
@@ -433,7 +433,7 @@
         "abbreviation": "SiSu",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 2
+        "goals": 3
       },
       "away": {
         "team_id": 1368628225,
@@ -441,7 +441,7 @@
         "abbreviation": "Uplakers",
         "association_id": 10658853,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10658853.png",
-        "goals": 8
+        "goals": 9
       },
       "score": null,
       "period_scores": null,
@@ -480,7 +480,7 @@
         "abbreviation": "SiSu Punainen",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 0
+        "goals": 1
       },
       "away": {
         "team_id": 1368627821,
@@ -488,7 +488,7 @@
         "abbreviation": "Kisa-Eagles Sininen",
         "association_id": 50003291,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/50003291.png",
-        "goals": 0
+        "goals": 1
       },
       "score": null,
       "period_scores": null,
