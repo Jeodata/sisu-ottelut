@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T14:55:23+02:00",
+  "generated_at": "2026-10-25T15:00:26+02:00",
   "date": "2026-10-25",
   "date_fi": "25.10.2026",
   "club": {
@@ -289,7 +289,7 @@
         "abbreviation": "SiSu Punainen",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 7
+        "goals": 9
       },
       "away": {
         "team_id": 1368627821,
@@ -344,7 +344,7 @@
         "abbreviation": "Uplakers",
         "association_id": 10658853,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10658853.png",
-        "goals": 3
+        "goals": 4
       },
       "score": null,
       "period_scores": null,
@@ -481,7 +481,7 @@
         "abbreviation": "SiSu Punainen",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 7
+        "goals": 9
       },
       "away": {
         "team_id": 1368627821,
@@ -536,7 +536,7 @@
         "abbreviation": "Uplakers",
         "association_id": 10658853,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10658853.png",
-        "goals": 3
+        "goals": 4
       },
       "score": null,
       "period_scores": null,
