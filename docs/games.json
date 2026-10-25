@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T12:50:24+02:00",
+  "generated_at": "2026-10-25T12:55:24+02:00",
   "date": "2026-10-25",
   "date_fi": "25.10.2026",
   "club": {
@@ -21,8 +21,8 @@
   },
   "counts": {
     "total": 8,
-    "upcoming": 4,
-    "live": 2,
+    "upcoming": 3,
+    "live": 3,
     "finished": 2,
     "other": 0,
     "teams": 37
@@ -220,8 +220,8 @@
       "game_id": 727999,
       "date": "25.10.2026",
       "time": "13:00",
-      "status": "upcoming",
-      "status_code": 0,
+      "status": "live",
+      "status_code": 1,
       "finished_type": null,
       "level": "U13 Sininen",
       "level_id": 1144,
@@ -242,7 +242,7 @@
         "abbreviation": "Pelicans Turkoosi",
         "association_id": 11019913,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11019913.png",
-        "goals": null
+        "goals": 0
       },
       "away": {
         "team_id": 1368626549,
@@ -250,7 +250,7 @@
         "abbreviation": "SiSu punainen",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": null
+        "goals": 0
       },
       "score": null,
       "period_scores": null,
@@ -406,53 +406,6 @@
     }
   ],
   "upcoming": [
-    {
-      "game_id": 727999,
-      "date": "25.10.2026",
-      "time": "13:00",
-      "status": "upcoming",
-      "status_code": 0,
-      "finished_type": null,
-      "level": "U13 Sininen",
-      "level_id": 1144,
-      "sub_serie_id": null,
-      "rink": "Laune 2",
-      "rink_id": null,
-      "small_area": false,
-      "spectators": 0,
-      "venue": "away",
-      "sisu_team": {
-        "team_id": 1368626549,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U13 punainen",
-        "abbreviation": "SiSu punainen"
-      },
-      "home": {
-        "team_id": 1368626684,
-        "name": null,
-        "abbreviation": "Pelicans Turkoosi",
-        "association_id": 11019913,
-        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11019913.png",
-        "goals": null
-      },
-      "away": {
-        "team_id": 1368626549,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U13 punainen",
-        "abbreviation": "SiSu punainen",
-        "association_id": 11015646,
-        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": null
-      },
-      "score": null,
-      "period_scores": null,
-      "urls": {
-        "gamecentre": "https://tulospalvelu.leijonat.fi/"
-      },
-      "link_is_specific": false,
-      "link_source": "unresolved",
-      "denied_results": false,
-      "denied_stats": false,
-      "no_score_tracking": false
-    },
     {
       "game_id": 757857,
       "date": "25.10.2026",
@@ -689,6 +642,53 @@
       "denied_results": false,
       "denied_stats": false,
       "no_score_tracking": true
+    },
+    {
+      "game_id": 727999,
+      "date": "25.10.2026",
+      "time": "13:00",
+      "status": "live",
+      "status_code": 1,
+      "finished_type": null,
+      "level": "U13 Sininen",
+      "level_id": 1144,
+      "sub_serie_id": null,
+      "rink": "Laune 2",
+      "rink_id": null,
+      "small_area": false,
+      "spectators": 0,
+      "venue": "away",
+      "sisu_team": {
+        "team_id": 1368626549,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U13 punainen",
+        "abbreviation": "SiSu punainen"
+      },
+      "home": {
+        "team_id": 1368626684,
+        "name": null,
+        "abbreviation": "Pelicans Turkoosi",
+        "association_id": 11019913,
+        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11019913.png",
+        "goals": 0
+      },
+      "away": {
+        "team_id": 1368626549,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U13 punainen",
+        "abbreviation": "SiSu punainen",
+        "association_id": 11015646,
+        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
+        "goals": 0
+      },
+      "score": null,
+      "period_scores": null,
+      "urls": {
+        "gamecentre": "https://tulospalvelu.leijonat.fi/"
+      },
+      "link_is_specific": false,
+      "link_source": "unresolved",
+      "denied_results": false,
+      "denied_stats": false,
+      "no_score_tracking": false
     }
   ],
   "finished": [
