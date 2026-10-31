@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T14:15:23+02:00",
+  "generated_at": "2026-10-31T14:20:26+02:00",
   "date": "2026-10-31",
   "date_fi": "31.10.2026",
   "club": {
@@ -22,8 +22,8 @@
   "counts": {
     "total": 8,
     "upcoming": 6,
-    "live": 1,
-    "finished": 1,
+    "live": 0,
+    "finished": 2,
     "other": 0,
     "teams": 37
   },
@@ -79,16 +79,16 @@
       "game_id": 753348,
       "date": "31.10.2026",
       "time": "13:00",
-      "status": "live",
-      "status_code": 15,
-      "finished_type": null,
+      "status": "finished",
+      "status_code": 2,
+      "finished_type": "regulation",
       "level": "U12 sarja",
       "level_id": 1143,
       "sub_serie_id": null,
       "rink": "Hakio S",
       "rink_id": null,
       "small_area": false,
-      "spectators": 0,
+      "spectators": 30,
       "venue": "home",
       "sisu_team": {
         "team_id": 1368627073,
@@ -111,7 +111,7 @@
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114698.png",
         "goals": 3
       },
-      "score": null,
+      "score": "7-3",
       "period_scores": null,
       "urls": {
         "gamecentre": "https://tulospalvelu.leijonat.fi/"
@@ -691,55 +691,7 @@
       "no_score_tracking": false
     }
   ],
-  "live": [
-    {
-      "game_id": 753348,
-      "date": "31.10.2026",
-      "time": "13:00",
-      "status": "live",
-      "status_code": 15,
-      "finished_type": null,
-      "level": "U12 sarja",
-      "level_id": 1143,
-      "sub_serie_id": null,
-      "rink": "Hakio S",
-      "rink_id": null,
-      "small_area": false,
-      "spectators": 0,
-      "venue": "home",
-      "sisu_team": {
-        "team_id": 1368627073,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U12 Punainen",
-        "abbreviation": "SiSu Punainen"
-      },
-      "home": {
-        "team_id": 1368627073,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U12 Punainen",
-        "abbreviation": "SiSu Punainen",
-        "association_id": 11015646,
-        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 7
-      },
-      "away": {
-        "team_id": 1368627826,
-        "name": null,
-        "abbreviation": "Ilves Ottawa",
-        "association_id": 10114698,
-        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114698.png",
-        "goals": 3
-      },
-      "score": null,
-      "period_scores": null,
-      "urls": {
-        "gamecentre": "https://tulospalvelu.leijonat.fi/"
-      },
-      "link_is_specific": false,
-      "link_source": "unresolved",
-      "denied_results": false,
-      "denied_stats": false,
-      "no_score_tracking": false
-    }
-  ],
+  "live": [],
   "finished": [
     {
       "game_id": 728004,
@@ -778,6 +730,53 @@
         "goals": 15
       },
       "score": "2-15",
+      "period_scores": null,
+      "urls": {
+        "gamecentre": "https://tulospalvelu.leijonat.fi/"
+      },
+      "link_is_specific": false,
+      "link_source": "unresolved",
+      "denied_results": false,
+      "denied_stats": false,
+      "no_score_tracking": false
+    },
+    {
+      "game_id": 753348,
+      "date": "31.10.2026",
+      "time": "13:00",
+      "status": "finished",
+      "status_code": 2,
+      "finished_type": "regulation",
+      "level": "U12 sarja",
+      "level_id": 1143,
+      "sub_serie_id": null,
+      "rink": "Hakio S",
+      "rink_id": null,
+      "small_area": false,
+      "spectators": 30,
+      "venue": "home",
+      "sisu_team": {
+        "team_id": 1368627073,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U12 Punainen",
+        "abbreviation": "SiSu Punainen"
+      },
+      "home": {
+        "team_id": 1368627073,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U12 Punainen",
+        "abbreviation": "SiSu Punainen",
+        "association_id": 11015646,
+        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
+        "goals": 7
+      },
+      "away": {
+        "team_id": 1368627826,
+        "name": null,
+        "abbreviation": "Ilves Ottawa",
+        "association_id": 10114698,
+        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114698.png",
+        "goals": 3
+      },
+      "score": "7-3",
       "period_scores": null,
       "urls": {
         "gamecentre": "https://tulospalvelu.leijonat.fi/"
