@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T15:05:24+02:00",
+  "generated_at": "2026-10-31T15:10:23+02:00",
   "date": "2026-10-31",
   "date_fi": "31.10.2026",
   "club": {
@@ -156,7 +156,7 @@
         "abbreviation": "Ilves Ottawa",
         "association_id": 10114698,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114698.png",
-        "goals": 6
+        "goals": 7
       },
       "score": null,
       "period_scores": null,
@@ -679,7 +679,7 @@
         "abbreviation": "Ilves Ottawa",
         "association_id": 10114698,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114698.png",
-        "goals": 6
+        "goals": 7
       },
       "score": null,
       "period_scores": null,
