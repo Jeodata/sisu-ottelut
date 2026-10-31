@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T18:45:25+02:00",
+  "generated_at": "2026-10-31T18:50:25+02:00",
   "date": "2026-10-31",
   "date_fi": "31.10.2026",
   "club": {
@@ -268,7 +268,7 @@
       "date": "31.10.2026",
       "time": "17:30",
       "status": "live",
-      "status_code": 14,
+      "status_code": 15,
       "finished_type": null,
       "level": "U16 Suomi-sarja",
       "level_id": 1138,
@@ -461,7 +461,7 @@
       "date": "31.10.2026",
       "time": "17:30",
       "status": "live",
-      "status_code": 14,
+      "status_code": 15,
       "finished_type": null,
       "level": "U16 Suomi-sarja",
       "level_id": 1138,
