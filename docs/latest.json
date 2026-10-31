@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T18:50:25+02:00",
+  "generated_at": "2026-10-31T18:55:24+02:00",
   "date": "2026-10-31",
   "date_fi": "31.10.2026",
   "club": {
@@ -297,7 +297,7 @@
         "abbreviation": "Pingviinit",
         "association_id": 10114517,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114517.png",
-        "goals": 3
+        "goals": 4
       },
       "score": null,
       "period_scores": null,
@@ -490,7 +490,7 @@
         "abbreviation": "Pingviinit",
         "association_id": 10114517,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114517.png",
-        "goals": 3
+        "goals": 4
       },
       "score": null,
       "period_scores": null,
