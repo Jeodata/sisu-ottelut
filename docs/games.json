@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T16:10:23+02:00",
+  "generated_at": "2026-10-31T16:15:23+02:00",
   "date": "2026-10-31",
   "date_fi": "31.10.2026",
   "club": {
@@ -195,7 +195,7 @@
         "abbreviation": "SiSu valkoinen",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 1
+        "goals": 2
       },
       "away": {
         "team_id": 1368626495,
@@ -203,7 +203,7 @@
         "abbreviation": "Kiekko-Ahma Oranssi",
         "association_id": 10114407,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114407.png",
-        "goals": 0
+        "goals": 1
       },
       "score": null,
       "period_scores": null,
@@ -242,7 +242,7 @@
         "abbreviation": "KPK",
         "association_id": 10114274,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114274.png",
-        "goals": 1
+        "goals": 2
       },
       "away": {
         "team_id": 1368629034,
@@ -577,7 +577,7 @@
         "abbreviation": "SiSu valkoinen",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 1
+        "goals": 2
       },
       "away": {
         "team_id": 1368626495,
@@ -585,7 +585,7 @@
         "abbreviation": "Kiekko-Ahma Oranssi",
         "association_id": 10114407,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114407.png",
-        "goals": 0
+        "goals": 1
       },
       "score": null,
       "period_scores": null,
@@ -624,7 +624,7 @@
         "abbreviation": "KPK",
         "association_id": 10114274,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114274.png",
-        "goals": 1
+        "goals": 2
       },
       "away": {
         "team_id": 1368629034,
