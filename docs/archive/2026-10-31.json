@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T09:55:27+02:00",
+  "generated_at": "2026-10-31T10:00:24+02:00",
   "date": "2026-10-31",
   "date_fi": "31.10.2026",
   "club": {
@@ -33,7 +33,7 @@
       "date": "31.10.2026",
       "time": "10:00",
       "status": "live",
-      "status_code": 1,
+      "status_code": 11,
       "finished_type": null,
       "level": "U13 Sininen",
       "level_id": 1144,
@@ -744,7 +744,7 @@
       "date": "31.10.2026",
       "time": "10:00",
       "status": "live",
-      "status_code": 1,
+      "status_code": 11,
       "finished_type": null,
       "level": "U13 Sininen",
       "level_id": 1144,
