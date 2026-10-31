@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T18:05:37+02:00",
+  "generated_at": "2026-10-31T18:10:24+02:00",
   "date": "2026-10-31",
   "date_fi": "31.10.2026",
   "club": {
@@ -242,7 +242,7 @@
         "abbreviation": "KPK",
         "association_id": 10114274,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114274.png",
-        "goals": 14
+        "goals": 15
       },
       "away": {
         "team_id": 1368629034,
@@ -482,7 +482,7 @@
         "abbreviation": "KPK",
         "association_id": 10114274,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114274.png",
-        "goals": 14
+        "goals": 15
       },
       "away": {
         "team_id": 1368629034,
