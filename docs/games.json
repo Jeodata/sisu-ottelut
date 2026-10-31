@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T10:45:24+02:00",
+  "generated_at": "2026-10-31T10:50:25+02:00",
   "date": "2026-10-31",
   "date_fi": "31.10.2026",
   "club": {
@@ -33,7 +33,7 @@
       "date": "31.10.2026",
       "time": "10:00",
       "status": "live",
-      "status_code": 13,
+      "status_code": 15,
       "finished_type": null,
       "level": "U13 Sininen",
       "level_id": 1144,
@@ -62,7 +62,7 @@
         "abbreviation": "SiSu punainen",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 6
+        "goals": 8
       },
       "score": null,
       "period_scores": null,
@@ -744,7 +744,7 @@
       "date": "31.10.2026",
       "time": "10:00",
       "status": "live",
-      "status_code": 13,
+      "status_code": 15,
       "finished_type": null,
       "level": "U13 Sininen",
       "level_id": 1144,
@@ -773,7 +773,7 @@
         "abbreviation": "SiSu punainen",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 6
+        "goals": 8
       },
       "score": null,
       "period_scores": null,
