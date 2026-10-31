@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T17:25:25+02:00",
+  "generated_at": "2026-10-31T17:30:22+02:00",
   "date": "2026-10-31",
   "date_fi": "31.10.2026",
   "club": {
@@ -276,7 +276,7 @@
       "rink": "HML hh",
       "rink_id": null,
       "small_area": false,
-      "spectators": 0,
+      "spectators": 20,
       "venue": "home",
       "sisu_team": {
         "team_id": 1305184724,
@@ -563,7 +563,7 @@
       "rink": "HML hh",
       "rink_id": null,
       "small_area": false,
-      "spectators": 0,
+      "spectators": 20,
       "venue": "home",
       "sisu_team": {
         "team_id": 1305184724,
