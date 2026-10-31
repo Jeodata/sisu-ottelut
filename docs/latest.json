@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T13:50:25+02:00",
+  "generated_at": "2026-10-31T13:55:23+02:00",
   "date": "2026-10-31",
   "date_fi": "31.10.2026",
   "club": {
@@ -80,7 +80,7 @@
       "date": "31.10.2026",
       "time": "13:00",
       "status": "live",
-      "status_code": 13,
+      "status_code": 15,
       "finished_type": null,
       "level": "U12 sarja",
       "level_id": 1143,
@@ -101,7 +101,7 @@
         "abbreviation": "SiSu Punainen",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 5
+        "goals": 6
       },
       "away": {
         "team_id": 1368627826,
@@ -109,7 +109,7 @@
         "abbreviation": "Ilves Ottawa",
         "association_id": 10114698,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114698.png",
-        "goals": 1
+        "goals": 2
       },
       "score": null,
       "period_scores": null,
@@ -697,7 +697,7 @@
       "date": "31.10.2026",
       "time": "13:00",
       "status": "live",
-      "status_code": 13,
+      "status_code": 15,
       "finished_type": null,
       "level": "U12 sarja",
       "level_id": 1143,
@@ -718,7 +718,7 @@
         "abbreviation": "SiSu Punainen",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 5
+        "goals": 6
       },
       "away": {
         "team_id": 1368627826,
@@ -726,7 +726,7 @@
         "abbreviation": "Ilves Ottawa",
         "association_id": 10114698,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114698.png",
-        "goals": 1
+        "goals": 2
       },
       "score": null,
       "period_scores": null,
