@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T16:50:23+02:00",
+  "generated_at": "2026-10-31T16:55:23+02:00",
   "date": "2026-10-31",
   "date_fi": "31.10.2026",
   "club": {
@@ -182,7 +182,7 @@
       "rink": "Hakio S",
       "rink_id": null,
       "small_area": false,
-      "spectators": 0,
+      "spectators": 40,
       "venue": "home",
       "sisu_team": {
         "team_id": 1368626550,
@@ -195,7 +195,7 @@
         "abbreviation": "SiSu valkoinen",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 8
+        "goals": 9
       },
       "away": {
         "team_id": 1368626495,
@@ -221,7 +221,7 @@
       "date": "31.10.2026",
       "time": "16:00",
       "status": "live",
-      "status_code": 12,
+      "status_code": 13,
       "finished_type": null,
       "level": "U18 II-divisioona",
       "level_id": 1136,
@@ -564,7 +564,7 @@
       "rink": "Hakio S",
       "rink_id": null,
       "small_area": false,
-      "spectators": 0,
+      "spectators": 40,
       "venue": "home",
       "sisu_team": {
         "team_id": 1368626550,
@@ -577,7 +577,7 @@
         "abbreviation": "SiSu valkoinen",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 8
+        "goals": 9
       },
       "away": {
         "team_id": 1368626495,
@@ -603,7 +603,7 @@
       "date": "31.10.2026",
       "time": "16:00",
       "status": "live",
-      "status_code": 12,
+      "status_code": 13,
       "finished_type": null,
       "level": "U18 II-divisioona",
       "level_id": 1136,
