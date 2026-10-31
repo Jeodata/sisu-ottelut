@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T10:25:24+02:00",
+  "generated_at": "2026-10-31T10:30:25+02:00",
   "date": "2026-10-31",
   "date_fi": "31.10.2026",
   "club": {
@@ -41,7 +41,7 @@
       "rink": "Hollola",
       "rink_id": null,
       "small_area": false,
-      "spectators": 0,
+      "spectators": 56,
       "venue": "away",
       "sisu_team": {
         "team_id": 1368626549,
@@ -752,7 +752,7 @@
       "rink": "Hollola",
       "rink_id": null,
       "small_area": false,
-      "spectators": 0,
+      "spectators": 56,
       "venue": "away",
       "sisu_team": {
         "team_id": 1368626549,
