@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T19:45:24+02:00",
+  "generated_at": "2026-10-31T19:50:24+02:00",
   "date": "2026-10-31",
   "date_fi": "31.10.2026",
   "club": {
@@ -392,7 +392,7 @@
         "abbreviation": "HPK Blue",
         "association_id": 10114740,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114740.png",
-        "goals": 4
+        "goals": 5
       },
       "score": null,
       "period_scores": null,
@@ -442,7 +442,7 @@
         "abbreviation": "HPK Blue",
         "association_id": 10114740,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114740.png",
-        "goals": 4
+        "goals": 5
       },
       "score": null,
       "period_scores": null,
