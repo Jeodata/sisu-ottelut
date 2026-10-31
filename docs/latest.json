@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T16:45:22+02:00",
+  "generated_at": "2026-10-31T16:50:23+02:00",
   "date": "2026-10-31",
   "date_fi": "31.10.2026",
   "club": {
@@ -174,7 +174,7 @@
       "date": "31.10.2026",
       "time": "16:00",
       "status": "live",
-      "status_code": 13,
+      "status_code": 15,
       "finished_type": null,
       "level": "U13 Valkoinen",
       "level_id": 1146,
@@ -556,7 +556,7 @@
       "date": "31.10.2026",
       "time": "16:00",
       "status": "live",
-      "status_code": 13,
+      "status_code": 15,
       "finished_type": null,
       "level": "U13 Valkoinen",
       "level_id": 1146,
