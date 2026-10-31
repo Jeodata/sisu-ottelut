@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T19:35:25+02:00",
+  "generated_at": "2026-10-31T19:40:23+02:00",
   "date": "2026-10-31",
   "date_fi": "31.10.2026",
   "club": {
@@ -22,8 +22,8 @@
   "counts": {
     "total": 8,
     "upcoming": 0,
-    "live": 2,
-    "finished": 6,
+    "live": 1,
+    "finished": 7,
     "other": 0,
     "teams": 37
   },
@@ -267,9 +267,9 @@
       "game_id": 732524,
       "date": "31.10.2026",
       "time": "17:30",
-      "status": "live",
-      "status_code": 16,
-      "finished_type": null,
+      "status": "finished",
+      "status_code": 2,
+      "finished_type": "regulation",
       "level": "U16 Suomi-sarja",
       "level_id": 1138,
       "sub_serie_id": null,
@@ -299,7 +299,7 @@
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114517.png",
         "goals": 5
       },
-      "score": null,
+      "score": "0-5",
       "period_scores": null,
       "urls": {
         "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2721473&lang=fi"
@@ -384,7 +384,7 @@
         "abbreviation": "SiSu Valkoinen",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 0
+        "goals": 1
       },
       "away": {
         "team_id": 1368627199,
@@ -408,54 +408,6 @@
   ],
   "upcoming": [],
   "live": [
-    {
-      "game_id": 732524,
-      "date": "31.10.2026",
-      "time": "17:30",
-      "status": "live",
-      "status_code": 16,
-      "finished_type": null,
-      "level": "U16 Suomi-sarja",
-      "level_id": 1138,
-      "sub_serie_id": null,
-      "rink": "HML hh",
-      "rink_id": null,
-      "small_area": false,
-      "spectators": 35,
-      "venue": "home",
-      "sisu_team": {
-        "team_id": 1305184724,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U16",
-        "abbreviation": "SiSu"
-      },
-      "home": {
-        "team_id": 1305184724,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U16",
-        "abbreviation": "SiSu",
-        "association_id": 11015646,
-        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 0
-      },
-      "away": {
-        "team_id": 1368625918,
-        "name": null,
-        "abbreviation": "Pingviinit",
-        "association_id": 10114517,
-        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114517.png",
-        "goals": 5
-      },
-      "score": null,
-      "period_scores": null,
-      "urls": {
-        "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2721473&lang=fi"
-      },
-      "link_is_specific": true,
-      "link_source": "getgames_cache",
-      "denied_results": false,
-      "denied_stats": false,
-      "no_score_tracking": false,
-      "public_game_id": 2721473
-    },
     {
       "game_id": 752920,
       "date": "31.10.2026",
@@ -482,7 +434,7 @@
         "abbreviation": "SiSu Valkoinen",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 0
+        "goals": 1
       },
       "away": {
         "team_id": 1368627199,
@@ -739,6 +691,54 @@
       "denied_results": false,
       "denied_stats": false,
       "no_score_tracking": false
+    },
+    {
+      "game_id": 732524,
+      "date": "31.10.2026",
+      "time": "17:30",
+      "status": "finished",
+      "status_code": 2,
+      "finished_type": "regulation",
+      "level": "U16 Suomi-sarja",
+      "level_id": 1138,
+      "sub_serie_id": null,
+      "rink": "HML hh",
+      "rink_id": null,
+      "small_area": false,
+      "spectators": 35,
+      "venue": "home",
+      "sisu_team": {
+        "team_id": 1305184724,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U16",
+        "abbreviation": "SiSu"
+      },
+      "home": {
+        "team_id": 1305184724,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U16",
+        "abbreviation": "SiSu",
+        "association_id": 11015646,
+        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
+        "goals": 0
+      },
+      "away": {
+        "team_id": 1368625918,
+        "name": null,
+        "abbreviation": "Pingviinit",
+        "association_id": 10114517,
+        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114517.png",
+        "goals": 5
+      },
+      "score": "0-5",
+      "period_scores": null,
+      "urls": {
+        "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2721473&lang=fi"
+      },
+      "link_is_specific": true,
+      "link_source": "getgames_cache",
+      "denied_results": false,
+      "denied_stats": false,
+      "no_score_tracking": false,
+      "public_game_id": 2721473
     },
     {
       "game_id": 752912,
