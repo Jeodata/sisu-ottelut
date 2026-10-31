@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T11:10:25+02:00",
+  "generated_at": "2026-10-31T11:15:24+02:00",
   "date": "2026-10-31",
   "date_fi": "31.10.2026",
   "club": {
@@ -22,8 +22,8 @@
   "counts": {
     "total": 8,
     "upcoming": 7,
-    "live": 1,
-    "finished": 0,
+    "live": 0,
+    "finished": 1,
     "other": 0,
     "teams": 37
   },
@@ -32,9 +32,9 @@
       "game_id": 728004,
       "date": "31.10.2026",
       "time": "10:00",
-      "status": "live",
-      "status_code": 15,
-      "finished_type": null,
+      "status": "finished",
+      "status_code": 2,
+      "finished_type": "regulation",
       "level": "U13 Sininen",
       "level_id": 1144,
       "sub_serie_id": null,
@@ -62,9 +62,9 @@
         "abbreviation": "SiSu punainen",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 14
+        "goals": 15
       },
-      "score": null,
+      "score": "2-15",
       "period_scores": null,
       "urls": {
         "gamecentre": "https://tulospalvelu.leijonat.fi/"
@@ -738,14 +738,15 @@
       "no_score_tracking": false
     }
   ],
-  "live": [
+  "live": [],
+  "finished": [
     {
       "game_id": 728004,
       "date": "31.10.2026",
       "time": "10:00",
-      "status": "live",
-      "status_code": 15,
-      "finished_type": null,
+      "status": "finished",
+      "status_code": 2,
+      "finished_type": "regulation",
       "level": "U13 Sininen",
       "level_id": 1144,
       "sub_serie_id": null,
@@ -773,9 +774,9 @@
         "abbreviation": "SiSu punainen",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 14
+        "goals": 15
       },
-      "score": null,
+      "score": "2-15",
       "period_scores": null,
       "urls": {
         "gamecentre": "https://tulospalvelu.leijonat.fi/"
@@ -787,7 +788,6 @@
       "no_score_tracking": false
     }
   ],
-  "finished": [],
   "teams": [
     {
       "team_id": 1251467171,
