@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T18:15:31+02:00",
+  "generated_at": "2026-10-31T18:20:24+02:00",
   "date": "2026-10-31",
   "date_fi": "31.10.2026",
   "club": {
@@ -22,8 +22,8 @@
   "counts": {
     "total": 8,
     "upcoming": 1,
-    "live": 3,
-    "finished": 4,
+    "live": 2,
+    "finished": 5,
     "other": 0,
     "teams": 37
   },
@@ -220,9 +220,9 @@
       "game_id": 735165,
       "date": "31.10.2026",
       "time": "16:00",
-      "status": "live",
-      "status_code": 15,
-      "finished_type": null,
+      "status": "finished",
+      "status_code": 2,
+      "finished_type": "regulation",
       "level": "U18 II-divisioona",
       "level_id": 1136,
       "sub_serie_id": null,
@@ -252,7 +252,7 @@
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
         "goals": 4
       },
-      "score": null,
+      "score": "15-4",
       "period_scores": null,
       "urls": {
         "gamecentre": "https://tulospalvelu.leijonat.fi/"
@@ -297,7 +297,7 @@
         "abbreviation": "Pingviinit",
         "association_id": 10114517,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114517.png",
-        "goals": 1
+        "goals": 2
       },
       "score": null,
       "period_scores": null,
@@ -457,53 +457,6 @@
   ],
   "live": [
     {
-      "game_id": 735165,
-      "date": "31.10.2026",
-      "time": "16:00",
-      "status": "live",
-      "status_code": 15,
-      "finished_type": null,
-      "level": "U18 II-divisioona",
-      "level_id": 1136,
-      "sub_serie_id": null,
-      "rink": "Mänttä",
-      "rink_id": null,
-      "small_area": false,
-      "spectators": 150,
-      "venue": "away",
-      "sisu_team": {
-        "team_id": 1368629034,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U18",
-        "abbreviation": "SiSu"
-      },
-      "home": {
-        "team_id": 182488615,
-        "name": null,
-        "abbreviation": "KPK",
-        "association_id": 10114274,
-        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114274.png",
-        "goals": 15
-      },
-      "away": {
-        "team_id": 1368629034,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U18",
-        "abbreviation": "SiSu",
-        "association_id": 11015646,
-        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 4
-      },
-      "score": null,
-      "period_scores": null,
-      "urls": {
-        "gamecentre": "https://tulospalvelu.leijonat.fi/"
-      },
-      "link_is_specific": false,
-      "link_source": "unresolved",
-      "denied_results": false,
-      "denied_stats": false,
-      "no_score_tracking": false
-    },
-    {
       "game_id": 732524,
       "date": "31.10.2026",
       "time": "17:30",
@@ -537,7 +490,7 @@
         "abbreviation": "Pingviinit",
         "association_id": 10114517,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114517.png",
-        "goals": 1
+        "goals": 2
       },
       "score": null,
       "period_scores": null,
@@ -778,6 +731,53 @@
         "goals": 5
       },
       "score": "10-5",
+      "period_scores": null,
+      "urls": {
+        "gamecentre": "https://tulospalvelu.leijonat.fi/"
+      },
+      "link_is_specific": false,
+      "link_source": "unresolved",
+      "denied_results": false,
+      "denied_stats": false,
+      "no_score_tracking": false
+    },
+    {
+      "game_id": 735165,
+      "date": "31.10.2026",
+      "time": "16:00",
+      "status": "finished",
+      "status_code": 2,
+      "finished_type": "regulation",
+      "level": "U18 II-divisioona",
+      "level_id": 1136,
+      "sub_serie_id": null,
+      "rink": "Mänttä",
+      "rink_id": null,
+      "small_area": false,
+      "spectators": 150,
+      "venue": "away",
+      "sisu_team": {
+        "team_id": 1368629034,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U18",
+        "abbreviation": "SiSu"
+      },
+      "home": {
+        "team_id": 182488615,
+        "name": null,
+        "abbreviation": "KPK",
+        "association_id": 10114274,
+        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114274.png",
+        "goals": 15
+      },
+      "away": {
+        "team_id": 1368629034,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U18",
+        "abbreviation": "SiSu",
+        "association_id": 11015646,
+        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
+        "goals": 4
+      },
+      "score": "15-4",
       "period_scores": null,
       "urls": {
         "gamecentre": "https://tulospalvelu.leijonat.fi/"
