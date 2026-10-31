@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T17:05:25+02:00",
+  "generated_at": "2026-10-31T17:10:23+02:00",
   "date": "2026-10-31",
   "date_fi": "31.10.2026",
   "club": {
@@ -203,7 +203,7 @@
         "abbreviation": "Kiekko-Ahma Oranssi",
         "association_id": 10114407,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114407.png",
-        "goals": 3
+        "goals": 5
       },
       "score": null,
       "period_scores": null,
@@ -537,7 +537,7 @@
         "abbreviation": "Kiekko-Ahma Oranssi",
         "association_id": 10114407,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114407.png",
-        "goals": 3
+        "goals": 5
       },
       "score": null,
       "period_scores": null,
