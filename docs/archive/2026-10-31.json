@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T16:00:23+02:00",
+  "generated_at": "2026-10-31T16:05:22+02:00",
   "date": "2026-10-31",
   "date_fi": "31.10.2026",
   "club": {
@@ -21,8 +21,8 @@
   },
   "counts": {
     "total": 8,
-    "upcoming": 4,
-    "live": 1,
+    "upcoming": 3,
+    "live": 2,
     "finished": 3,
     "other": 0,
     "teams": 37
@@ -173,8 +173,8 @@
       "game_id": 731590,
       "date": "31.10.2026",
       "time": "16:00",
-      "status": "upcoming",
-      "status_code": 0,
+      "status": "live",
+      "status_code": 11,
       "finished_type": null,
       "level": "U13 Valkoinen",
       "level_id": 1146,
@@ -195,7 +195,7 @@
         "abbreviation": "SiSu valkoinen",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": null
+        "goals": 0
       },
       "away": {
         "team_id": 1368626495,
@@ -203,7 +203,7 @@
         "abbreviation": "Kiekko-Ahma Oranssi",
         "association_id": 10114407,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114407.png",
-        "goals": null
+        "goals": 0
       },
       "score": null,
       "period_scores": null,
@@ -408,53 +408,6 @@
   ],
   "upcoming": [
     {
-      "game_id": 731590,
-      "date": "31.10.2026",
-      "time": "16:00",
-      "status": "upcoming",
-      "status_code": 0,
-      "finished_type": null,
-      "level": "U13 Valkoinen",
-      "level_id": 1146,
-      "sub_serie_id": null,
-      "rink": "Hakio S",
-      "rink_id": null,
-      "small_area": false,
-      "spectators": 0,
-      "venue": "home",
-      "sisu_team": {
-        "team_id": 1368626550,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U13 valkoinen",
-        "abbreviation": "SiSu valkoinen"
-      },
-      "home": {
-        "team_id": 1368626550,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U13 valkoinen",
-        "abbreviation": "SiSu valkoinen",
-        "association_id": 11015646,
-        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": null
-      },
-      "away": {
-        "team_id": 1368626495,
-        "name": null,
-        "abbreviation": "Kiekko-Ahma Oranssi",
-        "association_id": 10114407,
-        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114407.png",
-        "goals": null
-      },
-      "score": null,
-      "period_scores": null,
-      "urls": {
-        "gamecentre": "https://tulospalvelu.leijonat.fi/"
-      },
-      "link_is_specific": false,
-      "link_source": "unresolved",
-      "denied_results": false,
-      "denied_stats": false,
-      "no_score_tracking": false
-    },
-    {
       "game_id": 732524,
       "date": "31.10.2026",
       "time": "17:30",
@@ -598,6 +551,53 @@
     }
   ],
   "live": [
+    {
+      "game_id": 731590,
+      "date": "31.10.2026",
+      "time": "16:00",
+      "status": "live",
+      "status_code": 11,
+      "finished_type": null,
+      "level": "U13 Valkoinen",
+      "level_id": 1146,
+      "sub_serie_id": null,
+      "rink": "Hakio S",
+      "rink_id": null,
+      "small_area": false,
+      "spectators": 0,
+      "venue": "home",
+      "sisu_team": {
+        "team_id": 1368626550,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U13 valkoinen",
+        "abbreviation": "SiSu valkoinen"
+      },
+      "home": {
+        "team_id": 1368626550,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U13 valkoinen",
+        "abbreviation": "SiSu valkoinen",
+        "association_id": 11015646,
+        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
+        "goals": 0
+      },
+      "away": {
+        "team_id": 1368626495,
+        "name": null,
+        "abbreviation": "Kiekko-Ahma Oranssi",
+        "association_id": 10114407,
+        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114407.png",
+        "goals": 0
+      },
+      "score": null,
+      "period_scores": null,
+      "urls": {
+        "gamecentre": "https://tulospalvelu.leijonat.fi/"
+      },
+      "link_is_specific": false,
+      "link_source": "unresolved",
+      "denied_results": false,
+      "denied_stats": false,
+      "no_score_tracking": false
+    },
     {
       "game_id": 735165,
       "date": "31.10.2026",
