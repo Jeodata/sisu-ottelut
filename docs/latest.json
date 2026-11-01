@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T11:55:24+02:00",
+  "generated_at": "2026-11-01T12:00:25+02:00",
   "date": "2026-11-01",
   "date_fi": "01.11.2026",
   "club": {
@@ -21,8 +21,8 @@
   },
   "counts": {
     "total": 9,
-    "upcoming": 7,
-    "live": 1,
+    "upcoming": 6,
+    "live": 2,
     "finished": 1,
     "other": 0,
     "teams": 37
@@ -80,7 +80,7 @@
       "date": "01.11.2026",
       "time": "11:15",
       "status": "live",
-      "status_code": 13,
+      "status_code": 15,
       "finished_type": null,
       "level": "U11 sarja",
       "level_id": 1142,
@@ -88,7 +88,7 @@
       "rink": "Hervanta 2",
       "rink_id": null,
       "small_area": false,
-      "spectators": 0,
+      "spectators": 28,
       "venue": "away",
       "sisu_team": {
         "team_id": 1368627585,
@@ -109,7 +109,7 @@
         "abbreviation": "SiSu Punainen",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 2
+        "goals": 4
       },
       "score": null,
       "period_scores": null,
@@ -126,8 +126,8 @@
       "game_id": 752944,
       "date": "01.11.2026",
       "time": "12:00",
-      "status": "upcoming",
-      "status_code": 0,
+      "status": "live",
+      "status_code": 11,
       "finished_type": null,
       "level": "U12 sarja",
       "level_id": 1143,
@@ -148,7 +148,7 @@
         "abbreviation": "Kisa-Eagles Sininen",
         "association_id": 50003291,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/50003291.png",
-        "goals": null
+        "goals": 0
       },
       "away": {
         "team_id": 1368627072,
@@ -156,7 +156,7 @@
         "abbreviation": "SiSu Valkoinen",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": null
+        "goals": 0
       },
       "score": null,
       "period_scores": null,
@@ -454,53 +454,6 @@
   ],
   "upcoming": [
     {
-      "game_id": 752944,
-      "date": "01.11.2026",
-      "time": "12:00",
-      "status": "upcoming",
-      "status_code": 0,
-      "finished_type": null,
-      "level": "U12 sarja",
-      "level_id": 1143,
-      "sub_serie_id": null,
-      "rink": "Kangasala",
-      "rink_id": null,
-      "small_area": false,
-      "spectators": 0,
-      "venue": "away",
-      "sisu_team": {
-        "team_id": 1368627072,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U12 Valkoinen",
-        "abbreviation": "SiSu Valkoinen"
-      },
-      "home": {
-        "team_id": 1368627269,
-        "name": null,
-        "abbreviation": "Kisa-Eagles Sininen",
-        "association_id": 50003291,
-        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/50003291.png",
-        "goals": null
-      },
-      "away": {
-        "team_id": 1368627072,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U12 Valkoinen",
-        "abbreviation": "SiSu Valkoinen",
-        "association_id": 11015646,
-        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": null
-      },
-      "score": null,
-      "period_scores": null,
-      "urls": {
-        "gamecentre": "https://tulospalvelu.leijonat.fi/"
-      },
-      "link_is_specific": false,
-      "link_source": "unresolved",
-      "denied_results": false,
-      "denied_stats": false,
-      "no_score_tracking": false
-    },
-    {
       "game_id": 752943,
       "date": "01.11.2026",
       "time": "13:30",
@@ -789,7 +742,7 @@
       "date": "01.11.2026",
       "time": "11:15",
       "status": "live",
-      "status_code": 13,
+      "status_code": 15,
       "finished_type": null,
       "level": "U11 sarja",
       "level_id": 1142,
@@ -797,7 +750,7 @@
       "rink": "Hervanta 2",
       "rink_id": null,
       "small_area": false,
-      "spectators": 0,
+      "spectators": 28,
       "venue": "away",
       "sisu_team": {
         "team_id": 1368627585,
@@ -818,7 +771,54 @@
         "abbreviation": "SiSu Punainen",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 2
+        "goals": 4
+      },
+      "score": null,
+      "period_scores": null,
+      "urls": {
+        "gamecentre": "https://tulospalvelu.leijonat.fi/"
+      },
+      "link_is_specific": false,
+      "link_source": "unresolved",
+      "denied_results": false,
+      "denied_stats": false,
+      "no_score_tracking": false
+    },
+    {
+      "game_id": 752944,
+      "date": "01.11.2026",
+      "time": "12:00",
+      "status": "live",
+      "status_code": 11,
+      "finished_type": null,
+      "level": "U12 sarja",
+      "level_id": 1143,
+      "sub_serie_id": null,
+      "rink": "Kangasala",
+      "rink_id": null,
+      "small_area": false,
+      "spectators": 0,
+      "venue": "away",
+      "sisu_team": {
+        "team_id": 1368627072,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U12 Valkoinen",
+        "abbreviation": "SiSu Valkoinen"
+      },
+      "home": {
+        "team_id": 1368627269,
+        "name": null,
+        "abbreviation": "Kisa-Eagles Sininen",
+        "association_id": 50003291,
+        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/50003291.png",
+        "goals": 0
+      },
+      "away": {
+        "team_id": 1368627072,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U12 Valkoinen",
+        "abbreviation": "SiSu Valkoinen",
+        "association_id": 11015646,
+        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
+        "goals": 0
       },
       "score": null,
       "period_scores": null,
