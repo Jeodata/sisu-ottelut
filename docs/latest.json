@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T16:45:25+02:00",
+  "generated_at": "2026-11-01T16:50:23+02:00",
   "date": "2026-11-01",
   "date_fi": "01.11.2026",
   "club": {
@@ -417,7 +417,7 @@
       "rink": "Hakio S",
       "rink_id": null,
       "small_area": false,
-      "spectators": 0,
+      "spectators": 80,
       "venue": "away",
       "sisu_team": {
         "team_id": 1368626549,
@@ -438,7 +438,7 @@
         "abbreviation": "SiSu punainen",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 7
+        "goals": 8
       },
       "score": null,
       "period_scores": null,
@@ -467,7 +467,7 @@
       "rink": "Hakio S",
       "rink_id": null,
       "small_area": false,
-      "spectators": 0,
+      "spectators": 80,
       "venue": "away",
       "sisu_team": {
         "team_id": 1368626549,
@@ -488,7 +488,7 @@
         "abbreviation": "SiSu punainen",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 7
+        "goals": 8
       },
       "score": null,
       "period_scores": null,
