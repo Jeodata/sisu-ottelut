@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T10:50:24+02:00",
+  "generated_at": "2026-11-01T10:55:23+02:00",
   "date": "2026-11-01",
   "date_fi": "01.11.2026",
   "club": {
@@ -22,8 +22,8 @@
   "counts": {
     "total": 9,
     "upcoming": 8,
-    "live": 1,
-    "finished": 0,
+    "live": 0,
+    "finished": 1,
     "other": 0,
     "teams": 37
   },
@@ -32,16 +32,16 @@
       "game_id": 757871,
       "date": "01.11.2026",
       "time": "09:45",
-      "status": "live",
-      "status_code": 15,
-      "finished_type": null,
+      "status": "finished",
+      "status_code": 2,
+      "finished_type": "regulation",
       "level": "U11 sarja",
       "level_id": 1142,
       "sub_serie_id": null,
       "rink": "Hervanta 2",
       "rink_id": null,
       "small_area": false,
-      "spectators": 0,
+      "spectators": 67,
       "venue": "away",
       "sisu_team": {
         "team_id": 1368627585,
@@ -62,9 +62,9 @@
         "abbreviation": "SiSu Punainen",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 5
+        "goals": 6
       },
-      "score": null,
+      "score": "3-6",
       "period_scores": null,
       "urls": {
         "gamecentre": "https://tulospalvelu.leijonat.fi/"
@@ -830,21 +830,22 @@
       "no_score_tracking": false
     }
   ],
-  "live": [
+  "live": [],
+  "finished": [
     {
       "game_id": 757871,
       "date": "01.11.2026",
       "time": "09:45",
-      "status": "live",
-      "status_code": 15,
-      "finished_type": null,
+      "status": "finished",
+      "status_code": 2,
+      "finished_type": "regulation",
       "level": "U11 sarja",
       "level_id": 1142,
       "sub_serie_id": null,
       "rink": "Hervanta 2",
       "rink_id": null,
       "small_area": false,
-      "spectators": 0,
+      "spectators": 67,
       "venue": "away",
       "sisu_team": {
         "team_id": 1368627585,
@@ -865,9 +866,9 @@
         "abbreviation": "SiSu Punainen",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 5
+        "goals": 6
       },
-      "score": null,
+      "score": "3-6",
       "period_scores": null,
       "urls": {
         "gamecentre": "https://tulospalvelu.leijonat.fi/"
@@ -879,7 +880,6 @@
       "no_score_tracking": false
     }
   ],
-  "finished": [],
   "teams": [
     {
       "team_id": 1251467171,
