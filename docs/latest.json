@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T12:20:24+02:00",
+  "generated_at": "2026-11-01T12:25:23+02:00",
   "date": "2026-11-01",
   "date_fi": "01.11.2026",
   "club": {
@@ -22,8 +22,8 @@
   "counts": {
     "total": 9,
     "upcoming": 6,
-    "live": 2,
-    "finished": 1,
+    "live": 1,
+    "finished": 2,
     "other": 0,
     "teams": 37
   },
@@ -79,9 +79,9 @@
       "game_id": 757872,
       "date": "01.11.2026",
       "time": "11:15",
-      "status": "live",
-      "status_code": 15,
-      "finished_type": null,
+      "status": "finished",
+      "status_code": 2,
+      "finished_type": "regulation",
       "level": "U11 sarja",
       "level_id": 1142,
       "sub_serie_id": null,
@@ -109,9 +109,9 @@
         "abbreviation": "SiSu Punainen",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 5
+        "goals": 6
       },
-      "score": null,
+      "score": "8-6",
       "period_scores": null,
       "urls": {
         "gamecentre": "https://tulospalvelu.leijonat.fi/"
@@ -127,7 +127,7 @@
       "date": "01.11.2026",
       "time": "12:00",
       "status": "live",
-      "status_code": 11,
+      "status_code": 13,
       "finished_type": null,
       "level": "U12 sarja",
       "level_id": 1143,
@@ -738,58 +738,11 @@
   ],
   "live": [
     {
-      "game_id": 757872,
-      "date": "01.11.2026",
-      "time": "11:15",
-      "status": "live",
-      "status_code": 15,
-      "finished_type": null,
-      "level": "U11 sarja",
-      "level_id": 1142,
-      "sub_serie_id": null,
-      "rink": "Hervanta 2",
-      "rink_id": null,
-      "small_area": false,
-      "spectators": 28,
-      "venue": "away",
-      "sisu_team": {
-        "team_id": 1368627585,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U11 Punainen",
-        "abbreviation": "SiSu Punainen"
-      },
-      "home": {
-        "team_id": 1368627832,
-        "name": null,
-        "abbreviation": "Ilves Montreal",
-        "association_id": 10114698,
-        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114698.png",
-        "goals": 8
-      },
-      "away": {
-        "team_id": 1368627585,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U11 Punainen",
-        "abbreviation": "SiSu Punainen",
-        "association_id": 11015646,
-        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 5
-      },
-      "score": null,
-      "period_scores": null,
-      "urls": {
-        "gamecentre": "https://tulospalvelu.leijonat.fi/"
-      },
-      "link_is_specific": false,
-      "link_source": "unresolved",
-      "denied_results": false,
-      "denied_stats": false,
-      "no_score_tracking": false
-    },
-    {
       "game_id": 752944,
       "date": "01.11.2026",
       "time": "12:00",
       "status": "live",
-      "status_code": 11,
+      "status_code": 13,
       "finished_type": null,
       "level": "U12 sarja",
       "level_id": 1143,
@@ -870,6 +823,53 @@
         "goals": 6
       },
       "score": "3-6",
+      "period_scores": null,
+      "urls": {
+        "gamecentre": "https://tulospalvelu.leijonat.fi/"
+      },
+      "link_is_specific": false,
+      "link_source": "unresolved",
+      "denied_results": false,
+      "denied_stats": false,
+      "no_score_tracking": false
+    },
+    {
+      "game_id": 757872,
+      "date": "01.11.2026",
+      "time": "11:15",
+      "status": "finished",
+      "status_code": 2,
+      "finished_type": "regulation",
+      "level": "U11 sarja",
+      "level_id": 1142,
+      "sub_serie_id": null,
+      "rink": "Hervanta 2",
+      "rink_id": null,
+      "small_area": false,
+      "spectators": 28,
+      "venue": "away",
+      "sisu_team": {
+        "team_id": 1368627585,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U11 Punainen",
+        "abbreviation": "SiSu Punainen"
+      },
+      "home": {
+        "team_id": 1368627832,
+        "name": null,
+        "abbreviation": "Ilves Montreal",
+        "association_id": 10114698,
+        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114698.png",
+        "goals": 8
+      },
+      "away": {
+        "team_id": 1368627585,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U11 Punainen",
+        "abbreviation": "SiSu Punainen",
+        "association_id": 11015646,
+        "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
+        "goals": 6
+      },
+      "score": "8-6",
       "period_scores": null,
       "urls": {
         "gamecentre": "https://tulospalvelu.leijonat.fi/"
