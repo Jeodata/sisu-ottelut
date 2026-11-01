@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T16:15:24+02:00",
+  "generated_at": "2026-11-01T16:20:23+02:00",
   "date": "2026-11-01",
   "date_fi": "01.11.2026",
   "club": {
@@ -430,7 +430,7 @@
         "abbreviation": "HPK Musta",
         "association_id": 10114740,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114740.png",
-        "goals": 0
+        "goals": 1
       },
       "away": {
         "team_id": 1368626549,
@@ -438,7 +438,7 @@
         "abbreviation": "SiSu punainen",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 2
+        "goals": 3
       },
       "score": null,
       "period_scores": null,
@@ -480,7 +480,7 @@
         "abbreviation": "HPK Musta",
         "association_id": 10114740,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114740.png",
-        "goals": 0
+        "goals": 1
       },
       "away": {
         "team_id": 1368626549,
@@ -488,7 +488,7 @@
         "abbreviation": "SiSu punainen",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 2
+        "goals": 3
       },
       "score": null,
       "period_scores": null,
