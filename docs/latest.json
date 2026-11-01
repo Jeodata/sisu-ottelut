@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T14:30:25+02:00",
+  "generated_at": "2026-11-01T14:35:23+02:00",
   "date": "2026-11-01",
   "date_fi": "01.11.2026",
   "club": {
@@ -195,7 +195,7 @@
         "abbreviation": "Kisa-Eagles Sininen",
         "association_id": 50003291,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/50003291.png",
-        "goals": 2
+        "goals": 3
       },
       "away": {
         "team_id": 1368627072,
@@ -203,7 +203,7 @@
         "abbreviation": "SiSu Valkoinen",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 3
+        "goals": 4
       },
       "score": null,
       "period_scores": null,
@@ -622,7 +622,7 @@
         "abbreviation": "Kisa-Eagles Sininen",
         "association_id": 50003291,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/50003291.png",
-        "goals": 2
+        "goals": 3
       },
       "away": {
         "team_id": 1368627072,
@@ -630,7 +630,7 @@
         "abbreviation": "SiSu Valkoinen",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 3
+        "goals": 4
       },
       "score": null,
       "period_scores": null,
