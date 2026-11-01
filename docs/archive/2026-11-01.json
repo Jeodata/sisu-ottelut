@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T12:45:23+02:00",
+  "generated_at": "2026-11-01T12:50:25+02:00",
   "date": "2026-11-01",
   "date_fi": "01.11.2026",
   "club": {
@@ -127,7 +127,7 @@
       "date": "01.11.2026",
       "time": "12:00",
       "status": "live",
-      "status_code": 13,
+      "status_code": 15,
       "finished_type": null,
       "level": "U12 sarja",
       "level_id": 1143,
@@ -148,7 +148,7 @@
         "abbreviation": "Kisa-Eagles Sininen",
         "association_id": 50003291,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/50003291.png",
-        "goals": 1
+        "goals": 2
       },
       "away": {
         "team_id": 1368627072,
@@ -742,7 +742,7 @@
       "date": "01.11.2026",
       "time": "12:00",
       "status": "live",
-      "status_code": 13,
+      "status_code": 15,
       "finished_type": null,
       "level": "U12 sarja",
       "level_id": 1143,
@@ -763,7 +763,7 @@
         "abbreviation": "Kisa-Eagles Sininen",
         "association_id": 50003291,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/50003291.png",
-        "goals": 1
+        "goals": 2
       },
       "away": {
         "team_id": 1368627072,
