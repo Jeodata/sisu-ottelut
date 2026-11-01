@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T10:00:25+02:00",
+  "generated_at": "2026-11-01T10:05:23+02:00",
   "date": "2026-11-01",
   "date_fi": "01.11.2026",
   "club": {
@@ -54,7 +54,7 @@
         "abbreviation": "Ilves Montreal",
         "association_id": 10114698,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114698.png",
-        "goals": 2
+        "goals": 3
       },
       "away": {
         "team_id": 1368627585,
@@ -857,7 +857,7 @@
         "abbreviation": "Ilves Montreal",
         "association_id": 10114698,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/10114698.png",
-        "goals": 2
+        "goals": 3
       },
       "away": {
         "team_id": 1368627585,
