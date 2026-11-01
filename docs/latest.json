@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T14:15:24+02:00",
+  "generated_at": "2026-11-01T14:20:24+02:00",
   "date": "2026-11-01",
   "date_fi": "01.11.2026",
   "club": {
@@ -203,7 +203,7 @@
         "abbreviation": "SiSu Valkoinen",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 2
+        "goals": 3
       },
       "score": null,
       "period_scores": null,
@@ -630,7 +630,7 @@
         "abbreviation": "SiSu Valkoinen",
         "association_id": 11015646,
         "logo": "https://tulospalvelu.leijonat.fi/images/associations/weblogos/200x200/11015646.png",
-        "goals": 2
+        "goals": 3
       },
       "score": null,
       "period_scores": null,
