@@ -19,6 +19,10 @@ from sisu_ottelut import BASE_URL, HELPERS, ApiError, http_get_json
 # User-verified official U16 subseries for 2026-10-24. This is a fallback;
 # other ages are found using the Sisu team's ID without hard-coded subseries.
 CONFIRMED_SUBSERIES = {2027: {"U16 Suomi-sarja": (4135,)}}
+# Positive districts observed in the official UI and verified for Sisu games:
+# Häme (2) and the district serving the current U16 away fixtures (6).
+# These are candidate sources, never identity/age assumptions.
+LINK_DISTRICTS = (2, 6)
 # Applies to requests for ALL upcoming days, not to each day individually.
 # A normal run requests a single /getgames page per Sisu team/day, and stores
 # confirmed IDs in docs/public_game_ids.json to eliminate repeat lookups.
@@ -121,7 +125,7 @@ def enrich_public_links(
     If no unique match exists, retain the safe tulospalvelu homepage fallback.
     """
     cached = _load_cache(cache_file)
-    queries: dict[tuple[str, int, int, int], list[dict[str, Any]]] = {}
+    queries: dict[tuple[str, int, int, int, int], list[dict[str, Any]]] = {}
     by_date: dict[str, list[dict[str, Any]]] = defaultdict(list)
     for group in day_groups:
         for game in group:
@@ -136,14 +140,14 @@ def enrich_public_links(
         game["link_source"] = source
         cached[_cache_key(game, season)] = official_id
 
-    def fetch(day: str, subserie: int = 0, team: int = 0, level: int = -1) -> list[dict[str, Any]]:
-        key = (day, subserie, team, level)
+    def fetch(day: str, subserie: int = 0, team: int = 0, level: int = -1, district: int = 0) -> list[dict[str, Any]]:
+        key = (day, subserie, team, level, district)
         if key not in queries:
             if len(queries) >= MAX_LOOKUP_REQUESTS:
                 return []
             params = {
                 "dwl": 0, "season": season, "subSerieId": subserie,
-                "teamid": team, "districtid": 0, "gamedays": 0,
+                "teamid": team, "districtid": district, "gamedays": -1 if district else 0,
                 "dog": day, "levelid": level,
             }
             try:
@@ -179,9 +183,18 @@ def enrich_public_links(
         if not pending:
             continue
 
+        # Junior team-only queries with subSerieId=0 may return []. Use the
+        # official UI's district/day queries; one request serves every team.
+        # Combine districts before resolving to detect conflicting candidates.
+        candidates: list[dict[str, Any]] = []
+        for district in LINK_DISTRICTS:
+            candidates.extend(fetch(day, district=district))
+        pending = resolve(pending, candidates)
+        if not pending:
+            continue
+
         # First pass: one query per distinct Sisu team + day. Crucially,
         # do not use legacy LevelID or guess its corresponding public ID.
-        candidates: list[dict[str, Any]] = []
         teams = sorted({
             team for game in pending
             if (team := _int((game.get("sisu_team") or {}).get("team_id"))) and team > 0

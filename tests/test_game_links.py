@@ -75,12 +75,40 @@ class OfficialLinksTest(unittest.TestCase):
         self.assertNotIn('gameid=752874',html)
         self.assertIn('href="https://tulospalvelu.leijonat.fi/"',html)
 
+    def test_renderer_rejects_old_internal_and_wrong_season_links(self):
+        from render_html import _game_card
+        game = {'game_id': 732527, 'urls': {'gamecentre': BASE + '/game?gameid=732527'}}
+        markup = _game_card(game, 2027)
+        self.assertNotIn('gameid=732527', markup)
+        self.assertIn('href="' + BASE + '/"', markup)
+        game['link_is_specific'] = True
+        for url in (BASE + '/game?season=2026&gameid=2721476&lang=fi',
+                    'https://invalid.example/game?season=2027&gameid=2721476&lang=fi'):
+            game['urls']['gamecentre'] = url
+            self.assertNotIn('gameid=', _game_card(game, 2027))
+
     def test_prebuilt_pages_regression(self):
-        page = (Path(__file__).resolve().parents[1] / 'docs' / 'index.html').read_text(encoding='utf-8')
-        self.assertIn('gameid=2721476', page)
-        self.assertIn('gameid=2727976', page)
-        self.assertNotIn('gameid=732527', page)
-        self.assertNotIn('gameid=735159', page)
+        from html import escape
+        from urllib.parse import parse_qs, urlsplit
+        docs = Path(__file__).resolve().parents[1] / 'docs'
+        data = json.loads((docs / 'games.json').read_text(encoding='utf-8'))
+        # Render the latest snapshot with the current code. Do not demand
+        # that yesterday's checked-in output already uses a new template.
+        # Actual HTML/JSON output equality is checked by validate_site.py.
+        page = render_html(data)
+        groups = [data.get('games') or []] + [d.get('games') or [] for d in data.get('coming_days') or []]
+        for group in groups:
+            for game in group:
+                url = (game.get('urls') or {}).get('gamecentre') or BASE + '/'
+                self.assertIn('href="' + escape(url, quote=True) + '"', page)
+                if game.get('link_is_specific'):
+                    parsed = urlsplit(url)
+                    query = parse_qs(parsed.query)
+                    self.assertEqual(parsed.netloc, 'tulospalvelu.leijonat.fi')
+                    self.assertEqual(parsed.path, '/game')
+                    self.assertEqual(query.get('season'), [str(data['season']['number'])])
+                    self.assertEqual(query.get('lang'), ['fi'])
+                    self.assertNotEqual(query.get('gameid'), [str(game['game_id'])])
 
 
 if __name__ == '__main__':

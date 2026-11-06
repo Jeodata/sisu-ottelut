@@ -2,9 +2,8 @@ name: Päivitä Sisu Hockeyn ottelut
 
 on:
   schedule:
-    # Arkisin (ma-pe) 3 kertaa päivässä (aamulla, iltapäivällä ja illalla)
+    # Nykyiset UTC-ajastukset säilytetään; Cloudflareen ei tehdä muutoksia.
     - cron: '15 5,15,19 * * 1-5'
-    # Viikonloppuna (la-su) 5 minuutin välein klo 05:00 - 20:55 UTC (klo 07/08 - 22/23 Suomen aikaa)
     - cron: '*/5 5-20 * * 0,6'
   workflow_dispatch:
   push:
@@ -13,39 +12,103 @@ on:
       - "sisu_ottelut.py"
       - "render_html.py"
       - "publish.py"
+      - "logo_assets.py"
+      - "public_game_ids.py"
+      - "validate_site.py"
+      - "game_link_overrides.json"
+      - "manifest.webmanifest"
+      - "service-worker.js"
+      - "icons/**"
+      - "tests/**"
       - "assets/**"
       - ".github/workflows/update-games.yml"
 
 permissions:
-  contents: write
+  contents: read
 
+# Includes both data update and deploy: never interrupt an active publication.
+# GitHub keeps one running and one pending run; newer pending runs may replace older ones.
 concurrency:
   group: sisu-ottelut
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   update:
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
     steps:
-      - name: Checkout
+      - name: Checkout uusin main
         uses: actions/checkout@v4
+        with:
+          ref: main
 
       - name: Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
-      - name: Hae ottelut ja rakenna sivu
-        run: python3 publish.py --out docs
-
-      - name: Tallenna Pages-tiedostot
+      - name: Testaa logot, ottelulinkit ja PWA
         run: |
+          python3 -m unittest discover -s tests -v
+          node tests/test_service_worker.js
+
+      - name: Hae ja tarkista erillisessa hakemistossa
+        shell: bash
+        run: |
+          set -euo pipefail
+          site="$RUNNER_TEMP/sisu-site"
+          mkdir -p "$site"
+          # Preserve existing history and both ID/logo caches for the next fetch.
+          cp -a docs/. "$site/"
+          python3 publish.py --out "$site"
+          python3 validate_site.py "$site" | tee "$RUNNER_TEMP/sisu-validation.json"
+          # No write to docs if fetch, rendering or validation failed.
+          cp -a "$site/." docs/
+          echo '### Sisu-julkaisun paikallinen tarkistus' >> "$GITHUB_STEP_SUMMARY"
+          cat "$RUNNER_TEMP/sisu-validation.json" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Tallenna ottelut ja valimuistit
+        shell: bash
+        run: |
+          set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add docs
-          if git diff --cached --quiet; then
-            echo "Ei muutoksia."
-            exit 0
+          if ! git diff --cached --quiet; then
+            git commit -m "Päivitä ottelut $(date -u +%Y-%m-%dT%H:%MZ)"
+            # No force or automatic rebase: a concurrent outside change must stop this run.
+            git push origin HEAD:main
           fi
-          git commit -m "Päivitä ottelut $(date -u +%Y-%m-%dT%H:%MZ)"
-          git push
+          echo "Data commit: $(git rev-parse HEAD)" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Lataa juuri tarkistettu Pages-artifact
+        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
+        with:
+          path: docs
+          include-hidden-files: true
+
+  deploy:
+    needs: update
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      # Pages Source must be switched to GitHub Actions once, after approval.
+      # Do not attempt administration changes using GITHUB_TOKEN here.
+      - name: Varmista Pages-asetukset
+        uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
+        with:
+          enablement: false
+
+      - name: Julkaise saman ajon artifact
+        id: deployment
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1

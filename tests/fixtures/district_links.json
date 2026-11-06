@@ -1,0 +1,1414 @@
+{
+  "captured_at": "2026-11-06",
+  "source": "Official /helpers/getgames, only matching Sisu records retained",
+  "current": [
+    {
+      "game_id": 757873,
+      "date": "07.11.2026",
+      "time": "10:15",
+      "level": "U11 sarja",
+      "sisu_team": {
+        "team_id": 1368627585
+      },
+      "home": {
+        "team_id": 1368627809
+      },
+      "away": {
+        "team_id": 1368627585
+      },
+      "urls": {
+        "gamecentre": "https://tulospalvelu.leijonat.fi/"
+      },
+      "link_is_specific": false
+    },
+    {
+      "game_id": 757876,
+      "date": "07.11.2026",
+      "time": "12:00",
+      "level": "U11 sarja",
+      "sisu_team": {
+        "team_id": 1368627585
+      },
+      "home": {
+        "team_id": 1368627809
+      },
+      "away": {
+        "team_id": 1368627585
+      },
+      "urls": {
+        "gamecentre": "https://tulospalvelu.leijonat.fi/"
+      },
+      "link_is_specific": false
+    },
+    {
+      "game_id": 731604,
+      "date": "07.11.2026",
+      "time": "13:00",
+      "level": "U13 Valkoinen",
+      "sisu_team": {
+        "team_id": 1368626550
+      },
+      "home": {
+        "team_id": 1368626722
+      },
+      "away": {
+        "team_id": 1368626550
+      },
+      "urls": {
+        "gamecentre": "https://tulospalvelu.leijonat.fi/"
+      },
+      "link_is_specific": false
+    },
+    {
+      "game_id": 728016,
+      "date": "07.11.2026",
+      "time": "15:45",
+      "level": "U13 Sininen",
+      "sisu_team": {
+        "team_id": 1368626549
+      },
+      "home": {
+        "team_id": 1368626549
+      },
+      "away": {
+        "team_id": 1368630080
+      },
+      "urls": {
+        "gamecentre": "https://tulospalvelu.leijonat.fi/"
+      },
+      "link_is_specific": false
+    },
+    {
+      "game_id": 758180,
+      "date": "07.11.2026",
+      "time": "16:30",
+      "level": "U11 sarja",
+      "sisu_team": {
+        "team_id": 1368627586
+      },
+      "home": {
+        "team_id": 1368627586
+      },
+      "away": {
+        "team_id": 1368627839
+      },
+      "urls": {
+        "gamecentre": "https://tulospalvelu.leijonat.fi/"
+      },
+      "link_is_specific": false
+    },
+    {
+      "game_id": 752953,
+      "date": "07.11.2026",
+      "time": "17:50",
+      "level": "U12 sarja",
+      "sisu_team": {
+        "team_id": 1368627072
+      },
+      "home": {
+        "team_id": 1368627072
+      },
+      "away": {
+        "team_id": 1368627776
+      },
+      "urls": {
+        "gamecentre": "https://tulospalvelu.leijonat.fi/"
+      },
+      "link_is_specific": false
+    },
+    {
+      "game_id": 758181,
+      "date": "07.11.2026",
+      "time": "17:50",
+      "level": "U11 sarja",
+      "sisu_team": {
+        "team_id": 1368627586
+      },
+      "home": {
+        "team_id": 1368627586
+      },
+      "away": {
+        "team_id": 1368627839
+      },
+      "urls": {
+        "gamecentre": "https://tulospalvelu.leijonat.fi/"
+      },
+      "link_is_specific": false
+    },
+    {
+      "game_id": 735167,
+      "date": "07.11.2026",
+      "time": "18:15",
+      "level": "U18 II-divisioona",
+      "sisu_team": {
+        "team_id": 1368629034
+      },
+      "home": {
+        "team_id": 1368629034
+      },
+      "away": {
+        "team_id": 1368627381
+      },
+      "urls": {
+        "gamecentre": "https://tulospalvelu.leijonat.fi/"
+      },
+      "link_is_specific": false
+    },
+    {
+      "game_id": 752961,
+      "date": "07.11.2026",
+      "time": "19:20",
+      "level": "U12 sarja",
+      "sisu_team": {
+        "team_id": 1368627072
+      },
+      "home": {
+        "team_id": 1368627072
+      },
+      "away": {
+        "team_id": 1368627776
+      },
+      "urls": {
+        "gamecentre": "https://tulospalvelu.leijonat.fi/"
+      },
+      "link_is_specific": false
+    },
+    {
+      "game_id": 758198,
+      "date": "08.11.2026",
+      "time": "12:20",
+      "level": "U11 sarja",
+      "sisu_team": {
+        "team_id": 1368627586
+      },
+      "home": {
+        "team_id": 1368627856
+      },
+      "away": {
+        "team_id": 1368627586
+      },
+      "urls": {
+        "gamecentre": "https://tulospalvelu.leijonat.fi/"
+      },
+      "link_is_specific": false
+    },
+    {
+      "game_id": 758199,
+      "date": "08.11.2026",
+      "time": "13:45",
+      "level": "U11 sarja",
+      "sisu_team": {
+        "team_id": 1368627586
+      },
+      "home": {
+        "team_id": 1368627856
+      },
+      "away": {
+        "team_id": 1368627586
+      },
+      "urls": {
+        "gamecentre": "https://tulospalvelu.leijonat.fi/"
+      },
+      "link_is_specific": false
+    },
+    {
+      "game_id": 753371,
+      "date": "08.11.2026",
+      "time": "14:40",
+      "level": "U12 sarja",
+      "sisu_team": {
+        "team_id": 1368627073
+      },
+      "home": {
+        "team_id": 1368627202
+      },
+      "away": {
+        "team_id": 1368627073
+      },
+      "urls": {
+        "gamecentre": "https://tulospalvelu.leijonat.fi/"
+      },
+      "link_is_specific": false
+    },
+    {
+      "game_id": 753367,
+      "date": "08.11.2026",
+      "time": "15:45",
+      "level": "U12 sarja",
+      "sisu_team": {
+        "team_id": 1368627073
+      },
+      "home": {
+        "team_id": 1368627202
+      },
+      "away": {
+        "team_id": 1368627073
+      },
+      "urls": {
+        "gamecentre": "https://tulospalvelu.leijonat.fi/"
+      },
+      "link_is_specific": false
+    },
+    {
+      "game_id": 753378,
+      "date": "14.11.2026",
+      "time": "12:45",
+      "level": "U12 sarja",
+      "sisu_team": {
+        "team_id": 1368627073
+      },
+      "home": {
+        "team_id": 1368627073
+      },
+      "away": {
+        "team_id": 1368627185
+      },
+      "urls": {
+        "gamecentre": "https://tulospalvelu.leijonat.fi/"
+      },
+      "link_is_specific": false
+    },
+    {
+      "game_id": 753376,
+      "date": "14.11.2026",
+      "time": "14:15",
+      "level": "U12 sarja",
+      "sisu_team": {
+        "team_id": 1368627073
+      },
+      "home": {
+        "team_id": 1368627073
+      },
+      "away": {
+        "team_id": 1368627185
+      },
+      "urls": {
+        "gamecentre": "https://tulospalvelu.leijonat.fi/"
+      },
+      "link_is_specific": false
+    },
+    {
+      "game_id": 728023,
+      "date": "14.11.2026",
+      "time": "15:20",
+      "level": "U13 Sininen",
+      "sisu_team": {
+        "team_id": 1368626549
+      },
+      "home": {
+        "team_id": 1368626549
+      },
+      "away": {
+        "team_id": 1368630080
+      },
+      "urls": {
+        "gamecentre": "https://tulospalvelu.leijonat.fi/"
+      },
+      "link_is_specific": false
+    },
+    {
+      "game_id": 758206,
+      "date": "14.11.2026",
+      "time": "15:50",
+      "level": "U11 sarja",
+      "sisu_team": {
+        "team_id": 1368627586
+      },
+      "home": {
+        "team_id": 1368627586
+      },
+      "away": {
+        "team_id": 1368630000
+      },
+      "urls": {
+        "gamecentre": "https://tulospalvelu.leijonat.fi/"
+      },
+      "link_is_specific": false
+    },
+    {
+      "game_id": 758207,
+      "date": "14.11.2026",
+      "time": "17:20",
+      "level": "U11 sarja",
+      "sisu_team": {
+        "team_id": 1368627586
+      },
+      "home": {
+        "team_id": 1368627586
+      },
+      "away": {
+        "team_id": 1368630000
+      },
+      "urls": {
+        "gamecentre": "https://tulospalvelu.leijonat.fi/"
+      },
+      "link_is_specific": false
+    },
+    {
+      "game_id": 731619,
+      "date": "14.11.2026",
+      "time": "17:30",
+      "level": "U13 Valkoinen",
+      "sisu_team": {
+        "team_id": 1368626550
+      },
+      "home": {
+        "team_id": 1368630217
+      },
+      "away": {
+        "team_id": 1368626550
+      },
+      "urls": {
+        "gamecentre": "https://tulospalvelu.leijonat.fi/"
+      },
+      "link_is_specific": false
+    },
+    {
+      "game_id": 735176,
+      "date": "14.11.2026",
+      "time": "17:30",
+      "level": "U18 II-divisioona",
+      "sisu_team": {
+        "team_id": 1368629034
+      },
+      "home": {
+        "team_id": 913575250
+      },
+      "away": {
+        "team_id": 1368629034
+      },
+      "urls": {
+        "gamecentre": "https://tulospalvelu.leijonat.fi/"
+      },
+      "link_is_specific": false
+    },
+    {
+      "game_id": 771756,
+      "date": "14.11.2026",
+      "time": "17:45",
+      "level": "U16 II-divisioona",
+      "sisu_team": {
+        "team_id": 1305184724
+      },
+      "home": {
+        "team_id": 9443981
+      },
+      "away": {
+        "team_id": 1305184724
+      },
+      "urls": {
+        "gamecentre": "https://tulospalvelu.leijonat.fi/"
+      },
+      "link_is_specific": false
+    },
+    {
+      "game_id": 728028,
+      "date": "15.11.2026",
+      "time": null,
+      "level": "U13 Sininen",
+      "sisu_team": {
+        "team_id": 1368626549
+      },
+      "home": {
+        "team_id": 1368626777
+      },
+      "away": {
+        "team_id": 1368626549
+      },
+      "urls": {
+        "gamecentre": "https://tulospalvelu.leijonat.fi/"
+      },
+      "link_is_specific": false
+    },
+    {
+      "game_id": 757903,
+      "date": "15.11.2026",
+      "time": "12:20",
+      "level": "U11 sarja",
+      "sisu_team": {
+        "team_id": 1368627585
+      },
+      "home": {
+        "team_id": 1368627840
+      },
+      "away": {
+        "team_id": 1368627585
+      },
+      "urls": {
+        "gamecentre": "https://tulospalvelu.leijonat.fi/"
+      },
+      "link_is_specific": false
+    },
+    {
+      "game_id": 758218,
+      "date": "15.11.2026",
+      "time": "12:30",
+      "level": "U11 sarja",
+      "sisu_team": {
+        "team_id": 1368627586
+      },
+      "home": {
+        "team_id": 1368627586
+      },
+      "away": {
+        "team_id": 1368630320
+      },
+      "urls": {
+        "gamecentre": "https://tulospalvelu.leijonat.fi/"
+      },
+      "link_is_specific": false
+    },
+    {
+      "game_id": 757904,
+      "date": "15.11.2026",
+      "time": "13:30",
+      "level": "U11 sarja",
+      "sisu_team": {
+        "team_id": 1368627585
+      },
+      "home": {
+        "team_id": 1368627840
+      },
+      "away": {
+        "team_id": 1368627585
+      },
+      "urls": {
+        "gamecentre": "https://tulospalvelu.leijonat.fi/"
+      },
+      "link_is_specific": false
+    },
+    {
+      "game_id": 758219,
+      "date": "15.11.2026",
+      "time": "14:00",
+      "level": "U11 sarja",
+      "sisu_team": {
+        "team_id": 1368627586
+      },
+      "home": {
+        "team_id": 1368627586
+      },
+      "away": {
+        "team_id": 1368630320
+      },
+      "urls": {
+        "gamecentre": "https://tulospalvelu.leijonat.fi/"
+      },
+      "link_is_specific": false
+    },
+    {
+      "game_id": 731624,
+      "date": "15.11.2026",
+      "time": "14:45",
+      "level": "U13 Valkoinen",
+      "sisu_team": {
+        "team_id": 1368626550
+      },
+      "home": {
+        "team_id": 1368626774
+      },
+      "away": {
+        "team_id": 1368626550
+      },
+      "urls": {
+        "gamecentre": "https://tulospalvelu.leijonat.fi/"
+      },
+      "link_is_specific": false
+    },
+    {
+      "game_id": 752973,
+      "date": "15.11.2026",
+      "time": "15:30",
+      "level": "U12 sarja",
+      "sisu_team": {
+        "team_id": 1368627072
+      },
+      "home": {
+        "team_id": 1368627072
+      },
+      "away": {
+        "team_id": 1368627881
+      },
+      "urls": {
+        "gamecentre": "https://tulospalvelu.leijonat.fi/"
+      },
+      "link_is_specific": false
+    },
+    {
+      "game_id": 752980,
+      "date": "15.11.2026",
+      "time": "17:00",
+      "level": "U12 sarja",
+      "sisu_team": {
+        "team_id": 1368627072
+      },
+      "home": {
+        "team_id": 1368627072
+      },
+      "away": {
+        "team_id": 1368627881
+      },
+      "urls": {
+        "gamecentre": "https://tulospalvelu.leijonat.fi/"
+      },
+      "link_is_specific": false
+    }
+  ],
+  "u9": [
+    {
+      "game_id": 767213,
+      "date": "25.10.2026",
+      "time": "12:00",
+      "level": "U9 Leijonaliiga",
+      "sisu_team": {
+        "team_id": 1368629033
+      },
+      "home": {
+        "team_id": 1368629090
+      },
+      "away": {
+        "team_id": 1368629033
+      },
+      "urls": {
+        "gamecentre": "https://tulospalvelu.leijonat.fi/"
+      },
+      "link_is_specific": false
+    },
+    {
+      "game_id": 767222,
+      "date": "25.10.2026",
+      "time": "12:00",
+      "level": "U9 Leijonaliiga",
+      "sisu_team": {
+        "team_id": 1368629032
+      },
+      "home": {
+        "team_id": 1368629067
+      },
+      "away": {
+        "team_id": 1368629032
+      },
+      "urls": {
+        "gamecentre": "https://tulospalvelu.leijonat.fi/"
+      },
+      "link_is_specific": false
+    },
+    {
+      "game_id": 767209,
+      "date": "25.10.2026",
+      "time": "12:45",
+      "level": "U9 Leijonaliiga",
+      "sisu_team": {
+        "team_id": 1368629032
+      },
+      "home": {
+        "team_id": 1368629090
+      },
+      "away": {
+        "team_id": 1368629032
+      },
+      "urls": {
+        "gamecentre": "https://tulospalvelu.leijonat.fi/"
+      },
+      "link_is_specific": false
+    },
+    {
+      "game_id": 767218,
+      "date": "25.10.2026",
+      "time": "12:45",
+      "level": "U9 Leijonaliiga",
+      "sisu_team": {
+        "team_id": 1368629033
+      },
+      "home": {
+        "team_id": 1368629067
+      },
+      "away": {
+        "team_id": 1368629033
+      },
+      "urls": {
+        "gamecentre": "https://tulospalvelu.leijonat.fi/"
+      },
+      "link_is_specific": false
+    }
+  ],
+  "responses": [
+    {
+      "params": {
+        "dwl": 0,
+        "season": 2027,
+        "subSerieId": 0,
+        "teamid": 0,
+        "districtid": 2,
+        "gamedays": -1,
+        "dog": "2026-10-25",
+        "levelid": -1
+      },
+      "url": "https://tulospalvelu.leijonat.fi/helpers/getgames",
+      "data": [
+        {
+          "Games": [
+            {
+              "GameID": 2755415,
+              "GameDateDB": "2026-10-25",
+              "GameDate": "25.10.2026",
+              "GameTime": "12:00:00",
+              "HomeTeam": 1368629090,
+              "AwayTeam": 1368629033,
+              "HomeTeamAbbrv": "Fortuna Keltainen",
+              "AwayTeamAbbrv": "SiSu Valkoinen",
+              "Season": 2027,
+              "SubSerieID": 1765,
+              "LevelID": 111
+            },
+            {
+              "GameID": 2755417,
+              "GameDateDB": "2026-10-25",
+              "GameDate": "25.10.2026",
+              "GameTime": "12:00:00",
+              "HomeTeam": 1368629067,
+              "AwayTeam": 1368629032,
+              "HomeTeamAbbrv": "Fortuna Musta",
+              "AwayTeamAbbrv": "SiSu Punainen",
+              "Season": 2027,
+              "SubSerieID": 1765,
+              "LevelID": 111
+            },
+            {
+              "GameID": 2755414,
+              "GameDateDB": "2026-10-25",
+              "GameDate": "25.10.2026",
+              "GameTime": "12:45:00",
+              "HomeTeam": 1368629090,
+              "AwayTeam": 1368629032,
+              "HomeTeamAbbrv": "Fortuna Keltainen",
+              "AwayTeamAbbrv": "SiSu Punainen",
+              "Season": 2027,
+              "SubSerieID": 1765,
+              "LevelID": 111
+            },
+            {
+              "GameID": 2755416,
+              "GameDateDB": "2026-10-25",
+              "GameDate": "25.10.2026",
+              "GameTime": "12:45:00",
+              "HomeTeam": 1368629067,
+              "AwayTeam": 1368629033,
+              "HomeTeamAbbrv": "Fortuna Musta",
+              "AwayTeamAbbrv": "SiSu Valkoinen",
+              "Season": 2027,
+              "SubSerieID": 1765,
+              "LevelID": 111
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "params": {
+        "dwl": 0,
+        "season": 2027,
+        "subSerieId": 0,
+        "teamid": 0,
+        "districtid": 2,
+        "gamedays": -1,
+        "dog": "2026-11-07",
+        "levelid": -1
+      },
+      "url": "https://tulospalvelu.leijonat.fi/helpers/getgames",
+      "data": [
+        {
+          "Games": [
+            {
+              "GameID": 2727984,
+              "GameDateDB": "2026-11-07",
+              "GameDate": "07.11.2026",
+              "GameTime": "18:15:00",
+              "HomeTeam": 1368629034,
+              "AwayTeam": 1368627381,
+              "HomeTeamAbbrv": "SiSu",
+              "AwayTeamAbbrv": "Fortuna",
+              "Season": 2027,
+              "SubSerieID": 3952,
+              "LevelID": 84
+            },
+            {
+              "GameID": 2744889,
+              "GameDateDB": "2026-11-07",
+              "GameDate": "07.11.2026",
+              "GameTime": "10:15:00",
+              "HomeTeam": 1368627809,
+              "AwayTeam": 1368627585,
+              "HomeTeamAbbrv": "HPK Oranssi",
+              "AwayTeamAbbrv": "SiSu Punainen",
+              "Season": 2027,
+              "SubSerieID": 3612,
+              "LevelID": 146
+            },
+            {
+              "GameID": 2744892,
+              "GameDateDB": "2026-11-07",
+              "GameDate": "07.11.2026",
+              "GameTime": "12:00:00",
+              "HomeTeam": 1368627809,
+              "AwayTeam": 1368627585,
+              "HomeTeamAbbrv": "HPK Oranssi",
+              "AwayTeamAbbrv": "SiSu Punainen",
+              "Season": 2027,
+              "SubSerieID": 3612,
+              "LevelID": 146
+            },
+            {
+              "GameID": 2745236,
+              "GameDateDB": "2026-11-07",
+              "GameDate": "07.11.2026",
+              "GameTime": "16:30:00",
+              "HomeTeam": 1368627586,
+              "AwayTeam": 1368627839,
+              "HomeTeamAbbrv": "SiSu Valkoinen",
+              "AwayTeamAbbrv": "Ilves Winnipeg",
+              "Season": 2027,
+              "SubSerieID": 3613,
+              "LevelID": 146
+            },
+            {
+              "GameID": 2745237,
+              "GameDateDB": "2026-11-07",
+              "GameDate": "07.11.2026",
+              "GameTime": "17:50:00",
+              "HomeTeam": 1368627586,
+              "AwayTeam": 1368627839,
+              "HomeTeamAbbrv": "SiSu Valkoinen",
+              "AwayTeamAbbrv": "Ilves Winnipeg",
+              "Season": 2027,
+              "SubSerieID": 3613,
+              "LevelID": 146
+            },
+            {
+              "GameID": 2733467,
+              "GameDateDB": "2026-11-07",
+              "GameDate": "07.11.2026",
+              "GameTime": "17:50:00",
+              "HomeTeam": 1368627072,
+              "AwayTeam": 1368627776,
+              "HomeTeamAbbrv": "SiSu Valkoinen",
+              "AwayTeamAbbrv": "Pelicans Itä Valkoinen",
+              "Season": 2027,
+              "SubSerieID": 3605,
+              "LevelID": 145
+            },
+            {
+              "GameID": 2733475,
+              "GameDateDB": "2026-11-07",
+              "GameDate": "07.11.2026",
+              "GameTime": "19:20:00",
+              "HomeTeam": 1368627072,
+              "AwayTeam": 1368627776,
+              "HomeTeamAbbrv": "SiSu Valkoinen",
+              "AwayTeamAbbrv": "Pelicans Itä Valkoinen",
+              "Season": 2027,
+              "SubSerieID": 3605,
+              "LevelID": 145
+            },
+            {
+              "GameID": 2715094,
+              "GameDateDB": "2026-11-07",
+              "GameDate": "07.11.2026",
+              "GameTime": "15:45:00",
+              "HomeTeam": 1368626549,
+              "AwayTeam": 1368630080,
+              "HomeTeamAbbrv": "SiSu punainen",
+              "AwayTeamAbbrv": "Kiekko-Ahma Musta",
+              "Season": 2027,
+              "SubSerieID": 2960,
+              "LevelID": 101
+            },
+            {
+              "GameID": 2722242,
+              "GameDateDB": "2026-11-07",
+              "GameDate": "07.11.2026",
+              "GameTime": "13:00:00",
+              "HomeTeam": 1368626722,
+              "AwayTeam": 1368626550,
+              "HomeTeamAbbrv": "Kisa-Eagles VALKOINEN",
+              "AwayTeamAbbrv": "SiSu valkoinen",
+              "Season": 2027,
+              "SubSerieID": 4118,
+              "LevelID": 102
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "params": {
+        "dwl": 0,
+        "season": 2027,
+        "subSerieId": 0,
+        "teamid": 0,
+        "districtid": 2,
+        "gamedays": -1,
+        "dog": "2026-11-08",
+        "levelid": -1
+      },
+      "url": "https://tulospalvelu.leijonat.fi/helpers/getgames",
+      "data": [
+        {
+          "Games": [
+            {
+              "GameID": 2745254,
+              "GameDateDB": "2026-11-08",
+              "GameDate": "08.11.2026",
+              "GameTime": "12:20:00",
+              "HomeTeam": 1368627856,
+              "AwayTeam": 1368627586,
+              "HomeTeamAbbrv": "LeKi Valkoinen",
+              "AwayTeamAbbrv": "SiSu Valkoinen",
+              "Season": 2027,
+              "SubSerieID": 3613,
+              "LevelID": 146
+            },
+            {
+              "GameID": 2745255,
+              "GameDateDB": "2026-11-08",
+              "GameDate": "08.11.2026",
+              "GameTime": "13:45:00",
+              "HomeTeam": 1368627856,
+              "AwayTeam": 1368627586,
+              "HomeTeamAbbrv": "LeKi Valkoinen",
+              "AwayTeamAbbrv": "SiSu Valkoinen",
+              "Season": 2027,
+              "SubSerieID": 3613,
+              "LevelID": 146
+            },
+            {
+              "GameID": 2743008,
+              "GameDateDB": "2026-11-08",
+              "GameDate": "08.11.2026",
+              "GameTime": "14:40:00",
+              "HomeTeam": 1368627202,
+              "AwayTeam": 1368627073,
+              "HomeTeamAbbrv": "HPK Black",
+              "AwayTeamAbbrv": "SiSu Punainen",
+              "Season": 2027,
+              "SubSerieID": 3603,
+              "LevelID": 145
+            },
+            {
+              "GameID": 2743004,
+              "GameDateDB": "2026-11-08",
+              "GameDate": "08.11.2026",
+              "GameTime": "15:45:00",
+              "HomeTeam": 1368627202,
+              "AwayTeam": 1368627073,
+              "HomeTeamAbbrv": "HPK Black",
+              "AwayTeamAbbrv": "SiSu Punainen",
+              "Season": 2027,
+              "SubSerieID": 3603,
+              "LevelID": 145
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "params": {
+        "dwl": 0,
+        "season": 2027,
+        "subSerieId": 0,
+        "teamid": 0,
+        "districtid": 2,
+        "gamedays": -1,
+        "dog": "2026-11-14",
+        "levelid": -1
+      },
+      "url": "https://tulospalvelu.leijonat.fi/helpers/getgames",
+      "data": [
+        {
+          "Games": [
+            {
+              "GameID": 2727993,
+              "GameDateDB": "2026-11-14",
+              "GameDate": "14.11.2026",
+              "GameTime": "17:30:00",
+              "HomeTeam": 913575250,
+              "AwayTeam": 1368629034,
+              "HomeTeamAbbrv": "Kisa-Eagles",
+              "AwayTeamAbbrv": "SiSu",
+              "Season": 2027,
+              "SubSerieID": 3952,
+              "LevelID": 84
+            },
+            {
+              "GameID": 2745262,
+              "GameDateDB": "2026-11-14",
+              "GameDate": "14.11.2026",
+              "GameTime": "15:50:00",
+              "HomeTeam": 1368627586,
+              "AwayTeam": 1368630000,
+              "HomeTeamAbbrv": "SiSu Valkoinen",
+              "AwayTeamAbbrv": "Hokkarit Sininen",
+              "Season": 2027,
+              "SubSerieID": 3613,
+              "LevelID": 146
+            },
+            {
+              "GameID": 2745263,
+              "GameDateDB": "2026-11-14",
+              "GameDate": "14.11.2026",
+              "GameTime": "17:20:00",
+              "HomeTeam": 1368627586,
+              "AwayTeam": 1368630000,
+              "HomeTeamAbbrv": "SiSu Valkoinen",
+              "AwayTeamAbbrv": "Hokkarit Sininen",
+              "Season": 2027,
+              "SubSerieID": 3613,
+              "LevelID": 146
+            },
+            {
+              "GameID": 2743015,
+              "GameDateDB": "2026-11-14",
+              "GameDate": "14.11.2026",
+              "GameTime": "12:45:00",
+              "HomeTeam": 1368627073,
+              "AwayTeam": 1368627185,
+              "HomeTeamAbbrv": "SiSu Punainen",
+              "AwayTeamAbbrv": "Ilves Montreal",
+              "Season": 2027,
+              "SubSerieID": 3603,
+              "LevelID": 145
+            },
+            {
+              "GameID": 2743013,
+              "GameDateDB": "2026-11-14",
+              "GameDate": "14.11.2026",
+              "GameTime": "14:15:00",
+              "HomeTeam": 1368627073,
+              "AwayTeam": 1368627185,
+              "HomeTeamAbbrv": "SiSu Punainen",
+              "AwayTeamAbbrv": "Ilves Montreal",
+              "Season": 2027,
+              "SubSerieID": 3603,
+              "LevelID": 145
+            },
+            {
+              "GameID": 2715101,
+              "GameDateDB": "2026-11-14",
+              "GameDate": "14.11.2026",
+              "GameTime": "15:20:00",
+              "HomeTeam": 1368626549,
+              "AwayTeam": 1368630080,
+              "HomeTeamAbbrv": "SiSu punainen",
+              "AwayTeamAbbrv": "Kiekko-Ahma Musta",
+              "Season": 2027,
+              "SubSerieID": 2960,
+              "LevelID": 101
+            },
+            {
+              "GameID": 2722257,
+              "GameDateDB": "2026-11-14",
+              "GameDate": "14.11.2026",
+              "GameTime": "17:30:00",
+              "HomeTeam": 1368630217,
+              "AwayTeam": 1368626550,
+              "HomeTeamAbbrv": "KOOVEE Red",
+              "AwayTeamAbbrv": "SiSu valkoinen",
+              "Season": 2027,
+              "SubSerieID": 4118,
+              "LevelID": 102
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "params": {
+        "dwl": 0,
+        "season": 2027,
+        "subSerieId": 0,
+        "teamid": 0,
+        "districtid": 2,
+        "gamedays": -1,
+        "dog": "2026-11-15",
+        "levelid": -1
+      },
+      "url": "https://tulospalvelu.leijonat.fi/helpers/getgames",
+      "data": [
+        {
+          "Games": [
+            {
+              "GameID": 2744919,
+              "GameDateDB": "2026-11-15",
+              "GameDate": "15.11.2026",
+              "GameTime": "12:20:00",
+              "HomeTeam": 1368627840,
+              "AwayTeam": 1368627585,
+              "HomeTeamAbbrv": "Ilves Edmonton",
+              "AwayTeamAbbrv": "SiSu Punainen",
+              "Season": 2027,
+              "SubSerieID": 3612,
+              "LevelID": 146
+            },
+            {
+              "GameID": 2745274,
+              "GameDateDB": "2026-11-15",
+              "GameDate": "15.11.2026",
+              "GameTime": "12:30:00",
+              "HomeTeam": 1368627586,
+              "AwayTeam": 1368630320,
+              "HomeTeamAbbrv": "SiSu Valkoinen",
+              "AwayTeamAbbrv": "RuoSkA",
+              "Season": 2027,
+              "SubSerieID": 3613,
+              "LevelID": 146
+            },
+            {
+              "GameID": 2744920,
+              "GameDateDB": "2026-11-15",
+              "GameDate": "15.11.2026",
+              "GameTime": "13:30:00",
+              "HomeTeam": 1368627840,
+              "AwayTeam": 1368627585,
+              "HomeTeamAbbrv": "Ilves Edmonton",
+              "AwayTeamAbbrv": "SiSu Punainen",
+              "Season": 2027,
+              "SubSerieID": 3612,
+              "LevelID": 146
+            },
+            {
+              "GameID": 2745275,
+              "GameDateDB": "2026-11-15",
+              "GameDate": "15.11.2026",
+              "GameTime": "14:00:00",
+              "HomeTeam": 1368627586,
+              "AwayTeam": 1368630320,
+              "HomeTeamAbbrv": "SiSu Valkoinen",
+              "AwayTeamAbbrv": "RuoSkA",
+              "Season": 2027,
+              "SubSerieID": 3613,
+              "LevelID": 146
+            },
+            {
+              "GameID": 2733487,
+              "GameDateDB": "2026-11-15",
+              "GameDate": "15.11.2026",
+              "GameTime": "15:30:00",
+              "HomeTeam": 1368627072,
+              "AwayTeam": 1368627881,
+              "HomeTeamAbbrv": "SiSu Valkoinen",
+              "AwayTeamAbbrv": "Tappara Valkoinen",
+              "Season": 2027,
+              "SubSerieID": 3605,
+              "LevelID": 145
+            },
+            {
+              "GameID": 2733494,
+              "GameDateDB": "2026-11-15",
+              "GameDate": "15.11.2026",
+              "GameTime": "17:00:00",
+              "HomeTeam": 1368627072,
+              "AwayTeam": 1368627881,
+              "HomeTeamAbbrv": "SiSu Valkoinen",
+              "AwayTeamAbbrv": "Tappara Valkoinen",
+              "Season": 2027,
+              "SubSerieID": 3605,
+              "LevelID": 145
+            },
+            {
+              "GameID": 2715106,
+              "GameDateDB": "2026-11-15",
+              "GameDate": "15.11.2026",
+              "GameTime": "",
+              "HomeTeam": 1368626777,
+              "AwayTeam": 1368626549,
+              "HomeTeamAbbrv": "HC Nokia Oranssi",
+              "AwayTeamAbbrv": "SiSu punainen",
+              "Season": 2027,
+              "SubSerieID": 2960,
+              "LevelID": 101
+            },
+            {
+              "GameID": 2722262,
+              "GameDateDB": "2026-11-15",
+              "GameDate": "15.11.2026",
+              "GameTime": "14:45:00",
+              "HomeTeam": 1368626774,
+              "AwayTeam": 1368626550,
+              "HomeTeamAbbrv": "LeKi",
+              "AwayTeamAbbrv": "SiSu valkoinen",
+              "Season": 2027,
+              "SubSerieID": 4118,
+              "LevelID": 102
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "params": {
+        "dwl": 0,
+        "season": 2027,
+        "subSerieId": 0,
+        "teamid": 0,
+        "districtid": 6,
+        "gamedays": -1,
+        "dog": "2026-11-14",
+        "levelid": -1
+      },
+      "url": "https://tulospalvelu.leijonat.fi/helpers/getgames",
+      "data": [
+        {
+          "Games": [
+            {
+              "GameID": 2758488,
+              "GameDateDB": "2026-11-14",
+              "GameDate": "14.11.2026",
+              "GameTime": "17:45:00",
+              "HomeTeam": 9443981,
+              "AwayTeam": 1305184724,
+              "HomeTeamAbbrv": "Rockets",
+              "AwayTeamAbbrv": "SiSu",
+              "Season": 2027,
+              "SubSerieID": 5108,
+              "LevelID": 152
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "expected_current": [
+    {
+      "legacy_id": 757873,
+      "public_id": 2744889,
+      "date": "2026-11-07",
+      "time": "10:15",
+      "level": "U11 sarja",
+      "season": 2027
+    },
+    {
+      "legacy_id": 757876,
+      "public_id": 2744892,
+      "date": "2026-11-07",
+      "time": "12:00",
+      "level": "U11 sarja",
+      "season": 2027
+    },
+    {
+      "legacy_id": 731604,
+      "public_id": 2722242,
+      "date": "2026-11-07",
+      "time": "13:00",
+      "level": "U13 Valkoinen",
+      "season": 2027
+    },
+    {
+      "legacy_id": 728016,
+      "public_id": 2715094,
+      "date": "2026-11-07",
+      "time": "15:45",
+      "level": "U13 Sininen",
+      "season": 2027
+    },
+    {
+      "legacy_id": 758180,
+      "public_id": 2745236,
+      "date": "2026-11-07",
+      "time": "16:30",
+      "level": "U11 sarja",
+      "season": 2027
+    },
+    {
+      "legacy_id": 752953,
+      "public_id": 2733467,
+      "date": "2026-11-07",
+      "time": "17:50",
+      "level": "U12 sarja",
+      "season": 2027
+    },
+    {
+      "legacy_id": 758181,
+      "public_id": 2745237,
+      "date": "2026-11-07",
+      "time": "17:50",
+      "level": "U11 sarja",
+      "season": 2027
+    },
+    {
+      "legacy_id": 735167,
+      "public_id": 2727984,
+      "date": "2026-11-07",
+      "time": "18:15",
+      "level": "U18 II-divisioona",
+      "season": 2027
+    },
+    {
+      "legacy_id": 752961,
+      "public_id": 2733475,
+      "date": "2026-11-07",
+      "time": "19:20",
+      "level": "U12 sarja",
+      "season": 2027
+    },
+    {
+      "legacy_id": 758198,
+      "public_id": 2745254,
+      "date": "2026-11-08",
+      "time": "12:20",
+      "level": "U11 sarja",
+      "season": 2027
+    },
+    {
+      "legacy_id": 758199,
+      "public_id": 2745255,
+      "date": "2026-11-08",
+      "time": "13:45",
+      "level": "U11 sarja",
+      "season": 2027
+    },
+    {
+      "legacy_id": 753371,
+      "public_id": 2743008,
+      "date": "2026-11-08",
+      "time": "14:40",
+      "level": "U12 sarja",
+      "season": 2027
+    },
+    {
+      "legacy_id": 753367,
+      "public_id": 2743004,
+      "date": "2026-11-08",
+      "time": "15:45",
+      "level": "U12 sarja",
+      "season": 2027
+    },
+    {
+      "legacy_id": 753378,
+      "public_id": 2743015,
+      "date": "2026-11-14",
+      "time": "12:45",
+      "level": "U12 sarja",
+      "season": 2027
+    },
+    {
+      "legacy_id": 753376,
+      "public_id": 2743013,
+      "date": "2026-11-14",
+      "time": "14:15",
+      "level": "U12 sarja",
+      "season": 2027
+    },
+    {
+      "legacy_id": 728023,
+      "public_id": 2715101,
+      "date": "2026-11-14",
+      "time": "15:20",
+      "level": "U13 Sininen",
+      "season": 2027
+    },
+    {
+      "legacy_id": 758206,
+      "public_id": 2745262,
+      "date": "2026-11-14",
+      "time": "15:50",
+      "level": "U11 sarja",
+      "season": 2027
+    },
+    {
+      "legacy_id": 758207,
+      "public_id": 2745263,
+      "date": "2026-11-14",
+      "time": "17:20",
+      "level": "U11 sarja",
+      "season": 2027
+    },
+    {
+      "legacy_id": 731619,
+      "public_id": 2722257,
+      "date": "2026-11-14",
+      "time": "17:30",
+      "level": "U13 Valkoinen",
+      "season": 2027
+    },
+    {
+      "legacy_id": 735176,
+      "public_id": 2727993,
+      "date": "2026-11-14",
+      "time": "17:30",
+      "level": "U18 II-divisioona",
+      "season": 2027
+    },
+    {
+      "legacy_id": 771756,
+      "public_id": 2758488,
+      "date": "2026-11-14",
+      "time": "17:45",
+      "level": "U16 II-divisioona",
+      "season": 2027
+    },
+    {
+      "legacy_id": 728028,
+      "public_id": 2715106,
+      "date": "2026-11-15",
+      "time": null,
+      "level": "U13 Sininen",
+      "season": 2027
+    },
+    {
+      "legacy_id": 757903,
+      "public_id": 2744919,
+      "date": "2026-11-15",
+      "time": "12:20",
+      "level": "U11 sarja",
+      "season": 2027
+    },
+    {
+      "legacy_id": 758218,
+      "public_id": 2745274,
+      "date": "2026-11-15",
+      "time": "12:30",
+      "level": "U11 sarja",
+      "season": 2027
+    },
+    {
+      "legacy_id": 757904,
+      "public_id": 2744920,
+      "date": "2026-11-15",
+      "time": "13:30",
+      "level": "U11 sarja",
+      "season": 2027
+    },
+    {
+      "legacy_id": 758219,
+      "public_id": 2745275,
+      "date": "2026-11-15",
+      "time": "14:00",
+      "level": "U11 sarja",
+      "season": 2027
+    },
+    {
+      "legacy_id": 731624,
+      "public_id": 2722262,
+      "date": "2026-11-15",
+      "time": "14:45",
+      "level": "U13 Valkoinen",
+      "season": 2027
+    },
+    {
+      "legacy_id": 752973,
+      "public_id": 2733487,
+      "date": "2026-11-15",
+      "time": "15:30",
+      "level": "U12 sarja",
+      "season": 2027
+    },
+    {
+      "legacy_id": 752980,
+      "public_id": 2733494,
+      "date": "2026-11-15",
+      "time": "17:00",
+      "level": "U12 sarja",
+      "season": 2027
+    }
+  ]
+}

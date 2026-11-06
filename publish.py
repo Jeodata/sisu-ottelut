@@ -18,6 +18,7 @@ from typing import Any
 from zoneinfo import ZoneInfo
 
 from render_html import render_html
+from logo_assets import localize_logos
 from public_game_ids import enrich_public_links
 from sisu_ottelut import (
     DEFAULT_ASS_ID,
@@ -100,6 +101,8 @@ def write_site(payload: dict[str, Any], out_dir: Path) -> None:
     icons_dst.mkdir(exist_ok=True)
     for icon in (ROOT / "icons").glob("*.png"):
         shutil.copy2(icon, icons_dst / icon.name)
+    # Logo fetch errors degrade to a cached crest/initials, not a failed update.
+    localize_logos(payload, out_dir)
     html = render_html(payload)
     (out_dir / "index.html").write_text(html, encoding="utf-8")
     (out_dir / "games.json").write_text(

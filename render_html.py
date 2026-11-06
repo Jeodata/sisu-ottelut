@@ -4,6 +4,7 @@ import html
 import re
 from datetime import datetime
 from typing import Any
+from urllib.parse import parse_qs, urlsplit
 from zoneinfo import ZoneInfo
 
 TZ = ZoneInfo("Europe/Helsinki")
@@ -47,9 +48,11 @@ def _team_label(side: dict[str, Any] | None) -> str:
 def _logo(side: dict[str, Any] | None) -> str:
     side = side or {}
     url, name = side.get("logo") or "", _team_label(side)
+    fallback = f'<span class="crest crest-fallback" aria-hidden="true">{_e(name[:2].upper())}</span>'
     if url:
-        return f'<img class="crest" src="{_e(url)}" alt="{_e(name)}" width="40" height="40" loading="lazy">'
-    return f'<span class="crest crest-fallback">{_e(name[:2].upper())}</span>'
+        image = f'<img class="crest" src="{_e(url)}" alt="" width="40" height="40" loading="lazy" onerror="this.remove()">'
+        return f'<span class="crest-wrap" role="img" aria-label="{_e(name)}">{fallback}{image}</span>'
+    return f'<span class="crest-wrap" role="img" aria-label="{_e(name)}">{fallback}</span>'
 
 def _score_block(game: dict[str, Any]) -> str:
     status = game.get("status")
@@ -81,6 +84,21 @@ def _game_card(game: dict[str, Any], season_no: int | None = None) -> str:
     url = (game.get("urls") or {}).get("gamecentre") or "https://tulospalvelu.leijonat.fi/"
     linked = True
     specific = bool(game.get("link_is_specific"))
+    # Old archives predate public-ID verification. Do not render their guessed
+    # game?gameid=<internal> URLs, or trust third-party/mismatched season URLs.
+    try:
+        parsed, query = urlsplit(url), parse_qs(urlsplit(url).query)
+        specific = bool(specific and parsed.scheme == "https"
+                        and parsed.netloc == "tulospalvelu.leijonat.fi"
+                        and parsed.path == "/game"
+                        and len(query.get("gameid", [])) == 1
+                        and int(query["gameid"][0]) > 0
+                        and query.get("season") == [str(season_no)]
+                        and query.get("lang") == ["fi"])
+    except (TypeError, ValueError, KeyError):
+        specific = False
+    if not specific:
+        url = "https://tulospalvelu.leijonat.fi/"
     result_class = f" result-{result}" if result else ""
     sisu_name = sisu.get("abbreviation") or sisu.get("name") or "Sisu"
     meta_bits = [bit for bit in (level, rink + small) if bit]
@@ -205,6 +223,8 @@ def render_html(payload: dict[str, Any], extra_days: list[dict[str, Any]] | None
     .team {{ display:flex; flex-direction:column; align-items:center; gap:.35rem; text-align:center; }}
     .tname {{ font-weight:700; font-size:.92rem; line-height:1.2; }}
     .crest {{ width:40px; height:40px; object-fit:contain; border-radius:50%; background:#fff; }}
+    .crest-wrap {{ position:relative; display:block; width:40px; height:40px; }}
+    .crest-wrap img {{ position:absolute; inset:0; }}
     .crest-fallback {{ width:40px; height:40px; border-radius:50%; display:grid; place-items:center; background:#f3f5f8; font-size:.75rem; font-weight:800; }}
     .score {{ min-width:92px; text-align:center; font-variant-numeric:tabular-nums; }}
     .score .num {{ font-size:1.7rem; font-weight:800; }} .score .sep {{ margin:0 .15rem; color:var(--muted); font-size:1.3rem; }}

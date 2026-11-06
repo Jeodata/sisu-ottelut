@@ -4,5 +4,31 @@ __pycache__/
 .DS_Store
 .idea/
 .vscode/
-tama_paiva.json
-esimerkki_0310.json
+/tama_paiva.json
+/esimerkki_0310.json
+
+# Local downloads/build scratch space, not generated Pages data.
+/downloads/
+/tmp/
+*.zip
+*.part
+*.crdownload
+*.tmp
+
+# Obsolete root exports (the production versions live in docs/).
+/games.json
+/latest.json
+/index.html
+/logo.png
+/icon-192.png
+/icon-512.png
+/update_sisu.sh
+
+# Known browser/ZIP-upload duplicate names, never canonical source files.
+**/icon-192 ([0-9]*).png
+**/icon-512 ([0-9]*).png
+**/apple-touch-icon ([0-9]*).png
+**/logo ([0-9]*).png
+**/manifest ([0-9]*).webmanifest
+**/service-worker ([0-9]*).js
+**/update-games ([0-9]*).yml

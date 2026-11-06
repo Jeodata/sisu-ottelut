@@ -9,6 +9,9 @@ from zoneinfo import ZoneInfo
 BASE_URL = "https://tulospalvelu.leijonat.fi"
 HELPERS = f"{BASE_URL}/helpers"
 PROXY_URL = "https://leijonat-proxy.jeolehto.workers.dev"
+# Mirrors window.STATIC_ASSETS_IMAGE_BASE_URL in the official /serie page.
+# Img is now e.g. 2027/teams/<id>.png?associationId=<id>, not a flat filename.
+TEAM_LOGO_BASE = "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/"
 TZ = ZoneInfo("Europe/Helsinki")
 CLUB_NAME_NEEDLE = "SISU HOCKEY HÄMEENLINNA"
 DEFAULT_ASS_ID = "11015646"
@@ -186,11 +189,39 @@ def period_scores(summary: Any) -> dict[str, list[Any]] | None:
     home, away = pg.get("Home") or [], pg.get("Away") or []
     return {"home": home, "away": away} if (home or away) else None
 
+def logo_url(value: Any) -> str | None:
+    """Normalize flat legacy filenames and current season/team paths."""
+    if not isinstance(value, str) or not value.strip():
+        return None
+    value = value.strip()
+    parsed = urllib.parse.urlsplit(value)
+    if parsed.scheme or parsed.netloc:
+        if parsed.scheme != "https" or parsed.netloc not in {
+            urllib.parse.urlsplit(BASE_URL).netloc,
+            urllib.parse.urlsplit(TEAM_LOGO_BASE).netloc,
+        }:
+            return None
+        if parsed.netloc == urllib.parse.urlsplit(TEAM_LOGO_BASE).netloc:
+            return value
+        prefix = "/images/associations/weblogos/200x200/"
+        if not parsed.path.startswith(prefix):
+            return None
+        value = parsed.path[len(prefix):] + ("?" + parsed.query if parsed.query else "")
+    else:
+        value = value.lstrip("/")
+        prefix = "images/associations/weblogos/200x200/"
+        if value.startswith(prefix):
+            value = value[len(prefix):]
+    path = urllib.parse.unquote(urllib.parse.urlsplit(value).path)
+    if ".." in path.split("/") or "\\" in path or not path.endswith(".png"):
+        return None
+    return TEAM_LOGO_BASE + value
+
 def team_side(raw: dict[str, Any], prefix: str, show_score: bool) -> dict[str, Any]:
     goals = raw.get(f"{prefix}Goals")
     score = goals if show_score and goals is not None else None
     img = raw.get(f"{prefix}Img")
-    logo = f"{BASE_URL}/images/associations/weblogos/200x200/{img}" if img else None
+    logo = logo_url(img)
     return {"team_id": raw.get(f"{prefix}Team"), "name": raw.get(f"{prefix}TeamName"), "abbreviation": raw.get(f"{prefix}Abbrv"), "association_id": raw.get(f"{prefix}Association"), "logo": logo, "goals": score}
 
 def normalize_game(raw: dict[str, Any], ass_id: str, teams_by_id: dict[Any, str], day: datetime | None = None, season_number: int | None = None) -> dict[str, Any]:
