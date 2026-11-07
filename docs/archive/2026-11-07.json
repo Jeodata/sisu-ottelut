@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T18:35:24+02:00",
+  "generated_at": "2026-11-07T18:40:26+02:00",
   "date": "2026-11-07",
   "date_fi": "07.11.2026",
   "club": {
@@ -293,7 +293,7 @@
       "date": "07.11.2026",
       "time": "17:50",
       "status": "live",
-      "status_code": 13,
+      "status_code": 15,
       "finished_type": null,
       "level": "U12 sarja",
       "level_id": 1143,
@@ -324,7 +324,7 @@
         "abbreviation": "Pelicans Itä Valkoinen",
         "association_id": 11019913,
         "logo": "assets/team-logos/6c2501c09ed4503360b9164170546f23c4f597c32907cbb1ab426aebb15e76b2.png",
-        "goals": 3,
+        "goals": 4,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627776.png?associationId=11019913",
         "logo_source": "team"
       },
@@ -376,7 +376,7 @@
         "abbreviation": "Ilves Winnipeg",
         "association_id": 10114698,
         "logo": "assets/team-logos/4e435ceda98ea30a202ce760a217bd3d7596fb1a9d35454afd376157141cb1ff.png",
-        "goals": 11,
+        "goals": 12,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627839.png?associationId=10114698",
         "logo_source": "team"
       },
@@ -428,7 +428,7 @@
         "abbreviation": "Fortuna",
         "association_id": 10114766,
         "logo": "assets/team-logos/1b25c4104ab60819a8204f46d270148dedad0d700ed854f069bf65d61055ed1b.png",
-        "goals": 3,
+        "goals": 4,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627381.png?associationId=10114766",
         "logo_source": "team"
       },
@@ -557,7 +557,7 @@
       "date": "07.11.2026",
       "time": "17:50",
       "status": "live",
-      "status_code": 13,
+      "status_code": 15,
       "finished_type": null,
       "level": "U12 sarja",
       "level_id": 1143,
@@ -588,7 +588,7 @@
         "abbreviation": "Pelicans Itä Valkoinen",
         "association_id": 11019913,
         "logo": "assets/team-logos/6c2501c09ed4503360b9164170546f23c4f597c32907cbb1ab426aebb15e76b2.png",
-        "goals": 3,
+        "goals": 4,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627776.png?associationId=11019913",
         "logo_source": "team"
       },
@@ -640,7 +640,7 @@
         "abbreviation": "Ilves Winnipeg",
         "association_id": 10114698,
         "logo": "assets/team-logos/4e435ceda98ea30a202ce760a217bd3d7596fb1a9d35454afd376157141cb1ff.png",
-        "goals": 11,
+        "goals": 12,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627839.png?associationId=10114698",
         "logo_source": "team"
       },
@@ -692,7 +692,7 @@
         "abbreviation": "Fortuna",
         "association_id": 10114766,
         "logo": "assets/team-logos/1b25c4104ab60819a8204f46d270148dedad0d700ed854f069bf65d61055ed1b.png",
-        "goals": 3,
+        "goals": 4,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627381.png?associationId=10114766",
         "logo_source": "team"
       },
