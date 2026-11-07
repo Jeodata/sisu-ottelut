@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T16:55:23+02:00",
+  "generated_at": "2026-11-07T17:00:26+02:00",
   "date": "2026-11-07",
   "date_fi": "07.11.2026",
   "club": {
@@ -272,7 +272,7 @@
         "abbreviation": "Ilves Winnipeg",
         "association_id": 10114698,
         "logo": "assets/team-logos/4e435ceda98ea30a202ce760a217bd3d7596fb1a9d35454afd376157141cb1ff.png",
-        "goals": 7,
+        "goals": 8,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627839.png?associationId=10114698",
         "logo_source": "team"
       },
@@ -744,7 +744,7 @@
         "abbreviation": "Ilves Winnipeg",
         "association_id": 10114698,
         "logo": "assets/team-logos/4e435ceda98ea30a202ce760a217bd3d7596fb1a9d35454afd376157141cb1ff.png",
-        "goals": 7,
+        "goals": 8,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627839.png?associationId=10114698",
         "logo_source": "team"
       },
