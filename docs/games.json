@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T14:00:26+02:00",
+  "generated_at": "2026-11-07T14:05:25+02:00",
   "date": "2026-11-07",
   "date_fi": "07.11.2026",
   "club": {
@@ -168,7 +168,7 @@
         "abbreviation": "SiSu valkoinen",
         "association_id": 11015646,
         "logo": "assets/team-logos/d0c897255590be362e4ecd5d218344264b16e5a7b3a8f70f0e6409b2a35605bb.png",
-        "goals": 8,
+        "goals": 9,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368626550.png?associationId=11015646",
         "logo_source": "team"
       },
@@ -848,7 +848,7 @@
         "abbreviation": "SiSu valkoinen",
         "association_id": 11015646,
         "logo": "assets/team-logos/d0c897255590be362e4ecd5d218344264b16e5a7b3a8f70f0e6409b2a35605bb.png",
-        "goals": 8,
+        "goals": 9,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368626550.png?associationId=11015646",
         "logo_source": "team"
       },
