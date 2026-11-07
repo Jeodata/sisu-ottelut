@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T17:50:26+02:00",
+  "generated_at": "2026-11-07T17:55:23+02:00",
   "date": "2026-11-07",
   "date_fi": "07.11.2026",
   "club": {
@@ -21,8 +21,8 @@
   },
   "counts": {
     "total": 9,
-    "upcoming": 3,
-    "live": 1,
+    "upcoming": 2,
+    "live": 2,
     "finished": 5,
     "other": 0,
     "teams": 37
@@ -314,7 +314,7 @@
         "abbreviation": "SiSu Valkoinen",
         "association_id": 11015646,
         "logo": "assets/team-logos/d0c897255590be362e4ecd5d218344264b16e5a7b3a8f70f0e6409b2a35605bb.png",
-        "goals": 0,
+        "goals": 1,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627072.png?associationId=11015646",
         "logo_source": "team"
       },
@@ -344,8 +344,8 @@
       "game_id": 758181,
       "date": "07.11.2026",
       "time": "17:50",
-      "status": "upcoming",
-      "status_code": 0,
+      "status": "live",
+      "status_code": 11,
       "finished_type": null,
       "level": "U11 sarja",
       "level_id": 1142,
@@ -353,7 +353,7 @@
       "rink": "Hakio C",
       "rink_id": null,
       "small_area": false,
-      "spectators": 0,
+      "spectators": 30,
       "venue": "home",
       "sisu_team": {
         "team_id": 1368627586,
@@ -366,7 +366,7 @@
         "abbreviation": "SiSu Valkoinen",
         "association_id": 11015646,
         "logo": "assets/team-logos/d0c897255590be362e4ecd5d218344264b16e5a7b3a8f70f0e6409b2a35605bb.png",
-        "goals": null,
+        "goals": 0,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627586.png?associationId=11015646",
         "logo_source": "team"
       },
@@ -376,7 +376,7 @@
         "abbreviation": "Ilves Winnipeg",
         "association_id": 10114698,
         "logo": "assets/team-logos/4e435ceda98ea30a202ce760a217bd3d7596fb1a9d35454afd376157141cb1ff.png",
-        "goals": null,
+        "goals": 0,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627839.png?associationId=10114698",
         "logo_source": "team"
       },
@@ -498,58 +498,6 @@
     }
   ],
   "upcoming": [
-    {
-      "game_id": 758181,
-      "date": "07.11.2026",
-      "time": "17:50",
-      "status": "upcoming",
-      "status_code": 0,
-      "finished_type": null,
-      "level": "U11 sarja",
-      "level_id": 1142,
-      "sub_serie_id": null,
-      "rink": "Hakio C",
-      "rink_id": null,
-      "small_area": false,
-      "spectators": 0,
-      "venue": "home",
-      "sisu_team": {
-        "team_id": 1368627586,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U11 Valkoinen",
-        "abbreviation": "SiSu Valkoinen"
-      },
-      "home": {
-        "team_id": 1368627586,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U11 Valkoinen",
-        "abbreviation": "SiSu Valkoinen",
-        "association_id": 11015646,
-        "logo": "assets/team-logos/d0c897255590be362e4ecd5d218344264b16e5a7b3a8f70f0e6409b2a35605bb.png",
-        "goals": null,
-        "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627586.png?associationId=11015646",
-        "logo_source": "team"
-      },
-      "away": {
-        "team_id": 1368627839,
-        "name": null,
-        "abbreviation": "Ilves Winnipeg",
-        "association_id": 10114698,
-        "logo": "assets/team-logos/4e435ceda98ea30a202ce760a217bd3d7596fb1a9d35454afd376157141cb1ff.png",
-        "goals": null,
-        "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627839.png?associationId=10114698",
-        "logo_source": "team"
-      },
-      "score": null,
-      "period_scores": null,
-      "urls": {
-        "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2745237&lang=fi"
-      },
-      "link_is_specific": true,
-      "link_source": "getgames_cache",
-      "denied_results": false,
-      "denied_stats": false,
-      "no_score_tracking": false,
-      "public_game_id": 2745237
-    },
     {
       "game_id": 735167,
       "date": "07.11.2026",
@@ -682,7 +630,7 @@
         "abbreviation": "SiSu Valkoinen",
         "association_id": 11015646,
         "logo": "assets/team-logos/d0c897255590be362e4ecd5d218344264b16e5a7b3a8f70f0e6409b2a35605bb.png",
-        "goals": 0,
+        "goals": 1,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627072.png?associationId=11015646",
         "logo_source": "team"
       },
@@ -707,6 +655,58 @@
       "denied_stats": false,
       "no_score_tracking": false,
       "public_game_id": 2733467
+    },
+    {
+      "game_id": 758181,
+      "date": "07.11.2026",
+      "time": "17:50",
+      "status": "live",
+      "status_code": 11,
+      "finished_type": null,
+      "level": "U11 sarja",
+      "level_id": 1142,
+      "sub_serie_id": null,
+      "rink": "Hakio C",
+      "rink_id": null,
+      "small_area": false,
+      "spectators": 30,
+      "venue": "home",
+      "sisu_team": {
+        "team_id": 1368627586,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U11 Valkoinen",
+        "abbreviation": "SiSu Valkoinen"
+      },
+      "home": {
+        "team_id": 1368627586,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U11 Valkoinen",
+        "abbreviation": "SiSu Valkoinen",
+        "association_id": 11015646,
+        "logo": "assets/team-logos/d0c897255590be362e4ecd5d218344264b16e5a7b3a8f70f0e6409b2a35605bb.png",
+        "goals": 0,
+        "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627586.png?associationId=11015646",
+        "logo_source": "team"
+      },
+      "away": {
+        "team_id": 1368627839,
+        "name": null,
+        "abbreviation": "Ilves Winnipeg",
+        "association_id": 10114698,
+        "logo": "assets/team-logos/4e435ceda98ea30a202ce760a217bd3d7596fb1a9d35454afd376157141cb1ff.png",
+        "goals": 0,
+        "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627839.png?associationId=10114698",
+        "logo_source": "team"
+      },
+      "score": null,
+      "period_scores": null,
+      "urls": {
+        "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2745237&lang=fi"
+      },
+      "link_is_specific": true,
+      "link_source": "getgames_cache",
+      "denied_results": false,
+      "denied_stats": false,
+      "no_score_tracking": false,
+      "public_game_id": 2745237
     }
   ],
   "finished": [
