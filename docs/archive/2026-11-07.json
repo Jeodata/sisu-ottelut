@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T17:40:24+02:00",
+  "generated_at": "2026-11-07T17:45:24+02:00",
   "date": "2026-11-07",
   "date_fi": "07.11.2026",
   "club": {
@@ -301,7 +301,7 @@
       "rink": "Hakio S",
       "rink_id": null,
       "small_area": false,
-      "spectators": 0,
+      "spectators": 20,
       "venue": "home",
       "sisu_team": {
         "team_id": 1368627072,
@@ -511,7 +511,7 @@
       "rink": "Hakio S",
       "rink_id": null,
       "small_area": false,
-      "spectators": 0,
+      "spectators": 20,
       "venue": "home",
       "sisu_team": {
         "team_id": 1368627072,
