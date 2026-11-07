@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T20:25:24+02:00",
+  "generated_at": "2026-11-07T20:30:27+02:00",
   "date": "2026-11-07",
   "date_fi": "07.11.2026",
   "club": {
@@ -22,8 +22,8 @@
   "counts": {
     "total": 9,
     "upcoming": 0,
-    "live": 2,
-    "finished": 7,
+    "live": 1,
+    "finished": 8,
     "other": 0,
     "teams": 37
   },
@@ -396,9 +396,9 @@
       "game_id": 735167,
       "date": "07.11.2026",
       "time": "18:15",
-      "status": "live",
-      "status_code": 15,
-      "finished_type": null,
+      "status": "finished",
+      "status_code": 2,
+      "finished_type": "regulation",
       "level": "U18 II-divisioona",
       "level_id": 1136,
       "sub_serie_id": null,
@@ -432,7 +432,7 @@
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627381.png?associationId=10114766",
         "logo_source": "team"
       },
-      "score": null,
+      "score": "2-12",
       "period_scores": null,
       "urls": {
         "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2727984&lang=fi"
@@ -480,7 +480,7 @@
         "abbreviation": "Pelicans Itä Valkoinen",
         "association_id": 11019913,
         "logo": "assets/team-logos/6c2501c09ed4503360b9164170546f23c4f597c32907cbb1ab426aebb15e76b2.png",
-        "goals": 3,
+        "goals": 4,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627776.png?associationId=11019913",
         "logo_source": "team"
       },
@@ -500,58 +500,6 @@
   "upcoming": [],
   "live": [
     {
-      "game_id": 735167,
-      "date": "07.11.2026",
-      "time": "18:15",
-      "status": "live",
-      "status_code": 15,
-      "finished_type": null,
-      "level": "U18 II-divisioona",
-      "level_id": 1136,
-      "sub_serie_id": null,
-      "rink": "Hämeenlinna",
-      "rink_id": null,
-      "small_area": false,
-      "spectators": 40,
-      "venue": "home",
-      "sisu_team": {
-        "team_id": 1368629034,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U18",
-        "abbreviation": "SiSu"
-      },
-      "home": {
-        "team_id": 1368629034,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U18",
-        "abbreviation": "SiSu",
-        "association_id": 11015646,
-        "logo": "assets/team-logos/d0c897255590be362e4ecd5d218344264b16e5a7b3a8f70f0e6409b2a35605bb.png",
-        "goals": 2,
-        "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368629034.png?associationId=11015646",
-        "logo_source": "team"
-      },
-      "away": {
-        "team_id": 1368627381,
-        "name": null,
-        "abbreviation": "Fortuna",
-        "association_id": 10114766,
-        "logo": "assets/team-logos/1b25c4104ab60819a8204f46d270148dedad0d700ed854f069bf65d61055ed1b.png",
-        "goals": 12,
-        "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627381.png?associationId=10114766",
-        "logo_source": "team"
-      },
-      "score": null,
-      "period_scores": null,
-      "urls": {
-        "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2727984&lang=fi"
-      },
-      "link_is_specific": true,
-      "link_source": "getgames_cache",
-      "denied_results": false,
-      "denied_stats": false,
-      "no_score_tracking": false,
-      "public_game_id": 2727984
-    },
-    {
       "game_id": 752961,
       "date": "07.11.2026",
       "time": "19:20",
@@ -587,7 +535,7 @@
         "abbreviation": "Pelicans Itä Valkoinen",
         "association_id": 11019913,
         "logo": "assets/team-logos/6c2501c09ed4503360b9164170546f23c4f597c32907cbb1ab426aebb15e76b2.png",
-        "goals": 3,
+        "goals": 4,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627776.png?associationId=11019913",
         "logo_source": "team"
       },
@@ -968,6 +916,58 @@
       "denied_stats": false,
       "no_score_tracking": false,
       "public_game_id": 2745237
+    },
+    {
+      "game_id": 735167,
+      "date": "07.11.2026",
+      "time": "18:15",
+      "status": "finished",
+      "status_code": 2,
+      "finished_type": "regulation",
+      "level": "U18 II-divisioona",
+      "level_id": 1136,
+      "sub_serie_id": null,
+      "rink": "Hämeenlinna",
+      "rink_id": null,
+      "small_area": false,
+      "spectators": 40,
+      "venue": "home",
+      "sisu_team": {
+        "team_id": 1368629034,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U18",
+        "abbreviation": "SiSu"
+      },
+      "home": {
+        "team_id": 1368629034,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U18",
+        "abbreviation": "SiSu",
+        "association_id": 11015646,
+        "logo": "assets/team-logos/d0c897255590be362e4ecd5d218344264b16e5a7b3a8f70f0e6409b2a35605bb.png",
+        "goals": 2,
+        "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368629034.png?associationId=11015646",
+        "logo_source": "team"
+      },
+      "away": {
+        "team_id": 1368627381,
+        "name": null,
+        "abbreviation": "Fortuna",
+        "association_id": 10114766,
+        "logo": "assets/team-logos/1b25c4104ab60819a8204f46d270148dedad0d700ed854f069bf65d61055ed1b.png",
+        "goals": 12,
+        "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627381.png?associationId=10114766",
+        "logo_source": "team"
+      },
+      "score": "2-12",
+      "period_scores": null,
+      "urls": {
+        "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2727984&lang=fi"
+      },
+      "link_is_specific": true,
+      "link_source": "getgames_cache",
+      "denied_results": false,
+      "denied_stats": false,
+      "no_score_tracking": false,
+      "public_game_id": 2727984
     }
   ],
   "teams": [
