@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T13:55:23+02:00",
+  "generated_at": "2026-11-07T14:00:26+02:00",
   "date": "2026-11-07",
   "date_fi": "07.11.2026",
   "club": {
@@ -158,7 +158,7 @@
         "abbreviation": "Kisa-Eagles VALKOINEN",
         "association_id": 50003291,
         "logo": "assets/team-logos/1433c01cc26f660c83e821fcf0270dfedd03689e015e0d3e1b6849f6506ad856.png",
-        "goals": 1,
+        "goals": 2,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368626722.png?associationId=50003291",
         "logo_source": "team"
       },
@@ -838,7 +838,7 @@
         "abbreviation": "Kisa-Eagles VALKOINEN",
         "association_id": 50003291,
         "logo": "assets/team-logos/1433c01cc26f660c83e821fcf0270dfedd03689e015e0d3e1b6849f6506ad856.png",
-        "goals": 1,
+        "goals": 2,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368626722.png?associationId=50003291",
         "logo_source": "team"
       },
