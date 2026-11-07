@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T10:05:24+02:00",
+  "generated_at": "2026-11-07T10:10:26+02:00",
   "date": "2026-11-07",
   "date_fi": "07.11.2026",
   "club": {
@@ -21,8 +21,8 @@
   },
   "counts": {
     "total": 9,
-    "upcoming": 9,
-    "live": 0,
+    "upcoming": 8,
+    "live": 1,
     "finished": 0,
     "other": 0,
     "teams": 37
@@ -32,8 +32,8 @@
       "game_id": 757873,
       "date": "07.11.2026",
       "time": "10:15",
-      "status": "upcoming",
-      "status_code": 0,
+      "status": "live",
+      "status_code": 11,
       "finished_type": null,
       "level": "U11 sarja",
       "level_id": 1142,
@@ -54,7 +54,7 @@
         "abbreviation": "HPK Oranssi",
         "association_id": 10114740,
         "logo": "assets/team-logos/3e4641fb7cad94971cc6b921dc2c36c4d37e633252b7c833774865551168fc34.png",
-        "goals": null,
+        "goals": 0,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627809.png?associationId=10114740",
         "logo_source": "team"
       },
@@ -64,7 +64,7 @@
         "abbreviation": "SiSu Punainen",
         "association_id": 11015646,
         "logo": "assets/team-logos/d0c897255590be362e4ecd5d218344264b16e5a7b3a8f70f0e6409b2a35605bb.png",
-        "goals": null,
+        "goals": 0,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627585.png?associationId=11015646",
         "logo_source": "team"
       },
@@ -499,58 +499,6 @@
   ],
   "upcoming": [
     {
-      "game_id": 757873,
-      "date": "07.11.2026",
-      "time": "10:15",
-      "status": "upcoming",
-      "status_code": 0,
-      "finished_type": null,
-      "level": "U11 sarja",
-      "level_id": 1142,
-      "sub_serie_id": null,
-      "rink": "HML hh",
-      "rink_id": null,
-      "small_area": false,
-      "spectators": 0,
-      "venue": "away",
-      "sisu_team": {
-        "team_id": 1368627585,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U11 Punainen",
-        "abbreviation": "SiSu Punainen"
-      },
-      "home": {
-        "team_id": 1368627809,
-        "name": null,
-        "abbreviation": "HPK Oranssi",
-        "association_id": 10114740,
-        "logo": "assets/team-logos/3e4641fb7cad94971cc6b921dc2c36c4d37e633252b7c833774865551168fc34.png",
-        "goals": null,
-        "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627809.png?associationId=10114740",
-        "logo_source": "team"
-      },
-      "away": {
-        "team_id": 1368627585,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U11 Punainen",
-        "abbreviation": "SiSu Punainen",
-        "association_id": 11015646,
-        "logo": "assets/team-logos/d0c897255590be362e4ecd5d218344264b16e5a7b3a8f70f0e6409b2a35605bb.png",
-        "goals": null,
-        "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627585.png?associationId=11015646",
-        "logo_source": "team"
-      },
-      "score": null,
-      "period_scores": null,
-      "urls": {
-        "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2744889&lang=fi"
-      },
-      "link_is_specific": true,
-      "link_source": "getgames_cache",
-      "denied_results": false,
-      "denied_stats": false,
-      "no_score_tracking": false,
-      "public_game_id": 2744889
-    },
-    {
       "game_id": 757876,
       "date": "07.11.2026",
       "time": "12:00",
@@ -967,7 +915,60 @@
       "public_game_id": 2733475
     }
   ],
-  "live": [],
+  "live": [
+    {
+      "game_id": 757873,
+      "date": "07.11.2026",
+      "time": "10:15",
+      "status": "live",
+      "status_code": 11,
+      "finished_type": null,
+      "level": "U11 sarja",
+      "level_id": 1142,
+      "sub_serie_id": null,
+      "rink": "HML hh",
+      "rink_id": null,
+      "small_area": false,
+      "spectators": 0,
+      "venue": "away",
+      "sisu_team": {
+        "team_id": 1368627585,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U11 Punainen",
+        "abbreviation": "SiSu Punainen"
+      },
+      "home": {
+        "team_id": 1368627809,
+        "name": null,
+        "abbreviation": "HPK Oranssi",
+        "association_id": 10114740,
+        "logo": "assets/team-logos/3e4641fb7cad94971cc6b921dc2c36c4d37e633252b7c833774865551168fc34.png",
+        "goals": 0,
+        "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627809.png?associationId=10114740",
+        "logo_source": "team"
+      },
+      "away": {
+        "team_id": 1368627585,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U11 Punainen",
+        "abbreviation": "SiSu Punainen",
+        "association_id": 11015646,
+        "logo": "assets/team-logos/d0c897255590be362e4ecd5d218344264b16e5a7b3a8f70f0e6409b2a35605bb.png",
+        "goals": 0,
+        "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627585.png?associationId=11015646",
+        "logo_source": "team"
+      },
+      "score": null,
+      "period_scores": null,
+      "urls": {
+        "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2744889&lang=fi"
+      },
+      "link_is_specific": true,
+      "link_source": "getgames_cache",
+      "denied_results": false,
+      "denied_stats": false,
+      "no_score_tracking": false,
+      "public_game_id": 2744889
+    }
+  ],
   "finished": [],
   "teams": [
     {
