@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T16:40:26+02:00",
+  "generated_at": "2026-11-07T16:45:25+02:00",
   "date": "2026-11-07",
   "date_fi": "07.11.2026",
   "club": {
@@ -220,7 +220,7 @@
         "abbreviation": "Kiekko-Ahma Musta",
         "association_id": 10114407,
         "logo": "assets/team-logos/57dab5e95e2641a893a42e9a3a6523d57311c9ae83b372cd6a91d5924344391f.png",
-        "goals": 1,
+        "goals": 2,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368630080.png?associationId=10114407",
         "logo_source": "team"
       },
@@ -744,7 +744,7 @@
         "abbreviation": "Kiekko-Ahma Musta",
         "association_id": 10114407,
         "logo": "assets/team-logos/57dab5e95e2641a893a42e9a3a6523d57311c9ae83b372cd6a91d5924344391f.png",
-        "goals": 1,
+        "goals": 2,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368630080.png?associationId=10114407",
         "logo_source": "team"
       },
