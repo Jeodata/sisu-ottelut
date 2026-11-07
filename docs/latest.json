@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T09:30:26+02:00",
+  "generated_at": "2026-11-07T09:35:28+02:00",
   "date": "2026-11-07",
   "date_fi": "07.11.2026",
   "club": {
@@ -239,7 +239,7 @@
     {
       "game_id": 758180,
       "date": "07.11.2026",
-      "time": "16:30",
+      "time": "16:20",
       "status": "upcoming",
       "status_code": 0,
       "finished_type": null,
@@ -709,7 +709,7 @@
     {
       "game_id": 758180,
       "date": "07.11.2026",
-      "time": "16:30",
+      "time": "16:20",
       "status": "upcoming",
       "status_code": 0,
       "finished_type": null,
