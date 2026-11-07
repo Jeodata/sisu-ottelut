@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T18:15:25+02:00",
+  "generated_at": "2026-11-07T18:20:26+02:00",
   "date": "2026-11-07",
   "date_fi": "07.11.2026",
   "club": {
@@ -397,7 +397,7 @@
       "date": "07.11.2026",
       "time": "18:15",
       "status": "live",
-      "status_code": 1,
+      "status_code": 11,
       "finished_type": null,
       "level": "U18 II-divisioona",
       "level_id": 1136,
@@ -661,7 +661,7 @@
       "date": "07.11.2026",
       "time": "18:15",
       "status": "live",
-      "status_code": 1,
+      "status_code": 11,
       "finished_type": null,
       "level": "U18 II-divisioona",
       "level_id": 1136,
