@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T19:15:24+02:00",
+  "generated_at": "2026-11-07T19:20:25+02:00",
   "date": "2026-11-07",
   "date_fi": "07.11.2026",
   "club": {
@@ -21,8 +21,8 @@
   },
   "counts": {
     "total": 9,
-    "upcoming": 1,
-    "live": 1,
+    "upcoming": 0,
+    "live": 2,
     "finished": 7,
     "other": 0,
     "teams": 37
@@ -448,8 +448,8 @@
       "game_id": 752961,
       "date": "07.11.2026",
       "time": "19:20",
-      "status": "upcoming",
-      "status_code": 0,
+      "status": "live",
+      "status_code": 11,
       "finished_type": null,
       "level": "U12 sarja",
       "level_id": 1143,
@@ -457,7 +457,7 @@
       "rink": "Hakio S",
       "rink_id": null,
       "small_area": false,
-      "spectators": 0,
+      "spectators": 20,
       "venue": "home",
       "sisu_team": {
         "team_id": 1368627072,
@@ -470,7 +470,7 @@
         "abbreviation": "SiSu Valkoinen",
         "association_id": 11015646,
         "logo": "assets/team-logos/d0c897255590be362e4ecd5d218344264b16e5a7b3a8f70f0e6409b2a35605bb.png",
-        "goals": null,
+        "goals": 0,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627072.png?associationId=11015646",
         "logo_source": "team"
       },
@@ -480,7 +480,7 @@
         "abbreviation": "Pelicans Itä Valkoinen",
         "association_id": 11019913,
         "logo": "assets/team-logos/6c2501c09ed4503360b9164170546f23c4f597c32907cbb1ab426aebb15e76b2.png",
-        "goals": null,
+        "goals": 0,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627776.png?associationId=11019913",
         "logo_source": "team"
       },
@@ -497,60 +497,7 @@
       "public_game_id": 2733475
     }
   ],
-  "upcoming": [
-    {
-      "game_id": 752961,
-      "date": "07.11.2026",
-      "time": "19:20",
-      "status": "upcoming",
-      "status_code": 0,
-      "finished_type": null,
-      "level": "U12 sarja",
-      "level_id": 1143,
-      "sub_serie_id": null,
-      "rink": "Hakio S",
-      "rink_id": null,
-      "small_area": false,
-      "spectators": 0,
-      "venue": "home",
-      "sisu_team": {
-        "team_id": 1368627072,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U12 Valkoinen",
-        "abbreviation": "SiSu Valkoinen"
-      },
-      "home": {
-        "team_id": 1368627072,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U12 Valkoinen",
-        "abbreviation": "SiSu Valkoinen",
-        "association_id": 11015646,
-        "logo": "assets/team-logos/d0c897255590be362e4ecd5d218344264b16e5a7b3a8f70f0e6409b2a35605bb.png",
-        "goals": null,
-        "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627072.png?associationId=11015646",
-        "logo_source": "team"
-      },
-      "away": {
-        "team_id": 1368627776,
-        "name": null,
-        "abbreviation": "Pelicans Itä Valkoinen",
-        "association_id": 11019913,
-        "logo": "assets/team-logos/6c2501c09ed4503360b9164170546f23c4f597c32907cbb1ab426aebb15e76b2.png",
-        "goals": null,
-        "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627776.png?associationId=11019913",
-        "logo_source": "team"
-      },
-      "score": null,
-      "period_scores": null,
-      "urls": {
-        "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2733475&lang=fi"
-      },
-      "link_is_specific": true,
-      "link_source": "getgames_cache",
-      "denied_results": false,
-      "denied_stats": false,
-      "no_score_tracking": false,
-      "public_game_id": 2733475
-    }
-  ],
+  "upcoming": [],
   "live": [
     {
       "game_id": 735167,
@@ -603,6 +550,58 @@
       "denied_stats": false,
       "no_score_tracking": false,
       "public_game_id": 2727984
+    },
+    {
+      "game_id": 752961,
+      "date": "07.11.2026",
+      "time": "19:20",
+      "status": "live",
+      "status_code": 11,
+      "finished_type": null,
+      "level": "U12 sarja",
+      "level_id": 1143,
+      "sub_serie_id": null,
+      "rink": "Hakio S",
+      "rink_id": null,
+      "small_area": false,
+      "spectators": 20,
+      "venue": "home",
+      "sisu_team": {
+        "team_id": 1368627072,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U12 Valkoinen",
+        "abbreviation": "SiSu Valkoinen"
+      },
+      "home": {
+        "team_id": 1368627072,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U12 Valkoinen",
+        "abbreviation": "SiSu Valkoinen",
+        "association_id": 11015646,
+        "logo": "assets/team-logos/d0c897255590be362e4ecd5d218344264b16e5a7b3a8f70f0e6409b2a35605bb.png",
+        "goals": 0,
+        "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627072.png?associationId=11015646",
+        "logo_source": "team"
+      },
+      "away": {
+        "team_id": 1368627776,
+        "name": null,
+        "abbreviation": "Pelicans Itä Valkoinen",
+        "association_id": 11019913,
+        "logo": "assets/team-logos/6c2501c09ed4503360b9164170546f23c4f597c32907cbb1ab426aebb15e76b2.png",
+        "goals": 0,
+        "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627776.png?associationId=11019913",
+        "logo_source": "team"
+      },
+      "score": null,
+      "period_scores": null,
+      "urls": {
+        "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2733475&lang=fi"
+      },
+      "link_is_specific": true,
+      "link_source": "getgames_cache",
+      "denied_results": false,
+      "denied_stats": false,
+      "no_score_tracking": false,
+      "public_game_id": 2733475
     }
   ],
   "finished": [
