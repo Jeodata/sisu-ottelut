@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T11:30:26+02:00",
+  "generated_at": "2026-11-07T11:35:24+02:00",
   "date": "2026-11-07",
   "date_fi": "07.11.2026",
   "club": {
@@ -22,8 +22,8 @@
   "counts": {
     "total": 9,
     "upcoming": 8,
-    "live": 1,
-    "finished": 0,
+    "live": 0,
+    "finished": 1,
     "other": 0,
     "teams": 37
   },
@@ -32,16 +32,16 @@
       "game_id": 757873,
       "date": "07.11.2026",
       "time": "10:15",
-      "status": "live",
-      "status_code": 15,
-      "finished_type": null,
+      "status": "finished",
+      "status_code": 2,
+      "finished_type": "regulation",
       "level": "U11 sarja",
       "level_id": 1142,
       "sub_serie_id": null,
       "rink": "HML hh",
       "rink_id": null,
       "small_area": false,
-      "spectators": 0,
+      "spectators": 20,
       "venue": "away",
       "sisu_team": {
         "team_id": 1368627585,
@@ -64,11 +64,11 @@
         "abbreviation": "SiSu Punainen",
         "association_id": 11015646,
         "logo": "assets/team-logos/d0c897255590be362e4ecd5d218344264b16e5a7b3a8f70f0e6409b2a35605bb.png",
-        "goals": 12,
+        "goals": 13,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627585.png?associationId=11015646",
         "logo_source": "team"
       },
-      "score": null,
+      "score": "3-13",
       "period_scores": null,
       "urls": {
         "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2744889&lang=fi"
@@ -915,21 +915,22 @@
       "public_game_id": 2733475
     }
   ],
-  "live": [
+  "live": [],
+  "finished": [
     {
       "game_id": 757873,
       "date": "07.11.2026",
       "time": "10:15",
-      "status": "live",
-      "status_code": 15,
-      "finished_type": null,
+      "status": "finished",
+      "status_code": 2,
+      "finished_type": "regulation",
       "level": "U11 sarja",
       "level_id": 1142,
       "sub_serie_id": null,
       "rink": "HML hh",
       "rink_id": null,
       "small_area": false,
-      "spectators": 0,
+      "spectators": 20,
       "venue": "away",
       "sisu_team": {
         "team_id": 1368627585,
@@ -952,11 +953,11 @@
         "abbreviation": "SiSu Punainen",
         "association_id": 11015646,
         "logo": "assets/team-logos/d0c897255590be362e4ecd5d218344264b16e5a7b3a8f70f0e6409b2a35605bb.png",
-        "goals": 12,
+        "goals": 13,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627585.png?associationId=11015646",
         "logo_source": "team"
       },
-      "score": null,
+      "score": "3-13",
       "period_scores": null,
       "urls": {
         "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2744889&lang=fi"
@@ -969,7 +970,6 @@
       "public_game_id": 2744889
     }
   ],
-  "finished": [],
   "teams": [
     {
       "team_id": 1251467171,
