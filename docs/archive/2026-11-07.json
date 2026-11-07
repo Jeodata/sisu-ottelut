@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T13:05:26+02:00",
+  "generated_at": "2026-11-07T13:10:24+02:00",
   "date": "2026-11-07",
   "date_fi": "07.11.2026",
   "club": {
@@ -106,7 +106,7 @@
         "abbreviation": "HPK Oranssi",
         "association_id": 10114740,
         "logo": "assets/team-logos/3e4641fb7cad94971cc6b921dc2c36c4d37e633252b7c833774865551168fc34.png",
-        "goals": 4,
+        "goals": 5,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627809.png?associationId=10114740",
         "logo_source": "team"
       },
@@ -168,7 +168,7 @@
         "abbreviation": "SiSu valkoinen",
         "association_id": 11015646,
         "logo": "assets/team-logos/d0c897255590be362e4ecd5d218344264b16e5a7b3a8f70f0e6409b2a35605bb.png",
-        "goals": 1,
+        "goals": 2,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368626550.png?associationId=11015646",
         "logo_source": "team"
       },
@@ -838,7 +838,7 @@
         "abbreviation": "HPK Oranssi",
         "association_id": 10114740,
         "logo": "assets/team-logos/3e4641fb7cad94971cc6b921dc2c36c4d37e633252b7c833774865551168fc34.png",
-        "goals": 4,
+        "goals": 5,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627809.png?associationId=10114740",
         "logo_source": "team"
       },
@@ -900,7 +900,7 @@
         "abbreviation": "SiSu valkoinen",
         "association_id": 11015646,
         "logo": "assets/team-logos/d0c897255590be362e4ecd5d218344264b16e5a7b3a8f70f0e6409b2a35605bb.png",
-        "goals": 1,
+        "goals": 2,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368626550.png?associationId=11015646",
         "logo_source": "team"
       },
