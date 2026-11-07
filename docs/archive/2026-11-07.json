@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T19:45:25+02:00",
+  "generated_at": "2026-11-07T19:50:25+02:00",
   "date": "2026-11-07",
   "date_fi": "07.11.2026",
   "club": {
@@ -480,7 +480,7 @@
         "abbreviation": "Pelicans Itä Valkoinen",
         "association_id": 11019913,
         "logo": "assets/team-logos/6c2501c09ed4503360b9164170546f23c4f597c32907cbb1ab426aebb15e76b2.png",
-        "goals": 0,
+        "goals": 2,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627776.png?associationId=11019913",
         "logo_source": "team"
       },
@@ -587,7 +587,7 @@
         "abbreviation": "Pelicans Itä Valkoinen",
         "association_id": 11019913,
         "logo": "assets/team-logos/6c2501c09ed4503360b9164170546f23c4f597c32907cbb1ab426aebb15e76b2.png",
-        "goals": 0,
+        "goals": 2,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627776.png?associationId=11019913",
         "logo_source": "team"
       },
