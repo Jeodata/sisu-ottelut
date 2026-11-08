@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T13:25:26+02:00",
+  "generated_at": "2026-11-08T13:30:24+02:00",
   "date": "2026-11-08",
   "date_fi": "08.11.2026",
   "club": {
@@ -22,8 +22,8 @@
   "counts": {
     "total": 4,
     "upcoming": 3,
-    "live": 1,
-    "finished": 0,
+    "live": 0,
+    "finished": 1,
     "other": 0,
     "teams": 37
   },
@@ -32,9 +32,9 @@
       "game_id": 758198,
       "date": "08.11.2026",
       "time": "12:20",
-      "status": "live",
-      "status_code": 15,
-      "finished_type": null,
+      "status": "finished",
+      "status_code": 2,
+      "finished_type": "regulation",
       "level": "U11 sarja",
       "level_id": 1142,
       "sub_serie_id": null,
@@ -54,7 +54,7 @@
         "abbreviation": "LeKi Valkoinen",
         "association_id": 100025201,
         "logo": "assets/team-logos/63d67e0344460ab94029a9e2538bdc5c4aff4cc5739c738e33429d693e56738d.png",
-        "goals": 6,
+        "goals": 7,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627856.png?associationId=100025201",
         "logo_source": "team"
       },
@@ -68,7 +68,7 @@
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627586.png?associationId=11015646",
         "logo_source": "team"
       },
-      "score": null,
+      "score": "7-2",
       "period_scores": null,
       "urls": {
         "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2745254&lang=fi"
@@ -395,14 +395,15 @@
       "public_game_id": 2743004
     }
   ],
-  "live": [
+  "live": [],
+  "finished": [
     {
       "game_id": 758198,
       "date": "08.11.2026",
       "time": "12:20",
-      "status": "live",
-      "status_code": 15,
-      "finished_type": null,
+      "status": "finished",
+      "status_code": 2,
+      "finished_type": "regulation",
       "level": "U11 sarja",
       "level_id": 1142,
       "sub_serie_id": null,
@@ -422,7 +423,7 @@
         "abbreviation": "LeKi Valkoinen",
         "association_id": 100025201,
         "logo": "assets/team-logos/63d67e0344460ab94029a9e2538bdc5c4aff4cc5739c738e33429d693e56738d.png",
-        "goals": 6,
+        "goals": 7,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627856.png?associationId=100025201",
         "logo_source": "team"
       },
@@ -436,7 +437,7 @@
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627586.png?associationId=11015646",
         "logo_source": "team"
       },
-      "score": null,
+      "score": "7-2",
       "period_scores": null,
       "urls": {
         "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2745254&lang=fi"
@@ -449,7 +450,6 @@
       "public_game_id": 2745254
     }
   ],
-  "finished": [],
   "teams": [
     {
       "team_id": 1251467171,
