@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T14:45:23+02:00",
+  "generated_at": "2026-11-08T14:50:25+02:00",
   "date": "2026-11-08",
   "date_fi": "08.11.2026",
   "club": {
@@ -22,8 +22,8 @@
   "counts": {
     "total": 4,
     "upcoming": 1,
-    "live": 2,
-    "finished": 1,
+    "live": 1,
+    "finished": 2,
     "other": 0,
     "teams": 37
   },
@@ -84,9 +84,9 @@
       "game_id": 758199,
       "date": "08.11.2026",
       "time": "13:45",
-      "status": "live",
-      "status_code": 15,
-      "finished_type": null,
+      "status": "finished",
+      "status_code": 2,
+      "finished_type": "regulation",
       "level": "U11 sarja",
       "level_id": 1142,
       "sub_serie_id": null,
@@ -120,7 +120,7 @@
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627586.png?associationId=11015646",
         "logo_source": "team"
       },
-      "score": null,
+      "score": "5-2",
       "period_scores": null,
       "urls": {
         "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2745255&lang=fi"
@@ -293,58 +293,6 @@
   ],
   "live": [
     {
-      "game_id": 758199,
-      "date": "08.11.2026",
-      "time": "13:45",
-      "status": "live",
-      "status_code": 15,
-      "finished_type": null,
-      "level": "U11 sarja",
-      "level_id": 1142,
-      "sub_serie_id": null,
-      "rink": "Lempäälä 2",
-      "rink_id": null,
-      "small_area": false,
-      "spectators": 40,
-      "venue": "away",
-      "sisu_team": {
-        "team_id": 1368627586,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U11 Valkoinen",
-        "abbreviation": "SiSu Valkoinen"
-      },
-      "home": {
-        "team_id": 1368627856,
-        "name": null,
-        "abbreviation": "LeKi Valkoinen",
-        "association_id": 100025201,
-        "logo": "assets/team-logos/63d67e0344460ab94029a9e2538bdc5c4aff4cc5739c738e33429d693e56738d.png",
-        "goals": 5,
-        "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627856.png?associationId=100025201",
-        "logo_source": "team"
-      },
-      "away": {
-        "team_id": 1368627586,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U11 Valkoinen",
-        "abbreviation": "SiSu Valkoinen",
-        "association_id": 11015646,
-        "logo": "assets/team-logos/d0c897255590be362e4ecd5d218344264b16e5a7b3a8f70f0e6409b2a35605bb.png",
-        "goals": 2,
-        "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627586.png?associationId=11015646",
-        "logo_source": "team"
-      },
-      "score": null,
-      "period_scores": null,
-      "urls": {
-        "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2745255&lang=fi"
-      },
-      "link_is_specific": true,
-      "link_source": "getgames_cache",
-      "denied_results": false,
-      "denied_stats": false,
-      "no_score_tracking": false,
-      "public_game_id": 2745255
-    },
-    {
       "game_id": 753371,
       "date": "08.11.2026",
       "time": "14:40",
@@ -449,6 +397,58 @@
       "denied_stats": false,
       "no_score_tracking": false,
       "public_game_id": 2745254
+    },
+    {
+      "game_id": 758199,
+      "date": "08.11.2026",
+      "time": "13:45",
+      "status": "finished",
+      "status_code": 2,
+      "finished_type": "regulation",
+      "level": "U11 sarja",
+      "level_id": 1142,
+      "sub_serie_id": null,
+      "rink": "Lempäälä 2",
+      "rink_id": null,
+      "small_area": false,
+      "spectators": 40,
+      "venue": "away",
+      "sisu_team": {
+        "team_id": 1368627586,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U11 Valkoinen",
+        "abbreviation": "SiSu Valkoinen"
+      },
+      "home": {
+        "team_id": 1368627856,
+        "name": null,
+        "abbreviation": "LeKi Valkoinen",
+        "association_id": 100025201,
+        "logo": "assets/team-logos/63d67e0344460ab94029a9e2538bdc5c4aff4cc5739c738e33429d693e56738d.png",
+        "goals": 5,
+        "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627856.png?associationId=100025201",
+        "logo_source": "team"
+      },
+      "away": {
+        "team_id": 1368627586,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U11 Valkoinen",
+        "abbreviation": "SiSu Valkoinen",
+        "association_id": 11015646,
+        "logo": "assets/team-logos/d0c897255590be362e4ecd5d218344264b16e5a7b3a8f70f0e6409b2a35605bb.png",
+        "goals": 2,
+        "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627586.png?associationId=11015646",
+        "logo_source": "team"
+      },
+      "score": "5-2",
+      "period_scores": null,
+      "urls": {
+        "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2745255&lang=fi"
+      },
+      "link_is_specific": true,
+      "link_source": "getgames_cache",
+      "denied_results": false,
+      "denied_stats": false,
+      "no_score_tracking": false,
+      "public_game_id": 2745255
     }
   ],
   "teams": [
