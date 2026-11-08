@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T13:15:25+02:00",
+  "generated_at": "2026-11-08T13:20:25+02:00",
   "date": "2026-11-08",
   "date_fi": "08.11.2026",
   "club": {
@@ -54,7 +54,7 @@
         "abbreviation": "LeKi Valkoinen",
         "association_id": 100025201,
         "logo": "assets/team-logos/63d67e0344460ab94029a9e2538bdc5c4aff4cc5739c738e33429d693e56738d.png",
-        "goals": 4,
+        "goals": 5,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627856.png?associationId=100025201",
         "logo_source": "team"
       },
@@ -422,7 +422,7 @@
         "abbreviation": "LeKi Valkoinen",
         "association_id": 100025201,
         "logo": "assets/team-logos/63d67e0344460ab94029a9e2538bdc5c4aff4cc5739c738e33429d693e56738d.png",
-        "goals": 4,
+        "goals": 5,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627856.png?associationId=100025201",
         "logo_source": "team"
       },
