@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T14:20:24+02:00",
+  "generated_at": "2026-11-08T14:25:23+02:00",
   "date": "2026-11-08",
   "date_fi": "08.11.2026",
   "club": {
@@ -85,7 +85,7 @@
       "date": "08.11.2026",
       "time": "13:45",
       "status": "live",
-      "status_code": 13,
+      "status_code": 15,
       "finished_type": null,
       "level": "U11 sarja",
       "level_id": 1142,
@@ -93,7 +93,7 @@
       "rink": "Lempäälä 2",
       "rink_id": null,
       "small_area": false,
-      "spectators": 0,
+      "spectators": 40,
       "venue": "away",
       "sisu_team": {
         "team_id": 1368627586,
@@ -349,7 +349,7 @@
       "date": "08.11.2026",
       "time": "13:45",
       "status": "live",
-      "status_code": 13,
+      "status_code": 15,
       "finished_type": null,
       "level": "U11 sarja",
       "level_id": 1142,
@@ -357,7 +357,7 @@
       "rink": "Lempäälä 2",
       "rink_id": null,
       "small_area": false,
-      "spectators": 0,
+      "spectators": 40,
       "venue": "away",
       "sisu_team": {
         "team_id": 1368627586,
