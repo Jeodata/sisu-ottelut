@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T16:55:25+02:00",
+  "generated_at": "2026-11-08T17:00:25+02:00",
   "date": "2026-11-08",
   "date_fi": "08.11.2026",
   "club": {
@@ -189,7 +189,7 @@
       "date": "08.11.2026",
       "time": "15:45",
       "status": "live",
-      "status_code": 15,
+      "status_code": 16,
       "finished_type": null,
       "level": "U12 sarja",
       "level_id": 1143,
@@ -197,7 +197,7 @@
       "rink": "Hakio S",
       "rink_id": null,
       "small_area": false,
-      "spectators": 0,
+      "spectators": 50,
       "venue": "away",
       "sisu_team": {
         "team_id": 1368627073,
@@ -244,7 +244,7 @@
       "date": "08.11.2026",
       "time": "15:45",
       "status": "live",
-      "status_code": 15,
+      "status_code": 16,
       "finished_type": null,
       "level": "U12 sarja",
       "level_id": 1143,
@@ -252,7 +252,7 @@
       "rink": "Hakio S",
       "rink_id": null,
       "small_area": false,
-      "spectators": 0,
+      "spectators": 50,
       "venue": "away",
       "sisu_team": {
         "team_id": 1368627073,
