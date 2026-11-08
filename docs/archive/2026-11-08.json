@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T16:05:24+02:00",
+  "generated_at": "2026-11-08T16:10:24+02:00",
   "date": "2026-11-08",
   "date_fi": "08.11.2026",
   "club": {
@@ -189,7 +189,7 @@
       "date": "08.11.2026",
       "time": "15:45",
       "status": "live",
-      "status_code": 11,
+      "status_code": 13,
       "finished_type": null,
       "level": "U12 sarja",
       "level_id": 1143,
@@ -244,7 +244,7 @@
       "date": "08.11.2026",
       "time": "15:45",
       "status": "live",
-      "status_code": 11,
+      "status_code": 13,
       "finished_type": null,
       "level": "U12 sarja",
       "level_id": 1143,
