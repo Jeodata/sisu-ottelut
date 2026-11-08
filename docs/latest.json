@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T14:35:26+02:00",
+  "generated_at": "2026-11-08T14:40:26+02:00",
   "date": "2026-11-08",
   "date_fi": "08.11.2026",
   "club": {
@@ -21,8 +21,8 @@
   },
   "counts": {
     "total": 4,
-    "upcoming": 2,
-    "live": 1,
+    "upcoming": 1,
+    "live": 2,
     "finished": 1,
     "other": 0,
     "teams": 37
@@ -106,7 +106,7 @@
         "abbreviation": "LeKi Valkoinen",
         "association_id": 100025201,
         "logo": "assets/team-logos/63d67e0344460ab94029a9e2538bdc5c4aff4cc5739c738e33429d693e56738d.png",
-        "goals": 3,
+        "goals": 4,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627856.png?associationId=100025201",
         "logo_source": "team"
       },
@@ -116,7 +116,7 @@
         "abbreviation": "SiSu Valkoinen",
         "association_id": 11015646,
         "logo": "assets/team-logos/d0c897255590be362e4ecd5d218344264b16e5a7b3a8f70f0e6409b2a35605bb.png",
-        "goals": 1,
+        "goals": 2,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627586.png?associationId=11015646",
         "logo_source": "team"
       },
@@ -136,7 +136,7 @@
       "game_id": 753371,
       "date": "08.11.2026",
       "time": "14:40",
-      "status": "upcoming",
+      "status": "live",
       "status_code": 0,
       "finished_type": null,
       "level": "U12 sarja",
@@ -239,58 +239,6 @@
   ],
   "upcoming": [
     {
-      "game_id": 753371,
-      "date": "08.11.2026",
-      "time": "14:40",
-      "status": "upcoming",
-      "status_code": 0,
-      "finished_type": null,
-      "level": "U12 sarja",
-      "level_id": 1143,
-      "sub_serie_id": null,
-      "rink": "Hakio S",
-      "rink_id": null,
-      "small_area": true,
-      "spectators": 0,
-      "venue": "away",
-      "sisu_team": {
-        "team_id": 1368627073,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U12 Punainen",
-        "abbreviation": "SiSu Punainen"
-      },
-      "home": {
-        "team_id": 1368627202,
-        "name": null,
-        "abbreviation": "HPK Black",
-        "association_id": 10114740,
-        "logo": "assets/team-logos/3e4641fb7cad94971cc6b921dc2c36c4d37e633252b7c833774865551168fc34.png",
-        "goals": null,
-        "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627202.png?associationId=10114740",
-        "logo_source": "team"
-      },
-      "away": {
-        "team_id": 1368627073,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U12 Punainen",
-        "abbreviation": "SiSu Punainen",
-        "association_id": 11015646,
-        "logo": "assets/team-logos/d0c897255590be362e4ecd5d218344264b16e5a7b3a8f70f0e6409b2a35605bb.png",
-        "goals": null,
-        "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627073.png?associationId=11015646",
-        "logo_source": "team"
-      },
-      "score": null,
-      "period_scores": null,
-      "urls": {
-        "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2743008&lang=fi"
-      },
-      "link_is_specific": true,
-      "link_source": "getgames_cache",
-      "denied_results": false,
-      "denied_stats": false,
-      "no_score_tracking": true,
-      "public_game_id": 2743008
-    },
-    {
       "game_id": 753367,
       "date": "08.11.2026",
       "time": "15:45",
@@ -370,7 +318,7 @@
         "abbreviation": "LeKi Valkoinen",
         "association_id": 100025201,
         "logo": "assets/team-logos/63d67e0344460ab94029a9e2538bdc5c4aff4cc5739c738e33429d693e56738d.png",
-        "goals": 3,
+        "goals": 4,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627856.png?associationId=100025201",
         "logo_source": "team"
       },
@@ -380,7 +328,7 @@
         "abbreviation": "SiSu Valkoinen",
         "association_id": 11015646,
         "logo": "assets/team-logos/d0c897255590be362e4ecd5d218344264b16e5a7b3a8f70f0e6409b2a35605bb.png",
-        "goals": 1,
+        "goals": 2,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627586.png?associationId=11015646",
         "logo_source": "team"
       },
@@ -395,6 +343,58 @@
       "denied_stats": false,
       "no_score_tracking": false,
       "public_game_id": 2745255
+    },
+    {
+      "game_id": 753371,
+      "date": "08.11.2026",
+      "time": "14:40",
+      "status": "live",
+      "status_code": 0,
+      "finished_type": null,
+      "level": "U12 sarja",
+      "level_id": 1143,
+      "sub_serie_id": null,
+      "rink": "Hakio S",
+      "rink_id": null,
+      "small_area": true,
+      "spectators": 0,
+      "venue": "away",
+      "sisu_team": {
+        "team_id": 1368627073,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U12 Punainen",
+        "abbreviation": "SiSu Punainen"
+      },
+      "home": {
+        "team_id": 1368627202,
+        "name": null,
+        "abbreviation": "HPK Black",
+        "association_id": 10114740,
+        "logo": "assets/team-logos/3e4641fb7cad94971cc6b921dc2c36c4d37e633252b7c833774865551168fc34.png",
+        "goals": null,
+        "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627202.png?associationId=10114740",
+        "logo_source": "team"
+      },
+      "away": {
+        "team_id": 1368627073,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U12 Punainen",
+        "abbreviation": "SiSu Punainen",
+        "association_id": 11015646,
+        "logo": "assets/team-logos/d0c897255590be362e4ecd5d218344264b16e5a7b3a8f70f0e6409b2a35605bb.png",
+        "goals": null,
+        "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627073.png?associationId=11015646",
+        "logo_source": "team"
+      },
+      "score": null,
+      "period_scores": null,
+      "urls": {
+        "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2743008&lang=fi"
+      },
+      "link_is_specific": true,
+      "link_source": "getgames_cache",
+      "denied_results": false,
+      "denied_stats": false,
+      "no_score_tracking": true,
+      "public_game_id": 2743008
     }
   ],
   "finished": [
