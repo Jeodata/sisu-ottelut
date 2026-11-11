@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T14:40:42+02:00",
+  "generated_at": "2026-11-11T23:54:29+02:00",
   "date": "2026-11-11",
   "date_fi": "11.11.2026",
   "club": {
@@ -609,58 +609,6 @@
       "date_fi": "15.11.2026",
       "games": [
         {
-          "game_id": 728028,
-          "date": "15.11.2026",
-          "time": null,
-          "status": "upcoming",
-          "status_code": 0,
-          "finished_type": null,
-          "level": "U13 Sininen",
-          "level_id": 1144,
-          "sub_serie_id": null,
-          "rink": "Nokia 2",
-          "rink_id": null,
-          "small_area": false,
-          "spectators": 0,
-          "venue": "away",
-          "sisu_team": {
-            "team_id": 1368626549,
-            "name": "SISU HOCKEY HÄMEENLINNA  RY U13 punainen",
-            "abbreviation": "SiSu punainen"
-          },
-          "home": {
-            "team_id": 1368626777,
-            "name": null,
-            "abbreviation": "HC Nokia Oranssi",
-            "association_id": 10635371,
-            "logo": "assets/team-logos/16024ed05c040fee8a7614771878adf14f371867452b9038298d76095fd5622b.png",
-            "goals": null,
-            "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368626777.png?associationId=10635371",
-            "logo_source": "team"
-          },
-          "away": {
-            "team_id": 1368626549,
-            "name": "SISU HOCKEY HÄMEENLINNA  RY U13 punainen",
-            "abbreviation": "SiSu punainen",
-            "association_id": 11015646,
-            "logo": "assets/team-logos/d0c897255590be362e4ecd5d218344264b16e5a7b3a8f70f0e6409b2a35605bb.png",
-            "goals": null,
-            "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368626549.png?associationId=11015646",
-            "logo_source": "team"
-          },
-          "score": null,
-          "period_scores": null,
-          "urls": {
-            "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2715106&lang=fi"
-          },
-          "link_is_specific": true,
-          "link_source": "getgames_cache",
-          "denied_results": false,
-          "denied_stats": false,
-          "no_score_tracking": false,
-          "public_game_id": 2715106
-        },
-        {
           "game_id": 757903,
           "date": "15.11.2026",
           "time": "12:20",
@@ -973,6 +921,58 @@
           "public_game_id": 2733487
         },
         {
+          "game_id": 728028,
+          "date": "15.11.2026",
+          "time": "16:00",
+          "status": "upcoming",
+          "status_code": 0,
+          "finished_type": null,
+          "level": "U13 Sininen",
+          "level_id": 1144,
+          "sub_serie_id": null,
+          "rink": "Nokia",
+          "rink_id": null,
+          "small_area": false,
+          "spectators": 0,
+          "venue": "away",
+          "sisu_team": {
+            "team_id": 1368626549,
+            "name": "SISU HOCKEY HÄMEENLINNA  RY U13 punainen",
+            "abbreviation": "SiSu punainen"
+          },
+          "home": {
+            "team_id": 1368626777,
+            "name": null,
+            "abbreviation": "HC Nokia Oranssi",
+            "association_id": 10635371,
+            "logo": "assets/team-logos/16024ed05c040fee8a7614771878adf14f371867452b9038298d76095fd5622b.png",
+            "goals": null,
+            "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368626777.png?associationId=10635371",
+            "logo_source": "team"
+          },
+          "away": {
+            "team_id": 1368626549,
+            "name": "SISU HOCKEY HÄMEENLINNA  RY U13 punainen",
+            "abbreviation": "SiSu punainen",
+            "association_id": 11015646,
+            "logo": "assets/team-logos/d0c897255590be362e4ecd5d218344264b16e5a7b3a8f70f0e6409b2a35605bb.png",
+            "goals": null,
+            "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368626549.png?associationId=11015646",
+            "logo_source": "team"
+          },
+          "score": null,
+          "period_scores": null,
+          "urls": {
+            "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2715106&lang=fi"
+          },
+          "link_is_specific": true,
+          "link_source": "getgames_cache",
+          "denied_results": false,
+          "denied_stats": false,
+          "no_score_tracking": false,
+          "public_game_id": 2715106
+        },
+        {
           "game_id": 752980,
           "date": "15.11.2026",
           "time": "17:00",
@@ -1076,7 +1076,7 @@
             "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2744921&lang=fi"
           },
           "link_is_specific": true,
-          "link_source": "getgames",
+          "link_source": "getgames_cache",
           "denied_results": false,
           "denied_stats": false,
           "no_score_tracking": false,
@@ -1128,7 +1128,7 @@
             "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2755490&lang=fi"
           },
           "link_is_specific": true,
-          "link_source": "getgames",
+          "link_source": "getgames_cache",
           "denied_results": false,
           "denied_stats": false,
           "no_score_tracking": true,
@@ -1180,7 +1180,7 @@
             "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2755492&lang=fi"
           },
           "link_is_specific": true,
-          "link_source": "getgames",
+          "link_source": "getgames_cache",
           "denied_results": false,
           "denied_stats": false,
           "no_score_tracking": true,
@@ -1232,7 +1232,7 @@
             "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2758491&lang=fi"
           },
           "link_is_specific": true,
-          "link_source": "getgames",
+          "link_source": "getgames_cache",
           "denied_results": false,
           "denied_stats": false,
           "no_score_tracking": false,
@@ -1284,7 +1284,7 @@
             "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2744923&lang=fi"
           },
           "link_is_specific": true,
-          "link_source": "getgames",
+          "link_source": "getgames_cache",
           "denied_results": false,
           "denied_stats": false,
           "no_score_tracking": false,
@@ -1336,7 +1336,7 @@
             "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2755491&lang=fi"
           },
           "link_is_specific": true,
-          "link_source": "getgames",
+          "link_source": "getgames_cache",
           "denied_results": false,
           "denied_stats": false,
           "no_score_tracking": true,
@@ -1388,7 +1388,7 @@
             "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2755493&lang=fi"
           },
           "link_is_specific": true,
-          "link_source": "getgames",
+          "link_source": "getgames_cache",
           "denied_results": false,
           "denied_stats": false,
           "no_score_tracking": true,
@@ -1440,7 +1440,7 @@
             "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2715112&lang=fi"
           },
           "link_is_specific": true,
-          "link_source": "getgames",
+          "link_source": "getgames_cache",
           "denied_results": false,
           "denied_stats": false,
           "no_score_tracking": false,
@@ -1453,6 +1453,6 @@
     "resolved": 24,
     "total": 24,
     "unresolved": 0,
-    "queries": 2
+    "queries": 0
   }
 }
