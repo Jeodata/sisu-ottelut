@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T15:43:14+02:00",
+  "generated_at": "2026-11-12T23:49:31+02:00",
   "date": "2026-11-12",
   "date_fi": "12.11.2026",
   "club": {
@@ -1600,7 +1600,7 @@
             "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2743028&lang=fi"
           },
           "link_is_specific": true,
-          "link_source": "getgames",
+          "link_source": "getgames_cache",
           "denied_results": false,
           "denied_stats": false,
           "no_score_tracking": true,
@@ -1652,7 +1652,7 @@
             "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2743026&lang=fi"
           },
           "link_is_specific": true,
-          "link_source": "getgames",
+          "link_source": "getgames_cache",
           "denied_results": false,
           "denied_stats": false,
           "no_score_tracking": false,
@@ -1704,7 +1704,7 @@
             "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2722270&lang=fi"
           },
           "link_is_specific": true,
-          "link_source": "getgames",
+          "link_source": "getgames_cache",
           "denied_results": false,
           "denied_stats": false,
           "no_score_tracking": false,
@@ -1756,7 +1756,7 @@
             "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2745290&lang=fi"
           },
           "link_is_specific": true,
-          "link_source": "getgames",
+          "link_source": "getgames_cache",
           "denied_results": false,
           "denied_stats": false,
           "no_score_tracking": false,
@@ -1808,7 +1808,7 @@
             "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2745291&lang=fi"
           },
           "link_is_specific": true,
-          "link_source": "getgames",
+          "link_source": "getgames_cache",
           "denied_results": false,
           "denied_stats": false,
           "no_score_tracking": false,
