@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T15:03:05+02:00",
+  "generated_at": "2026-11-13T23:24:37+02:00",
   "date": "2026-11-13",
   "date_fi": "13.11.2026",
   "club": {
@@ -397,7 +397,7 @@
         {
           "game_id": 758207,
           "date": "14.11.2026",
-          "time": "17:20",
+          "time": "16:55",
           "status": "upcoming",
           "status_code": 0,
           "finished_type": null,
@@ -767,7 +767,7 @@
         {
           "game_id": 758219,
           "date": "15.11.2026",
-          "time": "14:00",
+          "time": "13:35",
           "status": "upcoming",
           "status_code": 0,
           "finished_type": null,
@@ -1602,7 +1602,7 @@
             "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2733508&lang=fi"
           },
           "link_is_specific": true,
-          "link_source": "getgames",
+          "link_source": "getgames_cache",
           "denied_results": false,
           "denied_stats": false,
           "no_score_tracking": false,
@@ -1758,7 +1758,7 @@
             "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2733515&lang=fi"
           },
           "link_is_specific": true,
-          "link_source": "getgames",
+          "link_source": "getgames_cache",
           "denied_results": false,
           "denied_stats": false,
           "no_score_tracking": false,
@@ -1823,6 +1823,6 @@
     "resolved": 31,
     "total": 31,
     "unresolved": 0,
-    "queries": 2
+    "queries": 0
   }
 }
