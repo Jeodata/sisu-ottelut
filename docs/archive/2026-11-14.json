@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T18:25:23+02:00",
+  "generated_at": "2026-11-14T18:30:23+02:00",
   "date": "2026-11-14",
   "date_fi": "14.11.2026",
   "club": {
@@ -314,7 +314,7 @@
         "abbreviation": "KOOVEE Red",
         "association_id": 10114669,
         "logo": "assets/team-logos/48279770bcd418a496009114d1fa4562437a33074065253af93f7b55074ad433.png",
-        "goals": 4,
+        "goals": 5,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368630217.png?associationId=10114669",
         "logo_source": "team"
       },
@@ -324,7 +324,7 @@
         "abbreviation": "SiSu valkoinen",
         "association_id": 11015646,
         "logo": "assets/team-logos/d0c897255590be362e4ecd5d218344264b16e5a7b3a8f70f0e6409b2a35605bb.png",
-        "goals": 6,
+        "goals": 7,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368626550.png?associationId=11015646",
         "logo_source": "team"
       },
@@ -366,7 +366,7 @@
         "abbreviation": "Kisa-Eagles",
         "association_id": 50003291,
         "logo": "assets/team-logos/1433c01cc26f660c83e821fcf0270dfedd03689e015e0d3e1b6849f6506ad856.png",
-        "goals": 7,
+        "goals": 8,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/913575250.png?associationId=50003291",
         "logo_source": "team"
       },
@@ -473,7 +473,7 @@
         "abbreviation": "KOOVEE Red",
         "association_id": 10114669,
         "logo": "assets/team-logos/48279770bcd418a496009114d1fa4562437a33074065253af93f7b55074ad433.png",
-        "goals": 4,
+        "goals": 5,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368630217.png?associationId=10114669",
         "logo_source": "team"
       },
@@ -483,7 +483,7 @@
         "abbreviation": "SiSu valkoinen",
         "association_id": 11015646,
         "logo": "assets/team-logos/d0c897255590be362e4ecd5d218344264b16e5a7b3a8f70f0e6409b2a35605bb.png",
-        "goals": 6,
+        "goals": 7,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368626550.png?associationId=11015646",
         "logo_source": "team"
       },
@@ -525,7 +525,7 @@
         "abbreviation": "Kisa-Eagles",
         "association_id": 50003291,
         "logo": "assets/team-logos/1433c01cc26f660c83e821fcf0270dfedd03689e015e0d3e1b6849f6506ad856.png",
-        "goals": 7,
+        "goals": 8,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/913575250.png?associationId=50003291",
         "logo_source": "team"
       },
