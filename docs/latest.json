@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T19:45:24+02:00",
+  "generated_at": "2026-11-14T19:50:24+02:00",
   "date": "2026-11-14",
   "date_fi": "14.11.2026",
   "club": {
@@ -22,8 +22,8 @@
   "counts": {
     "total": 8,
     "upcoming": 0,
-    "live": 1,
-    "finished": 7,
+    "live": 0,
+    "finished": 8,
     "other": 0,
     "teams": 37
   },
@@ -396,16 +396,16 @@
       "game_id": 771756,
       "date": "14.11.2026",
       "time": "17:45",
-      "status": "live",
-      "status_code": 15,
-      "finished_type": null,
+      "status": "finished",
+      "status_code": 2,
+      "finished_type": "regulation",
       "level": "U16 II-divisioona",
       "level_id": 1161,
       "sub_serie_id": null,
       "rink": "Loimaa",
       "rink_id": null,
       "small_area": false,
-      "spectators": 0,
+      "spectators": 28,
       "venue": "away",
       "sisu_team": {
         "team_id": 1305184724,
@@ -432,7 +432,7 @@
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1305184724.png?associationId=11015646",
         "logo_source": "team"
       },
-      "score": null,
+      "score": "3-3",
       "period_scores": null,
       "urls": {
         "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2758488&lang=fi"
@@ -446,60 +446,7 @@
     }
   ],
   "upcoming": [],
-  "live": [
-    {
-      "game_id": 771756,
-      "date": "14.11.2026",
-      "time": "17:45",
-      "status": "live",
-      "status_code": 15,
-      "finished_type": null,
-      "level": "U16 II-divisioona",
-      "level_id": 1161,
-      "sub_serie_id": null,
-      "rink": "Loimaa",
-      "rink_id": null,
-      "small_area": false,
-      "spectators": 0,
-      "venue": "away",
-      "sisu_team": {
-        "team_id": 1305184724,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U16",
-        "abbreviation": "SiSu"
-      },
-      "home": {
-        "team_id": 9443981,
-        "name": null,
-        "abbreviation": "Rockets",
-        "association_id": 10112548,
-        "logo": "assets/team-logos/37163eb8a07346fa1202bc58724939ec63e774f9181bc75f5f1ed246ab385f4d.png",
-        "goals": 3,
-        "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/9443981.png?associationId=10112548",
-        "logo_source": "team"
-      },
-      "away": {
-        "team_id": 1305184724,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U16",
-        "abbreviation": "SiSu",
-        "association_id": 11015646,
-        "logo": "assets/team-logos/d0c897255590be362e4ecd5d218344264b16e5a7b3a8f70f0e6409b2a35605bb.png",
-        "goals": 3,
-        "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1305184724.png?associationId=11015646",
-        "logo_source": "team"
-      },
-      "score": null,
-      "period_scores": null,
-      "urls": {
-        "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2758488&lang=fi"
-      },
-      "link_is_specific": true,
-      "link_source": "getgames_cache",
-      "denied_results": false,
-      "denied_stats": false,
-      "no_score_tracking": false,
-      "public_game_id": 2758488
-    }
-  ],
+  "live": [],
   "finished": [
     {
       "game_id": 753378,
@@ -864,6 +811,58 @@
       "denied_stats": false,
       "no_score_tracking": false,
       "public_game_id": 2727993
+    },
+    {
+      "game_id": 771756,
+      "date": "14.11.2026",
+      "time": "17:45",
+      "status": "finished",
+      "status_code": 2,
+      "finished_type": "regulation",
+      "level": "U16 II-divisioona",
+      "level_id": 1161,
+      "sub_serie_id": null,
+      "rink": "Loimaa",
+      "rink_id": null,
+      "small_area": false,
+      "spectators": 28,
+      "venue": "away",
+      "sisu_team": {
+        "team_id": 1305184724,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U16",
+        "abbreviation": "SiSu"
+      },
+      "home": {
+        "team_id": 9443981,
+        "name": null,
+        "abbreviation": "Rockets",
+        "association_id": 10112548,
+        "logo": "assets/team-logos/37163eb8a07346fa1202bc58724939ec63e774f9181bc75f5f1ed246ab385f4d.png",
+        "goals": 3,
+        "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/9443981.png?associationId=10112548",
+        "logo_source": "team"
+      },
+      "away": {
+        "team_id": 1305184724,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U16",
+        "abbreviation": "SiSu",
+        "association_id": 11015646,
+        "logo": "assets/team-logos/d0c897255590be362e4ecd5d218344264b16e5a7b3a8f70f0e6409b2a35605bb.png",
+        "goals": 3,
+        "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1305184724.png?associationId=11015646",
+        "logo_source": "team"
+      },
+      "score": "3-3",
+      "period_scores": null,
+      "urls": {
+        "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2758488&lang=fi"
+      },
+      "link_is_specific": true,
+      "link_source": "getgames_cache",
+      "denied_results": false,
+      "denied_stats": false,
+      "no_score_tracking": false,
+      "public_game_id": 2758488
     }
   ],
   "teams": [
