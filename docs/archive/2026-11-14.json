@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T14:15:25+02:00",
+  "generated_at": "2026-11-14T14:20:27+02:00",
   "date": "2026-11-14",
   "date_fi": "14.11.2026",
   "club": {
@@ -21,8 +21,8 @@
   },
   "counts": {
     "total": 8,
-    "upcoming": 7,
-    "live": 0,
+    "upcoming": 6,
+    "live": 1,
     "finished": 1,
     "other": 0,
     "teams": 37
@@ -84,8 +84,8 @@
       "game_id": 753376,
       "date": "14.11.2026",
       "time": "14:15",
-      "status": "upcoming",
-      "status_code": 0,
+      "status": "live",
+      "status_code": 11,
       "finished_type": null,
       "level": "U12 sarja",
       "level_id": 1143,
@@ -106,7 +106,7 @@
         "abbreviation": "SiSu Punainen",
         "association_id": 11015646,
         "logo": "assets/team-logos/d0c897255590be362e4ecd5d218344264b16e5a7b3a8f70f0e6409b2a35605bb.png",
-        "goals": null,
+        "goals": 0,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627073.png?associationId=11015646",
         "logo_source": "team"
       },
@@ -116,7 +116,7 @@
         "abbreviation": "Ilves Montreal",
         "association_id": 10114698,
         "logo": "assets/team-logos/4e435ceda98ea30a202ce760a217bd3d7596fb1a9d35454afd376157141cb1ff.png",
-        "goals": null,
+        "goals": 0,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627185.png?associationId=10114698",
         "logo_source": "team"
       },
@@ -447,58 +447,6 @@
   ],
   "upcoming": [
     {
-      "game_id": 753376,
-      "date": "14.11.2026",
-      "time": "14:15",
-      "status": "upcoming",
-      "status_code": 0,
-      "finished_type": null,
-      "level": "U12 sarja",
-      "level_id": 1143,
-      "sub_serie_id": null,
-      "rink": "Hakio C",
-      "rink_id": null,
-      "small_area": false,
-      "spectators": 0,
-      "venue": "home",
-      "sisu_team": {
-        "team_id": 1368627073,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U12 Punainen",
-        "abbreviation": "SiSu Punainen"
-      },
-      "home": {
-        "team_id": 1368627073,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U12 Punainen",
-        "abbreviation": "SiSu Punainen",
-        "association_id": 11015646,
-        "logo": "assets/team-logos/d0c897255590be362e4ecd5d218344264b16e5a7b3a8f70f0e6409b2a35605bb.png",
-        "goals": null,
-        "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627073.png?associationId=11015646",
-        "logo_source": "team"
-      },
-      "away": {
-        "team_id": 1368627185,
-        "name": null,
-        "abbreviation": "Ilves Montreal",
-        "association_id": 10114698,
-        "logo": "assets/team-logos/4e435ceda98ea30a202ce760a217bd3d7596fb1a9d35454afd376157141cb1ff.png",
-        "goals": null,
-        "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627185.png?associationId=10114698",
-        "logo_source": "team"
-      },
-      "score": null,
-      "period_scores": null,
-      "urls": {
-        "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2743013&lang=fi"
-      },
-      "link_is_specific": true,
-      "link_source": "getgames_cache",
-      "denied_results": false,
-      "denied_stats": false,
-      "no_score_tracking": false,
-      "public_game_id": 2743013
-    },
-    {
       "game_id": 728023,
       "date": "14.11.2026",
       "time": "15:20",
@@ -811,7 +759,60 @@
       "public_game_id": 2758488
     }
   ],
-  "live": [],
+  "live": [
+    {
+      "game_id": 753376,
+      "date": "14.11.2026",
+      "time": "14:15",
+      "status": "live",
+      "status_code": 11,
+      "finished_type": null,
+      "level": "U12 sarja",
+      "level_id": 1143,
+      "sub_serie_id": null,
+      "rink": "Hakio C",
+      "rink_id": null,
+      "small_area": false,
+      "spectators": 0,
+      "venue": "home",
+      "sisu_team": {
+        "team_id": 1368627073,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U12 Punainen",
+        "abbreviation": "SiSu Punainen"
+      },
+      "home": {
+        "team_id": 1368627073,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U12 Punainen",
+        "abbreviation": "SiSu Punainen",
+        "association_id": 11015646,
+        "logo": "assets/team-logos/d0c897255590be362e4ecd5d218344264b16e5a7b3a8f70f0e6409b2a35605bb.png",
+        "goals": 0,
+        "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627073.png?associationId=11015646",
+        "logo_source": "team"
+      },
+      "away": {
+        "team_id": 1368627185,
+        "name": null,
+        "abbreviation": "Ilves Montreal",
+        "association_id": 10114698,
+        "logo": "assets/team-logos/4e435ceda98ea30a202ce760a217bd3d7596fb1a9d35454afd376157141cb1ff.png",
+        "goals": 0,
+        "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627185.png?associationId=10114698",
+        "logo_source": "team"
+      },
+      "score": null,
+      "period_scores": null,
+      "urls": {
+        "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2743013&lang=fi"
+      },
+      "link_is_specific": true,
+      "link_source": "getgames_cache",
+      "denied_results": false,
+      "denied_stats": false,
+      "no_score_tracking": false,
+      "public_game_id": 2743013
+    }
+  ],
   "finished": [
     {
       "game_id": 753378,
