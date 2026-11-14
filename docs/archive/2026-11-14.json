@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T16:30:25+02:00",
+  "generated_at": "2026-11-14T16:35:25+02:00",
   "date": "2026-11-14",
   "date_fi": "14.11.2026",
   "club": {
@@ -22,8 +22,8 @@
   "counts": {
     "total": 8,
     "upcoming": 4,
-    "live": 2,
-    "finished": 2,
+    "live": 1,
+    "finished": 3,
     "other": 0,
     "teams": 37
   },
@@ -136,16 +136,16 @@
       "game_id": 728023,
       "date": "14.11.2026",
       "time": "15:20",
-      "status": "live",
-      "status_code": 15,
-      "finished_type": null,
+      "status": "finished",
+      "status_code": 2,
+      "finished_type": "regulation",
       "level": "U13 Sininen",
       "level_id": 1144,
       "sub_serie_id": null,
       "rink": "Hakio S",
       "rink_id": null,
       "small_area": false,
-      "spectators": 0,
+      "spectators": 30,
       "venue": "home",
       "sisu_team": {
         "team_id": 1368626549,
@@ -172,7 +172,7 @@
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368630080.png?associationId=10114407",
         "logo_source": "team"
       },
-      "score": null,
+      "score": "15-1",
       "period_scores": null,
       "urls": {
         "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2715101&lang=fi"
@@ -657,58 +657,6 @@
   ],
   "live": [
     {
-      "game_id": 728023,
-      "date": "14.11.2026",
-      "time": "15:20",
-      "status": "live",
-      "status_code": 15,
-      "finished_type": null,
-      "level": "U13 Sininen",
-      "level_id": 1144,
-      "sub_serie_id": null,
-      "rink": "Hakio S",
-      "rink_id": null,
-      "small_area": false,
-      "spectators": 0,
-      "venue": "home",
-      "sisu_team": {
-        "team_id": 1368626549,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U13 punainen",
-        "abbreviation": "SiSu punainen"
-      },
-      "home": {
-        "team_id": 1368626549,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U13 punainen",
-        "abbreviation": "SiSu punainen",
-        "association_id": 11015646,
-        "logo": "assets/team-logos/d0c897255590be362e4ecd5d218344264b16e5a7b3a8f70f0e6409b2a35605bb.png",
-        "goals": 15,
-        "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368626549.png?associationId=11015646",
-        "logo_source": "team"
-      },
-      "away": {
-        "team_id": 1368630080,
-        "name": null,
-        "abbreviation": "Kiekko-Ahma Musta",
-        "association_id": 10114407,
-        "logo": "assets/team-logos/57dab5e95e2641a893a42e9a3a6523d57311c9ae83b372cd6a91d5924344391f.png",
-        "goals": 1,
-        "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368630080.png?associationId=10114407",
-        "logo_source": "team"
-      },
-      "score": null,
-      "period_scores": null,
-      "urls": {
-        "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2715101&lang=fi"
-      },
-      "link_is_specific": true,
-      "link_source": "getgames_cache",
-      "denied_results": false,
-      "denied_stats": false,
-      "no_score_tracking": false,
-      "public_game_id": 2715101
-    },
-    {
       "game_id": 758206,
       "date": "14.11.2026",
       "time": "15:50",
@@ -865,6 +813,58 @@
       "denied_stats": false,
       "no_score_tracking": false,
       "public_game_id": 2743013
+    },
+    {
+      "game_id": 728023,
+      "date": "14.11.2026",
+      "time": "15:20",
+      "status": "finished",
+      "status_code": 2,
+      "finished_type": "regulation",
+      "level": "U13 Sininen",
+      "level_id": 1144,
+      "sub_serie_id": null,
+      "rink": "Hakio S",
+      "rink_id": null,
+      "small_area": false,
+      "spectators": 30,
+      "venue": "home",
+      "sisu_team": {
+        "team_id": 1368626549,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U13 punainen",
+        "abbreviation": "SiSu punainen"
+      },
+      "home": {
+        "team_id": 1368626549,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U13 punainen",
+        "abbreviation": "SiSu punainen",
+        "association_id": 11015646,
+        "logo": "assets/team-logos/d0c897255590be362e4ecd5d218344264b16e5a7b3a8f70f0e6409b2a35605bb.png",
+        "goals": 15,
+        "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368626549.png?associationId=11015646",
+        "logo_source": "team"
+      },
+      "away": {
+        "team_id": 1368630080,
+        "name": null,
+        "abbreviation": "Kiekko-Ahma Musta",
+        "association_id": 10114407,
+        "logo": "assets/team-logos/57dab5e95e2641a893a42e9a3a6523d57311c9ae83b372cd6a91d5924344391f.png",
+        "goals": 1,
+        "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368630080.png?associationId=10114407",
+        "logo_source": "team"
+      },
+      "score": "15-1",
+      "period_scores": null,
+      "urls": {
+        "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2715101&lang=fi"
+      },
+      "link_is_specific": true,
+      "link_source": "getgames_cache",
+      "denied_results": false,
+      "denied_stats": false,
+      "no_score_tracking": false,
+      "public_game_id": 2715101
     }
   ],
   "teams": [
