@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T17:35:26+02:00",
+  "generated_at": "2026-11-14T17:40:25+02:00",
   "date": "2026-11-14",
   "date_fi": "14.11.2026",
   "club": {
@@ -21,8 +21,8 @@
   },
   "counts": {
     "total": 8,
-    "upcoming": 1,
-    "live": 3,
+    "upcoming": 0,
+    "live": 4,
     "finished": 4,
     "other": 0,
     "teams": 37
@@ -314,7 +314,7 @@
         "abbreviation": "KOOVEE Red",
         "association_id": 10114669,
         "logo": "assets/team-logos/48279770bcd418a496009114d1fa4562437a33074065253af93f7b55074ad433.png",
-        "goals": 2,
+        "goals": 3,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368630217.png?associationId=10114669",
         "logo_source": "team"
       },
@@ -366,7 +366,7 @@
         "abbreviation": "Kisa-Eagles",
         "association_id": 50003291,
         "logo": "assets/team-logos/1433c01cc26f660c83e821fcf0270dfedd03689e015e0d3e1b6849f6506ad856.png",
-        "goals": 1,
+        "goals": 2,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/913575250.png?associationId=50003291",
         "logo_source": "team"
       },
@@ -396,8 +396,8 @@
       "game_id": 771756,
       "date": "14.11.2026",
       "time": "17:45",
-      "status": "upcoming",
-      "status_code": 0,
+      "status": "live",
+      "status_code": 1,
       "finished_type": null,
       "level": "U16 II-divisioona",
       "level_id": 1161,
@@ -418,7 +418,7 @@
         "abbreviation": "Rockets",
         "association_id": 10112548,
         "logo": "assets/team-logos/37163eb8a07346fa1202bc58724939ec63e774f9181bc75f5f1ed246ab385f4d.png",
-        "goals": null,
+        "goals": 0,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/9443981.png?associationId=10112548",
         "logo_source": "team"
       },
@@ -428,7 +428,7 @@
         "abbreviation": "SiSu",
         "association_id": 11015646,
         "logo": "assets/team-logos/d0c897255590be362e4ecd5d218344264b16e5a7b3a8f70f0e6409b2a35605bb.png",
-        "goals": null,
+        "goals": 0,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1305184724.png?associationId=11015646",
         "logo_source": "team"
       },
@@ -445,60 +445,7 @@
       "public_game_id": 2758488
     }
   ],
-  "upcoming": [
-    {
-      "game_id": 771756,
-      "date": "14.11.2026",
-      "time": "17:45",
-      "status": "upcoming",
-      "status_code": 0,
-      "finished_type": null,
-      "level": "U16 II-divisioona",
-      "level_id": 1161,
-      "sub_serie_id": null,
-      "rink": "Loimaa",
-      "rink_id": null,
-      "small_area": false,
-      "spectators": 0,
-      "venue": "away",
-      "sisu_team": {
-        "team_id": 1305184724,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U16",
-        "abbreviation": "SiSu"
-      },
-      "home": {
-        "team_id": 9443981,
-        "name": null,
-        "abbreviation": "Rockets",
-        "association_id": 10112548,
-        "logo": "assets/team-logos/37163eb8a07346fa1202bc58724939ec63e774f9181bc75f5f1ed246ab385f4d.png",
-        "goals": null,
-        "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/9443981.png?associationId=10112548",
-        "logo_source": "team"
-      },
-      "away": {
-        "team_id": 1305184724,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U16",
-        "abbreviation": "SiSu",
-        "association_id": 11015646,
-        "logo": "assets/team-logos/d0c897255590be362e4ecd5d218344264b16e5a7b3a8f70f0e6409b2a35605bb.png",
-        "goals": null,
-        "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1305184724.png?associationId=11015646",
-        "logo_source": "team"
-      },
-      "score": null,
-      "period_scores": null,
-      "urls": {
-        "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2758488&lang=fi"
-      },
-      "link_is_specific": true,
-      "link_source": "getgames_cache",
-      "denied_results": false,
-      "denied_stats": false,
-      "no_score_tracking": false,
-      "public_game_id": 2758488
-    }
-  ],
+  "upcoming": [],
   "live": [
     {
       "game_id": 758207,
@@ -578,7 +525,7 @@
         "abbreviation": "KOOVEE Red",
         "association_id": 10114669,
         "logo": "assets/team-logos/48279770bcd418a496009114d1fa4562437a33074065253af93f7b55074ad433.png",
-        "goals": 2,
+        "goals": 3,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368630217.png?associationId=10114669",
         "logo_source": "team"
       },
@@ -630,7 +577,7 @@
         "abbreviation": "Kisa-Eagles",
         "association_id": 50003291,
         "logo": "assets/team-logos/1433c01cc26f660c83e821fcf0270dfedd03689e015e0d3e1b6849f6506ad856.png",
-        "goals": 1,
+        "goals": 2,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/913575250.png?associationId=50003291",
         "logo_source": "team"
       },
@@ -655,6 +602,58 @@
       "denied_stats": false,
       "no_score_tracking": false,
       "public_game_id": 2727993
+    },
+    {
+      "game_id": 771756,
+      "date": "14.11.2026",
+      "time": "17:45",
+      "status": "live",
+      "status_code": 1,
+      "finished_type": null,
+      "level": "U16 II-divisioona",
+      "level_id": 1161,
+      "sub_serie_id": null,
+      "rink": "Loimaa",
+      "rink_id": null,
+      "small_area": false,
+      "spectators": 0,
+      "venue": "away",
+      "sisu_team": {
+        "team_id": 1305184724,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U16",
+        "abbreviation": "SiSu"
+      },
+      "home": {
+        "team_id": 9443981,
+        "name": null,
+        "abbreviation": "Rockets",
+        "association_id": 10112548,
+        "logo": "assets/team-logos/37163eb8a07346fa1202bc58724939ec63e774f9181bc75f5f1ed246ab385f4d.png",
+        "goals": 0,
+        "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/9443981.png?associationId=10112548",
+        "logo_source": "team"
+      },
+      "away": {
+        "team_id": 1305184724,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U16",
+        "abbreviation": "SiSu",
+        "association_id": 11015646,
+        "logo": "assets/team-logos/d0c897255590be362e4ecd5d218344264b16e5a7b3a8f70f0e6409b2a35605bb.png",
+        "goals": 0,
+        "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1305184724.png?associationId=11015646",
+        "logo_source": "team"
+      },
+      "score": null,
+      "period_scores": null,
+      "urls": {
+        "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2758488&lang=fi"
+      },
+      "link_is_specific": true,
+      "link_source": "getgames_cache",
+      "denied_results": false,
+      "denied_stats": false,
+      "no_score_tracking": false,
+      "public_game_id": 2758488
     }
   ],
   "finished": [
