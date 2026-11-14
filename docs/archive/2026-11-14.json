@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T19:15:24+02:00",
+  "generated_at": "2026-11-14T19:20:26+02:00",
   "date": "2026-11-14",
   "date_fi": "14.11.2026",
   "club": {
@@ -376,7 +376,7 @@
         "abbreviation": "SiSu",
         "association_id": 11015646,
         "logo": "assets/team-logos/d0c897255590be362e4ecd5d218344264b16e5a7b3a8f70f0e6409b2a35605bb.png",
-        "goals": 4,
+        "goals": 5,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368629034.png?associationId=11015646",
         "logo_source": "team"
       },
@@ -397,7 +397,7 @@
       "date": "14.11.2026",
       "time": "17:45",
       "status": "live",
-      "status_code": 14,
+      "status_code": 15,
       "finished_type": null,
       "level": "U16 II-divisioona",
       "level_id": 1161,
@@ -483,7 +483,7 @@
         "abbreviation": "SiSu",
         "association_id": 11015646,
         "logo": "assets/team-logos/d0c897255590be362e4ecd5d218344264b16e5a7b3a8f70f0e6409b2a35605bb.png",
-        "goals": 4,
+        "goals": 5,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368629034.png?associationId=11015646",
         "logo_source": "team"
       },
@@ -504,7 +504,7 @@
       "date": "14.11.2026",
       "time": "17:45",
       "status": "live",
-      "status_code": 14,
+      "status_code": 15,
       "finished_type": null,
       "level": "U16 II-divisioona",
       "level_id": 1161,
