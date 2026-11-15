@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T16:00:33+02:00",
+  "generated_at": "2026-11-15T16:05:24+02:00",
   "date": "2026-11-15",
   "date_fi": "15.11.2026",
   "club": {
@@ -22,8 +22,8 @@
   "counts": {
     "total": 8,
     "upcoming": 1,
-    "live": 3,
-    "finished": 4,
+    "live": 2,
+    "finished": 5,
     "other": 0,
     "teams": 37
   },
@@ -240,16 +240,16 @@
       "game_id": 731624,
       "date": "15.11.2026",
       "time": "14:45",
-      "status": "live",
-      "status_code": 15,
-      "finished_type": null,
+      "status": "finished",
+      "status_code": 2,
+      "finished_type": "regulation",
       "level": "U13 Valkoinen",
       "level_id": 1146,
       "sub_serie_id": null,
       "rink": "Lempäälä 2",
       "rink_id": null,
       "small_area": false,
-      "spectators": 0,
+      "spectators": 30,
       "venue": "away",
       "sisu_team": {
         "team_id": 1368626550,
@@ -276,7 +276,7 @@
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368626550.png?associationId=11015646",
         "logo_source": "team"
       },
-      "score": null,
+      "score": "4-5",
       "period_scores": null,
       "urls": {
         "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2722262&lang=fi"
@@ -500,58 +500,6 @@
     }
   ],
   "live": [
-    {
-      "game_id": 731624,
-      "date": "15.11.2026",
-      "time": "14:45",
-      "status": "live",
-      "status_code": 15,
-      "finished_type": null,
-      "level": "U13 Valkoinen",
-      "level_id": 1146,
-      "sub_serie_id": null,
-      "rink": "Lempäälä 2",
-      "rink_id": null,
-      "small_area": false,
-      "spectators": 0,
-      "venue": "away",
-      "sisu_team": {
-        "team_id": 1368626550,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U13 valkoinen",
-        "abbreviation": "SiSu valkoinen"
-      },
-      "home": {
-        "team_id": 1368626774,
-        "name": null,
-        "abbreviation": "LeKi",
-        "association_id": 100025201,
-        "logo": "assets/team-logos/63d67e0344460ab94029a9e2538bdc5c4aff4cc5739c738e33429d693e56738d.png",
-        "goals": 4,
-        "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368626774.png?associationId=100025201",
-        "logo_source": "team"
-      },
-      "away": {
-        "team_id": 1368626550,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U13 valkoinen",
-        "abbreviation": "SiSu valkoinen",
-        "association_id": 11015646,
-        "logo": "assets/team-logos/d0c897255590be362e4ecd5d218344264b16e5a7b3a8f70f0e6409b2a35605bb.png",
-        "goals": 5,
-        "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368626550.png?associationId=11015646",
-        "logo_source": "team"
-      },
-      "score": null,
-      "period_scores": null,
-      "urls": {
-        "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2722262&lang=fi"
-      },
-      "link_is_specific": true,
-      "link_source": "getgames_cache",
-      "denied_results": false,
-      "denied_stats": false,
-      "no_score_tracking": false,
-      "public_game_id": 2722262
-    },
     {
       "game_id": 752973,
       "date": "15.11.2026",
@@ -865,6 +813,58 @@
       "denied_stats": false,
       "no_score_tracking": true,
       "public_game_id": 2745275
+    },
+    {
+      "game_id": 731624,
+      "date": "15.11.2026",
+      "time": "14:45",
+      "status": "finished",
+      "status_code": 2,
+      "finished_type": "regulation",
+      "level": "U13 Valkoinen",
+      "level_id": 1146,
+      "sub_serie_id": null,
+      "rink": "Lempäälä 2",
+      "rink_id": null,
+      "small_area": false,
+      "spectators": 30,
+      "venue": "away",
+      "sisu_team": {
+        "team_id": 1368626550,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U13 valkoinen",
+        "abbreviation": "SiSu valkoinen"
+      },
+      "home": {
+        "team_id": 1368626774,
+        "name": null,
+        "abbreviation": "LeKi",
+        "association_id": 100025201,
+        "logo": "assets/team-logos/63d67e0344460ab94029a9e2538bdc5c4aff4cc5739c738e33429d693e56738d.png",
+        "goals": 4,
+        "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368626774.png?associationId=100025201",
+        "logo_source": "team"
+      },
+      "away": {
+        "team_id": 1368626550,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U13 valkoinen",
+        "abbreviation": "SiSu valkoinen",
+        "association_id": 11015646,
+        "logo": "assets/team-logos/d0c897255590be362e4ecd5d218344264b16e5a7b3a8f70f0e6409b2a35605bb.png",
+        "goals": 5,
+        "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368626550.png?associationId=11015646",
+        "logo_source": "team"
+      },
+      "score": "4-5",
+      "period_scores": null,
+      "urls": {
+        "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2722262&lang=fi"
+      },
+      "link_is_specific": true,
+      "link_source": "getgames_cache",
+      "denied_results": false,
+      "denied_stats": false,
+      "no_score_tracking": false,
+      "public_game_id": 2722262
     }
   ],
   "teams": [
