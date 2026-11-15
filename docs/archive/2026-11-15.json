@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T17:50:24+02:00",
+  "generated_at": "2026-11-15T17:55:24+02:00",
   "date": "2026-11-15",
   "date_fi": "15.11.2026",
   "club": {
@@ -397,7 +397,7 @@
       "date": "15.11.2026",
       "time": "17:00",
       "status": "live",
-      "status_code": 13,
+      "status_code": 15,
       "finished_type": null,
       "level": "U12 sarja",
       "level_id": 1143,
@@ -405,7 +405,7 @@
       "rink": "Hakio S",
       "rink_id": null,
       "small_area": false,
-      "spectators": 0,
+      "spectators": 25,
       "venue": "home",
       "sisu_team": {
         "team_id": 1368627072,
@@ -418,7 +418,7 @@
         "abbreviation": "SiSu Valkoinen",
         "association_id": 11015646,
         "logo": "assets/team-logos/d0c897255590be362e4ecd5d218344264b16e5a7b3a8f70f0e6409b2a35605bb.png",
-        "goals": 11,
+        "goals": 13,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627072.png?associationId=11015646",
         "logo_source": "team"
       },
@@ -452,7 +452,7 @@
       "date": "15.11.2026",
       "time": "17:00",
       "status": "live",
-      "status_code": 13,
+      "status_code": 15,
       "finished_type": null,
       "level": "U12 sarja",
       "level_id": 1143,
@@ -460,7 +460,7 @@
       "rink": "Hakio S",
       "rink_id": null,
       "small_area": false,
-      "spectators": 0,
+      "spectators": 25,
       "venue": "home",
       "sisu_team": {
         "team_id": 1368627072,
@@ -473,7 +473,7 @@
         "abbreviation": "SiSu Valkoinen",
         "association_id": 11015646,
         "logo": "assets/team-logos/d0c897255590be362e4ecd5d218344264b16e5a7b3a8f70f0e6409b2a35605bb.png",
-        "goals": 11,
+        "goals": 13,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627072.png?associationId=11015646",
         "logo_source": "team"
       },
