@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T00:39:13+02:00",
+  "generated_at": "2026-11-20T15:58:00+02:00",
   "date": "2026-11-20",
   "date_fi": "20.11.2026",
   "club": {
@@ -979,6 +979,58 @@
       "date_fi": "28.11.2026",
       "games": [
         {
+          "game_id": 776607,
+          "date": "28.11.2026",
+          "time": null,
+          "status": "upcoming",
+          "status_code": 0,
+          "finished_type": null,
+          "level": "U18 III-divisioona",
+          "level_id": 1159,
+          "sub_serie_id": null,
+          "rink": "Hakio S",
+          "rink_id": null,
+          "small_area": false,
+          "spectators": 0,
+          "venue": "home",
+          "sisu_team": {
+            "team_id": 1368629034,
+            "name": "SISU HOCKEY HÄMEENLINNA  RY U18",
+            "abbreviation": "SiSu"
+          },
+          "home": {
+            "team_id": 1368629034,
+            "name": "SISU HOCKEY HÄMEENLINNA  RY U18",
+            "abbreviation": "SiSu",
+            "association_id": 11015646,
+            "logo": "assets/team-logos/d0c897255590be362e4ecd5d218344264b16e5a7b3a8f70f0e6409b2a35605bb.png",
+            "goals": null,
+            "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368629034.png?associationId=11015646",
+            "logo_source": "team"
+          },
+          "away": {
+            "team_id": 935060384,
+            "name": null,
+            "abbreviation": "K-Espoo V",
+            "association_id": 100026957,
+            "logo": "assets/team-logos/8e4fb6c2ea5ff553374d92598f27da17d93dd5e136bea0b83a8671e00cf53e54.png",
+            "goals": null,
+            "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/935060384.png?associationId=100026957",
+            "logo_source": "team"
+          },
+          "score": null,
+          "period_scores": null,
+          "urls": {
+            "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2763338&lang=fi"
+          },
+          "link_is_specific": true,
+          "link_source": "getgames",
+          "denied_results": false,
+          "denied_stats": false,
+          "no_score_tracking": false,
+          "public_game_id": 2763338
+        },
+        {
           "game_id": 753412,
           "date": "28.11.2026",
           "time": "12:45",
@@ -1716,9 +1768,9 @@
     }
   ],
   "public_link_resolution": {
-    "resolved": 29,
-    "total": 29,
+    "resolved": 30,
+    "total": 30,
     "unresolved": 0,
-    "queries": 0
+    "queries": 2
   }
 }
