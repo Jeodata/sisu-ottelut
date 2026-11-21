@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T14:25:24+02:00",
+  "generated_at": "2026-11-21T14:30:36+02:00",
   "date": "2026-11-21",
   "date_fi": "21.11.2026",
   "club": {
@@ -21,8 +21,8 @@
   },
   "counts": {
     "total": 8,
-    "upcoming": 5,
-    "live": 2,
+    "upcoming": 3,
+    "live": 4,
     "finished": 1,
     "other": 0,
     "teams": 37
@@ -188,8 +188,8 @@
       "game_id": 771761,
       "date": "21.11.2026",
       "time": "14:30",
-      "status": "upcoming",
-      "status_code": 0,
+      "status": "live",
+      "status_code": 11,
       "finished_type": null,
       "level": "U16 II-divisioona",
       "level_id": 1161,
@@ -210,7 +210,7 @@
         "abbreviation": "SiSu",
         "association_id": 11015646,
         "logo": "assets/team-logos/d0c897255590be362e4ecd5d218344264b16e5a7b3a8f70f0e6409b2a35605bb.png",
-        "goals": null,
+        "goals": 0,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1305184724.png?associationId=11015646",
         "logo_source": "team"
       },
@@ -220,7 +220,7 @@
         "abbreviation": "Pelicans Team",
         "association_id": 11019913,
         "logo": "assets/team-logos/6c2501c09ed4503360b9164170546f23c4f597c32907cbb1ab426aebb15e76b2.png",
-        "goals": null,
+        "goals": 0,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368623392.png?associationId=11019913",
         "logo_source": "team"
       },
@@ -240,8 +240,8 @@
       "game_id": 757907,
       "date": "21.11.2026",
       "time": "14:45",
-      "status": "upcoming",
-      "status_code": 0,
+      "status": "live",
+      "status_code": 11,
       "finished_type": null,
       "level": "U11 sarja",
       "level_id": 1142,
@@ -262,7 +262,7 @@
         "abbreviation": "SiSu Punainen",
         "association_id": 11015646,
         "logo": "assets/team-logos/d0c897255590be362e4ecd5d218344264b16e5a7b3a8f70f0e6409b2a35605bb.png",
-        "goals": null,
+        "goals": 0,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627585.png?associationId=11015646",
         "logo_source": "team"
       },
@@ -272,7 +272,7 @@
         "abbreviation": "Ilves Toronto",
         "association_id": 10114698,
         "logo": "assets/team-logos/4e435ceda98ea30a202ce760a217bd3d7596fb1a9d35454afd376157141cb1ff.png",
-        "goals": null,
+        "goals": 0,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627833.png?associationId=10114698",
         "logo_source": "team"
       },
@@ -446,110 +446,6 @@
     }
   ],
   "upcoming": [
-    {
-      "game_id": 771761,
-      "date": "21.11.2026",
-      "time": "14:30",
-      "status": "upcoming",
-      "status_code": 0,
-      "finished_type": null,
-      "level": "U16 II-divisioona",
-      "level_id": 1161,
-      "sub_serie_id": null,
-      "rink": "HML hh",
-      "rink_id": null,
-      "small_area": false,
-      "spectators": 0,
-      "venue": "home",
-      "sisu_team": {
-        "team_id": 1305184724,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U16",
-        "abbreviation": "SiSu"
-      },
-      "home": {
-        "team_id": 1305184724,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U16",
-        "abbreviation": "SiSu",
-        "association_id": 11015646,
-        "logo": "assets/team-logos/d0c897255590be362e4ecd5d218344264b16e5a7b3a8f70f0e6409b2a35605bb.png",
-        "goals": null,
-        "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1305184724.png?associationId=11015646",
-        "logo_source": "team"
-      },
-      "away": {
-        "team_id": 1368623392,
-        "name": null,
-        "abbreviation": "Pelicans Team",
-        "association_id": 11019913,
-        "logo": "assets/team-logos/6c2501c09ed4503360b9164170546f23c4f597c32907cbb1ab426aebb15e76b2.png",
-        "goals": null,
-        "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368623392.png?associationId=11019913",
-        "logo_source": "team"
-      },
-      "score": null,
-      "period_scores": null,
-      "urls": {
-        "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2758491&lang=fi"
-      },
-      "link_is_specific": true,
-      "link_source": "getgames_cache",
-      "denied_results": false,
-      "denied_stats": false,
-      "no_score_tracking": false,
-      "public_game_id": 2758491
-    },
-    {
-      "game_id": 757907,
-      "date": "21.11.2026",
-      "time": "14:45",
-      "status": "upcoming",
-      "status_code": 0,
-      "finished_type": null,
-      "level": "U11 sarja",
-      "level_id": 1142,
-      "sub_serie_id": null,
-      "rink": "Hakio C",
-      "rink_id": null,
-      "small_area": false,
-      "spectators": 0,
-      "venue": "home",
-      "sisu_team": {
-        "team_id": 1368627585,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U11 Punainen",
-        "abbreviation": "SiSu Punainen"
-      },
-      "home": {
-        "team_id": 1368627585,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U11 Punainen",
-        "abbreviation": "SiSu Punainen",
-        "association_id": 11015646,
-        "logo": "assets/team-logos/d0c897255590be362e4ecd5d218344264b16e5a7b3a8f70f0e6409b2a35605bb.png",
-        "goals": null,
-        "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627585.png?associationId=11015646",
-        "logo_source": "team"
-      },
-      "away": {
-        "team_id": 1368627833,
-        "name": null,
-        "abbreviation": "Ilves Toronto",
-        "association_id": 10114698,
-        "logo": "assets/team-logos/4e435ceda98ea30a202ce760a217bd3d7596fb1a9d35454afd376157141cb1ff.png",
-        "goals": null,
-        "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627833.png?associationId=10114698",
-        "logo_source": "team"
-      },
-      "score": null,
-      "period_scores": null,
-      "urls": {
-        "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2744923&lang=fi"
-      },
-      "link_is_specific": true,
-      "link_source": "getgames_cache",
-      "denied_results": false,
-      "denied_stats": false,
-      "no_score_tracking": false,
-      "public_game_id": 2744923
-    },
     {
       "game_id": 767482,
       "date": "21.11.2026",
@@ -811,6 +707,110 @@
       "denied_stats": false,
       "no_score_tracking": true,
       "public_game_id": 2755492
+    },
+    {
+      "game_id": 771761,
+      "date": "21.11.2026",
+      "time": "14:30",
+      "status": "live",
+      "status_code": 11,
+      "finished_type": null,
+      "level": "U16 II-divisioona",
+      "level_id": 1161,
+      "sub_serie_id": null,
+      "rink": "HML hh",
+      "rink_id": null,
+      "small_area": false,
+      "spectators": 0,
+      "venue": "home",
+      "sisu_team": {
+        "team_id": 1305184724,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U16",
+        "abbreviation": "SiSu"
+      },
+      "home": {
+        "team_id": 1305184724,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U16",
+        "abbreviation": "SiSu",
+        "association_id": 11015646,
+        "logo": "assets/team-logos/d0c897255590be362e4ecd5d218344264b16e5a7b3a8f70f0e6409b2a35605bb.png",
+        "goals": 0,
+        "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1305184724.png?associationId=11015646",
+        "logo_source": "team"
+      },
+      "away": {
+        "team_id": 1368623392,
+        "name": null,
+        "abbreviation": "Pelicans Team",
+        "association_id": 11019913,
+        "logo": "assets/team-logos/6c2501c09ed4503360b9164170546f23c4f597c32907cbb1ab426aebb15e76b2.png",
+        "goals": 0,
+        "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368623392.png?associationId=11019913",
+        "logo_source": "team"
+      },
+      "score": null,
+      "period_scores": null,
+      "urls": {
+        "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2758491&lang=fi"
+      },
+      "link_is_specific": true,
+      "link_source": "getgames_cache",
+      "denied_results": false,
+      "denied_stats": false,
+      "no_score_tracking": false,
+      "public_game_id": 2758491
+    },
+    {
+      "game_id": 757907,
+      "date": "21.11.2026",
+      "time": "14:45",
+      "status": "live",
+      "status_code": 11,
+      "finished_type": null,
+      "level": "U11 sarja",
+      "level_id": 1142,
+      "sub_serie_id": null,
+      "rink": "Hakio C",
+      "rink_id": null,
+      "small_area": false,
+      "spectators": 0,
+      "venue": "home",
+      "sisu_team": {
+        "team_id": 1368627585,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U11 Punainen",
+        "abbreviation": "SiSu Punainen"
+      },
+      "home": {
+        "team_id": 1368627585,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U11 Punainen",
+        "abbreviation": "SiSu Punainen",
+        "association_id": 11015646,
+        "logo": "assets/team-logos/d0c897255590be362e4ecd5d218344264b16e5a7b3a8f70f0e6409b2a35605bb.png",
+        "goals": 0,
+        "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627585.png?associationId=11015646",
+        "logo_source": "team"
+      },
+      "away": {
+        "team_id": 1368627833,
+        "name": null,
+        "abbreviation": "Ilves Toronto",
+        "association_id": 10114698,
+        "logo": "assets/team-logos/4e435ceda98ea30a202ce760a217bd3d7596fb1a9d35454afd376157141cb1ff.png",
+        "goals": 0,
+        "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627833.png?associationId=10114698",
+        "logo_source": "team"
+      },
+      "score": null,
+      "period_scores": null,
+      "urls": {
+        "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2744923&lang=fi"
+      },
+      "link_is_specific": true,
+      "link_source": "getgames_cache",
+      "denied_results": false,
+      "denied_stats": false,
+      "no_score_tracking": false,
+      "public_game_id": 2744923
     }
   ],
   "finished": [
