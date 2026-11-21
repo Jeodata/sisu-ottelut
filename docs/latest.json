@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T15:10:25+02:00",
+  "generated_at": "2026-11-21T15:14:35+02:00",
   "date": "2026-11-21",
   "date_fi": "21.11.2026",
   "club": {
@@ -189,7 +189,7 @@
       "date": "21.11.2026",
       "time": "14:30",
       "status": "live",
-      "status_code": 12,
+      "status_code": 13,
       "finished_type": null,
       "level": "U16 II-divisioona",
       "level_id": 1161,
@@ -505,7 +505,7 @@
       "date": "21.11.2026",
       "time": "14:30",
       "status": "live",
-      "status_code": 12,
+      "status_code": 13,
       "finished_type": null,
       "level": "U16 II-divisioona",
       "level_id": 1161,
