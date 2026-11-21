@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T14:45:23+02:00",
+  "generated_at": "2026-11-21T14:50:25+02:00",
   "date": "2026-11-21",
   "date_fi": "21.11.2026",
   "club": {
@@ -21,9 +21,9 @@
   },
   "counts": {
     "total": 8,
-    "upcoming": 3,
+    "upcoming": 1,
     "live": 4,
-    "finished": 1,
+    "finished": 3,
     "other": 0,
     "teams": 37
   },
@@ -84,7 +84,7 @@
       "game_id": 767479,
       "date": "21.11.2026",
       "time": "14:00",
-      "status": "live",
+      "status": "finished",
       "status_code": 0,
       "finished_type": null,
       "level": "U9 Leijonaliiga",
@@ -136,7 +136,7 @@
       "game_id": 767484,
       "date": "21.11.2026",
       "time": "14:00",
-      "status": "live",
+      "status": "finished",
       "status_code": 0,
       "finished_type": null,
       "level": "U9 Leijonaliiga",
@@ -210,7 +210,7 @@
         "abbreviation": "SiSu",
         "association_id": 11015646,
         "logo": "assets/team-logos/d0c897255590be362e4ecd5d218344264b16e5a7b3a8f70f0e6409b2a35605bb.png",
-        "goals": 0,
+        "goals": 1,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1305184724.png?associationId=11015646",
         "logo_source": "team"
       },
@@ -272,7 +272,7 @@
         "abbreviation": "Ilves Toronto",
         "association_id": 10114698,
         "logo": "assets/team-logos/4e435ceda98ea30a202ce760a217bd3d7596fb1a9d35454afd376157141cb1ff.png",
-        "goals": 0,
+        "goals": 2,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627833.png?associationId=10114698",
         "logo_source": "team"
       },
@@ -292,7 +292,7 @@
       "game_id": 767482,
       "date": "21.11.2026",
       "time": "14:50",
-      "status": "upcoming",
+      "status": "live",
       "status_code": 0,
       "finished_type": null,
       "level": "U9 Leijonaliiga",
@@ -344,7 +344,7 @@
       "game_id": 767488,
       "date": "21.11.2026",
       "time": "14:50",
-      "status": "upcoming",
+      "status": "live",
       "status_code": 0,
       "finished_type": null,
       "level": "U9 Leijonaliiga",
@@ -447,110 +447,6 @@
   ],
   "upcoming": [
     {
-      "game_id": 767482,
-      "date": "21.11.2026",
-      "time": "14:50",
-      "status": "upcoming",
-      "status_code": 0,
-      "finished_type": null,
-      "level": "U9 Leijonaliiga",
-      "level_id": 1184,
-      "sub_serie_id": null,
-      "rink": "Vammala",
-      "rink_id": null,
-      "small_area": true,
-      "spectators": 0,
-      "venue": "away",
-      "sisu_team": {
-        "team_id": 1368629033,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U9 Valkoinen",
-        "abbreviation": "SiSu Valkoinen"
-      },
-      "home": {
-        "team_id": 1368630345,
-        "name": null,
-        "abbreviation": "VaPS valkoinen",
-        "association_id": 10114122,
-        "logo": "assets/team-logos/c58852de70827af818428a34761ba1d05297374381e754b826f4bbeb65a4e50c.png",
-        "goals": null,
-        "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368630345.png?associationId=10114122",
-        "logo_source": "team"
-      },
-      "away": {
-        "team_id": 1368629033,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U9 Valkoinen",
-        "abbreviation": "SiSu Valkoinen",
-        "association_id": 11015646,
-        "logo": "assets/team-logos/d0c897255590be362e4ecd5d218344264b16e5a7b3a8f70f0e6409b2a35605bb.png",
-        "goals": null,
-        "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368629033.png?associationId=11015646",
-        "logo_source": "team"
-      },
-      "score": null,
-      "period_scores": null,
-      "urls": {
-        "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2755491&lang=fi"
-      },
-      "link_is_specific": true,
-      "link_source": "getgames_cache",
-      "denied_results": false,
-      "denied_stats": false,
-      "no_score_tracking": true,
-      "public_game_id": 2755491
-    },
-    {
-      "game_id": 767488,
-      "date": "21.11.2026",
-      "time": "14:50",
-      "status": "upcoming",
-      "status_code": 0,
-      "finished_type": null,
-      "level": "U9 Leijonaliiga",
-      "level_id": 1184,
-      "sub_serie_id": null,
-      "rink": "Vammala",
-      "rink_id": null,
-      "small_area": true,
-      "spectators": 0,
-      "venue": "away",
-      "sisu_team": {
-        "team_id": 1368629032,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U9 Punainen",
-        "abbreviation": "SiSu Punainen"
-      },
-      "home": {
-        "team_id": 1368630414,
-        "name": null,
-        "abbreviation": "VaPS sininen",
-        "association_id": 10114122,
-        "logo": "assets/team-logos/c58852de70827af818428a34761ba1d05297374381e754b826f4bbeb65a4e50c.png",
-        "goals": null,
-        "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368630414.png?associationId=10114122",
-        "logo_source": "team"
-      },
-      "away": {
-        "team_id": 1368629032,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U9 Punainen",
-        "abbreviation": "SiSu Punainen",
-        "association_id": 11015646,
-        "logo": "assets/team-logos/d0c897255590be362e4ecd5d218344264b16e5a7b3a8f70f0e6409b2a35605bb.png",
-        "goals": null,
-        "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368629032.png?associationId=11015646",
-        "logo_source": "team"
-      },
-      "score": null,
-      "period_scores": null,
-      "urls": {
-        "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2755493&lang=fi"
-      },
-      "link_is_specific": true,
-      "link_source": "getgames_cache",
-      "denied_results": false,
-      "denied_stats": false,
-      "no_score_tracking": true,
-      "public_game_id": 2755493
-    },
-    {
       "game_id": 728034,
       "date": "21.11.2026",
       "time": "16:20",
@@ -605,110 +501,6 @@
   ],
   "live": [
     {
-      "game_id": 767479,
-      "date": "21.11.2026",
-      "time": "14:00",
-      "status": "live",
-      "status_code": 0,
-      "finished_type": null,
-      "level": "U9 Leijonaliiga",
-      "level_id": 1184,
-      "sub_serie_id": null,
-      "rink": "Vammala",
-      "rink_id": null,
-      "small_area": true,
-      "spectators": 0,
-      "venue": "away",
-      "sisu_team": {
-        "team_id": 1368629032,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U9 Punainen",
-        "abbreviation": "SiSu Punainen"
-      },
-      "home": {
-        "team_id": 1368630345,
-        "name": null,
-        "abbreviation": "VaPS valkoinen",
-        "association_id": 10114122,
-        "logo": "assets/team-logos/c58852de70827af818428a34761ba1d05297374381e754b826f4bbeb65a4e50c.png",
-        "goals": null,
-        "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368630345.png?associationId=10114122",
-        "logo_source": "team"
-      },
-      "away": {
-        "team_id": 1368629032,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U9 Punainen",
-        "abbreviation": "SiSu Punainen",
-        "association_id": 11015646,
-        "logo": "assets/team-logos/d0c897255590be362e4ecd5d218344264b16e5a7b3a8f70f0e6409b2a35605bb.png",
-        "goals": null,
-        "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368629032.png?associationId=11015646",
-        "logo_source": "team"
-      },
-      "score": null,
-      "period_scores": null,
-      "urls": {
-        "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2755490&lang=fi"
-      },
-      "link_is_specific": true,
-      "link_source": "getgames_cache",
-      "denied_results": false,
-      "denied_stats": false,
-      "no_score_tracking": true,
-      "public_game_id": 2755490
-    },
-    {
-      "game_id": 767484,
-      "date": "21.11.2026",
-      "time": "14:00",
-      "status": "live",
-      "status_code": 0,
-      "finished_type": null,
-      "level": "U9 Leijonaliiga",
-      "level_id": 1184,
-      "sub_serie_id": null,
-      "rink": "Vammala",
-      "rink_id": null,
-      "small_area": true,
-      "spectators": 0,
-      "venue": "away",
-      "sisu_team": {
-        "team_id": 1368629033,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U9 Valkoinen",
-        "abbreviation": "SiSu Valkoinen"
-      },
-      "home": {
-        "team_id": 1368630414,
-        "name": null,
-        "abbreviation": "VaPS sininen",
-        "association_id": 10114122,
-        "logo": "assets/team-logos/c58852de70827af818428a34761ba1d05297374381e754b826f4bbeb65a4e50c.png",
-        "goals": null,
-        "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368630414.png?associationId=10114122",
-        "logo_source": "team"
-      },
-      "away": {
-        "team_id": 1368629033,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U9 Valkoinen",
-        "abbreviation": "SiSu Valkoinen",
-        "association_id": 11015646,
-        "logo": "assets/team-logos/d0c897255590be362e4ecd5d218344264b16e5a7b3a8f70f0e6409b2a35605bb.png",
-        "goals": null,
-        "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368629033.png?associationId=11015646",
-        "logo_source": "team"
-      },
-      "score": null,
-      "period_scores": null,
-      "urls": {
-        "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2755492&lang=fi"
-      },
-      "link_is_specific": true,
-      "link_source": "getgames_cache",
-      "denied_results": false,
-      "denied_stats": false,
-      "no_score_tracking": true,
-      "public_game_id": 2755492
-    },
-    {
       "game_id": 771761,
       "date": "21.11.2026",
       "time": "14:30",
@@ -734,7 +526,7 @@
         "abbreviation": "SiSu",
         "association_id": 11015646,
         "logo": "assets/team-logos/d0c897255590be362e4ecd5d218344264b16e5a7b3a8f70f0e6409b2a35605bb.png",
-        "goals": 0,
+        "goals": 1,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1305184724.png?associationId=11015646",
         "logo_source": "team"
       },
@@ -796,7 +588,7 @@
         "abbreviation": "Ilves Toronto",
         "association_id": 10114698,
         "logo": "assets/team-logos/4e435ceda98ea30a202ce760a217bd3d7596fb1a9d35454afd376157141cb1ff.png",
-        "goals": 0,
+        "goals": 2,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627833.png?associationId=10114698",
         "logo_source": "team"
       },
@@ -811,6 +603,110 @@
       "denied_stats": false,
       "no_score_tracking": false,
       "public_game_id": 2744923
+    },
+    {
+      "game_id": 767482,
+      "date": "21.11.2026",
+      "time": "14:50",
+      "status": "live",
+      "status_code": 0,
+      "finished_type": null,
+      "level": "U9 Leijonaliiga",
+      "level_id": 1184,
+      "sub_serie_id": null,
+      "rink": "Vammala",
+      "rink_id": null,
+      "small_area": true,
+      "spectators": 0,
+      "venue": "away",
+      "sisu_team": {
+        "team_id": 1368629033,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U9 Valkoinen",
+        "abbreviation": "SiSu Valkoinen"
+      },
+      "home": {
+        "team_id": 1368630345,
+        "name": null,
+        "abbreviation": "VaPS valkoinen",
+        "association_id": 10114122,
+        "logo": "assets/team-logos/c58852de70827af818428a34761ba1d05297374381e754b826f4bbeb65a4e50c.png",
+        "goals": null,
+        "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368630345.png?associationId=10114122",
+        "logo_source": "team"
+      },
+      "away": {
+        "team_id": 1368629033,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U9 Valkoinen",
+        "abbreviation": "SiSu Valkoinen",
+        "association_id": 11015646,
+        "logo": "assets/team-logos/d0c897255590be362e4ecd5d218344264b16e5a7b3a8f70f0e6409b2a35605bb.png",
+        "goals": null,
+        "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368629033.png?associationId=11015646",
+        "logo_source": "team"
+      },
+      "score": null,
+      "period_scores": null,
+      "urls": {
+        "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2755491&lang=fi"
+      },
+      "link_is_specific": true,
+      "link_source": "getgames_cache",
+      "denied_results": false,
+      "denied_stats": false,
+      "no_score_tracking": true,
+      "public_game_id": 2755491
+    },
+    {
+      "game_id": 767488,
+      "date": "21.11.2026",
+      "time": "14:50",
+      "status": "live",
+      "status_code": 0,
+      "finished_type": null,
+      "level": "U9 Leijonaliiga",
+      "level_id": 1184,
+      "sub_serie_id": null,
+      "rink": "Vammala",
+      "rink_id": null,
+      "small_area": true,
+      "spectators": 0,
+      "venue": "away",
+      "sisu_team": {
+        "team_id": 1368629032,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U9 Punainen",
+        "abbreviation": "SiSu Punainen"
+      },
+      "home": {
+        "team_id": 1368630414,
+        "name": null,
+        "abbreviation": "VaPS sininen",
+        "association_id": 10114122,
+        "logo": "assets/team-logos/c58852de70827af818428a34761ba1d05297374381e754b826f4bbeb65a4e50c.png",
+        "goals": null,
+        "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368630414.png?associationId=10114122",
+        "logo_source": "team"
+      },
+      "away": {
+        "team_id": 1368629032,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U9 Punainen",
+        "abbreviation": "SiSu Punainen",
+        "association_id": 11015646,
+        "logo": "assets/team-logos/d0c897255590be362e4ecd5d218344264b16e5a7b3a8f70f0e6409b2a35605bb.png",
+        "goals": null,
+        "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368629032.png?associationId=11015646",
+        "logo_source": "team"
+      },
+      "score": null,
+      "period_scores": null,
+      "urls": {
+        "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2755493&lang=fi"
+      },
+      "link_is_specific": true,
+      "link_source": "getgames_cache",
+      "denied_results": false,
+      "denied_stats": false,
+      "no_score_tracking": true,
+      "public_game_id": 2755493
     }
   ],
   "finished": [
@@ -865,6 +761,110 @@
       "denied_stats": false,
       "no_score_tracking": false,
       "public_game_id": 2744921
+    },
+    {
+      "game_id": 767479,
+      "date": "21.11.2026",
+      "time": "14:00",
+      "status": "finished",
+      "status_code": 0,
+      "finished_type": null,
+      "level": "U9 Leijonaliiga",
+      "level_id": 1184,
+      "sub_serie_id": null,
+      "rink": "Vammala",
+      "rink_id": null,
+      "small_area": true,
+      "spectators": 0,
+      "venue": "away",
+      "sisu_team": {
+        "team_id": 1368629032,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U9 Punainen",
+        "abbreviation": "SiSu Punainen"
+      },
+      "home": {
+        "team_id": 1368630345,
+        "name": null,
+        "abbreviation": "VaPS valkoinen",
+        "association_id": 10114122,
+        "logo": "assets/team-logos/c58852de70827af818428a34761ba1d05297374381e754b826f4bbeb65a4e50c.png",
+        "goals": null,
+        "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368630345.png?associationId=10114122",
+        "logo_source": "team"
+      },
+      "away": {
+        "team_id": 1368629032,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U9 Punainen",
+        "abbreviation": "SiSu Punainen",
+        "association_id": 11015646,
+        "logo": "assets/team-logos/d0c897255590be362e4ecd5d218344264b16e5a7b3a8f70f0e6409b2a35605bb.png",
+        "goals": null,
+        "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368629032.png?associationId=11015646",
+        "logo_source": "team"
+      },
+      "score": null,
+      "period_scores": null,
+      "urls": {
+        "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2755490&lang=fi"
+      },
+      "link_is_specific": true,
+      "link_source": "getgames_cache",
+      "denied_results": false,
+      "denied_stats": false,
+      "no_score_tracking": true,
+      "public_game_id": 2755490
+    },
+    {
+      "game_id": 767484,
+      "date": "21.11.2026",
+      "time": "14:00",
+      "status": "finished",
+      "status_code": 0,
+      "finished_type": null,
+      "level": "U9 Leijonaliiga",
+      "level_id": 1184,
+      "sub_serie_id": null,
+      "rink": "Vammala",
+      "rink_id": null,
+      "small_area": true,
+      "spectators": 0,
+      "venue": "away",
+      "sisu_team": {
+        "team_id": 1368629033,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U9 Valkoinen",
+        "abbreviation": "SiSu Valkoinen"
+      },
+      "home": {
+        "team_id": 1368630414,
+        "name": null,
+        "abbreviation": "VaPS sininen",
+        "association_id": 10114122,
+        "logo": "assets/team-logos/c58852de70827af818428a34761ba1d05297374381e754b826f4bbeb65a4e50c.png",
+        "goals": null,
+        "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368630414.png?associationId=10114122",
+        "logo_source": "team"
+      },
+      "away": {
+        "team_id": 1368629033,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U9 Valkoinen",
+        "abbreviation": "SiSu Valkoinen",
+        "association_id": 11015646,
+        "logo": "assets/team-logos/d0c897255590be362e4ecd5d218344264b16e5a7b3a8f70f0e6409b2a35605bb.png",
+        "goals": null,
+        "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368629033.png?associationId=11015646",
+        "logo_source": "team"
+      },
+      "score": null,
+      "period_scores": null,
+      "urls": {
+        "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2755492&lang=fi"
+      },
+      "link_is_specific": true,
+      "link_source": "getgames_cache",
+      "denied_results": false,
+      "denied_stats": false,
+      "no_score_tracking": true,
+      "public_game_id": 2755492
     }
   ],
   "teams": [
