@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T16:25:26+02:00",
+  "generated_at": "2026-11-21T16:30:25+02:00",
   "date": "2026-11-21",
   "date_fi": "21.11.2026",
   "club": {
@@ -189,7 +189,7 @@
       "date": "21.11.2026",
       "time": "14:30",
       "status": "live",
-      "status_code": 15,
+      "status_code": 16,
       "finished_type": null,
       "level": "U16 II-divisioona",
       "level_id": 1161,
@@ -197,7 +197,7 @@
       "rink": "HML hh",
       "rink_id": null,
       "small_area": false,
-      "spectators": 0,
+      "spectators": 20,
       "venue": "home",
       "sisu_team": {
         "team_id": 1305184724,
@@ -452,7 +452,7 @@
       "date": "21.11.2026",
       "time": "14:30",
       "status": "live",
-      "status_code": 15,
+      "status_code": 16,
       "finished_type": null,
       "level": "U16 II-divisioona",
       "level_id": 1161,
@@ -460,7 +460,7 @@
       "rink": "HML hh",
       "rink_id": null,
       "small_area": false,
-      "spectators": 0,
+      "spectators": 20,
       "venue": "home",
       "sisu_team": {
         "team_id": 1305184724,
