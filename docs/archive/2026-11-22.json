@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T12:15:24+02:00",
+  "generated_at": "2026-11-22T12:20:25+02:00",
   "date": "2026-11-22",
   "date_fi": "22.11.2026",
   "club": {
@@ -22,8 +22,8 @@
   "counts": {
     "total": 7,
     "upcoming": 6,
-    "live": 1,
-    "finished": 0,
+    "live": 0,
+    "finished": 1,
     "other": 0,
     "teams": 37
   },
@@ -32,7 +32,7 @@
       "game_id": 753391,
       "date": "22.11.2026",
       "time": "11:30",
-      "status": "live",
+      "status": "finished",
       "status_code": 0,
       "finished_type": null,
       "level": "U12 sarja",
@@ -707,12 +707,13 @@
       "public_game_id": 2745291
     }
   ],
-  "live": [
+  "live": [],
+  "finished": [
     {
       "game_id": 753391,
       "date": "22.11.2026",
       "time": "11:30",
-      "status": "live",
+      "status": "finished",
       "status_code": 0,
       "finished_type": null,
       "level": "U12 sarja",
@@ -761,7 +762,6 @@
       "public_game_id": 2743028
     }
   ],
-  "finished": [],
   "teams": [
     {
       "team_id": 1251467171,
