@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T14:05:38+02:00",
+  "generated_at": "2026-11-22T14:10:26+02:00",
   "date": "2026-11-22",
   "date_fi": "22.11.2026",
   "club": {
@@ -116,7 +116,7 @@
         "abbreviation": "Ilves Edmonton",
         "association_id": 10114698,
         "logo": "assets/team-logos/4e435ceda98ea30a202ce760a217bd3d7596fb1a9d35454afd376157141cb1ff.png",
-        "goals": 4,
+        "goals": 5,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627189.png?associationId=10114698",
         "logo_source": "team"
       },
@@ -168,7 +168,7 @@
         "abbreviation": "SiSu Valkoinen",
         "association_id": 11015646,
         "logo": "assets/team-logos/d0c897255590be362e4ecd5d218344264b16e5a7b3a8f70f0e6409b2a35605bb.png",
-        "goals": 3,
+        "goals": 5,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627072.png?associationId=11015646",
         "logo_source": "team"
       },
@@ -640,7 +640,7 @@
         "abbreviation": "Ilves Edmonton",
         "association_id": 10114698,
         "logo": "assets/team-logos/4e435ceda98ea30a202ce760a217bd3d7596fb1a9d35454afd376157141cb1ff.png",
-        "goals": 4,
+        "goals": 5,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627189.png?associationId=10114698",
         "logo_source": "team"
       },
@@ -692,7 +692,7 @@
         "abbreviation": "SiSu Valkoinen",
         "association_id": 11015646,
         "logo": "assets/team-logos/d0c897255590be362e4ecd5d218344264b16e5a7b3a8f70f0e6409b2a35605bb.png",
-        "goals": 3,
+        "goals": 5,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627072.png?associationId=11015646",
         "logo_source": "team"
       },
