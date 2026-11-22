@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T13:35:24+02:00",
+  "generated_at": "2026-11-22T13:40:24+02:00",
   "date": "2026-11-22",
   "date_fi": "22.11.2026",
   "club": {
@@ -116,7 +116,7 @@
         "abbreviation": "Ilves Edmonton",
         "association_id": 10114698,
         "logo": "assets/team-logos/4e435ceda98ea30a202ce760a217bd3d7596fb1a9d35454afd376157141cb1ff.png",
-        "goals": 2,
+        "goals": 3,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627189.png?associationId=10114698",
         "logo_source": "team"
       },
@@ -137,7 +137,7 @@
       "date": "22.11.2026",
       "time": "13:15",
       "status": "live",
-      "status_code": 11,
+      "status_code": 13,
       "finished_type": null,
       "level": "U12 sarja",
       "level_id": 1143,
@@ -158,7 +158,7 @@
         "abbreviation": "Tappara Oranssi",
         "association_id": 10114562,
         "logo": "assets/team-logos/71cd879d15ced6a82c79316a4e4490a1732e25b81b12387f0719226c37b3b926.png",
-        "goals": 2,
+        "goals": 3,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627181.png?associationId=10114562",
         "logo_source": "team"
       },
@@ -640,7 +640,7 @@
         "abbreviation": "Ilves Edmonton",
         "association_id": 10114698,
         "logo": "assets/team-logos/4e435ceda98ea30a202ce760a217bd3d7596fb1a9d35454afd376157141cb1ff.png",
-        "goals": 2,
+        "goals": 3,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627189.png?associationId=10114698",
         "logo_source": "team"
       },
@@ -661,7 +661,7 @@
       "date": "22.11.2026",
       "time": "13:15",
       "status": "live",
-      "status_code": 11,
+      "status_code": 13,
       "finished_type": null,
       "level": "U12 sarja",
       "level_id": 1143,
@@ -682,7 +682,7 @@
         "abbreviation": "Tappara Oranssi",
         "association_id": 10114562,
         "logo": "assets/team-logos/71cd879d15ced6a82c79316a4e4490a1732e25b81b12387f0719226c37b3b926.png",
-        "goals": 2,
+        "goals": 3,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627181.png?associationId=10114562",
         "logo_source": "team"
       },
