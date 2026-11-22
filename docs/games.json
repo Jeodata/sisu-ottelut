@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T16:50:24+02:00",
+  "generated_at": "2026-11-22T16:55:32+02:00",
   "date": "2026-11-22",
   "date_fi": "22.11.2026",
   "club": {
@@ -366,7 +366,7 @@
         "abbreviation": "Pingviinit",
         "association_id": 10114517,
         "logo": "assets/team-logos/15e77b9362bb2a9da43ecae081de721f2301ef75e551cc95c22891997ffd3cd5.png",
-        "goals": 9,
+        "goals": 10,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627938.png?associationId=10114517",
         "logo_source": "team"
       },
@@ -421,7 +421,7 @@
         "abbreviation": "Pingviinit",
         "association_id": 10114517,
         "logo": "assets/team-logos/15e77b9362bb2a9da43ecae081de721f2301ef75e551cc95c22891997ffd3cd5.png",
-        "goals": 9,
+        "goals": 10,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627938.png?associationId=10114517",
         "logo_source": "team"
       },
