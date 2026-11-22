@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T16:20:31+02:00",
+  "generated_at": "2026-11-22T16:25:27+02:00",
   "date": "2026-11-22",
   "date_fi": "22.11.2026",
   "club": {
@@ -345,7 +345,7 @@
       "date": "22.11.2026",
       "time": "16:00",
       "status": "live",
-      "status_code": 11,
+      "status_code": 13,
       "finished_type": null,
       "level": "U11 sarja",
       "level_id": 1142,
@@ -353,7 +353,7 @@
       "rink": "Pirkkala",
       "rink_id": null,
       "small_area": false,
-      "spectators": 0,
+      "spectators": 22,
       "venue": "away",
       "sisu_team": {
         "team_id": 1368627586,
@@ -400,7 +400,7 @@
       "date": "22.11.2026",
       "time": "16:00",
       "status": "live",
-      "status_code": 11,
+      "status_code": 13,
       "finished_type": null,
       "level": "U11 sarja",
       "level_id": 1142,
@@ -408,7 +408,7 @@
       "rink": "Pirkkala",
       "rink_id": null,
       "small_area": false,
-      "spectators": 0,
+      "spectators": 22,
       "venue": "away",
       "sisu_team": {
         "team_id": 1368627586,
