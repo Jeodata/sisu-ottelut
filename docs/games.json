@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T15:55:25+02:00",
+  "generated_at": "2026-11-22T16:00:23+02:00",
   "date": "2026-11-22",
   "date_fi": "22.11.2026",
   "club": {
@@ -21,8 +21,8 @@
   },
   "counts": {
     "total": 7,
-    "upcoming": 1,
-    "live": 1,
+    "upcoming": 0,
+    "live": 2,
     "finished": 5,
     "other": 0,
     "teams": 37
@@ -314,7 +314,7 @@
         "abbreviation": "Tappara Oranssi",
         "association_id": 10114562,
         "logo": "assets/team-logos/71cd879d15ced6a82c79316a4e4490a1732e25b81b12387f0719226c37b3b926.png",
-        "goals": 19,
+        "goals": 21,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627181.png?associationId=10114562",
         "logo_source": "team"
       },
@@ -344,8 +344,8 @@
       "game_id": 758235,
       "date": "22.11.2026",
       "time": "16:00",
-      "status": "upcoming",
-      "status_code": 0,
+      "status": "live",
+      "status_code": 1,
       "finished_type": null,
       "level": "U11 sarja",
       "level_id": 1142,
@@ -366,7 +366,7 @@
         "abbreviation": "Pingviinit",
         "association_id": 10114517,
         "logo": "assets/team-logos/15e77b9362bb2a9da43ecae081de721f2301ef75e551cc95c22891997ffd3cd5.png",
-        "goals": null,
+        "goals": 0,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627938.png?associationId=10114517",
         "logo_source": "team"
       },
@@ -376,7 +376,7 @@
         "abbreviation": "SiSu Valkoinen",
         "association_id": 11015646,
         "logo": "assets/team-logos/d0c897255590be362e4ecd5d218344264b16e5a7b3a8f70f0e6409b2a35605bb.png",
-        "goals": null,
+        "goals": 0,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627586.png?associationId=11015646",
         "logo_source": "team"
       },
@@ -393,60 +393,7 @@
       "public_game_id": 2745291
     }
   ],
-  "upcoming": [
-    {
-      "game_id": 758235,
-      "date": "22.11.2026",
-      "time": "16:00",
-      "status": "upcoming",
-      "status_code": 0,
-      "finished_type": null,
-      "level": "U11 sarja",
-      "level_id": 1142,
-      "sub_serie_id": null,
-      "rink": "Pirkkala",
-      "rink_id": null,
-      "small_area": false,
-      "spectators": 0,
-      "venue": "away",
-      "sisu_team": {
-        "team_id": 1368627586,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U11 Valkoinen",
-        "abbreviation": "SiSu Valkoinen"
-      },
-      "home": {
-        "team_id": 1368627938,
-        "name": null,
-        "abbreviation": "Pingviinit",
-        "association_id": 10114517,
-        "logo": "assets/team-logos/15e77b9362bb2a9da43ecae081de721f2301ef75e551cc95c22891997ffd3cd5.png",
-        "goals": null,
-        "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627938.png?associationId=10114517",
-        "logo_source": "team"
-      },
-      "away": {
-        "team_id": 1368627586,
-        "name": "SISU HOCKEY HÄMEENLINNA  RY U11 Valkoinen",
-        "abbreviation": "SiSu Valkoinen",
-        "association_id": 11015646,
-        "logo": "assets/team-logos/d0c897255590be362e4ecd5d218344264b16e5a7b3a8f70f0e6409b2a35605bb.png",
-        "goals": null,
-        "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627586.png?associationId=11015646",
-        "logo_source": "team"
-      },
-      "score": null,
-      "period_scores": null,
-      "urls": {
-        "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2745291&lang=fi"
-      },
-      "link_is_specific": true,
-      "link_source": "getgames_cache",
-      "denied_results": false,
-      "denied_stats": false,
-      "no_score_tracking": false,
-      "public_game_id": 2745291
-    }
-  ],
+  "upcoming": [],
   "live": [
     {
       "game_id": 753001,
@@ -474,7 +421,7 @@
         "abbreviation": "Tappara Oranssi",
         "association_id": 10114562,
         "logo": "assets/team-logos/71cd879d15ced6a82c79316a4e4490a1732e25b81b12387f0719226c37b3b926.png",
-        "goals": 19,
+        "goals": 21,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627181.png?associationId=10114562",
         "logo_source": "team"
       },
@@ -499,6 +446,58 @@
       "denied_stats": false,
       "no_score_tracking": false,
       "public_game_id": 2733515
+    },
+    {
+      "game_id": 758235,
+      "date": "22.11.2026",
+      "time": "16:00",
+      "status": "live",
+      "status_code": 1,
+      "finished_type": null,
+      "level": "U11 sarja",
+      "level_id": 1142,
+      "sub_serie_id": null,
+      "rink": "Pirkkala",
+      "rink_id": null,
+      "small_area": false,
+      "spectators": 0,
+      "venue": "away",
+      "sisu_team": {
+        "team_id": 1368627586,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U11 Valkoinen",
+        "abbreviation": "SiSu Valkoinen"
+      },
+      "home": {
+        "team_id": 1368627938,
+        "name": null,
+        "abbreviation": "Pingviinit",
+        "association_id": 10114517,
+        "logo": "assets/team-logos/15e77b9362bb2a9da43ecae081de721f2301ef75e551cc95c22891997ffd3cd5.png",
+        "goals": 0,
+        "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627938.png?associationId=10114517",
+        "logo_source": "team"
+      },
+      "away": {
+        "team_id": 1368627586,
+        "name": "SISU HOCKEY HÄMEENLINNA  RY U11 Valkoinen",
+        "abbreviation": "SiSu Valkoinen",
+        "association_id": 11015646,
+        "logo": "assets/team-logos/d0c897255590be362e4ecd5d218344264b16e5a7b3a8f70f0e6409b2a35605bb.png",
+        "goals": 0,
+        "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627586.png?associationId=11015646",
+        "logo_source": "team"
+      },
+      "score": null,
+      "period_scores": null,
+      "urls": {
+        "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2745291&lang=fi"
+      },
+      "link_is_specific": true,
+      "link_source": "getgames_cache",
+      "denied_results": false,
+      "denied_stats": false,
+      "no_score_tracking": false,
+      "public_game_id": 2745291
     }
   ],
   "finished": [
