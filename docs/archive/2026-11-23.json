@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T02:57:39+02:00",
+  "generated_at": "2026-11-23T17:54:33+02:00",
   "date": "2026-11-23",
   "date_fi": "23.11.2026",
   "club": {
@@ -189,14 +189,14 @@
         {
           "game_id": 776607,
           "date": "28.11.2026",
-          "time": null,
+          "time": "10:00",
           "status": "upcoming",
           "status_code": 0,
           "finished_type": null,
           "level": "U18 III-divisioona",
           "level_id": 1159,
           "sub_serie_id": null,
-          "rink": "Hakio S",
+          "rink": "Hämeenlinna",
           "rink_id": null,
           "small_area": false,
           "spectators": 0,
