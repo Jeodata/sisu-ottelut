@@ -169,19 +169,19 @@
   },
   "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/534547833.png?associationId=10112412": {
     "file": "f9aef1c89ddd7277acadc7866aed62e0d7cd39125af93c834cbb45f314a2ff4d.png",
-    "checked_at": 1795041283.9534988
+    "checked_at": 1795659024.7317495
   },
   "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368629236.png?associationId=11019913": {
     "file": "6c2501c09ed4503360b9164170546f23c4f597c32907cbb1ab426aebb15e76b2.png",
-    "checked_at": 1795041283.9534988
+    "checked_at": 1795659024.7317495
   },
   "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368629237.png?associationId=11019913": {
     "file": "6c2501c09ed4503360b9164170546f23c4f597c32907cbb1ab426aebb15e76b2.png",
-    "checked_at": 1795041283.9534988
+    "checked_at": 1795659024.7317495
   },
   "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368626737.png?associationId=10114740": {
     "file": "3e4641fb7cad94971cc6b921dc2c36c4d37e633252b7c833774865551168fc34.png",
-    "checked_at": 1795041283.9534988
+    "checked_at": 1795659024.7317495
   },
   "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/935060384.png?associationId=100026957": {
     "file": "8e4fb6c2ea5ff553374d92598f27da17d93dd5e136bea0b83a8671e00cf53e54.png",
@@ -210,5 +210,17 @@
   "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627778.png?associationId=11019913": {
     "file": "6c2501c09ed4503360b9164170546f23c4f597c32907cbb1ab426aebb15e76b2.png",
     "checked_at": 1795575676.4700713
+  },
+  "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368627271.png?associationId=100025201": {
+    "file": "63d67e0344460ab94029a9e2538bdc5c4aff4cc5739c738e33429d693e56738d.png",
+    "checked_at": 1795659024.7317495
+  },
+  "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368626796.png?associationId=10112386": {
+    "file": "799ccf76bae8d4b392818fe794c56c47c66f773379f5ef621d966db38744f5b0.png",
+    "checked_at": 1795659024.7317495
+  },
+  "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1210839494.png?associationId=10112386": {
+    "file": "799ccf76bae8d4b392818fe794c56c47c66f773379f5ef621d966db38744f5b0.png",
+    "checked_at": 1795659024.7317495
   }
 }
