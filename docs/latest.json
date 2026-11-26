@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T04:10:20+02:00",
+  "generated_at": "2026-11-26T17:06:18+02:00",
   "date": "2026-11-26",
   "date_fi": "26.11.2026",
   "club": {
@@ -1031,58 +1031,6 @@
           "public_game_id": 2744958
         },
         {
-          "game_id": 776613,
-          "date": "05.12.2026",
-          "time": null,
-          "status": "upcoming",
-          "status_code": 0,
-          "finished_type": null,
-          "level": "U18 III-divisioona",
-          "level_id": 1159,
-          "sub_serie_id": null,
-          "rink": "Hakio S",
-          "rink_id": null,
-          "small_area": false,
-          "spectators": 0,
-          "venue": "home",
-          "sisu_team": {
-            "team_id": 1368629034,
-            "name": "SISU HOCKEY HÄMEENLINNA  RY U18",
-            "abbreviation": "SiSu"
-          },
-          "home": {
-            "team_id": 1368629034,
-            "name": "SISU HOCKEY HÄMEENLINNA  RY U18",
-            "abbreviation": "SiSu",
-            "association_id": 11015646,
-            "logo": "assets/team-logos/d0c897255590be362e4ecd5d218344264b16e5a7b3a8f70f0e6409b2a35605bb.png",
-            "goals": null,
-            "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/1368629034.png?associationId=11015646",
-            "logo_source": "team"
-          },
-          "away": {
-            "team_id": 266996664,
-            "name": null,
-            "abbreviation": "KooKoo Team",
-            "association_id": 10418967,
-            "logo": "assets/team-logos/f9afa2c40eeb9ef1e71a3809920fa59144b87ff0d86cbfa0eea548124e7f08b8.png",
-            "goals": null,
-            "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/266996664.png?associationId=10418967",
-            "logo_source": "team"
-          },
-          "score": null,
-          "period_scores": null,
-          "urls": {
-            "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2763344&lang=fi"
-          },
-          "link_is_specific": true,
-          "link_source": "getgames_cache",
-          "denied_results": false,
-          "denied_stats": false,
-          "no_score_tracking": false,
-          "public_game_id": 2763344
-        },
-        {
           "game_id": 731651,
           "date": "05.12.2026",
           "time": "09:30",
@@ -1498,7 +1446,7 @@
             "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2733557&lang=fi"
           },
           "link_is_specific": true,
-          "link_source": "getgames",
+          "link_source": "getgames_cache",
           "denied_results": false,
           "denied_stats": false,
           "no_score_tracking": true,
@@ -1550,7 +1498,7 @@
             "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2733561&lang=fi"
           },
           "link_is_specific": true,
-          "link_source": "getgames",
+          "link_source": "getgames_cache",
           "denied_results": false,
           "denied_stats": false,
           "no_score_tracking": false,
@@ -1602,7 +1550,7 @@
             "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2758115&lang=fi"
           },
           "link_is_specific": true,
-          "link_source": "getgames",
+          "link_source": "getgames_cache",
           "denied_results": false,
           "denied_stats": false,
           "no_score_tracking": false,
@@ -1654,7 +1602,7 @@
             "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2758116&lang=fi"
           },
           "link_is_specific": true,
-          "link_source": "getgames",
+          "link_source": "getgames_cache",
           "denied_results": false,
           "denied_stats": false,
           "no_score_tracking": false,
@@ -1706,7 +1654,7 @@
             "gamecentre": "https://tulospalvelu.leijonat.fi/game?season=2027&gameid=2758497&lang=fi"
           },
           "link_is_specific": true,
-          "link_source": "getgames",
+          "link_source": "getgames_cache",
           "denied_results": false,
           "denied_stats": false,
           "no_score_tracking": false,
@@ -1716,9 +1664,9 @@
     }
   ],
   "public_link_resolution": {
-    "resolved": 29,
-    "total": 29,
+    "resolved": 28,
+    "total": 28,
     "unresolved": 0,
-    "queries": 2
+    "queries": 0
   }
 }
