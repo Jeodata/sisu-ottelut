@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T10:25:28+02:00",
+  "generated_at": "2026-11-28T10:30:26+02:00",
   "date": "2026-11-28",
   "date_fi": "28.11.2026",
   "club": {
@@ -33,7 +33,7 @@
       "date": "28.11.2026",
       "time": "10:00",
       "status": "live",
-      "status_code": 11,
+      "status_code": 12,
       "finished_type": null,
       "level": "U18 III-divisioona",
       "level_id": 1159,
@@ -921,7 +921,7 @@
       "date": "28.11.2026",
       "time": "10:00",
       "status": "live",
-      "status_code": 11,
+      "status_code": 12,
       "finished_type": null,
       "level": "U18 III-divisioona",
       "level_id": 1159,
