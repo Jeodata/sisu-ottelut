@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T12:05:35+02:00",
+  "generated_at": "2026-11-28T12:10:24+02:00",
   "date": "2026-11-28",
   "date_fi": "28.11.2026",
   "club": {
@@ -64,7 +64,7 @@
         "abbreviation": "K-Espoo V",
         "association_id": 100026957,
         "logo": "assets/team-logos/8e4fb6c2ea5ff553374d92598f27da17d93dd5e136bea0b83a8671e00cf53e54.png",
-        "goals": 4,
+        "goals": 5,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/935060384.png?associationId=100026957",
         "logo_source": "team"
       },
@@ -952,7 +952,7 @@
         "abbreviation": "K-Espoo V",
         "association_id": 100026957,
         "logo": "assets/team-logos/8e4fb6c2ea5ff553374d92598f27da17d93dd5e136bea0b83a8671e00cf53e54.png",
-        "goals": 4,
+        "goals": 5,
         "logo_external": "https://d3lct1h2t2q714.cloudfront.net/transform/tulospalvelu/images/associations/weblogos/200x200/2027/teams/935060384.png?associationId=100026957",
         "logo_source": "team"
       },
